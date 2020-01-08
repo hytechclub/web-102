@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: bisque;
+                color: saddlebrown;
+                font-family: Cambria;
+            }
+
+            button.padded {
+                margin-top: 20px;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+
+            #nameInput {
+                width: 140px;
+            }
+
+            .inputContainer {
+                margin-top: 5px;
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hyland Job Application</h1>
+        <img src="http://media.cleveland.com/business_impact/photo/19fhylandc-b0de26a820f68660.jpg" style="height:200px;width:300px;">
+        <p>Thank you for choosing to apply to work at Hyland. We have slides so it's pretty cool.</p>
+        <div class="inputContainer">
+            Name: <input id="nameInput" type="text">
+        </div>
+        <div class="inputContainer">
+            Over 16? <input id="ageInput" type="checkbox">
+        </div>
+        <div class="inputContainer">
+            <p>In the space below, tell us why we should hire you without using the letter "e"</p>
+            <textarea></textarea>
+        </div>
+        <div class="inputContainer">
+            Resume: <input id="fileInput" type="file">
+        </div>
+        <div>
+            <button class="padded">Finished</button>
+        </div>
+    </body>
+</html>

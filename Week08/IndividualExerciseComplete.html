@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            body {
+                background: url(https://i.imgur.com/cOxUQHY.jpg);
+            }
+        </style>
+        <script>
+            function changeBackground(bg) {
+                document.body.style.background = "url(" + bg + ")";
+            }
+
+            function promptForBg() {
+                var userBG = prompt("What do you want the background to be?");
+                changeBackground(userBG);
+            }
+
+            function inputForBg() {
+                var bgInputElement = document.querySelector("#bgInput");
+                changeBackground(bgInputElement.value);
+                bgInputElement.value = "";
+            }
+        </script>
+    </head>
+    <body>
+            <button onclick="changeBackground('https://i.imgur.com/MdvJ4C2.jpg')">Image 1</button>
+            <button onclick="changeBackground('https://i.imgur.com/yfQ8Uj4.jpg')">Image 2</button>
+            <button onclick="changeBackground('https://i.imgur.com/r9ywXwx.jpg')">Image 3</button>
+            <button onclick="promptForBg()">Prompt for Bg</button>
+            <div>
+                <input id="bgInput"><button onclick="inputForBg()">Input For Bg</button>
+            </div>
+    </body>
+</html>

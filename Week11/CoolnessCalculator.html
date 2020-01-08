@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            body {
+                background: black;
+                color: white;
+            }
+
+            button {
+                font-size: 50px;
+            }
+        </style>
+        <script>
+            function askQuestion(q, a1, a2, a3) {
+                var questionMessage = q + "\n\n" + "A) " + a1 + "\nB) " + a2 + "\nC) " + a3;
+                return prompt(questionMessage);
+            }
+
+            function coolButton() {
+                var coolness = 0;
+
+                alert("Welcome to the coolness calculator!");
+                
+                var answer1 = askQuestion("How cool are you?", "Super cool", "Normal", "Uncool");
+                if (answer1 === "B") {
+                    coolness = coolness + 25;
+                } else if (answer1 === "A") {
+                    coolness = coolness + 15;
+                }
+                
+                var answer2 = askQuestion("Are you in school?", "School is cool", "School is lame", "No");
+                if (answer2 === "A") {
+                    coolness = coolness + 25;
+                }
+                
+                var answer3 = askQuestion("Are you Miles Davis?", "Yes", "No", "Who is that?");
+                if (answer3 === "A") {
+                    coolness = coolness + 25;
+                } else if (answer3 == "B") {
+                    coolness = coolness + 15;
+                } else {
+                    coolness = coolness - 10;
+                }
+
+                var answer4 = askQuestion("What's the best skateboard trick you can do?", "Ollie", "Kickflip", "I don't skate");
+                if (answer4 === "B") {
+                    coolness = coolness + 15;
+                } else if (answer4 === "C") {
+                    coolness = coolness + 25;
+                }
+
+                document.querySelector("#thisCool").textContent = "You are " + coolness + "% cool!";
+                
+                if (coolness === 100) {
+                    var imgEl = document.createElement("img");
+                    imgEl.src = "https://ih0.redbubble.net/image.460411297.7933/raf,750x1000,075,t,5e504c:7bf03840f4.u2.jpg"
+                    document.body.appendChild(imgEl);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>How cool are you?</h2>
+        <p>Take this test to find out how cool you are</p>
+        <button onclick="coolButton()">😎</button>
+        <p id="thisCool"></p>
+    </body>
+</html>

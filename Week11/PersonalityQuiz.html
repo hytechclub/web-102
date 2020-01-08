@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Consolas;
+                font-size: 20px;
+                color: darkgreen;
+            }
+        </style>
+        <script>
+            function startQuiz() {
+                var nameInput = document.querySelector("#nameInput");
+                var name = nameInput.value;
+
+                alert("Hello, " + name + ", and welcome to the season quiz! Answer these questions to find out which season best represents you...");
+                var winterCount = 0;
+                var springCount = 0;
+                var fallCount = 0;
+                var summerCount = 0;
+
+                var cozy = prompt("How cozy do you like to be?\n\nA) Very Cozy\nB) Kind of Cozy\nC) Not Cozy\nD) I hate being cozy");
+                if (cozy === "A") {
+                    winterCount++;
+                } else if (cozy === "B") {
+                    fallCount++;
+                } else if (cozy === "C") {
+                    springCount++;
+                } else {
+                    summerCount++;
+                }
+
+                var sport = prompt("What is your favorite sport?\n\nA) Baseball\nB) Basketball\nC) Football\nD) Hockey");
+                if (sport === "A") {
+                    summerCount++;
+                } else if (sport === "B") {
+                    springCount++;
+                } else if (sport === "C") {
+                    fallCount++;
+                } else {
+                    winterCount++;
+                }
+
+                var mood = prompt("How do you feel?\n\nA) Contemplative\nB) Comfortable\nC) Joyful\nD) Relaxed");
+                if (mood === "A") {
+                    fallCount++;
+                } else if (mood === "B") {
+                    winterCount++;
+                } else if (mood === "C") {
+                    springCount++;
+                } else {
+                    summerCount++;
+                }
+
+                var clothes = prompt("What kind of clothing do you like?\n\nA) Bathing suits\nB) Heavy bundles\nC) Rain coat\nD) Flannel");
+                if (clothes === "A") {
+                    summerCount++;
+                } else if (clothes === "B") {
+                    winterCount++;
+                } else if (clothes === "C") {
+                    springCount++;
+                } else {
+                    fallCount++;
+                }
+
+                var move = prompt("Where would you like to live?\n\nA) Hawaii\nB) Los Angeles\nC) Canada\nD) South Carolina");
+                if (clothes === "A") {
+                    springCount++;
+                } else if (clothes === "B") {
+                    summerCount++;
+                } else if (clothes === "C") {
+                    winterCount++;
+                } else {
+                    fallCount++;
+                }
+                
+                var max = Math.max(summerCount, fallCount, winterCount, springCount);
+                if (max === springCount) {
+                    alert("You are spring!");
+                    document.body.style.background = "green";
+                } else if (max === fallCount) {
+                    alert("You are fall!");
+                    document.body.style.background = "orange";
+                } else if (max === winterCount) {
+                    alert("You are winter!");
+                    document.body.style.background = "cyan";
+                } else {
+                    alert("You are summer!");
+                    document.body.style.background = "yellow";
+                }
+            }
+
+            function clearBackground() {
+                document.body.style.background = "white";
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Which season are you?</h2>
+        <p>Take this quiz to find out!</p>
+        <p>Enter your name: <input type="text" id="nameInput"></p>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <button onclick="clearBackground()">Clear Background</button>
+    </body>
+</html>

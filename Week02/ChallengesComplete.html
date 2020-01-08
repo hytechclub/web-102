@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            alert("Welcome to my website");
+
+            var fullName = prompt("What is your full name?");
+            var indexSpace = fullName.indexOf(" ");
+            var firstName = fullName.substring(0, indexSpace);
+            var lastName = fullName.substring(indexSpace+1);
+
+            var favoriteColor = prompt("What is your favorite color?");
+            favoriteColor = favoriteColor.replace("red", "blue");
+
+            var favoriteMovie = prompt("What is your favorite movie?");
+            favoriteMovie = favoriteMovie.toLowerCase();
+            favoriteMovie = favoriteMovie.trim();
+
+            prompt("What is the date today?");
+            var todaysDate = new Date();
+            var nextNewYear = new Date("01/01/" + (todaysDate.getFullYear()+1));
+            var msUntilNewYear = nextNewYear.getTime() - todaysDate.getTime();
+            var daysUntilNewYear = Math.ceil(msUntilNewYear/(1000*60*60*24));
+
+            var birthDayText = prompt("What is your birthday (MM/DD)?");
+            var halfBirthDate = new Date(birthDayText);
+            halfBirthDate.setDate(halfBirthDate.getDate() + (364/2));
+            var halfBirthDateText = (halfBirthDate.getMonth() + 1) + "/" + halfBirthDate.getDate();
+
+            var continued = confirm("Continue?");
+            alert("You chose to continue: " + continued);
+
+            var displayAnswers =
+`First Name: ${firstName}
+Last Name: ${lastName}
+Favorite Color: ${favoriteColor}
+Favorite Movie: ${favoriteMovie}
+Today's Date: ${todaysDate}
+Half birthday: ${halfBirthDateText}
+Days until New Year: ${daysUntilNewYear}`
+
+            alert(displayAnswers);
+        </script>
+    </head>
+</html>

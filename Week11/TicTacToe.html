@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <style>
+            td {
+                width: 100px;
+                height: 100px;
+                font-size: 50px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            td.occupied, #container.off td {
+                cursor: default;
+            }
+
+            #container {
+                margin: 0 auto;
+            }
+
+            tr.center td {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            td.center {
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
+
+            #start {
+                margin-bottom: 15px;
+            }
+
+            #message {
+                margin-top: 15px;
+            }
+        </style>
+        <script>
+            var currentPlayer = "X";
+            var board = {
+                "p0": "",
+                "p1": "",
+                "p2": "",
+                "p3": "",
+                "p4": "",
+                "p5": "",
+                "p6": "",
+                "p7": "",
+                "p8": ""
+            };
+
+            function setPiece(player, position) {
+                board[position] = player;
+
+                var square = document.querySelector("#" + position);
+                square.textContent = player;
+                square.classList.add("occupied");
+            }
+
+            function victory(player) {
+                var checkPositions = (x,y,z) =>
+                    board["p"+x] === player &&
+                    board["p"+y] === player &&
+                    board["p"+z] === player;
+                
+                return checkPositions(0,1,2) ||
+                    checkPositions(0,3,6) ||
+                    checkPositions(0,4,8) ||
+                    checkPositions(1,4,7) ||
+                    checkPositions(2,4,6) ||
+                    checkPositions(2,5,8) ||
+                    checkPositions(3,4,5) ||
+                    checkPositions(6,7,8);
+            }
+
+            function catsGame() {
+                for (square in board) {
+                    if (board[square] === "") {
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+
+            function setMessage(msg) {
+                var messageP = document.querySelector("#message");
+                messageP.textContent = msg;
+            }
+
+            function endGame() {
+                var containerDiv = document.querySelector("#container");
+                containerDiv.classList.add("off");
+
+                for (square in board) {
+                    var el = document.querySelector("#" + square);
+                    el.onclick = null;
+                    el.classList.remove("occupied");
+
+                    board[square] = "";
+                }
+            }
+
+            function changeTurn() {
+                if (victory(currentPlayer)) {
+                    setMessage(currentPlayer + " wins!");
+                    endGame();
+                } else if (catsGame()) {
+                    setMessage("Cat's Game!");
+                    endGame();
+                } else {
+                    currentPlayer = currentPlayer === "X" ? "O" : "X";
+                    setMessage(currentPlayer + "s turn!");
+                }
+            }
+
+            function startGame() {
+                var containerDiv = document.querySelector("#container");
+                containerDiv.classList.remove("off");
+
+                for (square in board) {
+                    var el = document.querySelector("#" + square);
+                    el.textContent = "";
+
+                    el.onclick = function() {
+                        if (!this.classList.contains("occupied")) {
+                            setPiece(currentPlayer, this.id);
+                            changeTurn();
+                        }
+                    }.bind(el);
+                }
+                
+                setMessage(currentPlayer + "s turn!");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container" class="off">
+            <table>
+                <tbody>
+                    <tr class="top">
+                        <td class="left" id="p0"></td>
+                        <td class="center" id="p1"></td>
+                        <td class="right" id="p2"></td>
+                    </tr>
+                    <tr class="center">
+                        <td class="left" id="p3"></td>
+                        <td class="center" id="p4"></td>
+                        <td class="right" id="p5"></td>
+                    </tr>
+                    <tr class="bottom">
+                        <td class="left" id="p6"></td>
+                        <td class="center" id="p7"></td>
+                        <td class="right" id="p8"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p id="message"></p>
+        <button id="start" onclick="startGame()">Start New Game</button>
+    </body>
+</html>
