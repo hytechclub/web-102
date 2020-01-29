@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 3 - Alerts & Prompts · GitBook</title>
+        <title>Challenges · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SpeedCalculatorInstructions.html" />
+    <link rel="next" href="../Week06/StudentDesc.html" />
     
     
-    <link rel="prev" href="../Week02/IndividualInstructions.html" />
+    <link rel="prev" href="IndividualInstructions.html" />
     
 
     </head>
@@ -183,9 +183,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.4" data-path="../Week03/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../Week03/StudentDesc.html">
             
                     
                     Week 3 - Alerts & Prompts
@@ -197,9 +197,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="SpeedCalculatorInstructions.html">
+        <li class="chapter " data-level="1.4.1" data-path="../Week03/SpeedCalculatorInstructions.html">
             
-                <a href="SpeedCalculatorInstructions.html">
+                <a href="../Week03/SpeedCalculatorInstructions.html">
             
                     
                     Speed Calculator Code-Along
@@ -210,9 +210,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="GeometryCalculationsInstructions.html">
+        <li class="chapter " data-level="1.4.2" data-path="../Week03/GeometryCalculationsInstructions.html">
             
-                <a href="GeometryCalculationsInstructions.html">
+                <a href="../Week03/GeometryCalculationsInstructions.html">
             
                     
                     Geometry Calculations Individual Exercise
@@ -223,9 +223,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="AdditionalChallenges.html">
+        <li class="chapter " data-level="1.4.3" data-path="../Week03/AdditionalChallenges.html">
             
-                <a href="AdditionalChallenges.html">
+                <a href="../Week03/AdditionalChallenges.html">
             
                     
                     Additional Challenges
@@ -299,9 +299,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../Week05/StudentDesc.html">
+        <li class="chapter " data-level="1.6" data-path="StudentDesc.html">
             
-                <a href="../Week05/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 5 - Conditionals
@@ -313,9 +313,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="../Week05/IndividualInstructions.html">
+        <li class="chapter " data-level="1.6.1" data-path="IndividualInstructions.html">
             
-                <a href="../Week05/IndividualInstructions.html">
+                <a href="IndividualInstructions.html">
             
                     
                     Individual Instructions
@@ -326,9 +326,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="../Week05/Challenges.html">
+        <li class="chapter active" data-level="1.6.2" data-path="Challenges.html">
             
-                <a href="../Week05/Challenges.html">
+                <a href="Challenges.html">
             
                     
                     Challenges
@@ -729,7 +729,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Week 3 - Alerts & Prompts</a>
+        <a href=".." >Challenges</a>
     </h1>
 </div>
 
@@ -744,20 +744,71 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="web-102-alerts--prompts">Web 102: Alerts &amp; Prompts</h1>
-<h2 id="reference">Reference</h2>
+                                <h1 id="booleans-and-conditionals-challenges">Booleans and Conditionals Challenges</h1>
+<p>First, create a new HTML file and a new JS file. The HTML file should link to the JS file. Then, complete the following challenges.</p>
+<h2 id="simple-chat-bot">Simple Chat Bot</h2>
+<p>Add a button to the HTML page. When clicked, ask the user to enter a message for the chat bot. Create at least 5 responses to five different messages. If the user enters a message the program does not recognize, it should display &quot;I do not understand your message&quot;.</p>
+<h3 id="examples">Examples</h3>
+<p>If the user enters &quot;Hello&quot;, the chatbot could respond with &quot;Goodbye&quot;.
+If the user enters &quot;How are you?&quot; the chatbot could respond with &quot;I am well, thank you&quot;.</p>
+<p>The specific messages/responses are up to you to decide!</p>
+<h2 id="quiz-me">Quiz Me</h2>
+<p>Add a button to the HTML page. When clicked, the program should ask the user at least 3 questions that have correct answers. If the user answers all of the questions correctly, the program should display a message saying they passed. If the user does NOT answer all questions correctly, the program should display a message saying they did NOT pass.</p>
+<h3 id="additional-challenge">Additional Challenge</h3>
+<p>In addition to displaying whether the user passed or not, display their final score. For example, if they scored 2 out of 3, display &quot;You scored 2/3&quot;.</p>
+<h2 id="five-questions">Five Questions</h2>
+<p>Create a simplified Twenty Questions-style game where your program will attempt to guess what object the user has in mind. For reference, it should work something like this: <a href="http://www.20q.net/" target="_blank">http://www.20q.net/</a></p>
+<p>The user should click a button to start the game. Then, the program should ask at least 5 questions in attempt to determine the user&apos;s object. The user should be able to answer either &quot;Yes&quot; or &quot;No&quot;. When the user answers the questions, the program should narrow down the possible answers. After 5 (or more) questions, the program should display a guess.</p>
+<h3 id="additional-challenges">Additional challenges</h3>
 <ul>
-<li><a href="Lecture.pptx" target="_blank">Alerts &amp; Prompts PowerPoint Presentation</a></li>
+<li>Add more questions to the game, and more possible guesses</li>
+<li>Ask different questions based on the user&apos;s answers to the previous questions</li>
+<li>Instead of using <code>prompt</code> to ask the user the yes or no questions, display the question in an <code>alert</code> and then allow the user to click a &quot;Yes&quot; or &quot;No&quot; button on the HTML page to answer. Create a new HTML file for this challenge.</li>
 </ul>
-<h2 id="activities">Activities</h2>
+<h2 id="boolean-logical-operators">Boolean Logical Operators</h2>
+<blockquote>
+<p>Resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators</a></p>
+</blockquote>
+<p>Simplify each of the following boolean values. The result should either be true, false, or a simplified expression including variables. If the variables get confusing, try using a truth table: <a href="https://en.wikipedia.org/wiki/Truth_table" target="_blank">https://en.wikipedia.org/wiki/Truth_table</a></p>
+<h3 id="examples">Examples</h3>
+<p>No variables</p>
 <ul>
-<li><a href="SpeedCalculatorInstructions.html">Speed Calculator Code-Along</a></li>
+<li>Expression: <code>(true || false) &amp;&amp; true</code></li>
+<li>Simplified: <code>true</code></li>
 </ul>
-<h2 id="practice">Practice</h2>
+<p>Variables</p>
 <ul>
-<li><a href="GeometryCalculationsInstructions.html">Geometry Calculations Individual Exercise</a></li>
-<li><a href="AdditionalChallenges.html">Additional Challenges</a></li>
+<li>Expression: <code>(x || y) &amp;&amp; (y || x)</code></li>
+<li>Simplified: <code>x || y</code></li>
 </ul>
+<h3 id="expressions">Expressions</h3>
+<ol>
+<li><code>(true &amp;&amp; !(true || false)) || false</code></li>
+<li><code>(true &amp;&amp; x) || (false &amp;&amp; x)</code></li>
+<li><code>!(false &amp;&amp; x) || (!x &amp;&amp; !false)</code></li>
+<li><code>!(false &amp;&amp; true &amp;&amp; true) &amp;&amp; (false || true)</code></li>
+<li><code>!(x || y)</code></li>
+<li><code>!(!x || !y)</code></li>
+</ol>
+<h2 id="ternary-conditionals">Ternary Conditionals</h2>
+<blockquote>
+<p>Resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></p>
+</blockquote>
+<p>Convert all of your conditionals into ternary statements. For example, if you had</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> message;
+<span class="hljs-keyword">if</span> (x === <span class="hljs-number">5</span>) {
+    message = <span class="hljs-string">&quot;x is 5&quot;</span>;
+} <span class="hljs-keyword">else</span> {
+    message = <span class="hljs-string">&quot;x is not 5&quot;</span>;
+}
+
+alert(message);
+</code></pre>
+<p>you would convert it to</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> message = x === <span class="hljs-number">5</span> ? <span class="hljs-string">&quot;x is 5&quot;</span> : <span class="hljs-string">&quot;x is not 5&quot;</span>;
+
+alert(message);
+</code></pre>
 
                                 
                                 </section>
@@ -785,12 +836,12 @@
 
             
                 
-                <a href="../Week02/IndividualInstructions.html" class="navigation navigation-prev " aria-label="Previous page: Individual Instructions">
+                <a href="IndividualInstructions.html" class="navigation navigation-prev " aria-label="Previous page: Individual Instructions">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="SpeedCalculatorInstructions.html" class="navigation navigation-next " aria-label="Next page: Speed Calculator Code-Along">
+                <a href="../Week06/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Week 6 - DOM Manipulation (Read from Input)">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -801,7 +852,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 3 - Alerts & Prompts","level":"1.4","depth":1,"next":{"title":"Speed Calculator Code-Along","level":"1.4.1","depth":2,"path":"Week03/SpeedCalculatorInstructions.md","ref":"Week03/SpeedCalculatorInstructions.md","articles":[]},"previous":{"title":"Individual Instructions","level":"1.3.1","depth":2,"path":"Week02/IndividualInstructions.md","ref":"Week02/IndividualInstructions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week03/StudentDesc.md","mtime":"2020-01-29T13:09:19.364Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-29T13:09:55.471Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Challenges","level":"1.6.2","depth":2,"next":{"title":"Week 6 - DOM Manipulation (Read from Input)","level":"1.7","depth":1,"path":"Week06/StudentDesc.md","ref":"Week06/StudentDesc.md","articles":[{"title":"Warm Up","level":"1.7.1","depth":2,"path":"Week06/WarmUp/WarmUp.md","ref":"Week06/WarmUp/WarmUp.md","articles":[]},{"title":"DOM Manipulation - Read from Input","level":"1.7.2","depth":2,"path":"Week06/DomManipulationReadFromInput.md","ref":"Week06/DomManipulationReadFromInput.md","articles":[]},{"title":"Mad Libs Follow-Along","level":"1.7.3","depth":2,"path":"Week06/MadLibsFollowAlong.md","ref":"Week06/MadLibsFollowAlong.md","articles":[]},{"title":"Mad Libs Individual Exercise","level":"1.7.4","depth":2,"path":"Week06/MadLibsIndividual.md","ref":"Week06/MadLibsIndividual.md","articles":[]},{"title":"Challenges","level":"1.7.5","depth":2,"path":"Week06/Challenges.md","ref":"Week06/Challenges.md","articles":[]}]},"previous":{"title":"Individual Instructions","level":"1.6.1","depth":2,"path":"Week05/IndividualInstructions.md","ref":"Week05/IndividualInstructions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week05/Challenges.md","mtime":"2020-01-29T13:09:19.368Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-29T13:09:55.471Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
