@@ -11,6 +11,6 @@ Welcome to the Web 102 Hy-Tech Club course!
 - Week 7 - [DOM Manipulation - Updating HTML](Week07/StudentDesc.md)
 - Week 8 - [Function Parameters](Week08/StudentDesc.md)
 - Week 9 - [JavaScript Objects](Week09/StudentDesc.md)
-- Week 10 - [Style Manipulation](Week10/StudentDesc.md)
+- Week 10 - [Style Manipulation](Week10/StyleManipulation.md)
 - Week 11 - [Final Project](Week11/StudentDesc.md)
 - Week 12 - Project Presentations

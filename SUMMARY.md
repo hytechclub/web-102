@@ -38,4 +38,4 @@
 - [Week 10 - Style Manipulation](Week10/StyleManipulation.md)
 - [Week 11 - Final Project](Week11/StudentDesc.md)
     - [Final Project](Week11/FinalProject.md)
-    - [CheatSheet](Week11/CheatSheet.md)
+    - [Cheat Sheet](Week11/CheatSheet.md)

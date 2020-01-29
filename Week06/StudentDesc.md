@@ -11,5 +11,5 @@
 - [Mad Libs Follow-Along](MadLibsFollowAlong.md)
 
 ## Practice
-- [Mad Libs Individual Exercise](Mad Libs Individual.md)
+- [Mad Libs Individual Exercise](MadLibsIndividual.md)
 - [Challenges](Challenges.md)

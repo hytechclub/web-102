@@ -25,8 +25,6 @@ Your project must have:
     - Updating the text content of an HTML element in JavaScript
     - Changing a style on the page in JavaScript
 
-<br><br>
-
 ## Ideas
 If you're having trouble thinking of something you'd like to make, you can choose one of these ideas as a starting point.
 

@@ -57,6 +57,7 @@ x += 10;
 
 ### Find the maximum of some variables
 >Assume `count1`, `count2`, and `count3` are all numeric variables
+
 ```js
 var maximumCount = Math.max(count1, count2, count3);
 ```
@@ -85,6 +86,7 @@ var answer = prompt("This is a question");
 
 ### Do something if a condition is true
 >Assume `answer` is a variable with a value
+
 ```js
 if (answer === "Answer") {
     alert("Do something");
@@ -93,6 +95,7 @@ if (answer === "Answer") {
 
 ### Do something if a condition is false
 >Assume `answer` is a variable with a value
+
 ```js
 if (answer === "Answer1") {
     alert("Do something");

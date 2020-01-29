@@ -4,7 +4,7 @@
 - [Final Project](FinalProject.md)
 
 ## Cheat Sheet
-- [CheatSheet](CheatSheet.md)
+- [Cheat Sheet](CheatSheet.md)
 
 ## Examples
 - <a href="CoolnessCalculator.html" target="_blank">CoolnessCalculator.html</a>

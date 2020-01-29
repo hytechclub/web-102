@@ -3,6 +3,9 @@
 ## Reference
 - <a href="Lecture.pptx" target="_blank">Buttons PowerPoint Presentation</a>
 
+## Activities
+- [Soundboard Follow-Along](SoundboardFollowAlongInstructions.md)
+
 ## Practice
-- [Individual Instructions](IndividualInstructions.md)
+- [Soundboard Individual](SoundboardIndividualInstructions.md)
 - [Challenges](Challenges.md)

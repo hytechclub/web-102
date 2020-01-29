@@ -4,8 +4,6 @@ Manipulating the DOM is one of the best ways to create interactive web experienc
 ## Example Description
 We want to create a simple webpage that allows a user to enter a password. If they enter the correct password, the webpage should inform them that they entered the correct password with a nice green message, and display an image. If they enter an incorrect password, the webpage should inform them that they entered the wrong password with a red message, and hide the image.
 
-<br><br>
-
 ## HTML
 ### Basic Setup
 Create a new HTML file, and add the basic tags (`html`, `body`, `head`, `style`). Additionally, add the header and a paragraph:
