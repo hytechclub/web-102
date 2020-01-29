@@ -5,5 +5,7 @@
 
 ## Activities
 - [Speed Calculator Code-Along](SpeedCalculatorInstructions.md)
+
+## Practice
 - [Geometry Calculations Individual Exercise](GeometryCalculationsInstructions.md)
 - [Additional Challenges](AdditionalChallenges.md)

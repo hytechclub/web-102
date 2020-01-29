@@ -1,5 +1,5 @@
 # Functions Follow-Along: Dice Roller
-We currently have a webpage ([DiceRoller.html](DiceRoller.html)) that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well!
+We currently have a webpage that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well!
 
 ## Background information - Random Number generation
 Random numbers can be an extremely useful tool when creating games. Any time there is any sort of probability in a game, it's probably using random numbers!

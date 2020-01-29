@@ -3,5 +3,5 @@
 ## Reference
 - <a href="IntroductionToJavaScript.pptx" target="_blank">Introduction to JavaScript PowerPoint Presentation</a>
 
-## Activities
+## Practice
 - [Individual Instructions](IndividualInstructions.md)
