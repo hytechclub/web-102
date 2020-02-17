@@ -1,3 +1,5 @@
 - [Week 1 - HTML & CSS](Week01/StudentDesc.md)
     - [Introduce Yourself](Week01/IntroduceYourself.md)
     - [Challenge](Week01/Challenge.md)
+- [Week 2 - Introduction to JavaScript](Week02/StudentDesc.md)
+    - [Individual Instructions](Week02/IndividualInstructions.md)
