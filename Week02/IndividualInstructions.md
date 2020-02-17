@@ -29,8 +29,8 @@ These may be helpful resources:
 - https://www.w3schools.com/jsref/met_win_confirm.asp
 
 
-### Lowercase movie
-No matter what the user enters, display their favorite movie in all in lowercase letters.
+### Uppercase movie
+No matter what the user enters, display their favorite movie in all in uppercase letters.
 
 ### Removing whitespace from movie
 Remove all spaces from the beginning and end of the text the user enters for their favorite movie.
