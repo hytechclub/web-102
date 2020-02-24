@@ -4,7 +4,7 @@ Welcome to the Web 102 Hy-Tech Club course!
 ## Schedule
 - Week 1 - [HTML & CSS](Week01/StudentDesc.md)
 - Week 2 - [Hello JS](Week02/StudentDesc.md)
-- Week 3 - [Alerts & Prompts](Week03/StudentDesc.md)
+- Week 3 - [Comments, Data Types, and Math](Week03/StudentDesc.md)
 - Week 4 - [Buttons](Week04/StudentDesc.md)
 - Week 5 - [Conditionals](Week05/StudentDesc.md)
 - Week 6 - [DOM Manipulation - Reading from Input](Week06/StudentDesc.md)
