@@ -3,7 +3,7 @@
     - [Challenge](Week01/Challenge.md)
 - [Week 2 - Introduction to JavaScript](Week02/StudentDesc.md)
     - [Individual Instructions](Week02/IndividualInstructions.md)
-- [Week 3 - Alerts & Prompts](Week03/StudentDesc.md)
+- [Week 3 - Comments, Data Types, and Math](Week03/StudentDesc.md)
     - [Speed Calculator Code-Along](Week03/SpeedCalculatorInstructions.md)
     - [Geometry Calculations Individual Exercise](Week03/GeometryCalculationsInstructions.md)
     - [Additional Challenges](Week03/AdditionalChallenges.md)
