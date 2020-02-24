@@ -1,10 +1,10 @@
-# Web 102: Alerts & Prompts
+# Web 102: Comments, Data Types, and Math
 
 ## Reference
-- <a href="Lecture.pptx" target="_blank">Alerts & Prompts PowerPoint Presentation</a>
+- <a href="Lecture.pptx" target="_blank">More Concepts PowerPoint Presentation</a>
 
 ## Activities
-- [Speed Calculator Code-Along](SpeedCalculatorInstructions.md)
+- [Speed Calculator Code-Along]()
 
 ## Practice
 - [Geometry Calculations Individual Exercise](GeometryCalculationsInstructions.md)
