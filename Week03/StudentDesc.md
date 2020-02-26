@@ -4,7 +4,7 @@
 - <a href="Lecture.pptx" target="_blank">More Concepts PowerPoint Presentation</a>
 
 ## Activities
-- Speed Calculator Code-Along
+- [Speed Calculator Code-Along](SpeedCalculatorInstructions.md)
 
 ## Practice
 - [Geometry Calculations Individual Exercise](GeometryCalculationsInstructions.md)
