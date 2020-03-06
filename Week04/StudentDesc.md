@@ -4,7 +4,7 @@
 - <a href="Lecture.pptx" target="_blank">Buttons PowerPoint Presentation</a>
 
 ## Activities
-- Soundboard Code-Along
+- [Soundboard Code-Along](SoundboardFollowAlongInstructions.md)
 
 ## Practice
 - [Soundboard Individual](SoundboardIndividualInstructions.md)
