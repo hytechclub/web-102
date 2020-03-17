@@ -16,6 +16,8 @@ Each week, follow the same type of agenda we normally would follow in class:
 1. **Challenges**: work on the challenges after completing the code-along
 
 ## Schedule
+Follow the links below to view each week of material.
+
 - Week 1 (2/11) - [HTML & CSS](Week01/StudentDesc.md)
 - Week 2 (2/18) - [Hello JS](Week02/StudentDesc.md)
 - Week 3 (2/25) - [Comments, Data Types, and Math](Week03/StudentDesc.md)
