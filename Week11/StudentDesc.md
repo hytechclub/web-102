@@ -1,4 +1,5 @@
 # Web 102: Final Project
+Use the resources below to complete a final project!
 
 ## Description
 - [Final Project](FinalProject.md)
