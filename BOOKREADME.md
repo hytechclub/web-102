@@ -7,7 +7,6 @@ Welcome to the Web 102 Hy-Tech Club course!
 - Recordings for lectures and code-alongs will be posted to [this playlist](https://www.youtube.com/playlist?list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u)
 - Office Hours will be held via [Zoom](https://hyland.zoom.us/j/180902745) on Tuesdays from 5:30PM-6:30PM
 - Email [web102@hyland.com](mailto:web102@hyland.com) with any questions
-- Office Hours will be held via [Zoom](https://hyland.zoom.us/j/236727451) on Tuesdays from 5:30PM-6:30PM
 
 ### Weekly Plan
 Each week, follow the same type of agenda we normally would follow in class:
