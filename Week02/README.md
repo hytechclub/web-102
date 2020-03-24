@@ -13,7 +13,9 @@ Ask the students to answer the following questions:
 Discussion will take place during the lecture.
 
 ## Lecture
-The lecture defines JavaScript and explains how developers use JavaScript. Then it dives in to the following concepts:
+The first lecture defines JavaScript and explains how developers use JavaScript.
+
+The second lecture dives in to the following concepts:
 - Script tag
 - `alert`
 - Variables
