@@ -1,7 +1,7 @@
 # Web 102: Buttons
 
 ## Reference
-- <a href="Lecture.pptx" target="_blank">Buttons PowerPoint Presentation</a>
+- <a href="LectureOld.pptx" target="_blank">Buttons PowerPoint Presentation</a>
 
 ## Activities
 - [Soundboard Code-Along](SoundboardFollowAlongInstructions.md)
