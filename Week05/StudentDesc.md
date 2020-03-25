@@ -1,7 +1,7 @@
 # Web 102: Conditionals
 
 ## Reference
-- <a href="Lecture.pptx" target="_blank">Conditionals PowerPoint Presentation</a>
+- <a href="LectureOld.pptx" target="_blank">Conditionals PowerPoint Presentation</a>
 
 ## Practice
 - [Individual Exercise](IndividualInstructions.md)
