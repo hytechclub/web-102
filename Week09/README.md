@@ -7,7 +7,7 @@ Introduce JavaScript objects
 ## Lecture
 The lecture introduces JavaScript objects. It also includes a mini quiz.
 
-## Follow-Along Activty: Profile Builder
+## Follow-Along Activity: Profile Builder
 As a group, walk through the [ProfileBuilderFollowAlong](ProfileBuilderFollowAlong.md) activity.
 
 ## Individual Exercise: Profile Builder Updates
