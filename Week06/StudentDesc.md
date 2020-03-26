@@ -14,7 +14,7 @@ If you are working on this from home, follow these steps:
 
 ## Lecture
 - Video
-- <a href="DomManipulationIntro.pptx" target="_blank">DOM Manipulation Intro PowerPoint Presentation</a>
+- <a href="DomManipulationIntroOld.pptx" target="_blank">DOM Manipulation Intro PowerPoint Presentation</a>
 
 ## Code-Along
 - Video
