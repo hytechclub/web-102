@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 2 - Introduction to JavaScript · GitBook</title>
+        <title>DOM Manipulation - Update HTML · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="IndividualInstructions.html" />
+    <link rel="next" href="LyricsBuilderFollowAlongInstructions.html" />
     
     
-    <link rel="prev" href="../Week01/Challenge.html" />
+    <link rel="prev" href="StudentDesc.html" />
     
 
     </head>
@@ -151,9 +151,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.3" data-path="../Week02/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../Week02/StudentDesc.html">
             
                     
                     Week 2 - Introduction to JavaScript
@@ -165,9 +165,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="IndividualInstructions.html">
+        <li class="chapter " data-level="1.3.1" data-path="../Week02/IndividualInstructions.html">
             
-                <a href="IndividualInstructions.html">
+                <a href="../Week02/IndividualInstructions.html">
             
                     
                     Individual Instructions
@@ -428,9 +428,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../Week07/StudentDesc.html">
+        <li class="chapter " data-level="1.8" data-path="StudentDesc.html">
             
-                <a href="../Week07/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 7 - DOM Manipulation (Update HTML)
@@ -442,9 +442,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../Week07/DomManipulationUpdateHTML.html">
+        <li class="chapter active" data-level="1.8.1" data-path="DomManipulationUpdateHTML.html">
             
-                <a href="../Week07/DomManipulationUpdateHTML.html">
+                <a href="DomManipulationUpdateHTML.html">
             
                     
                     DOM Manipulation - Update HTML
@@ -455,9 +455,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../Week07/LyricsBuilderFollowAlongInstructions.html">
+        <li class="chapter " data-level="1.8.2" data-path="LyricsBuilderFollowAlongInstructions.html">
             
-                <a href="../Week07/LyricsBuilderFollowAlongInstructions.html">
+                <a href="LyricsBuilderFollowAlongInstructions.html">
             
                     
                     Lyrics Builder Follow-Along
@@ -468,9 +468,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../Week07/BackgroundChangerIndividualInstructions.html">
+        <li class="chapter " data-level="1.8.3" data-path="BackgroundChangerIndividualInstructions.html">
             
-                <a href="../Week07/BackgroundChangerIndividualInstructions.html">
+                <a href="BackgroundChangerIndividualInstructions.html">
             
                     
                     Background Changer Individual Exercise
@@ -481,9 +481,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.4" data-path="../Week07/Challenges/ShoppingListChallenge.html">
+        <li class="chapter " data-level="1.8.4" data-path="Challenges/ShoppingListChallenge.html">
             
-                <a href="../Week07/Challenges/ShoppingListChallenge.html">
+                <a href="Challenges/ShoppingListChallenge.html">
             
                     
                     Shopping List Challenge
@@ -494,9 +494,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.5" data-path="../Week07/Challenges/TableDataChallenge.html">
+        <li class="chapter " data-level="1.8.5" data-path="Challenges/TableDataChallenge.html">
             
-                <a href="../Week07/Challenges/TableDataChallenge.html">
+                <a href="Challenges/TableDataChallenge.html">
             
                     
                     Table Data List Challenge
@@ -542,7 +542,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Week 2 - Introduction to JavaScript</a>
+        <a href=".." >DOM Manipulation - Update HTML</a>
     </h1>
 </div>
 
@@ -557,15 +557,79 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="web-102-introduction-to-javascript">Web 102: Introduction to JavaScript</h1>
-<h2 id="reference">Reference</h2>
+                                <h1 id="dom-manipulation-continued-updating-html">DOM Manipulation Continued: Updating HTML</h1>
+<p>So far, we have used DOM Manipulation to get input from the user, but we can also interact with the HTML in other ways! After reading through this guide, you should be able to <strong>use JavaScript</strong> to:</p>
 <ul>
-<li><a href="IntroductionToJavaScriptOld.pptx" target="_blank">Introduction to JavaScript PowerPoint Presentation</a></li>
+<li>Update existing HTML elements</li>
+<li>Create new HTML elements</li>
+<li>Add new HTML elements to your webpage</li>
 </ul>
-<h2 id="practice">Practice</h2>
-<ul>
-<li><a href="IndividualInstructions.html">Individual Instructions</a></li>
-</ul>
+<h2 id="getting-and-setting-paragraph-text">Getting and setting paragraph text</h2>
+<p>It is possible to read from existing paragraphs, on the HTML page, and update their text as well. Check out the following example:</p>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myText&quot;</span>&gt;</span>This is a paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myTextVariable = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myText&quot;</span>);
+</code></pre>
+<p>Here, our <code>document.querySelector</code> code allows us to grab that whole HTML paragraph element, and store it in the <code>myTextVariable</code> variable. Once we have our <code>&lt;p&gt;</code> element stored in the variable, we can use <code>.textContent</code> to get and set its text like so:</p>
+<h3 id="getting-the-p-text">Getting the <code>&lt;p&gt;</code> text</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myTextVariable = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myText&quot;</span>);
+<span class="hljs-keyword">var</span> myTextValue = myTextVariable.textContent;
+
+<span class="hljs-comment">// show a message with the contents of the #myText paragraph</span>
+alert(myTextValue);
+</code></pre>
+<h3 id="setting-the-p-text">Setting the <code>&lt;p&gt;</code> text</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myTextVariable = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myText&quot;</span>);
+
+<span class="hljs-comment">// update the contents of the #myText paragraph</span>
+myTextVariable.textContent = <span class="hljs-string">&quot;Different&quot;</span>;
+</code></pre>
+<h2 id="creating-an-html-element-with-javascript">Creating an HTML element with JavaScript</h2>
+<p>In addition to interacting with elements that already exist on the webpage, we can create totally new HTML elements and insert them wherever we want! To create an element, we use <code>document.createElement</code> in JavaScript. This spins up a whole new element, and we can store that element in a variable, like so:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myParagraph = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
+</code></pre>
+<p>Notice the text between the quotes in the JS: <code>p</code>. This means that we are creating a <code>&lt;p&gt;&lt;/p&gt;</code> element. If we wanted to create a different type of element, we could pass in the name of a different tag, like <code>a</code> or <code>h1</code>. With a <code>p</code> element, we can also set its text content using <code>.textContent</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myParagraph = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
+myParagraph.textContent = <span class="hljs-string">&quot;This is a new paragraph!&quot;</span>;
+</code></pre>
+<p>Now that we have a new HTML element created, we have to insert it into our HTML page. To do this, we use <code>.appendChild</code> on an existing HTML element on the page. Here&apos;s an example:</p>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// store the &lt;div&gt; element in a variable</span>
+<span class="hljs-keyword">var</span> containerDiv = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#container&quot;</span>);
+
+<span class="hljs-comment">// create a new &lt;p&gt; element</span>
+<span class="hljs-keyword">var</span> myParagraph = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
+
+<span class="hljs-comment">// give text to the new &lt;p&gt; element</span>
+myParagraph.textContent = <span class="hljs-string">&quot;Paragraph Text&quot;</span>;
+
+<span class="hljs-comment">// insert the new &lt;p&gt; element into the &lt;div&gt;</span>
+containerDiv.appendChild(myParagraph);
+</code></pre>
+<p>When the JavaScript code above is executed, the <code>&lt;div&gt;</code> element will have a new child <code>&lt;p&gt;</code> element saying <code>&quot;Paragraph Text&quot;</code>. It will look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph Text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Now we know how to read from HTML elements and create new ones!</p>
 
                                 
                                 </section>
@@ -593,12 +657,12 @@
 
             
                 
-                <a href="../Week01/Challenge.html" class="navigation navigation-prev " aria-label="Previous page: Challenge">
+                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 7 - DOM Manipulation (Update HTML)">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="IndividualInstructions.html" class="navigation navigation-next " aria-label="Next page: Individual Instructions">
+                <a href="LyricsBuilderFollowAlongInstructions.html" class="navigation navigation-next " aria-label="Next page: Lyrics Builder Follow-Along">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -609,7 +673,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 2 - Introduction to JavaScript","level":"1.3","depth":1,"next":{"title":"Individual Instructions","level":"1.3.1","depth":2,"path":"Week02/IndividualInstructions.md","ref":"Week02/IndividualInstructions.md","articles":[]},"previous":{"title":"Challenge","level":"1.2.2","depth":2,"path":"Week01/Challenge.md","ref":"Week01/Challenge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week02/StudentDesc.md","mtime":"2020-03-26T18:58:16.212Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-26T18:58:56.757Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"DOM Manipulation - Update HTML","level":"1.8.1","depth":2,"next":{"title":"Lyrics Builder Follow-Along","level":"1.8.2","depth":2,"path":"Week07/LyricsBuilderFollowAlongInstructions.md","ref":"Week07/LyricsBuilderFollowAlongInstructions.md","articles":[]},"previous":{"title":"Week 7 - DOM Manipulation (Update HTML)","level":"1.8","depth":1,"path":"Week07/StudentDesc.md","ref":"Week07/StudentDesc.md","articles":[{"title":"DOM Manipulation - Update HTML","level":"1.8.1","depth":2,"path":"Week07/DomManipulationUpdateHTML.md","ref":"Week07/DomManipulationUpdateHTML.md","articles":[]},{"title":"Lyrics Builder Follow-Along","level":"1.8.2","depth":2,"path":"Week07/LyricsBuilderFollowAlongInstructions.md","ref":"Week07/LyricsBuilderFollowAlongInstructions.md","articles":[]},{"title":"Background Changer Individual Exercise","level":"1.8.3","depth":2,"path":"Week07/BackgroundChangerIndividualInstructions.md","ref":"Week07/BackgroundChangerIndividualInstructions.md","articles":[]},{"title":"Shopping List Challenge","level":"1.8.4","depth":2,"path":"Week07/Challenges/ShoppingListChallenge.md","ref":"Week07/Challenges/ShoppingListChallenge.md","articles":[]},{"title":"Table Data List Challenge","level":"1.8.5","depth":2,"path":"Week07/Challenges/TableDataChallenge.md","ref":"Week07/Challenges/TableDataChallenge.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week07/DomManipulationUpdateHTML.md","mtime":"2020-03-26T18:58:16.240Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-26T18:58:56.757Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

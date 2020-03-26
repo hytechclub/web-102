@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 2 - Introduction to JavaScript · GitBook</title>
+        <title>Background Changer Individual Exercise · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="IndividualInstructions.html" />
+    <link rel="next" href="Challenges/ShoppingListChallenge.html" />
     
     
-    <link rel="prev" href="../Week01/Challenge.html" />
+    <link rel="prev" href="LyricsBuilderFollowAlongInstructions.html" />
     
 
     </head>
@@ -151,9 +151,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.3" data-path="../Week02/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../Week02/StudentDesc.html">
             
                     
                     Week 2 - Introduction to JavaScript
@@ -165,9 +165,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="IndividualInstructions.html">
+        <li class="chapter " data-level="1.3.1" data-path="../Week02/IndividualInstructions.html">
             
-                <a href="IndividualInstructions.html">
+                <a href="../Week02/IndividualInstructions.html">
             
                     
                     Individual Instructions
@@ -428,9 +428,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../Week07/StudentDesc.html">
+        <li class="chapter " data-level="1.8" data-path="StudentDesc.html">
             
-                <a href="../Week07/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 7 - DOM Manipulation (Update HTML)
@@ -442,9 +442,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../Week07/DomManipulationUpdateHTML.html">
+        <li class="chapter " data-level="1.8.1" data-path="DomManipulationUpdateHTML.html">
             
-                <a href="../Week07/DomManipulationUpdateHTML.html">
+                <a href="DomManipulationUpdateHTML.html">
             
                     
                     DOM Manipulation - Update HTML
@@ -455,9 +455,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../Week07/LyricsBuilderFollowAlongInstructions.html">
+        <li class="chapter " data-level="1.8.2" data-path="LyricsBuilderFollowAlongInstructions.html">
             
-                <a href="../Week07/LyricsBuilderFollowAlongInstructions.html">
+                <a href="LyricsBuilderFollowAlongInstructions.html">
             
                     
                     Lyrics Builder Follow-Along
@@ -468,9 +468,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../Week07/BackgroundChangerIndividualInstructions.html">
+        <li class="chapter active" data-level="1.8.3" data-path="BackgroundChangerIndividualInstructions.html">
             
-                <a href="../Week07/BackgroundChangerIndividualInstructions.html">
+                <a href="BackgroundChangerIndividualInstructions.html">
             
                     
                     Background Changer Individual Exercise
@@ -481,9 +481,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.4" data-path="../Week07/Challenges/ShoppingListChallenge.html">
+        <li class="chapter " data-level="1.8.4" data-path="Challenges/ShoppingListChallenge.html">
             
-                <a href="../Week07/Challenges/ShoppingListChallenge.html">
+                <a href="Challenges/ShoppingListChallenge.html">
             
                     
                     Shopping List Challenge
@@ -494,9 +494,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.5" data-path="../Week07/Challenges/TableDataChallenge.html">
+        <li class="chapter " data-level="1.8.5" data-path="Challenges/TableDataChallenge.html">
             
-                <a href="../Week07/Challenges/TableDataChallenge.html">
+                <a href="Challenges/TableDataChallenge.html">
             
                     
                     Table Data List Challenge
@@ -542,7 +542,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Week 2 - Introduction to JavaScript</a>
+        <a href=".." >Background Changer Individual Exercise</a>
     </h1>
 </div>
 
@@ -557,14 +557,106 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="web-102-introduction-to-javascript">Web 102: Introduction to JavaScript</h1>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a href="IntroductionToJavaScriptOld.pptx" target="_blank">Introduction to JavaScript PowerPoint Presentation</a></li>
+                                <h1 id="background-changer-revisited">Background Changer Revisited</h1>
+<p>Previously, we created a webpage that could change its background color on a button click. The page would ask for colors using <code>prompt</code>s, and then set the background color. Let&apos;s improve that webpage by using an HTML input instead of <code>prompt</code>s to get a color from the user!</p>
+<h2 id="setup---html">Setup - HTML</h2>
+<ol>
+<li>Create a new HTML file and add the basic tags: <code>html</code>, <code>head</code>, <code>body</code></li>
+<li>In the body, add an <code>h1</code> header saying &quot;Background Changer&quot;</li>
+<li>Under the header, add a new <code>p</code> paragraph</li>
+<li>Within the paragraph, add text that says &quot;Color: &quot;</li>
+<li>Within the paragraph, add an <code>input</code> with a <code>type</code> of &quot;text&quot;<ul>
+<li>Give the <code>input</code> an <code>id</code> attribute with value &quot;color&quot;</li>
 </ul>
-<h2 id="practice">Practice</h2>
+</li>
+<li>Within the paragraph, add a <code>button</code> with text &quot;Change Background&quot;</li>
+<li>Underneath the paragraph, add a <code>div</code> element<ul>
+<li>Give the <code>div</code> an <code>id</code> attribute with value &quot;colorList&quot;</li>
+<li><em>NOTE: This <code>div</code> will not appear on the page</em></li>
+</ul>
+</li>
+</ol>
+<p>At the end of this section, the page should look like this:</p>
+<p><img src="https://i.imgur.com/NAWNnFU.png" alt=""></p>
+<h2 id="setup---js">Setup - JS</h2>
+<ol>
+<li>Create a new JS file named &quot;BackgroundChanger.js&quot;</li>
+<li>In the JS file, define a new function named <code>changeBackground</code><ul>
+<li><code>function</code> keyword</li>
+<li>Function name (<code>changeBackground</code>)</li>
+<li>Parentheses (<code>()</code>)</li>
+<li>Curly brackets (<code>{}</code>)</li>
+</ul>
+</li>
+<li>In the HTML file, add a <code>script</code> as a child of the <code>head</code> element<ul>
+<li>Set the <code>src</code> attribute of the <code>script</code> to &quot;BackgroundChanger.js&quot;</li>
+</ul>
+</li>
+<li>Set the <code>onclick</code> attribute of the HTML button to call the <code>changeBackground</code> function</li>
+</ol>
+<h2 id="changing-the-background-color">Changing the background color</h2>
+<p>The background color should change to the color in the input when the user clicks the &quot;Change Background&quot; button.</p>
+<h3 id="getting-the-color-from-the-input">Getting the color from the input</h3>
+<ol>
+<li>In the JS file, within the body of the <code>changeBackground</code> function, declare a new variable named <code>colorInput</code></li>
+<li>Set the value of <code>colorInput</code>: use <code>document.querySelector</code> to select the HTML <code>input</code><ul>
+<li><code>document.querySelector</code></li>
+<li>Parentheses</li>
+<li>Quotes within the parentheses</li>
+<li><code>id</code> selector within the quotes</li>
+</ul>
+</li>
+<li>Under the <code>colorInput</code> variable, declare a new variable named <code>color</code></li>
+<li>Set the value of <code>color</code>: use <code>.value</code> to get the text from the <code>colorInput</code> element</li>
+</ol>
+<h3 id="setting-the-background-color-to-the-new-color">Setting the background color to the new color</h3>
+<p>To set the background color, use the following code:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.style.background = color;
+</code></pre>
+<p>Test out the button with a few different colors in the input, and verify that the background color changes!</p>
+<h2 id="listing-previous-colors">Listing previous colors</h2>
+<p>Whenever the background color changes, the web page should keep track of the new color and display a running list to the user.</p>
+<h3 id="getting-the-container-div">Getting the container <code>div</code></h3>
+<ol>
+<li>At the bottom of the <code>changeBackground</code> function, declare a new variable named <code>colorListDiv</code></li>
+<li>Set the value of <code>colorListDiv</code>: use <code>document.querySelector</code> to select the HTML <code>div</code><ul>
+<li><code>document.querySelector</code></li>
+<li>Parentheses</li>
+<li>Quotes within the parentheses</li>
+<li><code>id</code> selector within the quotes</li>
+</ul>
+</li>
+</ol>
+<h3 id="creating-a-new-p-element">Creating a new <code>p</code> element</h3>
+<ol>
+<li>Underneath the <code>colorListDiv</code> variable, declare a new variable named <code>newColorP</code></li>
+<li>Set the value of <code>newColorP</code>: use <code>document.createElement</code> to create a new <code>p</code> paragraph<ul>
+<li><code>document.createElement</code></li>
+<li>Parentheses</li>
+<li>Quotes within the parentheses</li>
+<li>Tag name within the quotes</li>
+</ul>
+</li>
+<li>Under the variable declaration, use <code>.textContent</code> to set the text value of <code>newColorP</code><ul>
+<li>Variable name</li>
+<li><code>.textContent</code></li>
+<li>Set the value to the color the user entered (stored in the <code>color</code> variable)</li>
+</ul>
+</li>
+</ol>
+<h3 id="appending-the-new-p-element-to-the-container-div">Appending the new <code>p</code> element to the container <code>div</code></h3>
+<p>At the bottom of the <code>changeBackground</code> function, use <code>.appendChild</code> to add <code>newColorP</code> as a child of <code>colorListDiv</code>.</p>
 <ul>
-<li><a href="IndividualInstructions.html">Individual Instructions</a></li>
+<li>Parent element variable (container)</li>
+<li><code>.appendChild</code></li>
+<li>Parentheses</li>
+<li>Child element variable (new paragraph) within the parentheses</li>
+</ul>
+<h2 id="challenges">Challenges</h2>
+<p>When you have completed this activity, attempt one or both of the following challenges:</p>
+<ul>
+<li>Shopping List Challenge</li>
+<li>Table Data Challenge</li>
 </ul>
 
                                 
@@ -593,12 +685,12 @@
 
             
                 
-                <a href="../Week01/Challenge.html" class="navigation navigation-prev " aria-label="Previous page: Challenge">
+                <a href="LyricsBuilderFollowAlongInstructions.html" class="navigation navigation-prev " aria-label="Previous page: Lyrics Builder Follow-Along">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="IndividualInstructions.html" class="navigation navigation-next " aria-label="Next page: Individual Instructions">
+                <a href="Challenges/ShoppingListChallenge.html" class="navigation navigation-next " aria-label="Next page: Shopping List Challenge">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -609,7 +701,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 2 - Introduction to JavaScript","level":"1.3","depth":1,"next":{"title":"Individual Instructions","level":"1.3.1","depth":2,"path":"Week02/IndividualInstructions.md","ref":"Week02/IndividualInstructions.md","articles":[]},"previous":{"title":"Challenge","level":"1.2.2","depth":2,"path":"Week01/Challenge.md","ref":"Week01/Challenge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week02/StudentDesc.md","mtime":"2020-03-26T18:58:16.212Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-26T18:58:56.757Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Background Changer Individual Exercise","level":"1.8.3","depth":2,"next":{"title":"Shopping List Challenge","level":"1.8.4","depth":2,"path":"Week07/Challenges/ShoppingListChallenge.md","ref":"Week07/Challenges/ShoppingListChallenge.md","articles":[]},"previous":{"title":"Lyrics Builder Follow-Along","level":"1.8.2","depth":2,"path":"Week07/LyricsBuilderFollowAlongInstructions.md","ref":"Week07/LyricsBuilderFollowAlongInstructions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week07/BackgroundChangerIndividualInstructions.md","mtime":"2020-03-26T18:58:16.236Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-26T18:58:56.757Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
