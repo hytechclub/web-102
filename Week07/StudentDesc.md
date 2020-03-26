@@ -13,12 +13,12 @@ If you are working on this from home, follow these steps:
 - [DOM Manipulation - Update HTML](DomManipulationUpdateHTML.md)
 
 ## Lecture
-- Video
-- <a href="DomManipulationContinued.pptx" target="_blank">DOM Manipulation Continued PowerPoint Presentation</a>
+- <a href="DomManipulationContinuedOld.pptx" target="_blank">DOM Manipulation Continued PowerPoint Presentation</a>
+- [Video](https://www.youtube.com/watch?v=fIloVxs8cxQ&list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u&index=27&t=0s)
 
 ## Code-Along
-- Video
 - [Lyrics Builder Follow-Along](LyricsBuilderFollowAlongInstructions.md)
+- [Video](https://www.youtube.com/watch?v=Bc0O_BovUlU&list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u&index=28&t=0s)
 
 ## Individual Exercise & Challenges
 - [Background Changer Individual Exercise](BackgroundChangerIndividualInstructions.md)
