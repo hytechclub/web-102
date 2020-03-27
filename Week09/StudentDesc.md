@@ -10,7 +10,7 @@ If you are working on this from home, follow these steps:
 
 ## Lecture
 - Video
-- <a href="JavaScriptObjects.pptx" target="_blank">JavaScript Objects PowerPoint Presentation</a>
+- <a href="JavaScriptObjectsOld.pptx" target="_blank">JavaScript Objects PowerPoint Presentation</a>
 
 ## Code-Along
 - Video
