@@ -10,7 +10,7 @@ If you are working on this from home, follow these steps:
 
 ## Lecture
 - Video
-- <a href="FunctionParameters.pptx" target="_blank">Function Parameters PowerPoint Presentation</a>
+- <a href="FunctionParametersOld.pptx" target="_blank">Function Parameters PowerPoint Presentation</a>
 
 ## Code-Along
 - Video
