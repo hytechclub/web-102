@@ -5,7 +5,7 @@ Welcome to the Web 102 Hy-Tech Club course!
 - Watch [this video](https://www.youtube.com/watch?v=fOgaGFRN39o&list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u&index=2&t=0s) to learn how to install [Visual Studio Code](https://code.visualstudio.com/)
     - Alternatively, write code in [CodePen](https://codepen.io/) instead
 - Recordings for lectures and code-alongs will be posted to [this playlist](https://www.youtube.com/playlist?list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u)
-- Office Hours will be held via [Zoom](https://hyland.zoom.us/j/236727451) on Tuesdays from 5:30PM-6:30PM
+- Office Hours will be held via [Zoom](https://hyland.zoom.us/j/129389034) on Tuesdays from 5:30PM-6:30PM
 - Email [web102@hyland.com](mailto:web102@hyland.com) with any questions
 
 ### Weekly Plan
