@@ -26,3 +26,8 @@
     - [Background Changer Individual Exercise](Week07/BackgroundChangerIndividualInstructions.md)
     - [Shopping List Challenge](Week07/Challenges/ShoppingListChallenge.md)
     - [Table Data List Challenge](Week07/Challenges/TableDataChallenge.md)
+- [Week 8 - Function Parameters](Week08/StudentDesc.md)
+    - [Warm Up](Week08/WarmUp.md)
+    - [Dice Roller Follow-Along](Week08/DiceRoller/DiceRollerFollowAlong.md)
+    - [Individual Instructions](Week08/IndividualInstructions.md)
+    - [Challenge](Week08/Challenge.md)
