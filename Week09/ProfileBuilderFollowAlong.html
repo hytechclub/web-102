@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Individual Instructions · GitBook</title>
+        <title>Profile Builder Follow-Along · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,7 +61,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Challenges.html" />
+    <link rel="next" href="ProfileBuilderIndividual.html" />
     
     
     <link rel="prev" href="StudentDesc.html" />
@@ -299,9 +299,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.6" data-path="../Week05/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../Week05/StudentDesc.html">
             
                     
                     Week 5 - Conditionals
@@ -313,9 +313,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="IndividualInstructions.html">
+        <li class="chapter " data-level="1.6.1" data-path="../Week05/IndividualInstructions.html">
             
-                <a href="IndividualInstructions.html">
+                <a href="../Week05/IndividualInstructions.html">
             
                     
                     Individual Instructions
@@ -326,9 +326,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="Challenges.html">
+        <li class="chapter " data-level="1.6.2" data-path="../Week05/Challenges.html">
             
-                <a href="Challenges.html">
+                <a href="../Week05/Challenges.html">
             
                     
                     Challenges
@@ -583,9 +583,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../Week09/StudentDesc.html">
+        <li class="chapter " data-level="1.10" data-path="StudentDesc.html">
             
-                <a href="../Week09/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 9 - JavaScript Objects
@@ -597,9 +597,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="../Week09/ProfileBuilderFollowAlong.html">
+        <li class="chapter active" data-level="1.10.1" data-path="ProfileBuilderFollowAlong.html">
             
-                <a href="../Week09/ProfileBuilderFollowAlong.html">
+                <a href="ProfileBuilderFollowAlong.html">
             
                     
                     Profile Builder Follow-Along
@@ -610,9 +610,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.2" data-path="../Week09/ProfileBuilderIndividual.html">
+        <li class="chapter " data-level="1.10.2" data-path="ProfileBuilderIndividual.html">
             
-                <a href="../Week09/ProfileBuilderIndividual.html">
+                <a href="ProfileBuilderIndividual.html">
             
                     
                     Profile Builder Individual
@@ -623,9 +623,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.3" data-path="../Week09/Challenges.html">
+        <li class="chapter " data-level="1.10.3" data-path="Challenges.html">
             
-                <a href="../Week09/Challenges.html">
+                <a href="Challenges.html">
             
                     
                     Challenges
@@ -671,7 +671,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Individual Instructions</a>
+        <a href=".." >Profile Builder Follow-Along</a>
     </h1>
 </div>
 
@@ -686,98 +686,170 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="individual-activity---booleans-and-conditionals">Individual Activity - Booleans and Conditionals</h1>
-<p>For this activity, create an HTML page that can change its background color based on two input colors. The user should be able to click a button, enter two colors, and see the background change to the mix of those two colors.</p>
-<p>For more information about color mixing, check out this site: <a href="https://www.enchantedlearning.com/crafts/Colormixing.shtml" target="_blank">https://www.enchantedlearning.com/crafts/Colormixing.shtml</a></p>
-<h2 id="part-1---basic-setup">Part 1 - Basic Setup</h2>
+                                <h1 id="profile-builder-follow-along-activity">Profile Builder: Follow-Along Activity</h1>
+<p>Create a profile website with data pulled from a JavaScript object.</p>
+<h2 id="html-setup">HTML setup</h2>
+<p>The webpage should have labels for the profile information going down the left side, and then the information should fill in when the user clicks the button.</p>
 <ol>
-<li>Create a new HTML file<ul>
-<li>Be sure to save it with the <code>.html</code> file extension!</li>
+<li>Create a new HTML and JS file, and add the basic tags (including the <code>script</code>)</li>
+<li>Within the <code>&lt;body&gt;&lt;/body&gt;</code> of the HTML file, create a new <code>p</code> element</li>
+<li>Within the <code>&lt;p&gt;&lt;/p&gt;</code> element, create a <code>button</code> element<ul>
+<li>It should say &quot;Generate Profile&quot;</li>
+<li>It should call the <code>generateProfile</code> function when clicked</li>
 </ul>
 </li>
-<li>Fill out the basic starting tags for the HTML file - <code>html</code>, <code>body</code>, <code>head</code></li>
-<li>Create a new JavaScript file<ul>
-<li>Be sure the save it with the <code>.js</code> file extension!</li>
-</ul>
-</li>
-<li>Link the JavaScript file using a <code>script</code> tag in the HTML file</li>
-<li>Add a header and a paragraph to your HTML page explaining its purpose</li>
+<li>Underneath the <code>&lt;p&gt;&lt;/p&gt;</code> element, create an <code>h3</code> that says &quot;Name&quot;</li>
+<li>Underneath the &quot;Name&quot; <code>&lt;h3&gt;&lt;/h3&gt;</code>, create a <code>p</code> with no content that has an <code>id</code> attribute of &quot;name&quot;</li>
+<li>Repeat the two steps above for &quot;Height&quot;, &quot;Age&quot;, and &quot;Location&quot;</li>
 </ol>
-<h2 id="part-2---button-and-function">Part 2 - Button and Function</h2>
+<h3 id="code">Code</h3>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;ProfileBuilder.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;generateProfile()&quot;</span>&gt;</span>Generate Profile<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Height<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;height&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Age<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;age&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Location<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;location&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h2 id="javascript-object-definition">JavaScript object definition</h2>
+<p>Since all of this information is related, it would make sense to store it within one JavaScript <strong>object</strong>.</p>
 <ol>
-<li>Add a <code>button</code> to the HTML file. The text should read &quot;Change Background Color&quot;</li>
-<li>Define a <code>changeBackground</code> function in the JavaScript file<ul>
-<li>use the <code>function</code> keyword, function name, parentheses, and curly braces</li>
-<li>in the body of the function, show a message to the user saying &quot;Changing Background Color&quot;</li>
+<li>At the top of the &quot;ProfileBuilder.js&quot; file, define a new JavaScript object variable named <code>profileInfo</code><ul>
+<li><code>var</code></li>
+<li>variable name</li>
+<li><code>=</code></li>
+<li><code>{}</code></li>
 </ul>
 </li>
-<li>Set the <code>onclick</code> attribute of the button to call the <code>changeBackground</code> function</li>
-</ol>
-<h2 id="part-3---asking-for-colors">Part 3 - Asking for Colors</h2>
-<ol>
-<li>Inside of the <code>changeBackground</code> function, use two <code>prompt</code>s to ask the user for two different colors<ul>
-<li>Limit the colors to red, blue, and yellow</li>
+<li>Within the <code>profileInfo</code> object, set the <code>Name</code> property to &quot;Jack&quot;<ul>
+<li>property name (<code>Name</code>)</li>
+<li>colon (<code>:</code>)</li>
+<li>property value (<code>&quot;Jack&quot;</code>)</li>
+<li>comma (<code>,</code>)</li>
 </ul>
 </li>
-<li>Store the color strings in two variables</li>
+<li>Set the following additional properties on the <code>profileInfo</code> object:<ul>
+<li>Height (60)</li>
+<li>Age (33)</li>
+<li>Location (Pittsburgh)</li>
+</ul>
+</li>
 </ol>
-<h2 id="part-4---color-mixing">Part 4 - Color Mixing</h2>
-<blockquote>
-<p>NOTE: For this part, if the user enters any colors other than &quot;Red&quot;, &quot;Blue&quot;, or &quot;Yellow&quot;, there is no need to calculate a mix color.</p>
-</blockquote>
-<p>Once the user has entered the two colors, it&apos;s time to calculate the mix of those colors. There are 9 possible combinations of the three colors:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Red</th>
-<th>Blue</th>
-<th>Yellow</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Red</strong></td>
-<td>Red</td>
-<td>Purple</td>
-<td>Orange</td>
-</tr>
-<tr>
-<td><strong>Blue</strong></td>
-<td>Purple</td>
-<td>Blue</td>
-<td>Green</td>
-</tr>
-<tr>
-<td><strong>Yellow</strong></td>
-<td>Orange</td>
-<td>Green</td>
-<td>Yellow</td>
-</tr>
-</tbody>
-</table>
-<p>You should create a variable in your function to keep track of the mix of the two colors, and set it based on the values of the colors the user enters.</p>
-<h4 id="operator"><code>&amp;&amp;</code> operator</h4>
-<p>Read this article about <em>Logical Operators</em> to familiarize yourself with the <code>&amp;&amp;</code> operator: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators</a></p>
-<p>For this activity, you can check the values of both colors in the same <code>if</code>! For example, to check if both colors entered are &quot;Red&quot;, use the following:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (color1 === <span class="hljs-string">&quot;Red&quot;</span> &amp;&amp; color2 === <span class="hljs-string">&quot;Red&quot;</span>) {
-    <span class="hljs-comment">// ... do something</span>
+<h3 id="code">Code</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> profileInfo = {
+    Name: <span class="hljs-string">&quot;Jack&quot;</span>,
+    Height: <span class="hljs-number">60</span>,
+    Age: <span class="hljs-number">33</span>,
+    Location: <span class="hljs-string">&quot;Pittsburgh&quot;</span>
 }
 </code></pre>
-<p>(this example assumes the first color is stored in a variable named <code>color1</code>, and the second color is stored in a variable named <code>color2</code>)</p>
-<h2 id="part-5---change-the-background">Part 5 - Change the Background!</h2>
-<p>Once you have calculated the mix color, use the following code to change the background color:</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.body.style.background = mixColor;
+<h2 id="profile-generation">Profile generation</h2>
+<p>The &quot;Generate Profile&quot; button should fill out the HTML with the information from the object when clicked.</p>
+<ol>
+<li>In the JS file, under the object definition, define a function named <code>generateProfile</code><ul>
+<li><code>function</code></li>
+<li>function name (<code>generateProfile</code>)</li>
+<li><code>()</code></li>
+<li><code>{}</code></li>
+</ul>
+</li>
+<li>Within the body of the <code>generateProfile</code> function, use <code>document.querySelector</code> to get the <code>p</code> with an <code>id</code> of &quot;name&quot;<ul>
+<li>Store the result in a variable</li>
+</ul>
+</li>
+<li>Set the <code>.textContent</code> of the &quot;name&quot; paragraph to the <code>Name</code> property of the <code>profileInfo</code> object<ul>
+<li>Use <code>.Name</code></li>
+</ul>
+</li>
+<li>Repeat the two steps above for &quot;Height&quot;, &quot;Age&quot;, and &quot;Location&quot;</li>
+</ol>
+<p>Try out the webpage to see if it works!</p>
+<h3 id="code">Code</h3>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">generateProfile</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> nameEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#name&quot;</span>);
+    nameEl.textContent = profileInfo.Name;
+
+    <span class="hljs-keyword">var</span> heightEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#height&quot;</span>);
+    heightEl.textContent = profileInfo.Height;
+
+    <span class="hljs-keyword">var</span> ageEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#age&quot;</span>);
+    ageEl.textContent = profileInfo.Age;
+
+    <span class="hljs-keyword">var</span> locationEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#location&quot;</span>);
+    locationEl.textContent = profileInfo.Location;
+}
 </code></pre>
-<p>(this example assumes the mix color is stored in a variable named <code>mixColor</code>)</p>
-<h2 id="challenges">Challenges</h2>
-<p>Once you have finished the main activity, attempt the challenges below, <strong>OR</strong> attempt the other challenges in the <code>Challenges.md</code> file. Feel free to hop around from one challenge to another if you like.</p>
-<h3 id="case-insensitivity">Case Insensitivity</h3>
-<p>Allow the user to enter the colors using any case. For example, they should be able to enter either &quot;red&quot; or &quot;Red&quot;, and the program should deal with the color in the same way.</p>
-<h3 id="change-the-text-color">Change the Text Color</h3>
-<p>Add another button and function to change the text color on the page. It should work the same as the background color, taking in two colors and mixing them together.</p>
-<h4 id="reusing-functionality">Reusing functionality</h4>
-<p>For an added challenge, reuse the code from the <code>changeBackground</code> function for changing the text color. Create a new function that simply calculates a mix color, and call that function for both the Background button and the Text Color button.</p>
+<h2 id="object-updates">Object updates</h2>
+<p>The user should be able to update the &quot;Name&quot; information in the JavaScript object.</p>
+<ol>
+<li>In the HTML file, add a <code>button</code> within the &quot;Name&quot; <code>h3</code> after the text<ul>
+<li>The button should say &quot;Update&quot;</li>
+<li>When clicked, the button should call a function named <code>updateName</code></li>
+</ul>
+</li>
+<li>In the JS file, underneath the <code>generateProfile</code> function, define a new function named <code>updateName</code></li>
+<li>In the body of the <code>updateName</code> function, use a <code>prompt</code> to ask the user for a new name<ul>
+<li>Store the user input in a variable</li>
+</ul>
+</li>
+<li>Update the <code>Name</code> property of the <code>profileInfo</code> object to be the user input</li>
+</ol>
+<p>Try out the webpage. Note that when updating, it only updates the JavaScript object, not the HTML on the page. To see the HTML update, click the &quot;Generate Profile&quot; button again!</p>
+<h2 id="final-code">Final Code</h2>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;ProfileBuilder.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;generateProfile()&quot;</span>&gt;</span>Generate Profile<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Name <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;updateName()&quot;</span>&gt;</span>Update<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Height<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;height&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Age<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;age&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Location<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;location&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="js">JS</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> profileInfo = {
+    Name: <span class="hljs-string">&quot;Jack&quot;</span>,
+    Height: <span class="hljs-number">60</span>,
+    Age: <span class="hljs-number">33</span>,
+    Location: <span class="hljs-string">&quot;Pittsburgh&quot;</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">generateProfile</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> nameEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#name&quot;</span>);
+    nameEl.textContent = profileInfo.Name;
+
+    <span class="hljs-keyword">var</span> heightEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#height&quot;</span>);
+    heightEl.textContent = profileInfo.Height;
+
+    <span class="hljs-keyword">var</span> ageEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#age&quot;</span>);
+    ageEl.textContent = profileInfo.Age;
+
+    <span class="hljs-keyword">var</span> locationEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#location&quot;</span>);
+    locationEl.textContent = profileInfo.Location;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateName</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> newName = prompt(<span class="hljs-string">&quot;Enter a new name:&quot;</span>);
+    profileInfo.Name = newName;
+}
+</code></pre>
 
                                 
                                 </section>
@@ -805,12 +877,12 @@
 
             
                 
-                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 5 - Conditionals">
+                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 9 - JavaScript Objects">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Challenges.html" class="navigation navigation-next " aria-label="Next page: Challenges">
+                <a href="ProfileBuilderIndividual.html" class="navigation navigation-next " aria-label="Next page: Profile Builder Individual">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -821,7 +893,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Individual Instructions","level":"1.6.1","depth":2,"next":{"title":"Challenges","level":"1.6.2","depth":2,"path":"Week05/Challenges.md","ref":"Week05/Challenges.md","articles":[]},"previous":{"title":"Week 5 - Conditionals","level":"1.6","depth":1,"path":"Week05/StudentDesc.md","ref":"Week05/StudentDesc.md","articles":[{"title":"Individual Instructions","level":"1.6.1","depth":2,"path":"Week05/IndividualInstructions.md","ref":"Week05/IndividualInstructions.md","articles":[]},{"title":"Challenges","level":"1.6.2","depth":2,"path":"Week05/Challenges.md","ref":"Week05/Challenges.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week05/IndividualInstructions.md","mtime":"2020-04-09T12:23:22.495Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-09T12:24:00.278Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Profile Builder Follow-Along","level":"1.10.1","depth":2,"next":{"title":"Profile Builder Individual","level":"1.10.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},"previous":{"title":"Week 9 - JavaScript Objects","level":"1.10","depth":1,"path":"Week09/StudentDesc.md","ref":"Week09/StudentDesc.md","articles":[{"title":"Profile Builder Follow-Along","level":"1.10.1","depth":2,"path":"Week09/ProfileBuilderFollowAlong.md","ref":"Week09/ProfileBuilderFollowAlong.md","articles":[]},{"title":"Profile Builder Individual","level":"1.10.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},{"title":"Challenges","level":"1.10.3","depth":2,"path":"Week09/Challenges.md","ref":"Week09/Challenges.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week09/ProfileBuilderFollowAlong.md","mtime":"2020-04-09T12:23:22.511Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-09T12:24:00.278Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
