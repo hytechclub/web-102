@@ -31,3 +31,7 @@
     - [Dice Roller Follow-Along](Week08/DiceRoller/DiceRollerFollowAlong.md)
     - [Individual Instructions](Week08/IndividualInstructions.md)
     - [Challenge](Week08/Challenge.md)
+- [Week 9 - JavaScript Objects](Week09/StudentDesc.md)
+    - [Profile Builder Follow-Along](Week09/ProfileBuilderFollowAlong.md)
+    - [Profile Builder Individual](Week09/ProfileBuilderIndividual.md)
+    - [Challenges](Week09/Challenges.md)

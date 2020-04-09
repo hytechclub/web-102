@@ -9,11 +9,9 @@ If you are working on this from home, follow these steps:
 1. Complete the Challenge before, during, or after Office Hours
 
 ## Lecture
-- Video
 - <a href="JavaScriptObjectsOld.pptx" target="_blank">JavaScript Objects PowerPoint Presentation</a>
 
 ## Code-Along
-- Video
 - [Profile Builder Follow-Along](ProfileBuilderFollowAlong.md)
 
 ## Individual Exercise & Challenge
