@@ -35,3 +35,6 @@
     - [Profile Builder Follow-Along](Week09/ProfileBuilderFollowAlong.md)
     - [Profile Builder Individual](Week09/ProfileBuilderIndividual.md)
     - [Challenges](Week09/Challenges.md)
+- [Final Project](Week11/StudentDesc.md)
+    - [Final Project](Week11/FinalProject.md)
+    - [Cheat Sheet](Week11/CheatSheet.md)

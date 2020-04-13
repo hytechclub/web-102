@@ -10,8 +10,8 @@ In Javascript, you can use `Math.random()` to generate a random decimal number b
 ### Expanding the range
 To make the `Math.random()` number a little more usable, we first multiply it by however many options we'd like. For example, `Math.random()*5` would give you a random decimal number between 0 and 5, `Math.random()*100` would give you a random decimal number between 0 and 100, and so on. A regular die has 6 sides, so we want to multiply the number by 6.
 
-### Limiting the numbers to integers with `Math.ceil`
-In our case, we want to generate integers. A die has a certain number of integer sides, so decimals do not really make sense. To round up a decimal number, we use `Math.ceil()`. "ceil" here is short for ceiling, and it will round any decimal number UP to the nearest whole number. For example, given `0.01`, it would return `1`. Given `11.9`, it would return `12`. Given `5.0`, it would return `5`, because 5 is already a whole number.
+### Limiting the numbers to integers with `Math.floor`
+In our case, we want to generate integers. A die has a certain number of integer sides, so decimals do not really make sense. To round down a decimal number, we use `Math.floor()`, which will round any decimal number DOWN to the nearest whole number. For example, given `0.01`, it would return `0`. Given `11.9`, it would return `11`. Given `5.0`, it would return `5`, because 5 is already a whole number. After rounding down, it is necessary to add `1`.
 
 When applied to our randomly-generated number from a given range, we can get all the sides for a die! Now, let's make some updates to our code to make good use of these random numbers.
 
@@ -30,7 +30,7 @@ Start by creating another button, labeled "D4", next to the "D6" button. As with
 function rollD4() {
 	var randomDecimal = Math.random();
 	var randomDecimalRange = randomDecimal * 4;
-	var randomDiceRoll = Math.ceil(randomDecimalRange);
+	var randomDiceRoll = Math.floor(randomDecimalRange)+1;
 	alert("You rolled a " + randomDiceRoll + "!");
 }
 ```
@@ -50,7 +50,7 @@ Let's add another button/function for an 8-sided die. This time, we can simply c
 function rollD8() {
 	var randomDecimal = Math.random();
 	var randomDecimalRange = randomDecimal * 8;
-	var randomDiceRoll = Math.ceil(randomDecimalRange);
+	var randomDiceRoll = Math.floor(randomDecimalRange)+1;
 	alert("You rolled a " + randomDiceRoll + "!");
 }
 ```
@@ -73,7 +73,7 @@ After that, we can use the `sides` variable inside of the body of our function. 
 function rollD(sides) {
 	var randomDecimal = Math.random();
 	var randomDecimalRange = randomDecimal * sides;
-	var randomDiceRoll = Math.ceil(randomDecimalRange);
+	var randomDiceRoll = Math.floor(randomDecimalRange)+1;
 	alert("You rolled a " + randomDiceRoll + "!");
 }
 ```
@@ -169,7 +169,7 @@ Again, it is incredibly easy to add an additional button. All we have to do is a
 function rollD(sides) {
 	var randomDecimal = Math.random();
 	var randomDecimalRange = randomDecimal * sides;
-    var randomDiceRoll = Math.ceil(randomDecimalRange);
+    var randomDiceRoll = Math.floor(randomDecimalRange)+1;
     
     var paragraphElement = document.querySelector("#myParagraph");
     paragraphElement.textContent = "You rolled a " + randomDiceRoll + "!";
