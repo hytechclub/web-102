@@ -6,7 +6,7 @@ function rollD6() {
 	var randomDecimalRange = randomDecimal * 6;
 
 	// random whole number between 1 and 6
-	var randomDiceRoll = Math.ceil(randomDecimalRange);
+	var randomDiceRoll = Math.floor(randomDecimalRange) + 1;
 
 	alert("You rolled a " + randomDiceRoll + "!");
 }

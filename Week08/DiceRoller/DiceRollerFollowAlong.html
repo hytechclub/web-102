@@ -641,6 +641,51 @@
             
         </li>
     
+        <li class="chapter " data-level="1.11" data-path="../../Week11/StudentDesc.html">
+            
+                <a href="../../Week11/StudentDesc.html">
+            
+                    
+                    Final Project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../Week11/FinalProject.html">
+            
+                <a href="../../Week11/FinalProject.html">
+            
+                    
+                    Final Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../Week11/CheatSheet.html">
+            
+                <a href="../../Week11/CheatSheet.html">
+            
+                    
+                    Cheat Sheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -694,8 +739,8 @@
 <p>In Javascript, you can use <code>Math.random()</code> to generate a random decimal number between 0 and 1.</p>
 <h3 id="expanding-the-range">Expanding the range</h3>
 <p>To make the <code>Math.random()</code> number a little more usable, we first multiply it by however many options we&apos;d like. For example, <code>Math.random()*5</code> would give you a random decimal number between 0 and 5, <code>Math.random()*100</code> would give you a random decimal number between 0 and 100, and so on. A regular die has 6 sides, so we want to multiply the number by 6.</p>
-<h3 id="limiting-the-numbers-to-integers-with-mathceil">Limiting the numbers to integers with <code>Math.ceil</code></h3>
-<p>In our case, we want to generate integers. A die has a certain number of integer sides, so decimals do not really make sense. To round up a decimal number, we use <code>Math.ceil()</code>. &quot;ceil&quot; here is short for ceiling, and it will round any decimal number UP to the nearest whole number. For example, given <code>0.01</code>, it would return <code>1</code>. Given <code>11.9</code>, it would return <code>12</code>. Given <code>5.0</code>, it would return <code>5</code>, because 5 is already a whole number.</p>
+<h3 id="limiting-the-numbers-to-integers-with-mathfloor">Limiting the numbers to integers with <code>Math.floor</code></h3>
+<p>In our case, we want to generate integers. A die has a certain number of integer sides, so decimals do not really make sense. To round down a decimal number, we use <code>Math.floor()</code>, which will round any decimal number DOWN to the nearest whole number. For example, given <code>0.01</code>, it would return <code>0</code>. Given <code>11.9</code>, it would return <code>11</code>. Given <code>5.0</code>, it would return <code>5</code>, because 5 is already a whole number. After rounding down, it is necessary to add <code>1</code>.</p>
 <p>When applied to our randomly-generated number from a given range, we can get all the sides for a die! Now, let&apos;s make some updates to our code to make good use of these random numbers.</p>
 <h2 id="a-4-sided-die-roll">A 4-sided Die Roll</h2>
 <p>Start by creating another button, labeled &quot;D4&quot;, next to the &quot;D6&quot; button. As with any button that should execute JavaScript, we want to set its <code>onclick</code> attribute. We are also going to define a new function in the <a href="DiceRoller.js">DiceRoller.js</a> file. Use the <code>rollD6</code> function as a template, because the <code>rollD4</code> function will be very similar.</p>
@@ -706,7 +751,7 @@
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD4</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
     <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * <span class="hljs-number">4</span>;
-    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.ceil(randomDecimalRange);
+    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
     alert(<span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>);
 }
 </code></pre>
@@ -719,7 +764,7 @@
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD8</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
     <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * <span class="hljs-number">8</span>;
-    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.ceil(randomDecimalRange);
+    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
     alert(<span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>);
 }
 </code></pre>
@@ -734,7 +779,7 @@
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD</span>(<span class="hljs-params">sides</span>) </span>{
     <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
     <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * sides;
-    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.ceil(randomDecimalRange);
+    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
     alert(<span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>);
 }
 </code></pre>
@@ -807,7 +852,7 @@ paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quo
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD</span>(<span class="hljs-params">sides</span>) </span>{
     <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
     <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * sides;
-    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.ceil(randomDecimalRange);
+    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
 
     <span class="hljs-keyword">var</span> paragraphElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myParagraph&quot;</span>);
     paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>;
@@ -856,7 +901,7 @@ paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quo
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Dice Roller Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Individual Instructions","level":"1.9.3","depth":2,"path":"Week08/IndividualInstructions.md","ref":"Week08/IndividualInstructions.md","articles":[]},"previous":{"title":"Warm Up","level":"1.9.1","depth":2,"path":"Week08/WarmUp.md","ref":"Week08/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/DiceRoller/DiceRollerFollowAlong.md","mtime":"2020-04-09T12:23:22.507Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-09T12:24:00.278Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Dice Roller Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Individual Instructions","level":"1.9.3","depth":2,"path":"Week08/IndividualInstructions.md","ref":"Week08/IndividualInstructions.md","articles":[]},"previous":{"title":"Warm Up","level":"1.9.1","depth":2,"path":"Week08/WarmUp.md","ref":"Week08/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/DiceRoller/DiceRollerFollowAlong.md","mtime":"2020-04-13T15:43:35.569Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T15:44:12.285Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
