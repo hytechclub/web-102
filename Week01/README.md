@@ -4,39 +4,26 @@ Review content from HTML and CSS. Note, depending on how much the students remem
 ## Student introductions
 Since this is the first week of the club, allow the students to introduce themselves. They can share their school and grade level, and something fun like their favorite movie or tv show or an interesting fact about themselves.
 
-## Review Kahoot
-A Kahoot to gauge what the students remember: https://play.kahoot.it/#/k/9da0c22b-48ae-479f-9c7f-c0bfd458a2b5
+## Icebreaker
+The first session should begin with a quick icebreaker activity where the instructors and students can introduce themselves.
 
-This quiz covers HTML and CSS concepts.
+### Virtual Icebreaker
+First, go around the room and have each instructor and student introduce themselves. Then, break out into a couple different rooms, and create new private rooms in [skribbl.io](https://skribbl.io) (online pictionary). Keep the round count and draw time to small numbers to limit the total amount of time for the activity. In the "Custom Words" text area, add some HTML- and CSS-related words that the students should recognize from Web 101. For example:
 
-## Follow-Along Activity
-Follow-along coding to help refresh the students' memory, or re-teach them. There is a `FollowAlong.html` file and a `FollowAlongComplete.html` file. Start from the FollowAlong file, and build up to the FollowAlongComplete file. Be sure to explain the thought process behind every change. Ask the students for suggestions about what to type. Throughout the exercise, ask questions about the code that already exists.
+```
+HTML, CSS, element, attribute, style, tag, h1, paragraph, img, link, list, ul, ol, list item, input, textarea, button, table, iframe, div, span, background, color, font-size, class, id, selector, text-align, height, width, font-family, responsive, bootstrap
+```
 
-Note that the follow-along activity can be quick in the interest of giving the students time to work on the individual activity.
+Play the game with the students! At the end of the activity, group back up in the main Zoom room.
 
-### Instructions
-- Add a paragraph about Hyland above the first paragraph
-- Add in an address field
-    - Add a div around the input
-    - Add the input and label
-    - Add the inputContainer class
-    - Add an id to the input
-    - Add a style for the id updating the width
-- Give the "Finished" button a border using the "blackBorder" class
-- Add the "blackBorder" class to the textarea
-- Give the "Finished" button a box shadow when hovering over it using the "hoverShadow" class
+## HTML & CSS Review Code-Along
+Walk through [the code-along instructions](HtmlCssReviewCodeAlong.md) with the students.
 
-## Individual Activity
-Something for the students to work on by themselves. They will need to build out a basic HTML file from scratch, using the concepts reviewed in the Follow-Along. The webpage will be them introducing themselves to the rest of the class, and each student can present what they come up with briefly.
+## Individual "About Me" Websites
+The students should work on their "About Me" websites on their own, following [the instructions](IntroduceYourself.md). They will need to build out a basic HTML file from scratch, using the concepts reviewed in the Code-Along. The webpage will be them introducing themselves to the rest of the class, and each student can present what they come up with briefly.
 
 ## Challenge
 If the students complete the Individual activity with time to spare, they can attempt the challenge.
 
-## Suggested Schedule
-| Activity | Time |
-|-|-|
-| Review Kahoot | 5:45-6:00 |
-| Follow-Along Activity | 6:00-6:30 |
-| Break | 6:30-6:35 |
-| Individual Exercise | 6:35-7:10 |
-| Individual Presentations | 7:10-7:30 |
+## Review Kahoot
+End the session with a Kahoot to gauge what the students ultimately remember from HTML/CSS: https://play.kahoot.it/#/k/9da0c22b-48ae-479f-9c7f-c0bfd458a2b5
