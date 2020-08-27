@@ -1,7 +1,8 @@
-# Web 102 - HTML & CSS
+# HTML & CSS Review
+Review some foundational topics from HTML and CSS.
 
-# Reference
-Right-click the [Follow-Along Starter Code link](FollowAlong.html) and select "Save link as..." to download it!
+## Reference
+- [Code-Along](HtmlCssReviewCodeAlong.md)
 
 ## Activities
 - [Introduce Yourself](IntroduceYourself.md)
