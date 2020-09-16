@@ -18,7 +18,7 @@ In this exercise, you will need to create a new HTML file from scratch. Then, fo
 </html>
 ```
 
-## Part 2 - Calculating speed with hard-coded values
+## Part 2 - Calculating Speed with Hard-coded Values
 1. Declare a new variable called `distance`, and set its value to `60`
     - The unit of measurement for distance is miles
 1. Declare another new variable called `time`, and set its value to `1`
@@ -46,7 +46,7 @@ In this exercise, you will need to create a new HTML file from scratch. Then, fo
 </html>
 ```
 
-## Part 3 - Prompting for input
+## Part 3 - Prompting for Input
 Instead of hard-coding values, the program should ask the user for this information!
 
 1. Declare a new variable, `distanceString`, and set its value from a `prompt`

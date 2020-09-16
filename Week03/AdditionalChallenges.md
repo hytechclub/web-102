@@ -14,16 +14,16 @@ Create a new HTML page that, when opened, will repeat a message. Ask the user to
 ## Dice Roll
 Create a new HTML page that, when opened, will display a message with a random number from 1-6.
 
-### Many-sided die
+### Many-sided Die
 Before displaying the random number, ask the user how many choices should be available for the dice roll. There should be no limit to the number of sides on the die. For example, if the user says "12", the program should display a random number from 1-12.
 
-### Visual die
+### Visual Die
 Create another new HTML page where, instead of simply displaying the number, it displays a visual representation of the die. For example, a roll of 2 would display "X X ", a roll of 5 would display "X X X X X ", and so on.
 
 ## Random Password
 Create a new HTML page that will generate a numeric random password for the user. First, ask the user how many characters they would like for the password (1-16). Then, generate the password for them! The password should consist of only numeric characters.
 
-### Non-numeric password
+### Non-numeric Password
 Create another HTML page that will generate a random password consisting of alphanumeric characters. Ask the user how many characters they would like for the password (1-8). Then, generate the password for them! The password should consist of only lowercase letters.
 
 ## Division with Quotient and Remainder
@@ -32,7 +32,7 @@ Create another HTML page that will calculate the quotient AND remainder for two 
 ## Multiply by 2
 Create another HTML page that will multiply a given number by 2, with one catch: do not use `+`, `-`, `/`, or `*`. Ask the user for a number to multiply, and then perform the calculation. For example, if the user enters "6", the program should display "12".
 
-### Multiply by a power of 2
+### Multiply by a Power of 2
 Instead of multiplying by 2 every time, ask the user for a power of 2 to multiply by. For example, if the user enters "5" for the number, and "2" for the power of 2, the program should perform the calculation `5 times (2^2)`, which reduces to `5 times 4`, and display "20". In this example, the `^` symbol represents an exponent. If the user enters "9" for the number and "9" for the power of 2, the program should perform the calculation `9 times (2^9)` and display "4608".
 
 ## Regular Expressions
