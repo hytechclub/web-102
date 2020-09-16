@@ -9,14 +9,14 @@ In this exercise, you will need to create a new HTML file from scratch. Then, fo
 
 _note: a body is not required for this HTML page_
 
-## Part 2 - Asking questions
+## Part 2 - Asking Questions
 For each of the questions below, show a text box to the user allowing them to answer. Store all of the user's answers in their own variables. Make sure you choose good variable names!
 - What is your full name?
 - What is your favorite color?
 - What is your favorite movie?
 - What is the date today?
 
-## Part 3 - Displaying answers
+## Part 3 - Displaying Answers
 For each of the answers retrieved in the previous part, show the user a formatted message like "Name: Charlie Chaplin". For an added challenge, attempt to display all the information in only one message box. Use `\n` to add a new line into the text value.
 
 ## Challenges
@@ -29,23 +29,23 @@ These may be helpful resources:
 - https://www.w3schools.com/jsref/met_win_confirm.asp
 
 
-### Uppercase movie
+### Uppercase Movie
 No matter what the user enters, display their favorite movie in all in uppercase letters.
 
-### Removing whitespace from movie
+### Removing Whitespace from Movie
 Remove all spaces from the beginning and end of the text the user enters for their favorite movie.
 
-### Replacing red
+### Replacing Red
 If the user enters "red" as their favorite color, replace it with "blue" instead.
 
-### Separate First and Last name
+### Separate First and Last Name
 Instead of displaying the user's full name in one line, display their first name and last name separately. For this challenge, assume the user will enter their first name, then a space, then their last name.
 
 **Example**
 
 Instead of displaying "Name: Charlie Chaplin", display "First Name: Charlie" and "Last Name: Chaplin" on separate lines.
 
-### Display actual date
+### Display Actual Date
 Instead of displaying the date the user enters, display the actual date.
 
 ### OK/Cancel
@@ -62,10 +62,10 @@ Ask the user for their date of birth, then display their half birthday based on 
 - When displaying their half birthday, only show the month and day, in the form "MM/DD"
 - Do not worry about leap years
 
-### Days until the New Year
+### Days Until the New Year
 In addition to displaying today's date, display the number of days until the New Year. For example, if today were 12/31, it should display "1". If today were 3/9, it should display "298".
 
-### Template literals
+### Template Literals
 >Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 
 Figure out how to use template literals to display multi-line text and include variable values _without_ using `+` or `\n`!

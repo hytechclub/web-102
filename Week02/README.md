@@ -4,7 +4,6 @@ Introduce JavaScript at a basic level. This should be a fairly light introductio
 - variables
 - `prompt` function
 
-
 ## Warm Up
 Ask the students to answer the following questions:
 - What are your favorite websites?
@@ -21,8 +20,8 @@ The second lecture dives in to the following concepts:
 - Variables
 - `prompt`
 
-### Variables activity
-During the lecture, after introducing variables, instructors can use this tangible representation of variables to help explain them. Use cups, nametags, and scraps of paper to represent what's happening in the computer.
+### Variables Activity - In-Person
+During the second lecture, after introducing variables, instructors can use this tangible representation of variables to help explain them. Use cups, nametags, and scraps of paper to represent what's happening in the computer.
 
 - A **cup** represents a block of space in memory
     - It may be helpful to have multiple cups to indicate many blocks of memory
