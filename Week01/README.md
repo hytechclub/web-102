@@ -1,14 +1,17 @@
 ## Overview
 Review content from HTML and CSS. Note, depending on how much the students remember, it may be worth spending more than one day on these concepts.
 
-## Student introductions
+## Live Student Introductions
 Since this is the first week of the club, allow the students to introduce themselves. They can share their school and grade level, and something fun like their favorite movie or tv show or an interesting fact about themselves.
+
+## Virtual Student Introductions
+Complete a virtual activity to allow the students to get to know each other, and encourage them to share their screen/mic/video. One possibility is to have each student go to [Sketchpad](https://sketch.io/sketchpad/) and have them draw something. Then, go around the room and have each student introduce their drawing by sharing their screen.
 
 ## Icebreaker
 The first session should begin with a quick icebreaker activity where the instructors and students can introduce themselves.
 
-### Virtual Icebreaker
-First, go around the room and have each instructor and student introduce themselves. Then, break out into a couple different rooms, and create new private rooms in [skribbl.io](https://skribbl.io) (online pictionary). Keep the round count and draw time to small numbers to limit the total amount of time for the activity. In the "Custom Words" text area, add some HTML- and CSS-related words that the students should recognize from Web 101. For example:
+### Virtual Icebreaker - HTML/CSS Review
+Break out into a couple different rooms, and create new private rooms in [skribbl.io](https://skribbl.io) (online pictionary). Keep the round count and draw time to small numbers to limit the total amount of time for the activity. In the "Custom Words" text area, add some HTML- and CSS-related words that the students should recognize from Web 101. For example:
 
 ```
 HTML, CSS, element, attribute, style, tag, h1, paragraph, img, link, list, ul, ol, list item, input, textarea, button, table, iframe, div, span, background, color, font-size, class, id, selector, text-align, height, width, font-family, responsive, bootstrap
