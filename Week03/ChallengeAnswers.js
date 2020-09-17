@@ -1,3 +1,4 @@
+/* Some _possible_ solutions to the challenges (not the only solutions) */
 function diceRoll() {
     var size = prompt("How many sides?");
     var sizeNum = Number(size);
