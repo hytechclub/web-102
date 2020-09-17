@@ -4,18 +4,20 @@ Create a webpage that will allow the user to enter some individual words and tel
 ![](https://i.imgur.com/L0Yd6g4.png)
 
 ## Basic Setup
-1. Create a new HTML file called `MadLibs.html`
+Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), then follow the steps below.
+
+1. Open the **index.html** file
 1. Add the basic tags: `html`, `head`, `body`
 1. Create a new JavaScript file called `MadLibs.js`
 1. Link the JavaScript file in the HTML file using a `script` tag
 
-## Creating the inputs in HTML
+## Creating the Inputs in HTML
 1. In the HTML file, create an appropriate header for the webpage saying "Pizza Pizza"
 1. Create a `p` paragraph element containing a text label and a textbox input for "Adjective"
     - Ensure that the `input` element has an `id` attribute
 1. Create additional `p` elements containing labels and inputs for "Nationality" and "Person"
 
-##### MadLibs.html
+##### index.html
 ```html
 <html>
     <head>
@@ -30,7 +32,7 @@ Create a webpage that will allow the user to enter some individual words and tel
 </html>
 ```
 
-## Defining the function in JavaScript
+## Defining the Function in JavaScript
 In the JavaScript file, define a new function named `madLibs`:
 - `function` keyword
 - function name (`madLibs`)
@@ -44,7 +46,7 @@ function madLibs() {
 }
 ```
 
-## Getting the values from inputs
+## Getting the Values from Inputs
 In the body of the `madLibs` function:
 
 1. Store the"Adjective" input element in a variable
@@ -70,7 +72,7 @@ var personEl = document.querySelector("#person");
 var personVal = personEl.value;
 ```
 
-## Displaying the story
+## Displaying the Story
 Create an alert and put the story together. It should use the variables in place of the blanks for the first sentence of the Mad Libs.
 
 ##### MadLibs.js
@@ -78,16 +80,16 @@ Create an alert and put the story together. It should use the variables in place
 alert("Pizza was invented by a " + adj1Val + " " + nationalityVal + " chef named " + personVal + ".");
 ```
 
-## Hooking up a button
+## Hooking Up a Button
 Finally, create a button in the HTML that will call the `madLibs` function when clicked! Place it inside of a `p` so it appears on its own line.
 
-##### MadLibs.html
+##### index.html
 ```html
 <p><button onclick="madLibs()">Generate Mad Libs!</button></p>
 ```
 
 ## Final Code
-##### MadLibs.html
+##### index.html
 ```html
 <html>
     <head>

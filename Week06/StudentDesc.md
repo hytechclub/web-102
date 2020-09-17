@@ -1,25 +1,16 @@
-# Web 102: DOM Manipulation (Read from Input)
+# DOM Manipulation (Read from Input)
+Learn how to use JavaScript to capture input on a webpage.
 
-## Online Learning
-If you are working on this from home, follow these steps:
+## Warm-Up Activity
+- [CSS Refresher](WarmUp.md)
 
-1. Read through the DOM Manipulation resource before Office Hours
-1. Watch the Lecture video before Office Hours
-1. Watch the Code-Along video and complete the activity before or during Office Hours
-1. Complete the Individual Exercise before or during Office Hours
-1. Complete the Challenge before, during, or after Office Hours
-
-## Resource
+## Resources
 - [DOM Manipulation - Read from Input](DomManipulationReadFromInput.md)
 
-## Lecture
-- Video
-- <a href="DomManipulationIntroOld.pptx" target="_blank">DOM Manipulation Intro PowerPoint Presentation</a>
+## PowerPoint Presentation
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/Week06/DomManipulationIntro.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
-## Code-Along
-- Video
+## Activities
 - [Mad Libs Follow-Along](MadLibsFollowAlong.md)
-
-## Individual Exercise & Challenge
 - [Mad Libs Individual Exercise](MadLibsIndividual.md)
 - [Challenges](Challenges.md)

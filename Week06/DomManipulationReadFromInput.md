@@ -16,7 +16,7 @@ So far, we have stored a few different things in JavaScript variables: `Number`s
 ## Implementation
 Now, let's cover how we will actually use these concepts to make our webpages more interactive!
 
-### Storing an HTML element in a JavaScript variable
+### Storing an HTML Element in a JavaScript Variable
 To find an element within our HTML page and store it in a variable, we use `document.querySelector`. This allows us to **select** an HTML element in the same way we would select it to style it in CSS. Note that here, we are storing the _ACTUAL HTML ELEMENT_, not just the text!
 
 #### HTML
@@ -39,7 +39,7 @@ var myMessageVariable = document.querySelector("#myInput");
 
 Here, our `document.querySelector` code allows us to grab that whole HTML input element, and store it in the `myMessageVariable` variable. Once we have our HTML element stored in the variable, we can interact with it! We can use `.value` to get and set the text entered in the `<input>` tag like so:
 
-#### Getting the `<input>` value
+#### Getting the `<input>` Value
 
 ```javascript
 var myMessageVariable = document.querySelector("#myInput");

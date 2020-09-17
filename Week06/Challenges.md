@@ -1,13 +1,13 @@
 # Challenges
 Use DOM manipulation to complete the following challenges.
 
-## Which is bigger?
+## Which is Bigger?
 Create an HTML page with two inputs and one button. When the button is clicked, the page should display which of the two inputs contains a larger value.
 
 ## Guessing Game
 Make a guessing game web page where the user is told to type in a number from 1 to 10. The user can enter a number in a text box and click a "Guess" button. The page should tell the user if they are too low, too high, or exactly right!
 
-## Bonus challenges
+## Bonus Challenges
 - Make the correct answer a random number (rather than hard-coded)
 - Track how many guesses it took for the user to get to the right answer, and track the lowest number of guesses as the high score
 
