@@ -5,14 +5,14 @@ Soundboard example: https://www.101soundboards.com/boards/10715
 Quotes from here: https://www.quora.com/What-are-some-famous-Darth-Vader-quotes
 
 ## Setup
-Start by creating the `.html` and .`js` files, and adding the basic tags to them.
+Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), then follow the steps below.
 
-1. Create a new file called `DarthVaderQuotes.html`
-1. In the `DarthVaderQuotes.html` file, add the `html`, `head`, `style`, and `body` elements
+1. Open the **index.html** file
+1. In the **index.html** file, add the `html`, `head`, `style`, and `body` elements
 1. Create another new file in the same folder called `DarthVaderQuotes.js`
 1. In the HTML file, within the `head` element, create a `script` element that points to `DarthVaderQuotes.js` using the `src` attribute
 
-##### `DarthVaderQuotes.html`
+##### index.html
 ```html
 <html>
     <head>
@@ -32,7 +32,7 @@ Add some basic elements to the webpage, and update a couple styles.
 1. Within the `p`, add an `img` with its `src` attribute set to "https://lumiere-a.akamaihd.net/v1/images/Darth-Vader_6bda9114.jpeg"
 1. In the `style` tag, set the background color to black and the text color to red
 
-##### `DarthVaderQuotes.html`
+##### index.html
 ```html
 <html>
     <head>
@@ -59,7 +59,7 @@ Add a button which will display a Darth Vader quote when clicked.
 1. In the body of the `technologicalTerror` function, add an `alert` statement that says "Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force."
 1. Back in the HTML file, add the `onclick` attribute to the `button` and make it call the `technologicalTerror` function
 
-##### `DarthVaderQuotes.html`
+##### index.html
 ```html
 <html>
     <head>
@@ -79,7 +79,7 @@ Add a button which will display a Darth Vader quote when clicked.
 </html>
 ```
 
-### `DarthVaderQuotes.js`
+##### DarthVaderQuotes.js
 ```js
 function technologicalTerror() {
     alert("Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.");

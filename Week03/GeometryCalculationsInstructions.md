@@ -1,12 +1,12 @@
 # Individual Exercise - Geometry Calculations
-In this exercise, you will need to create a new HTML file from scratch. Then, follow the instructions below to complete the activity. You will be creating a basic Triangle area calculator.
+In this exercise, start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html). Then, follow the instructions below to complete the activity. You will be creating a basic Triangle area calculator.
 
 ## Background
 Read the following article to learn how to calculate the area of a triangle: http://www.softschools.com/math/geometry/topics/area_of_triangles_part_1/
 
 ## Part 1 - Setup
-1. Create a new HTML file
-1. Add the basic tags to your HTML file - `html`, `head`, `script`
+1. Open the **index.html** file
+1. Add the basic elements to the HTML file - `html`, `head`, `script`
 
 ## Part 2 - Prompting for Numbers
 1. Display a message to the user welcoming them to your calculator

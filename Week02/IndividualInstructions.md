@@ -1,13 +1,13 @@
-# Individual Exercise - JavaScript basics
-In this exercise, you will need to create a new HTML file from scratch. Then, follow the instructions below to build a little text-based JavaScript program. The program will ask the user a number of questions, and then display some information using the answers the user provides.
+# Individual Exercise - JavaScript Basics
+For this exercise, start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html). Then, follow the instructions below to build a little text-based JavaScript program. The program will ask the user a number of questions, and then display some information using the answers the user provides.
 
 ## Part 1 - Setup
-1. Add the `html` tag to your page
-1. Add the `head` tag to your page (child of `html`)
-1. Add the `script` tag to your page (child of `head`)
-1. Within the script, add a statement that will show a message to the user welcoming them to your website.
+1. Add the `html` element to the **index.html** file
+1. Add the `head` element (child of `html`)
+1. Add the `script` element (child of `head`)
+1. Within the `<script></script>`, add a statement that will show a message to the user welcoming them to your website.
 
-_note: a body is not required for this HTML page_
+_Note: a body is not required for this HTML page_
 
 ## Part 2 - Asking Questions
 For each of the questions below, show a text box to the user allowing them to answer. Store all of the user's answers in their own variables. Make sure you choose good variable names!

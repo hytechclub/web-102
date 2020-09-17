@@ -1,10 +1,10 @@
 # Speed Calculator
-In this exercise, you will need to create a new HTML file from scratch. Then, follow the instructions below to build a little text-based JavaScript program that calculates speed using user input.
+In this exercise, start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html). Then, follow the instructions below to build a little text-based JavaScript program that calculates speed using user input.
 
 ## Part 1 - Setup
-1. Add the `html` tag to your page
-1. Add the `head` tag to your page (child of `html`)
-1. Add the `script` tag to your page (child of `head`)
+1. Add the `html` element to the **index.html** file
+1. Add the `head` element (child of `html`)
+1. Add the `script` element (child of `head`)
 1. Within the script, add a statement that will show a message to the user welcoming them to your website. It should say "Welcome to the Speed Calculator"
 
 #### Code
