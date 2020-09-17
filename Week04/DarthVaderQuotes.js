@@ -6,7 +6,7 @@ function faith() {
     alert("I find your lack of faith disturbing.");
 }
 
-function prescence() {
+function presence() {
     alert("I sense something. A presence I have not felt since...");
 }
 

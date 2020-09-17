@@ -15,7 +15,7 @@ Add a button to your HTML page with the text "Add". When clicked, the button sho
 
 >Hint: To make this work, you will have to convert the values into numbers before performing the addition.
 
-### Additional operations
+### Additional Operations
 After creating the addition button, create three more buttons for subtraction, multiplication, and division. These buttons should work like the "Add" button, but instead of adding the two numbers, they should perform the new calculation.
 
 ## The Cat's Meow
@@ -66,10 +66,10 @@ The HTML for the calculator should consist of many buttons:
 - One button to perform the final calculation: `=`
 
 ### Functionality
-#### Character buttons
+#### Character Buttons
 When any button other than the `=` button is clicked, the program should add that character to the running equation. Additionally, the program should display the current equation. For example, if the "2" button is pressed, the program should display "2". Then, if the "+" button is pressed, the program should display "2+". Then, if the "1" button is pressed, the program should display "2+1".
 
-#### Equals button
+#### Equals Button
 When the `=` button is pressed, the program should:
 - Display the result of the equation
     - Ex, if the equation is "2+1", display "3"
