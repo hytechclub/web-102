@@ -7,8 +7,8 @@ Your table can contain any type of data you'd like. If you can't think of anythi
 ## Styles
 Make sure your table looks nice. At the very least, it should have some borders so that each cell is distinct.
 
-## Extra challenge
+## Extra Challenge
 To make it even more challenging, try to build the entire page in JavaScript. Your HTML file should start with only a button saying "Create Page". When that button is clicked, it should create the table, the inputs, and the "Add" button, and put them all on the webpage. It should also remove the initial "Create Page" button.
 
-## Extra extra challenge (extremely hard)
-Allow the user to resequence the rows in the list.
+## Extra Extra Challenge (Extremely Hard)
+Allow the user to re-sequence the rows in the list.

@@ -16,14 +16,14 @@ Not really. Actually, it should look something like this:
 To complete the exercise, follow the steps below, and make sure that the list behaves as described above.
 
 ## HTML
-To start, create an HTML file and a JavaScript file. The HTML file should have all of the basic tags (`html`, `head`, `body`), and a `script` tag that links to the JS file.
+Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), and create a new JS file. The HTML file should have all of the basic tags (`html`, `head`, `body`), and a `script` tag that links to the JS file.
 
 Then, in the HTML file, add the following:
-- a header saying "My shopping list"
-- some text saying "Enter a new item:"
-- an input with a unique `id` attribute
-- a button saying "Add item"
-- an unordered list with a unique `id` attribute
+- A header saying "My shopping list"
+- Some text saying "Enter a new item:"
+- An input with a unique `id` attribute
+- A button saying "Add item"
+- An unordered list with a unique `id` attribute
 
 ## JavaScript
 In the JavaScript file, define a function that will run in response to the button being clicked. Make sure you hook up the function to the button in the HTML! Then, inside the function body:

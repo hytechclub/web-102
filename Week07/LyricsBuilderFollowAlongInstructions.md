@@ -6,7 +6,7 @@ We want to create a webpage that will allow us to enter lyrics into a text box l
 We'll start with the HTML, and then add some JavaScript to make the "Add" button create a new paragraph and add it to the container!
 
 ## Basic HTML
-Start with the basic tags: `html`, `head`, `body`, and `style`
+Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), and add the basic tags to the **index.html** file:
 
 ```html
 <html>
@@ -19,7 +19,7 @@ Start with the basic tags: `html`, `head`, `body`, and `style`
 <html>
 ```
 
-## Adding content Tags
+## Adding Content Tags
 Next, add in the tags that make up the page: an `<h2>` for "Lyrics", a `<div>` for the container where the lyrics will go, another `<h2>` for "Add Line", and finally, another `<div>` containing the text input and the "Add" button:
 
 ```html
@@ -61,7 +61,7 @@ We will also need to provide `id` attributes for the HTML elements we want to ma
 </html>
 ```
 
-## Styling the Lyrics box
+## Styling the Lyrics Box
 Currently, the `<div>` that will contain the lyrics doesn't have any content, so it won't show up on our page. We want to add a border, a height, a width, and some padding to the box. This `<div>` already has an `id` attribute, so we can use that to select it in CSS in the `<style></style>` tag (`#lyricsContainer`):
 
 ```html
@@ -89,7 +89,7 @@ Currently, the `<div>` that will contain the lyrics doesn't have any content, so
 ```
 
 ## Adding Interactivity with JavaScript
-Now that we have our HTML all set up, the only thing left to do is make it work! We can start by creating a new JavaScript file called "LyricsBuilder.js". Then, we can link the file to our HTML page in a `<script>` tag:
+Now that we have our HTML all set up, the only thing left to do is make it work! We can start by creating a new JavaScript file called **LyricsBuilder.js**. Then, we can link the file to our HTML page in a `<script>` tag:
 
 ```html
 <html>
@@ -156,7 +156,7 @@ function addLine() {
 
 Now when the user clicks the "Add" button on our HTML page, the code within the `addLine` function will run!
 
-### Getting text from the `<input>`
+### Getting Text from the `<input>`
 Whenever the user clicks "Add", we want to look at the text within the `lineText` input. First, we need to use `document.querySelector` to find the `<input>` element and store it in a variable:
 
 ```javascript
@@ -176,7 +176,7 @@ function addLine() {
 
 Now, the text the user entered will be stored in the `lineText` variable!
 
-### Creating the new `<p>` element
+### Creating the New `<p>` Element
 Now that we have the text, we can create a new paragraph and place the text in it. To create a new element and store it in a variable, we will use `document.createElement`:
 
 ```javascript
@@ -202,7 +202,7 @@ function addLine() {
 
 Now we have a brand new paragraph!
 
-### Inserting the new `<p>` element into the `<div>`
+### Inserting the New `<p>` Element into the `<div>`
 We have created a new paragraph, but it still won't appear on our webpage until we insert it somewhere. We want to place it in the lyrics box, our `lyricsContainer` div. The first thing we need to do is find that `<div>` element and store it in a variable:
 
 ```javascript

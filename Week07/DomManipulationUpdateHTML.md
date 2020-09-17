@@ -4,7 +4,7 @@ So far, we have used DOM Manipulation to get input from the user, but we can als
 - Create new HTML elements
 - Add new HTML elements to your webpage
 
-## Getting and setting paragraph text
+## Getting and Setting Paragraph Text
 It is possible to read from existing paragraphs, on the HTML page, and update their text as well. Check out the following example:
 
 #### HTML
@@ -23,7 +23,7 @@ var myTextVariable = document.querySelector("#myText");
 
 Here, our `document.querySelector` code allows us to grab that whole HTML paragraph element, and store it in the `myTextVariable` variable. Once we have our `<p>` element stored in the variable, we can use `.textContent` to get and set its text like so:
 
-### Getting the `<p>` text
+### Getting the `<p>` Text
 ```javascript
 var myTextVariable = document.querySelector("#myText");
 var myTextValue = myTextVariable.textContent;
@@ -32,7 +32,7 @@ var myTextValue = myTextVariable.textContent;
 alert(myTextValue);
 ```
 
-### Setting the `<p>` text
+### Setting the `<p>` Text
 ```javascript
 var myTextVariable = document.querySelector("#myText");
 
@@ -40,7 +40,7 @@ var myTextVariable = document.querySelector("#myText");
 myTextVariable.textContent = "Different";
 ```
 
-## Creating an HTML element with JavaScript
+## Creating an HTML Element with JavaScript
 In addition to interacting with elements that already exist on the webpage, we can create totally new HTML elements and insert them wherever we want! To create an element, we use `document.createElement` in JavaScript. This spins up a whole new element, and we can store that element in a variable, like so:
 
 ```javascript
