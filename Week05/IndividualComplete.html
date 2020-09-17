@@ -6,52 +6,52 @@
                 var color1 = prompt("Enter color 1");
                 var color2 = prompt("Enter color 2");
 
-                var mixColor;
-                if (color1 === "Red") {
-                    if (color2 === "Red") {
-                        mixColor = "Red";
-                    } else if (color2 === "Blue") {
-                        mixColor = "Purple";
-                    } else if (color2 === "Yellow") {
-                        mixColor = "Orange";
-                    }
-                } else if (color1 === "Blue") {
-                    if (color2 === "Red") {
-                        mixColor = "Purple";
-                    } else if (color2 === "Blue") {
-                        mixColor = "Blue";
-                    } else if (color2 === "Yellow") {
-                        mixColor = "Green";
-                    }
-                } else if (color1 === "Yellow") {
-                    if (color2 === "Red") {
-                        mixColor = "Orange";
-                    } else if (color2 === "Blue") {
-                        mixColor = "Green";
-                    } else if (color2 === "Yellow") {
-                        mixColor = "Yellow";
-                    }
-                }
-
-                // if (color1 === "Red" && color2 === "Red") {
-                //     mixColor = "Red";
-                // } else if (color1 === "Red" && color2 === "Blue") {
-                //     mixColor = "Purple";
-                // } else if (color1 === "Red" && color2 === "Yellow") {
-                //     mixColor = "Orange";
-                // } else if (color1 === "Blue" && color2 === "Red") {
-                //     mixColor = "Purple";
-                // } else if (color1 === "Blue" && color2 === "Blue") {
-                //     mixColor = "Blue";
-                // } else if (color1 === "Blue" && color2 === "Yellow") {
-                //     mixColor = "Green";
-                // } else if (color1 === "Yellow" && color2 === "Red") {
-                //     mixColor = "Orange";
-                // } else if (color1 === "Yellow" && color2 === "Blue") {
-                //     mixColor = "Green";
-                // } else if (color1 === "Yellow" && color2 === "Yellow") {
-                //     mixColor = "Yellow";
+                // var mixColor;
+                // if (color1 === "Red") {
+                //     if (color2 === "Red") {
+                //         mixColor = "Red";
+                //     } else if (color2 === "Blue") {
+                //         mixColor = "Purple";
+                //     } else if (color2 === "Yellow") {
+                //         mixColor = "Orange";
+                //     }
+                // } else if (color1 === "Blue") {
+                //     if (color2 === "Red") {
+                //         mixColor = "Purple";
+                //     } else if (color2 === "Blue") {
+                //         mixColor = "Blue";
+                //     } else if (color2 === "Yellow") {
+                //         mixColor = "Green";
+                //     }
+                // } else if (color1 === "Yellow") {
+                //     if (color2 === "Red") {
+                //         mixColor = "Orange";
+                //     } else if (color2 === "Blue") {
+                //         mixColor = "Green";
+                //     } else if (color2 === "Yellow") {
+                //         mixColor = "Yellow";
+                //     }
                 // }
+
+                if (color1 === "Red" && color2 === "Red") {
+                    mixColor = "Red";
+                } else if (color1 === "Red" && color2 === "Blue") {
+                    mixColor = "Purple";
+                } else if (color1 === "Red" && color2 === "Yellow") {
+                    mixColor = "Orange";
+                } else if (color1 === "Blue" && color2 === "Red") {
+                    mixColor = "Purple";
+                } else if (color1 === "Blue" && color2 === "Blue") {
+                    mixColor = "Blue";
+                } else if (color1 === "Blue" && color2 === "Yellow") {
+                    mixColor = "Green";
+                } else if (color1 === "Yellow" && color2 === "Red") {
+                    mixColor = "Orange";
+                } else if (color1 === "Yellow" && color2 === "Blue") {
+                    mixColor = "Green";
+                } else if (color1 === "Yellow" && color2 === "Yellow") {
+                    mixColor = "Yellow";
+                }
 
                 document.body.style.background = mixColor;
             }
