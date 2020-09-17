@@ -384,9 +384,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="WarmUp/WarmUp.html">
+        <li class="chapter " data-level="1.8.1" data-path="WarmUp/WarmUp.md">
             
-                <a href="WarmUp/WarmUp.html">
+                <span>
             
                     
                     Warm Up
@@ -761,13 +761,14 @@
 <p>Create a webpage that will allow the user to enter some individual words and tell a silly story.</p>
 <p><img src="https://i.imgur.com/L0Yd6g4.png" alt=""></p>
 <h2 id="basic-setup">Basic Setup</h2>
+<p>Start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb#index.html" target="_blank">this empty Repl</a>, then follow the steps below.</p>
 <ol>
-<li>Create a new HTML file called <code>MadLibs.html</code></li>
+<li>Open the <strong>index.html</strong> file</li>
 <li>Add the basic tags: <code>html</code>, <code>head</code>, <code>body</code></li>
 <li>Create a new JavaScript file called <code>MadLibs.js</code></li>
 <li>Link the JavaScript file in the HTML file using a <code>script</code> tag</li>
 </ol>
-<h2 id="creating-the-inputs-in-html">Creating the inputs in HTML</h2>
+<h2 id="creating-the-inputs-in-html">Creating the Inputs in HTML</h2>
 <ol>
 <li>In the HTML file, create an appropriate header for the webpage saying &quot;Pizza Pizza&quot;</li>
 <li>Create a <code>p</code> paragraph element containing a text label and a textbox input for &quot;Adjective&quot;<ul>
@@ -776,7 +777,7 @@
 </li>
 <li>Create additional <code>p</code> elements containing labels and inputs for &quot;Nationality&quot; and &quot;Person&quot;</li>
 </ol>
-<h5 id="madlibshtml">MadLibs.html</h5>
+<h5 id="indexhtml">index.html</h5>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;MadLibs.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -789,7 +790,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="defining-the-function-in-javascript">Defining the function in JavaScript</h2>
+<h2 id="defining-the-function-in-javascript">Defining the Function in JavaScript</h2>
 <p>In the JavaScript file, define a new function named <code>madLibs</code>:</p>
 <ul>
 <li><code>function</code> keyword</li>
@@ -802,7 +803,7 @@
 
 }
 </code></pre>
-<h2 id="getting-the-values-from-inputs">Getting the values from inputs</h2>
+<h2 id="getting-the-values-from-inputs">Getting the Values from Inputs</h2>
 <p>In the body of the <code>madLibs</code> function:</p>
 <ol>
 <li>Store the&quot;Adjective&quot; input element in a variable<ul>
@@ -830,18 +831,18 @@
 <span class="hljs-keyword">var</span> personEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#person&quot;</span>);
 <span class="hljs-keyword">var</span> personVal = personEl.value;
 </code></pre>
-<h2 id="displaying-the-story">Displaying the story</h2>
+<h2 id="displaying-the-story">Displaying the Story</h2>
 <p>Create an alert and put the story together. It should use the variables in place of the blanks for the first sentence of the Mad Libs.</p>
 <h5 id="madlibsjs">MadLibs.js</h5>
 <pre><code class="lang-js">alert(<span class="hljs-string">&quot;Pizza was invented by a &quot;</span> + adj1Val + <span class="hljs-string">&quot; &quot;</span> + nationalityVal + <span class="hljs-string">&quot; chef named &quot;</span> + personVal + <span class="hljs-string">&quot;.&quot;</span>);
 </code></pre>
-<h2 id="hooking-up-a-button">Hooking up a button</h2>
+<h2 id="hooking-up-a-button">Hooking Up a Button</h2>
 <p>Finally, create a button in the HTML that will call the <code>madLibs</code> function when clicked! Place it inside of a <code>p</code> so it appears on its own line.</p>
-<h5 id="madlibshtml">MadLibs.html</h5>
+<h5 id="indexhtml">index.html</h5>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;madLibs()&quot;</span>&gt;</span>Generate Mad Libs!<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 <h2 id="final-code">Final Code</h2>
-<h5 id="madlibshtml">MadLibs.html</h5>
+<h5 id="indexhtml">index.html</h5>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;MadLibs.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -912,7 +913,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mad Libs Follow-Along","level":"1.8.3","depth":2,"next":{"title":"Mad Libs Individual Exercise","level":"1.8.4","depth":2,"path":"Week06/MadLibsIndividual.md","ref":"Week06/MadLibsIndividual.md","articles":[]},"previous":{"title":"DOM Manipulation - Read from Input","level":"1.8.2","depth":2,"path":"Week06/DomManipulationReadFromInput.md","ref":"Week06/DomManipulationReadFromInput.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week06/MadLibsFollowAlong.md","mtime":"2020-09-17T14:32:47.825Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T14:33:29.166Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mad Libs Follow-Along","level":"1.8.3","depth":2,"next":{"title":"Mad Libs Individual Exercise","level":"1.8.4","depth":2,"path":"Week06/MadLibsIndividual.md","ref":"Week06/MadLibsIndividual.md","articles":[]},"previous":{"title":"DOM Manipulation - Read from Input","level":"1.8.2","depth":2,"path":"Week06/DomManipulationReadFromInput.md","ref":"Week06/DomManipulationReadFromInput.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week06/MadLibsFollowAlong.md","mtime":"2020-09-17T15:02:13.936Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T15:02:54.301Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

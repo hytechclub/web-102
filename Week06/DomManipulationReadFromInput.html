@@ -64,7 +64,7 @@
     <link rel="next" href="MadLibsFollowAlong.html" />
     
     
-    <link rel="prev" href="WarmUp/WarmUp.html" />
+    <link rel="prev" href="WarmUp/WarmUp.md" />
     
 
     </head>
@@ -384,9 +384,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="WarmUp/WarmUp.html">
+        <li class="chapter " data-level="1.8.1" data-path="WarmUp/WarmUp.md">
             
-                <a href="WarmUp/WarmUp.html">
+                <span>
             
                     
                     Warm Up
@@ -768,7 +768,7 @@
 <p>So far, we have stored a few different things in JavaScript variables: <code>Number</code>s, <code>String</code>s, and <code>Boolean</code>s. These are known as <strong>Data Types</strong>. To store something bigger, like a whole HTML input element, we need to use another data type: <code>Object</code>. <code>Object</code>s in JavaScript can store pretty much anything! For now, we are going to use them to store HTML elements that exist in our HTML document.</p>
 <h2 id="implementation">Implementation</h2>
 <p>Now, let&apos;s cover how we will actually use these concepts to make our webpages more interactive!</p>
-<h3 id="storing-an-html-element-in-a-javascript-variable">Storing an HTML element in a JavaScript variable</h3>
+<h3 id="storing-an-html-element-in-a-javascript-variable">Storing an HTML Element in a JavaScript Variable</h3>
 <p>To find an element within our HTML page and store it in a variable, we use <code>document.querySelector</code>. This allows us to <strong>select</strong> an HTML element in the same way we would select it to style it in CSS. Note that here, we are storing the <em>ACTUAL HTML ELEMENT</em>, not just the text!</p>
 <h4 id="html">HTML</h4>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
@@ -784,7 +784,7 @@
 <p>Notice the text between the quotes in the JS: <code>#myInput</code>. This is exactly what we would use in CSS to select and style the input with an <code>id</code> of &quot;myInput&quot;.</p>
 </blockquote>
 <p>Here, our <code>document.querySelector</code> code allows us to grab that whole HTML input element, and store it in the <code>myMessageVariable</code> variable. Once we have our HTML element stored in the variable, we can interact with it! We can use <code>.value</code> to get and set the text entered in the <code>&lt;input&gt;</code> tag like so:</p>
-<h4 id="getting-the-input-value">Getting the <code>&lt;input&gt;</code> value</h4>
+<h4 id="getting-the-input-value">Getting the <code>&lt;input&gt;</code> Value</h4>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myMessageVariable = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myInput&quot;</span>);
 <span class="hljs-keyword">var</span> myMessageValue = myMessageVariable.value;
 
@@ -818,7 +818,7 @@ alert(<span class="hljs-string">&quot;Your message was: &quot;</span> + myMessag
 
             
                 
-                <a href="WarmUp/WarmUp.html" class="navigation navigation-prev " aria-label="Previous page: Warm Up">
+                <a href="WarmUp/WarmUp.md" class="navigation navigation-prev " aria-label="Previous page: Warm Up">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -834,7 +834,7 @@ alert(<span class="hljs-string">&quot;Your message was: &quot;</span> + myMessag
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DOM Manipulation - Read from Input","level":"1.8.2","depth":2,"next":{"title":"Mad Libs Follow-Along","level":"1.8.3","depth":2,"path":"Week06/MadLibsFollowAlong.md","ref":"Week06/MadLibsFollowAlong.md","articles":[]},"previous":{"title":"Warm Up","level":"1.8.1","depth":2,"path":"Week06/WarmUp/WarmUp.md","ref":"Week06/WarmUp/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week06/DomManipulationReadFromInput.md","mtime":"2020-09-17T14:32:47.825Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T14:33:29.166Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"DOM Manipulation - Read from Input","level":"1.8.2","depth":2,"next":{"title":"Mad Libs Follow-Along","level":"1.8.3","depth":2,"path":"Week06/MadLibsFollowAlong.md","ref":"Week06/MadLibsFollowAlong.md","articles":[]},"previous":{"title":"Warm Up","level":"1.8.1","depth":2,"path":"Week06/WarmUp/WarmUp.md","ref":"Week06/WarmUp/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week06/DomManipulationReadFromInput.md","mtime":"2020-09-17T15:02:13.936Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T15:02:54.301Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
