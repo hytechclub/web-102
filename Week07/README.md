@@ -11,7 +11,7 @@ Use DOM Manipulation to update the HTML of a webpage. This lesson covers:
 - Creating new HTML elements
 
 ## Follow-Along Activity: Lyrics Builder
-Follow the [LyricsBuilderFollowAlongInstructions](LyricsBuilderFollowAlongInstructions.md) file to build up to a simple app that adds lines of a song into a container one-by-one. Be sure to ask the students for suggestions about where to go next. There is no need to spend too long on this.
+Follow the [instructions](LyricsBuilderFollowAlongInstructions.md) to build up to a simple app that adds lines of a song into a container one-by-one. Be sure to ask the students for suggestions about where to go next. There is no need to spend too long on this.
 
 ## Formative Assessment: Kahoot
 After the students have learned about DOM Manipulation, and completed the follow-along, test their retention with a Kahoot: https://play.kahoot.it/#/k/7bc99cd7-493b-4353-ac53-111b2a0488b3
@@ -19,11 +19,13 @@ After the students have learned about DOM Manipulation, and completed the follow
 All of the questions should be answerable using the information in the lectures.
 
 ## Individual Exercise: Background Changer
-The students should follow the instructions in [BackgroundChangerIndividualInstructions](BackgroundChangerIndividualInstructions.md) and complete the exercise.
+The students should follow the [individual instructions](BackgroundChangerIndividualInstructions.md) to complete the activity.
 
 ## Challenges
+There are a number of challenges for the students.
+
 ### Shopping List Challenge
-This challenge is copied from Mozilla: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#Active_learning_A_dynamic_shopping_list
+This [challenge](Challenges/ShoppingListChallenge.md) is copied from [Mozilla](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#Active_learning_A_dynamic_shopping_list).
 
 The main challenge here is the "Delete" button for a given shopping list item. To implement that, the students will have to do some research. They will have to:
 - Set up the `onclick` binding function in JavaScript for the button they create

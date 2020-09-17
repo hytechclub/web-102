@@ -762,7 +762,7 @@
 <p><img src="https://i.imgur.com/wOv6a01.png" alt="lyrics builder"></p>
 <p>We&apos;ll start with the HTML, and then add some JavaScript to make the &quot;Add&quot; button create a new paragraph and add it to the container!</p>
 <h2 id="basic-html">Basic HTML</h2>
-<p>Start with the basic tags: <code>html</code>, <code>head</code>, <code>body</code>, and <code>style</code></p>
+<p>Start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb#index.html" target="_blank">this empty Repl</a>, and add the basic tags to the <strong>index.html</strong> file:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
@@ -772,7 +772,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="adding-content-tags">Adding content Tags</h2>
+<h2 id="adding-content-tags">Adding Content Tags</h2>
 <p>Next, add in the tags that make up the page: an <code>&lt;h2&gt;</code> for &quot;Lyrics&quot;, a <code>&lt;div&gt;</code> for the container where the lyrics will go, another <code>&lt;h2&gt;</code> for &quot;Add Line&quot;, and finally, another <code>&lt;div&gt;</code> containing the text input and the &quot;Add&quot; button:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -808,7 +808,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="styling-the-lyrics-box">Styling the Lyrics box</h2>
+<h2 id="styling-the-lyrics-box">Styling the Lyrics Box</h2>
 <p>Currently, the <code>&lt;div&gt;</code> that will contain the lyrics doesn&apos;t have any content, so it won&apos;t show up on our page. We want to add a border, a height, a width, and some padding to the box. This <code>&lt;div&gt;</code> already has an <code>id</code> attribute, so we can use that to select it in CSS in the <code>&lt;style&gt;&lt;/style&gt;</code> tag (<code>#lyricsContainer</code>):</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -833,7 +833,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <h2 id="adding-interactivity-with-javascript">Adding Interactivity with JavaScript</h2>
-<p>Now that we have our HTML all set up, the only thing left to do is make it work! We can start by creating a new JavaScript file called &quot;LyricsBuilder.js&quot;. Then, we can link the file to our HTML page in a <code>&lt;script&gt;</code> tag:</p>
+<p>Now that we have our HTML all set up, the only thing left to do is make it work! We can start by creating a new JavaScript file called <strong>LyricsBuilder.js</strong>. Then, we can link the file to our HTML page in a <code>&lt;script&gt;</code> tag:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;LyricsBuilder.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -889,7 +889,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <p>Now when the user clicks the &quot;Add&quot; button on our HTML page, the code within the <code>addLine</code> function will run!</p>
-<h3 id="getting-text-from-the-input">Getting text from the <code>&lt;input&gt;</code></h3>
+<h3 id="getting-text-from-the-input">Getting Text from the <code>&lt;input&gt;</code></h3>
 <p>Whenever the user clicks &quot;Add&quot;, we want to look at the text within the <code>lineText</code> input. First, we need to use <code>document.querySelector</code> to find the <code>&lt;input&gt;</code> element and store it in a variable:</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
@@ -902,7 +902,7 @@
 }
 </code></pre>
 <p>Now, the text the user entered will be stored in the <code>lineText</code> variable!</p>
-<h3 id="creating-the-new-p-element">Creating the new <code>&lt;p&gt;</code> element</h3>
+<h3 id="creating-the-new-p-element">Creating the New <code>&lt;p&gt;</code> Element</h3>
 <p>Now that we have the text, we can create a new paragraph and place the text in it. To create a new element and store it in a variable, we will use <code>document.createElement</code>:</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
@@ -921,7 +921,7 @@
 }
 </code></pre>
 <p>Now we have a brand new paragraph!</p>
-<h3 id="inserting-the-new-p-element-into-the-div">Inserting the new <code>&lt;p&gt;</code> element into the <code>&lt;div&gt;</code></h3>
+<h3 id="inserting-the-new-p-element-into-the-div">Inserting the New <code>&lt;p&gt;</code> Element into the <code>&lt;div&gt;</code></h3>
 <p>We have created a new paragraph, but it still won&apos;t appear on our webpage until we insert it somewhere. We want to place it in the lyrics box, our <code>lyricsContainer</code> div. The first thing we need to do is find that <code>&lt;div&gt;</code> element and store it in a variable:</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
@@ -1043,7 +1043,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lyrics Builder Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Background Changer Individual Exercise","level":"1.9.3","depth":2,"path":"Week07/BackgroundChangerIndividualInstructions.md","ref":"Week07/BackgroundChangerIndividualInstructions.md","articles":[]},"previous":{"title":"DOM Manipulation - Update HTML","level":"1.9.1","depth":2,"path":"Week07/DomManipulationUpdateHTML.md","ref":"Week07/DomManipulationUpdateHTML.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week07/LyricsBuilderFollowAlongInstructions.md","mtime":"2020-09-17T15:02:13.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T15:02:54.301Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lyrics Builder Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Background Changer Individual Exercise","level":"1.9.3","depth":2,"path":"Week07/BackgroundChangerIndividualInstructions.md","ref":"Week07/BackgroundChangerIndividualInstructions.md","articles":[]},"previous":{"title":"DOM Manipulation - Update HTML","level":"1.9.1","depth":2,"path":"Week07/DomManipulationUpdateHTML.md","ref":"Week07/DomManipulationUpdateHTML.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week07/LyricsBuilderFollowAlongInstructions.md","mtime":"2020-09-17T15:33:40.033Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T15:34:20.491Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
