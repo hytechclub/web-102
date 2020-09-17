@@ -1,11 +1,20 @@
 # JavaScript Objects
 Introduce JavaScript objects
 
+## Virtual Note
+For a virtual 11-week semester, this lesson will be optional.
+
+### Final Review
+Have the students complete the [final review Quizizz](https://quizizz.com/admin/quiz/5cb4ab688f1e35001d3e267c/web-final-review).
+
+### Final Project Introductions
+After the final review, introduce the [Final Projects](../Week11/FinalProject.md) and have the students begin working on them. Show them some examples of final projects. By the end of class, they should at least have an idea of what they might like to do for it.
+
 ## Warm Up
 >What types of information would usually be grouped together?
 
 ## Lecture
-The lecture introduces JavaScript objects. It also includes a mini quiz.
+The [lecture](JavaScriptObjects.pptx) introduces JavaScript objects. It also includes a mini quiz.
 
 ## Follow-Along Activity: Profile Builder
 As a group, walk through the [ProfileBuilderFollowAlong](ProfileBuilderFollowAlong.md) activity.

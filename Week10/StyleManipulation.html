@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Code-Along · GitBook</title>
+        <title>OPTIONAL - Style Manipulation · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="IntroduceYourself.html" />
+    <link rel="next" href="../Week11/StudentDesc.html" />
     
     
-    <link rel="prev" href="StudentDesc.html" />
+    <link rel="prev" href="../Week09/Challenges.html" />
     
 
     </head>
@@ -119,9 +119,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.3" data-path="../Week01/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../Week01/StudentDesc.html">
             
                     
                     Week 1 - HTML & CSS
@@ -133,9 +133,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="HtmlCssReviewCodeAlong.html">
+        <li class="chapter " data-level="1.3.1" data-path="../Week01/HtmlCssReviewCodeAlong.html">
             
-                <a href="HtmlCssReviewCodeAlong.html">
+                <a href="../Week01/HtmlCssReviewCodeAlong.html">
             
                     
                     Code-Along
@@ -146,9 +146,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="IntroduceYourself.html">
+        <li class="chapter " data-level="1.3.2" data-path="../Week01/IntroduceYourself.html">
             
-                <a href="IntroduceYourself.html">
+                <a href="../Week01/IntroduceYourself.html">
             
                     
                     Introduce Yourself
@@ -159,9 +159,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="Challenge.html">
+        <li class="chapter " data-level="1.3.3" data-path="../Week01/Challenge.html">
             
-                <a href="Challenge.html">
+                <a href="../Week01/Challenge.html">
             
                     
                     Challenge
@@ -667,9 +667,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../Week10/StyleManipulation.html">
+        <li class="chapter active" data-level="1.12" data-path="StyleManipulation.html">
             
-                <a href="../Week10/StyleManipulation.html">
+                <a href="StyleManipulation.html">
             
                     
                     OPTIONAL - Style Manipulation
@@ -755,7 +755,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Code-Along</a>
+        <a href=".." >OPTIONAL - Style Manipulation</a>
     </h1>
 </div>
 
@@ -770,108 +770,155 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="html--css-review-code-along">HTML &amp; CSS Review Code-Along</h1>
-<p>Start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb" target="_blank">this empty Repl</a>, then follow the instructions below to build a simple webpage!</p>
-<h2 id="add-the-basic-html-elements">Add the Basic HTML Elements</h2>
-<p>Add the foundational elements to the <strong>index.html</strong> file. Start with <code>&lt;html&gt;&lt;/html&gt;</code>, then add <code>&lt;head&gt;&lt;/head&gt;</code> and <code>&lt;body&gt;&lt;/body&gt;</code> between the HTML tags.</p>
+                                <h1 id="updating-css-styles-with-javascript">Updating CSS Styles with JavaScript</h1>
+<p>Manipulating the DOM is one of the best ways to create interactive web experiences using JavaScript. We can even manipulate CSS through the DOM! By updating the styles of a webpage dynamically, developers can provide fun and engaging visuals for users. Let&apos;s walk through an example.</p>
+<h2 id="example-description">Example Description</h2>
+<p>We want to create a simple webpage that allows a user to enter a password. If they enter the correct password, the webpage should inform them that they entered the correct password with a nice green message, and display an image. If they enter an incorrect password, the webpage should inform them that they entered the wrong password with a red message, and hide the image.</p>
+<h2 id="html">HTML</h2>
+<h3 id="basic-setup">Basic Setup</h3>
+<p>Start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb#index.html" target="_blank">this empty Repl</a>, open the <strong>index.html</strong> file, and add the basic tags (<code>html</code>, <code>body</code>, <code>head</code>, <code>style</code>). Additionally, add the header and a paragraph:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Password Checker<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Please enter the correct password to see an image.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="add-a-header">Add a Header</h2>
-<p>Between the opening and closing <code>body</code> tags, add an <code>h3</code> element. Within the <code>h3</code> element, add the proper text.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Despicable Me Fan Site<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<h3 id="text-input-and-button">Text Input and Button</h3>
+<p>Next, we need a text input and a button. We want them to appear together, on their own line. We can place them inside a <code>div</code> to achieve this structure (right under the paragraph). Note that the input also requires an <code>id</code> so that we can select it in the JavaScript.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordInput&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-<h2 id="add-an-image">Add an Image</h2>
-<p>Add an image to the page.</p>
-<ol>
-<li>Go to <a href="https://images.google.com" target="_blank">Google Images</a></li>
-<li>Find an image, and copy the image address/URL/location</li>
-<li>Create an <code>img</code> tag, and set its <code>src</code> attribute to be the URL for the image</li>
-</ol>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.imgur.com/EQdshBM.jpg&quot;</span>&gt;</span>
+<h3 id="passwordmessage-paragraph-and-image"><code>passwordMessage</code> Paragraph and Image</h3>
+<p>Next, let&apos;s add a paragraph that will contain messages for the user. We need this paragraph to have an <code>id</code> so that we can select it and update it in the JavaScript. This should go under the <code>div</code>.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordMessage&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
-<h2 id="add-a-paragraph">Add a Paragraph</h2>
-<p>Under the <code>img</code> element, add a <code>p</code> element that contains the text for the paragraph.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Despicable Me is a great film filled with several memorable characters and zany plot lines.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<p>We also want to add an image underneath this paragraph. We need the image to have an <code>id</code> so that we can select it and update it in the JavaScript. We also need to set its source.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;hiddenImage&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.imgur.com/5NGCWUo.jpg&quot;</span> /&gt;</span>
 </code></pre>
-<h2 id="add-another-header">Add Another Header</h2>
-<p>Under the <code>p</code>, add another <code>h3</code> header that will serve as the title for a list.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Top Three Movies Of All Time<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-</code></pre>
-<h2 id="add-a-list">Add a List</h2>
-<p>Under the <code>h3</code>, create an <code>ol</code> element. Between the opening and closing tags, create three <code>li</code> elements with the proper text.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Despicable Me<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Despicable Me 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Despicable Me 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-</code></pre>
-<h2 id="create-a-new-css-file">Create a New CSS File</h2>
-<p>Now it&apos;s time to add some style. Create a new file named <strong>style.css</strong>, and save it in the same folder as the <strong>index.html</strong> file. In the file, add a ruleset that will select the <code>body</code> (all the content on the page). Within the ruleset, set the <code>background</code> property to <code>black</code>, and the <code>color</code> property to <code>orange</code>.</p>
-<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">background</span>: black;
-    <span class="hljs-attribute">color</span>: orange;
+<p>When a user first loads up the webpage, the image should actually be hidden. We can make this happen with CSS. We will select the image using its <code>id</code>, and then set its <code>display</code> property to <code>none</code>. The CSS should go in the <code>style</code> tag of the HTML page.</p>
+<pre><code class="lang-css"><span class="hljs-selector-id">#hiddenImage</span> {
+    <span class="hljs-attribute">display</span>: none;
 }
 </code></pre>
-<h2 id="link-the-css-in-the-html">Link the CSS in the HTML</h2>
-<p>Although CSS has been added to the <strong>style.css</strong> file, nothing has changed on the page! This is because the CSS file must be <em>linked</em> in the HTML file.</p>
-<p>In the <strong>index.html</strong> file, between the opening and closing <code>head</code> tags, create a <code>link</code> tag. It should have an <code>href</code> attribute with the value <code>style.css</code>, a <code>type</code> attribute with the value <code>text/css</code>, and a <code>rel</code> attribute with the value <code>stylesheet</code>. Now the page should have the styles!</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span>
+<p>Now, if a user opens the webpage, the image should be invisible.</p>
+<h2 id="javascript-setup">JavaScript Setup</h2>
+<p>Create a new JavaScript file, and link it in the HTML file:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;FollowAlong.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
-<h2 id="add-an-image-style">Add an Image Style</h2>
-<p>Currently, the image might be a little big. Use CSS to update its size. In the <strong>style.css</strong> file, add a ruleset that will select the <code>img</code>. Within the ruleset, set the <code>height</code> property to <code>200px</code>.</p>
-<pre><code class="lang-css"><span class="hljs-selector-tag">img</span> {
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+<p>Inside the JavaScript file, define a new function called <code>submitPassword</code>. For testing purposes, place an <code>alert</code> in the body of the function, saying that the function was called:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">submitPassword</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&quot;submitPassword called&quot;</span>);
 }
 </code></pre>
-<h2 id="add-a-main-header-style">Add a Main Header Style</h2>
-<p>Next, it would be nice for the main header to stand out a little more. To select this header specifically, but not any other header, add an <code>id</code> attribute to it in the HTML, and then select it by its ID in the CSS.</p>
-<p>In the <strong>index.html</strong> file, find the top <code>h3</code> header. Add an <code>id</code> attribute with a value of <code>main</code> to the element.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>Despicable Me Fan Site<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<p>Back in the HTML file, hook up the &quot;Submit&quot; button to the function:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;submitPassword()&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 </code></pre>
-<p>In the <strong>style.css</strong> file, add a ruleset that will select elements with an ID of <code>main</code> using <code>#main</code>. Within the ruleset, set the <code>color</code> property to <code>yellow</code> (this is the color of the minions).</p>
-<pre><code class="lang-css"><span class="hljs-selector-id">#main</span> {
-    <span class="hljs-attribute">color</span>: yellow;
+<p>Now, a user should be able to load up the page, click the button, and see a message!</p>
+<h2 id="checking-the-password">Checking the Password</h2>
+<p>Our JavaScript function should check the value the user entered into the text input, and update the page accordingly.</p>
+<h3 id="selecting-html-elements">Selecting HTML Elements</h3>
+<p>The first thing we need to do is select the text input from the HTML, so that we can get its value. Use <code>document.querySelector</code>, along with the <code>id</code> of the input, to accomplish this. Remember, we also need to store this text input in a JavaScript variable. This line should replace the <code>alert</code> at the top of the <code>submitPassword</code> function body:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> passwordInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#passwordInput&quot;</span>);
+</code></pre>
+<p>In addition to selecting the password input, we are also going to need to select the paragraph for message text, and the image. We can do this in a very similar way:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> passwordMessage = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#passwordMessage&quot;</span>);
+<span class="hljs-keyword">var</span> hiddenImage = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#hiddenImage&quot;</span>);
+</code></pre>
+<p>Place these lines directly below the <code>passwordInput</code> variable declaration/setting.</p>
+<h3 id="getting-user-input">Getting User Input</h3>
+<p>We have the text input stored in a JavaScript variable (<code>passwordInput</code>), but we need to get its actual value (what the user entered). We do this by using <code>.value</code>, and we have to store the result in another variable:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> passwordValue = passwordInput.value;
+</code></pre>
+<p>Now that we have the text the user entered, we can compare it to the correct password. In our case, let&apos;s say the correct password is &quot;opensesame&quot;. We can use an <code>if</code>/<code>else</code> structure to change program flow based on whether their password is correct or incorrect. For now, let&apos;s simply alert whether the password was correct or not:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
+    alert(<span class="hljs-string">&quot;You entered the correct password&quot;</span>);
+} <span class="hljs-keyword">else</span> {
+    alert(<span class="hljs-string">&quot;You entered the wrong password&quot;</span>);
 }
 </code></pre>
-<h2 id="final-code">Final Code</h2>
-<p>That&apos;s it! The Despicable Me Fan Site looks pretty good.</p>
-<h3 id="indexhtml">index.html</h3>
+<p>Now, a user should be able to load up the webpage, enter a password, click the button, and see a message saying if the password is correct! Test out your code by entering the correct password, and an incorrect password, and making sure the webpage displays the right message.</p>
+<h3 id="setting-paragraph-text">Setting Paragraph Text</h3>
+<p>Instead of using those <code>alert</code>s, we can give the user a much nicer experience by simply updating an existing HTML element on the page. We&apos;ve already selected the message paragraph and stored it in a variable: <code>passwordMessage</code>. All we have to do is set its <code>textContent</code> from within the body of the <code>if</code> and <code>else</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
+    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the correct password&quot;</span>;
+} <span class="hljs-keyword">else</span> {
+    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the wrong password&quot;</span>;
+}
+</code></pre>
+<p>Now, instead of displaying a message, the webpage should update with the message underneath the text input. Test out your code again by entering some different passwords.</p>
+<h2 id="updating-styles">Updating Styles</h2>
+<p>To update the styles of a selected HTML element in JavaScript, a developer can use <code>.style</code>. This will work for any variable holding an HTML element that has styles attached to it. This is similar to how we would use <code>.textContent</code> to update the text inside the element. After <code>.style</code>, you will have to specify which style to access.</p>
+<h3 id="setting-text-color">Setting Text Color</h3>
+<p>In addition to setting the <code>textContent</code> of the <code>passwordMessage</code> paragraph, we want to change its color to reflect the tone of the message. If the user enters the correct password, the color should be green. If they enter the wrong password, the color should be red. To set the text color of the element, use <code>.style.color</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
+    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the correct password&quot;</span>;
+    passwordMessage.style.color = <span class="hljs-string">&quot;green&quot;</span>;
+} <span class="hljs-keyword">else</span> {
+    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the wrong password&quot;</span>;
+    passwordMessage.style.color = <span class="hljs-string">&quot;red&quot;</span>;
+}
+</code></pre>
+<p>Test out your code again. It should work the same, except when you enter the correct password, the message should be green. When you enter the wrong password, the message should be red.</p>
+<h3 id="showing-the-image">Showing the Image</h3>
+<p>To start off, we have CSS on our image setting its <code>display</code> property to the value <code>none</code>. This will hide the image. To show it, we need to set its <code>display</code> property to <code>block</code>. We can do this in a very similar way to setting the text color; we will use <code>.style.display</code>. We already have the HTML element for the image stored in a variable (<code>hiddenImage</code>). We just need to set its CSS.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
+    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the correct password&quot;</span>;
+    passwordMessage.style.color = <span class="hljs-string">&quot;green&quot;</span>;
+    hiddenImage.style.display = <span class="hljs-string">&quot;block&quot;</span>;
+} <span class="hljs-keyword">else</span> {
+    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the wrong password&quot;</span>;
+    passwordMessage.style.color = <span class="hljs-string">&quot;red&quot;</span>;
+    hiddenImage.style.display = <span class="hljs-string">&quot;none&quot;</span>;
+}
+</code></pre>
+<p>Test out your code again. Now, the image should show up when you enter the correct password, and hide otherwise!</p>
+<h2 id="final-product">Final Product</h2>
+<h4 id="html">HTML</h4>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;FollowAlong.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+            <span class="hljs-selector-id">#hiddenImage</span> {
+                <span class="hljs-attribute">display</span>: none;
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>Despicable Me Fan Site<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.imgur.com/EQdshBM.jpg&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Despicable Me is a great film filled with several memorable characters and zany plot lines.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Top Three Movies Of All Time<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Despicable Me<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Despicable Me 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Despicable Me 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Password Checker<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Please enter the correct password to see an image.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordInput&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;submitPassword()&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordMessage&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;hiddenImage&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.imgur.com/5NGCWUo.jpg&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h3 id="stylecss">style.css</h3>
-<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">background</span>: black;
-    <span class="hljs-attribute">color</span>: orange;
-}
+<h4 id="javascript">JavaScript</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">submitPassword</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> passwordInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#passwordInput&quot;</span>);
+    <span class="hljs-keyword">var</span> passwordMessage = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#passwordMessage&quot;</span>);
+    <span class="hljs-keyword">var</span> hiddenImage = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#hiddenImage&quot;</span>);
 
-<span class="hljs-selector-tag">img</span> {
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
-}
+    <span class="hljs-keyword">var</span> passwordValue = passwordInput.value;
 
-<span class="hljs-selector-id">#main</span> {
-    <span class="hljs-attribute">color</span>: yellow;
+    <span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
+        passwordMessage.textContent = <span class="hljs-string">&quot;You entered the correct password&quot;</span>;
+        passwordMessage.style.color = <span class="hljs-string">&quot;green&quot;</span>;
+        hiddenImage.style.display = <span class="hljs-string">&quot;block&quot;</span>;
+    } <span class="hljs-keyword">else</span> {
+        passwordMessage.textContent = <span class="hljs-string">&quot;You entered the wrong password&quot;</span>;
+        passwordMessage.style.color = <span class="hljs-string">&quot;red&quot;</span>;
+        hiddenImage.style.display = <span class="hljs-string">&quot;none&quot;</span>;
+    }
 }
 </code></pre>
 
@@ -901,12 +948,12 @@
 
             
                 
-                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 1 - HTML & CSS">
+                <a href="../Week09/Challenges.html" class="navigation navigation-prev " aria-label="Previous page: Objects Challenges">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="IntroduceYourself.html" class="navigation navigation-next " aria-label="Next page: Introduce Yourself">
+                <a href="../Week11/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Final Project">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -917,7 +964,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.3.1","depth":2,"next":{"title":"Introduce Yourself","level":"1.3.2","depth":2,"path":"Week01/IntroduceYourself.md","ref":"Week01/IntroduceYourself.md","articles":[]},"previous":{"title":"Week 1 - HTML & CSS","level":"1.3","depth":1,"path":"Week01/StudentDesc.md","ref":"Week01/StudentDesc.md","articles":[{"title":"Code-Along","level":"1.3.1","depth":2,"path":"Week01/HtmlCssReviewCodeAlong.md","ref":"Week01/HtmlCssReviewCodeAlong.md","articles":[]},{"title":"Introduce Yourself","level":"1.3.2","depth":2,"path":"Week01/IntroduceYourself.md","ref":"Week01/IntroduceYourself.md","articles":[]},{"title":"Challenge","level":"1.3.3","depth":2,"path":"Week01/Challenge.md","ref":"Week01/Challenge.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week01/HtmlCssReviewCodeAlong.md","mtime":"2020-09-17T16:54:24.589Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T16:55:02.847Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OPTIONAL - Style Manipulation","level":"1.12","depth":1,"next":{"title":"Final Project","level":"1.13","depth":1,"path":"Week11/StudentDesc.md","ref":"Week11/StudentDesc.md","articles":[{"title":"Final Project","level":"1.13.1","depth":2,"path":"Week11/FinalProject.md","ref":"Week11/FinalProject.md","articles":[]},{"title":"Cheat Sheet","level":"1.13.2","depth":2,"path":"Week11/CheatSheet.md","ref":"Week11/CheatSheet.md","articles":[]}]},"previous":{"title":"Objects Challenges","level":"1.11.3","depth":2,"path":"Week09/Challenges.md","ref":"Week09/Challenges.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week10/StyleManipulation.md","mtime":"2020-09-17T16:54:24.621Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T16:55:02.847Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

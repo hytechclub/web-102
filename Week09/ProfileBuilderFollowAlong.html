@@ -667,7 +667,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../Week11/StudentDesc.html">
+        <li class="chapter " data-level="1.12" data-path="../Week10/StyleManipulation.html">
+            
+                <a href="../Week10/StyleManipulation.html">
+            
+                    
+                    OPTIONAL - Style Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Week11/StudentDesc.html">
             
                 <a href="../Week11/StudentDesc.html">
             
@@ -681,7 +694,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.1" data-path="../Week11/FinalProject.html">
+        <li class="chapter " data-level="1.13.1" data-path="../Week11/FinalProject.html">
             
                 <a href="../Week11/FinalProject.html">
             
@@ -694,7 +707,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2" data-path="../Week11/CheatSheet.html">
+        <li class="chapter " data-level="1.13.2" data-path="../Week11/CheatSheet.html">
             
                 <a href="../Week11/CheatSheet.html">
             
@@ -758,11 +771,12 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="profile-builder-follow-along-activity">Profile Builder: Follow-Along Activity</h1>
-<p>Create a profile website with data pulled from a JavaScript object.</p>
+<p>Create a profile website with data pulled from a JavaScript object. Start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb#index.html" target="_blank">this empty Repl</a>, then follow the instructions below.</p>
 <h2 id="html-setup">HTML setup</h2>
 <p>The webpage should have labels for the profile information going down the left side, and then the information should fill in when the user clicks the button.</p>
 <ol>
-<li>Create a new HTML and JS file, and add the basic tags (including the <code>script</code>)</li>
+<li>Create a new JS file named <strong>ProfileBuilder.js</strong></li>
+<li>Add the basic elements to the <strong>index.html</strong> file (including the <code>script</code>)</li>
 <li>Within the <code>&lt;body&gt;&lt;/body&gt;</code> of the HTML file, create a new <code>p</code> element</li>
 <li>Within the <code>&lt;p&gt;&lt;/p&gt;</code> element, create a <code>button</code> element<ul>
 <li>It should say &quot;Generate Profile&quot;</li>
@@ -791,8 +805,8 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="javascript-object-definition">JavaScript object definition</h2>
-<p>Since all of this information is related, it would make sense to store it within one JavaScript <strong>object</strong>.</p>
+<h2 id="javascript-object-definition">JavaScript Object Definition</h2>
+<p>Since all of this information is related, it would make sense to store it within one JavaScript <em>object</em>.</p>
 <ol>
 <li>At the top of the &quot;ProfileBuilder.js&quot; file, define a new JavaScript object variable named <code>profileInfo</code><ul>
 <li><code>var</code></li>
@@ -823,7 +837,7 @@
     Location: <span class="hljs-string">&quot;Pittsburgh&quot;</span>
 }
 </code></pre>
-<h2 id="profile-generation">Profile generation</h2>
+<h2 id="profile-generation">Profile Generation</h2>
 <p>The &quot;Generate Profile&quot; button should fill out the HTML with the information from the object when clicked.</p>
 <ol>
 <li>In the JS file, under the object definition, define a function named <code>generateProfile</code><ul>
@@ -859,7 +873,7 @@
     locationEl.textContent = profileInfo.Location;
 }
 </code></pre>
-<h2 id="object-updates">Object updates</h2>
+<h2 id="object-updates">Object Updates</h2>
 <p>The user should be able to update the &quot;Name&quot; information in the JavaScript object.</p>
 <ol>
 <li>In the HTML file, add a <code>button</code> within the &quot;Name&quot; <code>h3</code> after the text<ul>
@@ -964,7 +978,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Profile Builder Follow-Along","level":"1.11.1","depth":2,"next":{"title":"Profile Builder Individual","level":"1.11.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},"previous":{"title":"OPTIONAL - JavaScript Objects","level":"1.11","depth":1,"path":"Week09/StudentDesc.md","ref":"Week09/StudentDesc.md","articles":[{"title":"Profile Builder Follow-Along","level":"1.11.1","depth":2,"path":"Week09/ProfileBuilderFollowAlong.md","ref":"Week09/ProfileBuilderFollowAlong.md","articles":[]},{"title":"Profile Builder Individual","level":"1.11.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},{"title":"Objects Challenges","level":"1.11.3","depth":2,"path":"Week09/Challenges.md","ref":"Week09/Challenges.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week09/ProfileBuilderFollowAlong.md","mtime":"2020-09-17T15:57:37.063Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T15:58:19.758Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Profile Builder Follow-Along","level":"1.11.1","depth":2,"next":{"title":"Profile Builder Individual","level":"1.11.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},"previous":{"title":"OPTIONAL - JavaScript Objects","level":"1.11","depth":1,"path":"Week09/StudentDesc.md","ref":"Week09/StudentDesc.md","articles":[{"title":"Profile Builder Follow-Along","level":"1.11.1","depth":2,"path":"Week09/ProfileBuilderFollowAlong.md","ref":"Week09/ProfileBuilderFollowAlong.md","articles":[]},{"title":"Profile Builder Individual","level":"1.11.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},{"title":"Objects Challenges","level":"1.11.3","depth":2,"path":"Week09/Challenges.md","ref":"Week09/Challenges.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week09/ProfileBuilderFollowAlong.md","mtime":"2020-09-17T16:54:24.621Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T16:55:02.847Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
