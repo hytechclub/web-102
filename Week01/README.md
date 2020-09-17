@@ -1,4 +1,4 @@
-## Overview
+# Week 1: HTML & CSS Review
 Review content from HTML and CSS. Note, depending on how much the students remember, it may be worth spending more than one day on these concepts.
 
 ## Live Student Introductions

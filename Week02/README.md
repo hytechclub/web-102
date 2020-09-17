@@ -1,4 +1,4 @@
-## Overview
+# Week 2: Introduction to JavaScript
 Introduce JavaScript at a basic level. This should be a fairly light introduction. This lesson covers:
 - `alert` function
 - variables

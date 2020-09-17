@@ -1,4 +1,4 @@
-## Overview
+# Week 4: Functions
 This lesson introduces ways to make JavaScript more usable. These concepts will be used throughout the remainder of the course. This lesson covers:
 - Separate JavaScript Files
 - Buttons
