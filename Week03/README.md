@@ -1,4 +1,4 @@
-## Overview
+# Week 3: Basic JS Concepts
 Introduce some additional JavaScript concepts, still staying fairly basic. This lesson covers:
 - Comments
 - Data Types
