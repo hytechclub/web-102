@@ -11,10 +11,12 @@ document.body.style.background = "url(<your url here>)";
 Refer back to this code when you need it.
 
 ## Setup
-- Create a new HTML file
-- In the HTML file, add the basic tags: `html`, `head`, `style`, `body`
+Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), then follow the steps below.
+
+- Open the **index.html** file
+- In the **index.html** file, add the basic tags: `html`, `head`, `style`, `body`
 - Create a new JavaScript file
-- In the HTML file, use a `<script>` tag to link the JavaScript file
+- In the **index.html** file, use a `<script>` tag to link the JavaScript file
 
 Once you complete this setup, complete each of the exercises below in the HTML file and JavaScript file.
 
@@ -44,12 +46,12 @@ The function name and button text should be different. Name the function `change
 ## Parameter Time
 Now, your JavaScript file should contain two very similar functions. The only differences are the names of the functions, and the actual URLs for the images. Looks like a parameter could help us simplify our code!
 
-### Updating the function definition
+### Updating the Function Definition
 - In the `changeBackground` function, replace the actual URL in the string with a new variable named `backgroundUrl`
     - To do this, you will have to add together three values
 - Instead of declaring `backgroundUrl` as a variable, make it a **parameter** by placing it within the parentheses of the function definiton
 
-### Updating the function calls
+### Updating the Function Calls
 - In the HTML file, update the call to `changeBackground` so that it passes in the original URL as the parameter
     - Because this call is within double quotes, surround the url with single quotes inside of the parentheses
 - Update the "Image 2" button to call the `changeBackground` function on click as well, passing in its own URL

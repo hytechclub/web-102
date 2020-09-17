@@ -1,22 +1,22 @@
 # Functions Follow-Along: Dice Roller
-We currently have a webpage that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well!
+We currently have [a webpage](https://repl.it/@JosephMaxwell/DiceRoller#index.html) that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well.
 
-## Background information - Random Number generation
+## Background Information - Random Number Generation
 Random numbers can be an extremely useful tool when creating games. Any time there is any sort of probability in a game, it's probably using random numbers!
 
 ### `Math.random`
 In Javascript, you can use `Math.random()` to generate a random decimal number between 0 and 1.
 
-### Expanding the range
+### Expanding the Range
 To make the `Math.random()` number a little more usable, we first multiply it by however many options we'd like. For example, `Math.random()*5` would give you a random decimal number between 0 and 5, `Math.random()*100` would give you a random decimal number between 0 and 100, and so on. A regular die has 6 sides, so we want to multiply the number by 6.
 
-### Limiting the numbers to integers with `Math.floor`
+### Limiting the Numbers to Integers with `Math.floor`
 In our case, we want to generate integers. A die has a certain number of integer sides, so decimals do not really make sense. To round down a decimal number, we use `Math.floor()`, which will round any decimal number DOWN to the nearest whole number. For example, given `0.01`, it would return `0`. Given `11.9`, it would return `11`. Given `5.0`, it would return `5`, because 5 is already a whole number. After rounding down, it is necessary to add `1`.
 
 When applied to our randomly-generated number from a given range, we can get all the sides for a die! Now, let's make some updates to our code to make good use of these random numbers.
 
 ## A 4-sided Die Roll
-Start by creating another button, labeled "D4", next to the "D6" button. As with any button that should execute JavaScript, we want to set its `onclick` attribute. We are also going to define a new function in the [DiceRoller.js](DiceRoller.js) file. Use the `rollD6` function as a template, because the `rollD4` function will be very similar.
+Start by creating another button, labeled "D4", next to the "D6" button. As with any button that should execute JavaScript, we want to set its `onclick` attribute. We are also going to define a new function in the **DiceRoller.js** file. Use the `rollD6` function as a template, because the `rollD4` function will be very similar.
 
 #### HTML
 
@@ -35,7 +35,7 @@ function rollD4() {
 }
 ```
 
-## A D8 roll
+## A D8 Roll
 Let's add another button/function for an 8-sided die. This time, we can simply copy and paste the code for D4. We only have to change a few  things: the function name, the factor multiplied by `randomDecimal`, and of course, the button text.
 
 #### HTML
@@ -60,7 +60,7 @@ You may notice that this is becoming a little tedious. If we needed to do this f
 ## Function Parameters
 Since there is only one small part of the functions that differ for different dice rolls, we can use a single function and a _parameter_ instead! This allows us to cut down on repeated code, and makes it easier for us to change the mechanics for all dice rolls.
 
-### Updating the function definition
+### Updating the Function Definition
 To add a parameter, we need to place a new variable name within the parenthesis of the function definition, like this:
 
 ```javascript
@@ -78,7 +78,7 @@ function rollD(sides) {
 }
 ```
 
-### Updating the function call
+### Updating the Function Call
 Now that we've updated our function definition, we need to fix how it is called. In the HTML file, update the `onclick` attribute for the D8 button so that it calls the correct function, and passes in the correct parameter:
 
 ```html
@@ -103,7 +103,7 @@ It is now incredibly easy to add a new die. We can simply create a new button, a
 
 Notice that we don't have to update anything in our JavaScript file; the parameter makes our code flexible enough to work with new values.
 
-## Using DOM Manipulation to display the dice roll
+## Using DOM Manipulation to Display the Dice Roll
 We want to update our function so that instead of using `alert` to show the roll result to the user, it updates the text of a paragraph on the HTML page. If we had multiple functions for each die, we would have to update all of those functions individually. Lucky for us, we only need to update one function!
 
 Follow these steps to update the webpage:

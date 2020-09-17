@@ -2,9 +2,12 @@
 Create a webpage where users can perform various functions on two inputs.
 
 ## Setup
+Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), then follow the steps below.
+
 ### Basics
-- Create a new HTML file and JavaScript file with all the basic boiler-plate starter code
-- In the HTML file:
+- Create a new JS file
+- Update the **index.html** file with all the basic boiler-plate
+- Also in the **index.html** file:
     - Create two text inputs, each with an id
     - Create a paragraph with an id
     - Create a button with the text "Add"
@@ -26,7 +29,7 @@ Repeat the steps above for a new function: `multiplyNumbers`. Add a new button t
 ## Abstracting the Functionality
 So far, we are able to execute two functions on the two input values. We want to expand this to make it easier to add more functions, without repeating a lot of code.
 
-### Simplifying functions
+### Simplifying Functions
 Our `addNumbers` and `multiplyNumbers` functions are doing too much right now. In general, functions should do as little as possible, so we don't have to repeat code.
 
 Simplify the `addNumbers` and `multiplyNumbers` functions. They should:
@@ -40,7 +43,7 @@ Simplify the `addNumbers` and `multiplyNumbers` functions. They should:
 return calcResult;
 ```
 
-### Runner function
+### Runner Function
 The next step is to create a runner function that will call all other functions as needed. Each button should be identifiable by a number. The runner function will call the corresponding function.
 
 - In the JavaScript file, define a function named `runButton`
@@ -54,10 +57,10 @@ The next step is to create a runner function that will call all other functions 
 
 For example, let's say the "Add" button is `1`, and the "Multiply" button is `2`. Calling `runButton(1)` should perform the `addNumbers` action, and calling `runButton(2)` should perform the `multiplyNumbers`. Note that these identifiers are completely arbitrary. You could use any sort of parameter, as long as the `runButton` calls the right function!
 
-### Updating function calls
+### Updating Function Calls
 Now, our `runButton` function should be able to handle any of our buttons! Update the `onclick` attribute for each button so that it calls `runButton` with the appropriate numeric identifier.
 
-## Adding new buttons
+## Adding New Buttons
 Now, to add a new button and function, take these steps:
 - In the JavaScript, define a new function that will take in two values, and return the result
 - Call this function within the `runButton` function based on its numeric identifier (e.g., 3)
@@ -71,5 +74,5 @@ That's all! Next, add buttons that will perform the following actions:
 1. Return the average of the two inputs
 1. Return the larger input minus the smaller input
 
-## More functions - Single input
+## More Functions - Single Input
 Try to think of possible calculations to perform on a single input. Try playing this game for inspiration: http://www.functiongame.com/
