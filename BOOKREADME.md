@@ -4,6 +4,9 @@ Welcome to the Web 102 Hy-Tech Club course!
 ## Repl Setup
 The Web 102 course will use [Repl](https://repl.it). Please complete the [Repl setup steps](ReplSetup.md) before the course begins.
 
+## Zoom Meetings
+The course will meet weekly on Wednesdays via [Zoom]() from 4:30 p.m. to 6:30 p.m. ET.
+
 ## Schedule
 Follow the links below to view each week of material.
 

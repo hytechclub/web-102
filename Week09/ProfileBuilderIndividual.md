@@ -1,10 +1,10 @@
 # Profile Builder: Individual Exercises
 Make some updates to the Profile Builder.
 
-## Starting info changes
+## Starting Info Changes
 Update all of the starting information in the initial `profileInfo` object so that when the "Generate Profile" button is clicked the first time, all of the new information appears. The new information can be anything appropriate.
 
-## Additional property
+## Additional Property
 Add a new "Phone" property that will store the phone number for the profile.
 
 1. Add an `h3` label and a `p` paragraph to the HTML file for the new property
@@ -12,7 +12,7 @@ Add a new "Phone" property that will store the phone number for the profile.
 1. In the JS file, update the initial `profileInfo` object definition so it has the new property with a value of  "KL5-3226"
 1. Update the `generateProfile` function so that it includes the new property
 
-## More object property updates
+## More Object Property Updates
 Add the ability for all object properties to update in the same way "Name" updates.
 
 1. In the JS file, define a new function

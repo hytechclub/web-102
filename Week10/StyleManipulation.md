@@ -6,7 +6,7 @@ We want to create a simple webpage that allows a user to enter a password. If th
 
 ## HTML
 ### Basic Setup
-Create a new HTML file, and add the basic tags (`html`, `body`, `head`, `style`). Additionally, add the header and a paragraph:
+Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), open the **index.html** file, and add the basic tags (`html`, `body`, `head`, `style`). Additionally, add the header and a paragraph:
 
 ```html
 <html>
@@ -80,7 +80,7 @@ Now, a user should be able to load up the page, click the button, and see a mess
 ## Checking the Password
 Our JavaScript function should check the value the user entered into the text input, and update the page accordingly.
 
-### Selecting HTML elements
+### Selecting HTML Elements
 The first thing we need to do is select the text input from the HTML, so that we can get its value. Use `document.querySelector`, along with the `id` of the input, to accomplish this. Remember, we also need to store this text input in a JavaScript variable. This line should replace the `alert` at the top of the `submitPassword` function body:
 
 ```js
@@ -131,7 +131,7 @@ Now, instead of displaying a message, the webpage should update with the message
 ## Updating Styles
 To update the styles of a selected HTML element in JavaScript, a developer can use `.style`. This will work for any variable holding an HTML element that has styles attached to it. This is similar to how we would use `.textContent` to update the text inside the element. After `.style`, you will have to specify which style to access.
 
-### Setting text color
+### Setting Text Color
 In addition to setting the `textContent` of the `passwordMessage` paragraph, we want to change its color to reflect the tone of the message. If the user enters the correct password, the color should be green. If they enter the wrong password, the color should be red. To set the text color of the element, use `.style.color`:
 
 ```js
@@ -146,7 +146,7 @@ if (passwordValue === "opensesame") {
 
 Test out your code again. It should work the same, except when you enter the correct password, the message should be green. When you enter the wrong password, the message should be red.
 
-### Showing the image
+### Showing the Image
 To start off, we have CSS on our image setting its `display` property to the value `none`. This will hide the image. To show it, we need to set its `display` property to `block`. We can do this in a very similar way to setting the text color; we will use `.style.display`. We already have the HTML element for the image stored in a variable (`hiddenImage`). We just need to set its CSS.
 
 ```js

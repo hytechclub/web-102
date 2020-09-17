@@ -1,10 +1,11 @@
 # Profile Builder: Follow-Along Activity
-Create a profile website with data pulled from a JavaScript object.
+Create a profile website with data pulled from a JavaScript object. Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), then follow the instructions below.
 
 ## HTML setup
 The webpage should have labels for the profile information going down the left side, and then the information should fill in when the user clicks the button.
 
-1. Create a new HTML and JS file, and add the basic tags (including the `script`)
+1. Create a new JS file named **ProfileBuilder.js**
+1. Add the basic elements to the **index.html** file (including the `script`)
 1. Within the `<body></body>` of the HTML file, create a new `p` element
 1. Within the `<p></p>` element, create a `button` element
     - It should say "Generate Profile"
@@ -33,8 +34,8 @@ The webpage should have labels for the profile information going down the left s
 </html>
 ```
 
-## JavaScript object definition
-Since all of this information is related, it would make sense to store it within one JavaScript **object**.
+## JavaScript Object Definition
+Since all of this information is related, it would make sense to store it within one JavaScript _object_.
 
 1. At the top of the "ProfileBuilder.js" file, define a new JavaScript object variable named `profileInfo`
     - `var `
@@ -61,7 +62,7 @@ var profileInfo = {
 }
 ```
 
-## Profile generation
+## Profile Generation
 The "Generate Profile" button should fill out the HTML with the information from the object when clicked.
 
 1. In the JS file, under the object definition, define a function named `generateProfile`
@@ -94,7 +95,7 @@ function generateProfile() {
 }
 ```
 
-## Object updates
+## Object Updates
 The user should be able to update the "Name" information in the JavaScript object.
 
 1. In the HTML file, add a `button` within the "Name" `h3` after the text
