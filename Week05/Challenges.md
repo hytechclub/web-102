@@ -27,7 +27,7 @@ The user should click a button to start the game. Then, the program should ask a
 - Instead of using `prompt` to ask the user the yes or no questions, display the question in an `alert` and then allow the user to click a "Yes" or "No" button on the HTML page to answer. Create a new HTML file for this challenge.
 
 ## Boolean Logical Operators
->Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+>Resource: https://javascript.info/logical-operators
 
 Simplify each of the following boolean values. The result should either be true, false, or a simplified expression including variables. If the variables get confusing, try using a truth table: https://en.wikipedia.org/wiki/Truth_table
 

@@ -37,7 +37,7 @@ Once the user has entered the two colors, it's time to calculate the mix of thos
 You should create a variable in your function to keep track of the mix of the two colors, and set it based on the values of the colors the user enters.
 
 #### `&&` Operator
-Read this article about _Logical Operators_ to familiarize yourself with the `&&` operator: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+Read this article about _Logical Operators_ to familiarize yourself with the `&&` operator: https://javascript.info/logical-operators#and
 
 For this activity, you can check the values of both colors in the same `if`! For example, to check if both colors entered are "Red", use the following:
 

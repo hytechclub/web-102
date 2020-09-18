@@ -1,4 +1,4 @@
-# Warm Up - Practice
+# Warm-Up: Quiz
 Answer each of the following questions in a new text file, or on paper. 
 
 1. For each of the expressions below, **True or False?**
