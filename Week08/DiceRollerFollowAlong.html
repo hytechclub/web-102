@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 8 - Function Parameters · GitBook</title>
+        <title>Dice Roller Follow-Along · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="WarmUp.html" />
+    <link rel="next" href="IndividualInstructions.html" />
     
     
-    <link rel="prev" href="../Week07/Challenges/TableDataChallenge.html" />
+    <link rel="prev" href="WarmUp.html" />
     
 
     </head>
@@ -538,7 +538,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.10" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.10" data-path="StudentDesc.html">
             
                 <a href="StudentDesc.html">
             
@@ -565,7 +565,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.2" data-path="DiceRollerFollowAlong.html">
+        <li class="chapter active" data-level="1.10.2" data-path="DiceRollerFollowAlong.html">
             
                 <a href="DiceRollerFollowAlong.html">
             
@@ -755,7 +755,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Week 8 - Function Parameters</a>
+        <a href=".." >Dice Roller Follow-Along</a>
     </h1>
 </div>
 
@@ -770,21 +770,133 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="function-parameters">Function Parameters</h1>
-<p>Learn how to use <em>parameters</em> to make JavaScript functions even more powerful!</p>
-<h2 id="warm-up-activity">Warm-Up Activity</h2>
+                                <h1 id="functions-follow-along-dice-roller">Functions Follow-Along: Dice Roller</h1>
+<p>We currently have <a href="https://repl.it/@JosephMaxwell/DiceRoller#index.html" target="_blank">a webpage</a> that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well.</p>
+<h2 id="background-information---random-number-generation">Background Information - Random Number Generation</h2>
+<p>Random numbers can be an extremely useful tool when creating games. Any time there is any sort of probability in a game, it&apos;s probably using random numbers!</p>
+<h3 id="mathrandom"><code>Math.random</code></h3>
+<p>In Javascript, you can use <code>Math.random()</code> to generate a random decimal number between 0 and 1.</p>
+<h3 id="expanding-the-range">Expanding the Range</h3>
+<p>To make the <code>Math.random()</code> number a little more usable, we first multiply it by however many options we&apos;d like. For example, <code>Math.random()*5</code> would give you a random decimal number between 0 and 5, <code>Math.random()*100</code> would give you a random decimal number between 0 and 100, and so on. A regular die has 6 sides, so we want to multiply the number by 6.</p>
+<h3 id="limiting-the-numbers-to-integers-with-mathfloor">Limiting the Numbers to Integers with <code>Math.floor</code></h3>
+<p>In our case, we want to generate integers. A die has a certain number of integer sides, so decimals do not really make sense. To round down a decimal number, we use <code>Math.floor()</code>, which will round any decimal number DOWN to the nearest whole number. For example, given <code>0.01</code>, it would return <code>0</code>. Given <code>11.9</code>, it would return <code>11</code>. Given <code>5.0</code>, it would return <code>5</code>, because 5 is already a whole number. After rounding down, it is necessary to add <code>1</code>.</p>
+<p>When applied to our randomly-generated number from a given range, we can get all the sides for a die! Now, let&apos;s make some updates to our code to make good use of these random numbers.</p>
+<h2 id="a-4-sided-die-roll">A 4-sided Die Roll</h2>
+<p>Start by creating another button, labeled &quot;D4&quot;, next to the &quot;D6&quot; button. As with any button that should execute JavaScript, we want to set its <code>onclick</code> attribute. We are also going to define a new function in the <strong>DiceRoller.js</strong> file. Use the <code>rollD6</code> function as a template, because the <code>rollD4</code> function will be very similar.</p>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD4();&quot;</span>&gt;</span>D4<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<h4 id="js">JS</h4>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD4</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
+    <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * <span class="hljs-number">4</span>;
+    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
+    alert(<span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>);
+}
+</code></pre>
+<h2 id="a-d8-roll">A D8 Roll</h2>
+<p>Let&apos;s add another button/function for an 8-sided die. This time, we can simply copy and paste the code for D4. We only have to change a few  things: the function name, the factor multiplied by <code>randomDecimal</code>, and of course, the button text.</p>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD8();&quot;</span>&gt;</span>D8<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<h4 id="js">JS</h4>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD8</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
+    <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * <span class="hljs-number">8</span>;
+    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
+    alert(<span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>);
+}
+</code></pre>
+<p>You may notice that this is becoming a little tedious. If we needed to do this for many other types of dice, our code would start to become pretty difficult to manage. Luckily, there is a better way: function parameters!</p>
+<h2 id="function-parameters">Function Parameters</h2>
+<p>Since there is only one small part of the functions that differ for different dice rolls, we can use a single function and a <em>parameter</em> instead! This allows us to cut down on repeated code, and makes it easier for us to change the mechanics for all dice rolls.</p>
+<h3 id="updating-the-function-definition">Updating the Function Definition</h3>
+<p>To add a parameter, we need to place a new variable name within the parenthesis of the function definition, like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD8</span>(<span class="hljs-params">sides</span>)
+</span></code></pre>
+<p>After that, we can use the <code>sides</code> variable inside of the body of our function. The value of the <code>sides</code> variable will be whatever is passed when the function is called. Replace the <code>8</code> in the function body with <code>sides</code>. We should also change the name of this function to reflect that it can handle any number of sides. Change it to simply <code>rollD</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD</span>(<span class="hljs-params">sides</span>) </span>{
+    <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
+    <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * sides;
+    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
+    alert(<span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>);
+}
+</code></pre>
+<h3 id="updating-the-function-call">Updating the Function Call</h3>
+<p>Now that we&apos;ve updated our function definition, we need to fix how it is called. In the HTML file, update the <code>onclick</code> attribute for the D8 button so that it calls the correct function, and passes in the correct parameter:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(8);&quot;</span>&gt;</span>D8<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<h3 id="updating-the-function-calls-for-the-other-dice">Updating the function calls for the other dice</h3>
+<p>The big benefit of these parameters is that we can update our other function calls too! Update the <code>onclick</code> for both the D6 and D4 buttons to call the new <code>rollD</code> function. After doing that, we can even remove the additional functions from our JavaScript file, so we only have <code>rollD</code>.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(6);&quot;</span>&gt;</span>D6<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(4);&quot;</span>&gt;</span>D4<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(8);&quot;</span>&gt;</span>D8<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<h3 id="adding-d20">Adding D20</h3>
+<p>It is now incredibly easy to add a new die. We can simply create a new button, and call the <code>rollD</code> function with the appropriate parameter. Add a D20 button to the page too:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(20);&quot;</span>&gt;</span>D20<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<p>Notice that we don&apos;t have to update anything in our JavaScript file; the parameter makes our code flexible enough to work with new values.</p>
+<h2 id="using-dom-manipulation-to-display-the-dice-roll">Using DOM Manipulation to Display the Dice Roll</h2>
+<p>We want to update our function so that instead of using <code>alert</code> to show the roll result to the user, it updates the text of a paragraph on the HTML page. If we had multiple functions for each die, we would have to update all of those functions individually. Lucky for us, we only need to update one function!</p>
+<p>Follow these steps to update the webpage:</p>
 <ul>
-<li><a href="WarmUp.html">Quiz</a></li>
+<li>In the HTML, create a new <code>p</code> element under the buttons<ul>
+<li>Give the <code>p</code> a unique <code>id</code> attribute</li>
 </ul>
-<h2 id="powerpoint-presentation">PowerPoint Presentation</h2>
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/Week08/FunctionParameters.pptx" width="100%" height="450px" frameborder="0"></iframe>
+</li>
+<li>In the JavaScript, remove the <code>alert</code> from the <code>rollD</code> function</li>
+<li>Use <code>document.querySelector</code> to store the <code>p</code> element in a JavaScript variable</li>
+<li>Set the text of the <code>p</code> element to the message using <code>.textContent</code></li>
+</ul>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myParagraph&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> paragraphElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myParagraph&quot;</span>);
+paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>;
+</code></pre>
+<p>Now, when the user clicks any of the dice roll buttons, the code should update the <code>p</code> text on the page!</p>
+<h3 id="adding-d120">Adding D120</h3>
+<p>Again, it is incredibly easy to add an additional button. All we have to do is add a new button in the HTML that calls the <code>rollD</code> function with <code>120</code> as the parameter value! You can do this with a die having any number of sides.</p>
+<h2 id="final-result">Final Result</h2>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+            <span class="hljs-selector-tag">body</span> {
+                <span class="hljs-attribute">background-color</span>: red;
+                <span class="hljs-attribute">text-align</span>: center;
+            }
 
-<h2 id="activities">Activities</h2>
-<ul>
-<li><a href="DiceRollerFollowAlong.html">Dice Roller Follow-Along</a></li>
-<li><a href="IndividualInstructions.html">Individual Instructions</a></li>
-<li><a href="Challenge.html">Challenge</a></li>
-</ul>
+            <span class="hljs-selector-tag">h1</span> {
+                <span class="hljs-attribute">color</span>: black;
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;DiceRoller.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.imgur.com/XvxwZTp.jpg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Dice<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(6);&quot;</span>&gt;</span>D6<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(4);&quot;</span>&gt;</span>D4<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(8);&quot;</span>&gt;</span>D8<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(20);&quot;</span>&gt;</span>D20<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(120);&quot;</span>&gt;</span>D120<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myParagraph&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD</span>(<span class="hljs-params">sides</span>) </span>{
+    <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
+    <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * sides;
+    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">var</span> paragraphElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myParagraph&quot;</span>);
+    paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>;
+}
+</code></pre>
 
                                 
                                 </section>
@@ -812,12 +924,12 @@
 
             
                 
-                <a href="../Week07/Challenges/TableDataChallenge.html" class="navigation navigation-prev " aria-label="Previous page: Table Data List Challenge">
+                <a href="WarmUp.html" class="navigation navigation-prev " aria-label="Previous page: Warm Up">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="WarmUp.html" class="navigation navigation-next " aria-label="Next page: Warm Up">
+                <a href="IndividualInstructions.html" class="navigation navigation-next " aria-label="Next page: Individual Instructions">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -828,7 +940,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 8 - Function Parameters","level":"1.10","depth":1,"next":{"title":"Warm Up","level":"1.10.1","depth":2,"path":"Week08/WarmUp.md","ref":"Week08/WarmUp.md","articles":[]},"previous":{"title":"Table Data List Challenge","level":"1.9.5","depth":2,"path":"Week07/Challenges/TableDataChallenge.md","ref":"Week07/Challenges/TableDataChallenge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/StudentDesc.md","mtime":"2020-09-18T14:56:13.681Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-18T14:56:59.665Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Dice Roller Follow-Along","level":"1.10.2","depth":2,"next":{"title":"Individual Instructions","level":"1.10.3","depth":2,"path":"Week08/IndividualInstructions.md","ref":"Week08/IndividualInstructions.md","articles":[]},"previous":{"title":"Warm Up","level":"1.10.1","depth":2,"path":"Week08/WarmUp.md","ref":"Week08/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/DiceRollerFollowAlong.md","mtime":"2020-09-18T14:56:13.677Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-18T14:56:59.665Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

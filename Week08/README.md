@@ -2,8 +2,8 @@
 Dive deeper into the concepts behind functions and practice using them. This lesson covers:
 - Function parameters
 
-## Warm Up
-The [warm up activity](WarmUp.md) is a little quiz with some review questions. Students should answer the questions in a new text file, or on paper. Give the students 5-10 minutes to complete the quiz, and then go over the answers briefly.
+## Warm-Up
+The [warm-up activity](WarmUp.md) is a little quiz with some review questions. Students should answer the questions in a new text file, or on paper. Give the students 5-10 minutes to complete the quiz, and then go over the answers briefly.
 
 ## Lecture
 The lecture formalizes functions a little more, and introduces parameters.
