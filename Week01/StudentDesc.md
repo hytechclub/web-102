@@ -1,10 +1,7 @@
 # HTML & CSS Review
-Review some foundational topics from HTML and CSS.
-
-## Reference
-- [Sketchpad](https://sketch.io/sketchpad/)
-- [Code-Along](HtmlCssReviewCodeAlong.md)
+Review some foundational topics from HTML and CSS. Complete the [Code-Along](HtmlCssReviewCodeAlong.md) activity, and then the [Introduce Yourself](IntroduceYourself.md) individual exercise. If desired, complete the [Challenge](Challenge.md) as well.
 
 ## Activities
+- [Code-Along](HtmlCssReviewCodeAlong.md)
 - [Introduce Yourself](IntroduceYourself.md)
 - [Challenge](Challenge.md)

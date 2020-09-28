@@ -1,13 +1,15 @@
 # DOM Manipulation (Update HTML)
-Learn how to update an HTML page using JavaScript.
+Learn how to update an HTML page using JavaScript. Review the PowerPoint presentation below, and check out the [guide](DomManipulationUpdateHTML.md) to review further if needed.
 
-## Resources
-- [DOM Manipulation - Update HTML](DomManipulationUpdateHTML.md)
+After that, complete the [Lyrics Builder Follow-Along](LyricsBuilderFollowAlongInstructions.md) activity, and work on the [Background Changer Individual Exercise](BackgroundChangerIndividualInstructions.md). Beyond that, there are some additional challenges as well.
 
 ## PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/Week07/DomManipulationContinued.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 <iframe width="100%" height="450px" src="https://www.youtube.com/embed/fIloVxs8cxQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Resources
+- [DOM Manipulation - Update HTML](DomManipulationUpdateHTML.md)
 
 ## Code-Along
 - [Lyrics Builder Follow-Along](LyricsBuilderFollowAlongInstructions.md)

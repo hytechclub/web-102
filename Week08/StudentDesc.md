@@ -1,5 +1,5 @@
 # Function Parameters
-Learn how to use _parameters_ to make JavaScript functions even more powerful!
+Learn how to use _parameters_ to make JavaScript functions even more powerful. Start by completing the [warm-up quiz](WarmUp.md). Then, review the PowerPoint presentation below, and complete the [Dice Roller Follow-Along](DiceRollerFollowAlong.md) activity. After that, work on the [Individual Exercise](IndividualInstructions.md). Beyond that, there is an additional challenge as well.
 
 ## Warm-Up Activity
 - [Quiz](WarmUp.md)

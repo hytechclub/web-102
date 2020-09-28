@@ -1,5 +1,5 @@
 # Web 102: Final Project
-Use the resources below to complete a final project!
+Complete a final project. Check out the [description](FinalProject.md) below to see the expectations. If needed, use the [cheat sheet](CheatSheet.md) to help with the project development. There are also a few examples of projects, all of which should be possible to build using the concepts covered in this course.
 
 ## Description
 - [Final Project](FinalProject.md)
