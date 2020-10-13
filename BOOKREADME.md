@@ -46,5 +46,7 @@ Points can be redeemed for a variety of rewards.
 | Points | Reward |
 | -- | -- |
 | 3 | Short online game with an instructor (e.g. [Connect 4](https://www.mathsisfun.com/games/connect4.html), [Soccer](https://www.agame.com/game/1-on-1-soccer-classic), [Chess](https://lichess.org/setup/friend)) |
+| 5 | Rock, Paper Scissors for more points |
 | 10 | Choose an appropriate (<5min) song to play in class |
 | 15 | Choose an appropriate (<5min) video to watch in class |
+| 25 | Humble Bundle Game |
