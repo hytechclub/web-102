@@ -3,6 +3,9 @@ Learn how to use JavaScript to capture input on a webpage. Start with the [CSS R
 
 After that, complete the [Mad Libs Follow-Along](MadLibsFollowAlong.md) activity, and then work on the [Mad Libs Individual Exercise](MadLibsIndividual.md). Beyond that, there are some additional challenges as well.
 
+## Session Recording
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/1myw5_L_l6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Warm-Up Activity
 - [CSS Refresher](WarmUp.md)
 
