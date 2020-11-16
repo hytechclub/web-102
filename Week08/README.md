@@ -9,7 +9,7 @@ The [warm-up activity](WarmUp.md) is a little quiz with some review questions. S
 The lecture formalizes functions a little more, and introduces parameters.
 
 ## Follow-Along: DiceRoller
-Follow the instructions in [DiceRollerFollowAlong](DiceRoller/DiceRollerFollowAlong.md) to build up a webpage capable of rolling different types of dice. Start from the [DiceRoller Repl](https://repl.it/@JosephMaxwell/DiceRoller#index.html). This walkthrough covers:
+Follow the instructions in [DiceRollerFollowAlong](DiceRollerFollowAlong.md) to build up a webpage capable of rolling different types of dice. Start from the [DiceRoller Repl](https://repl.it/@JosephMaxwell/DiceRoller#index.html). This walkthrough covers:
 
 - Defining multiple functions
 - Random number generation
