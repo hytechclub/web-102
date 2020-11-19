@@ -811,15 +811,15 @@
 <h3 id="updating-the-function-definition">Updating the Function Definition</h3>
 <ul>
 <li>In the <code>changeBackground</code> function, replace the actual URL in the string with a new variable named <code>backgroundUrl</code><ul>
-<li>To do this, you will have to add together three values</li>
+<li>To do this, you will have to add together three values: <code>&quot;url(&quot; + backgroundUrl + &quot;)&quot;</code></li>
 </ul>
 </li>
-<li>Instead of declaring <code>backgroundUrl</code> as a variable, make it a <strong>parameter</strong> by placing it within the parentheses of the function definiton</li>
+<li>Instead of declaring <code>backgroundUrl</code> as a variable, make it a <strong>parameter</strong> by placing it within the parentheses of the function definition</li>
 </ul>
 <h3 id="updating-the-function-calls">Updating the Function Calls</h3>
 <ul>
 <li>In the HTML file, update the call to <code>changeBackground</code> so that it passes in the original URL as the parameter<ul>
-<li>Because this call is within double quotes, surround the url with single quotes inside of the parentheses</li>
+<li>Because this call is within double quotes, surround the url with single quotes inside of the parentheses, ex: <code>onclick=&quot;changeBackground(&apos;https://i.imgur.com/MdvJ4C2.jpg&apos;)&quot;</code></li>
 </ul>
 </li>
 <li>Update the &quot;Image 2&quot; button to call the <code>changeBackground</code> function on click as well, passing in its own URL</li>
@@ -902,7 +902,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Individual Instructions","level":"1.10.3","depth":2,"next":{"title":"Challenge","level":"1.10.4","depth":2,"path":"Week08/Challenge.md","ref":"Week08/Challenge.md","articles":[]},"previous":{"title":"Dice Roller Follow-Along","level":"1.10.2","depth":2,"path":"Week08/DiceRollerFollowAlong.md","ref":"Week08/DiceRollerFollowAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/IndividualInstructions.md","mtime":"2020-11-18T16:38:50.112Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-18T16:39:29.519Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Individual Instructions","level":"1.10.3","depth":2,"next":{"title":"Challenge","level":"1.10.4","depth":2,"path":"Week08/Challenge.md","ref":"Week08/Challenge.md","articles":[]},"previous":{"title":"Dice Roller Follow-Along","level":"1.10.2","depth":2,"path":"Week08/DiceRollerFollowAlong.md","ref":"Week08/DiceRollerFollowAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/IndividualInstructions.md","mtime":"2020-11-19T14:05:11.693Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-19T14:05:50.214Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
