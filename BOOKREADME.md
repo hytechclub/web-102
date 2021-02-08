@@ -7,9 +7,9 @@ The Web 102 course will use [Repl](https://repl.it). Please complete the [Repl s
 ## Zoom Meetings
 The course will meet weekly on Wednesdays via **Zoom** from 4:00 p.m. to 6:00 p.m. ET.
 
-The meeting ID is **????????**, and the password is **????????**.
+The meeting ID is **931 0264 0307**, and the password is **388243**.
 
-- [Click Here to join from PC, Mac, Linux, iOS or Android](?????????????????????).
+- [Click Here to join from PC, Mac, Linux, iOS or Android](https://hyland.zoom.us/j/93102640307?pwd=czBySDBEOGZyS2V2TFc4R3dYN2Z6Zz09).
 - To join by phone: Dial [+1 312 626 6799](tel:+13126266799) and enter the meeting ID and password.
 
 ## Discord
