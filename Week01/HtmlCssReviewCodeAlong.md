@@ -1,6 +1,10 @@
 # HTML & CSS Review Code-Along
 Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb), then follow the instructions below to build a simple webpage!
 
+To fork the Repl, click the "Fork" button on the page:
+
+![](https://i.imgur.com/iTPah53.png)
+
 ## Add the Basic HTML Elements
 Add the foundational elements to the **index.html** file. Start with `<html></html>`, then add `<head></head>` and `<body></body>` between the HTML tags.
 

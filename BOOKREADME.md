@@ -47,6 +47,10 @@ Points can be redeemed for a variety of rewards.
 | -- | -- |
 | 3 | Short online game with an instructor (e.g. [Connect 4](https://connect-4.org/en), [Chess](https://lichess.org/setup/friend)) |
 | 5 | Rock, Paper Scissors to earn 2 extra points |
+| 5 | An instructor has to show you an old picture of themselves |
 | 7 | An instructor has to play [QWOP](http://www.foddy.net/Athletics.html) (point value depends on instructor) |
+| 10 | Play a short online game against another student |
 | 10 | Choose an appropriate (<5min) song to play in class |
 | 15 | Choose an appropriate (<5min) video to watch in class |
+| 20 | Run a student-made Kahoot quiz |
+| 50 | A pizza (only one per class is allowed) |
