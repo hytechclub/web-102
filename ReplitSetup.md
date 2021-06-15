@@ -25,6 +25,3 @@ Create a **Replit.com** account in order to save and share HTML/CSS/JS projects.
 - **Run Area** - This is where the developer sees the results of the code
 
 In the new Repl, click the "run" button to see the code execute. Note that nothing should happen at this point; the webpage is still empty.
-
-### TIP - Boiler-plate Code
-At the moment, there is a lot of "boiler-plate" code in the editor. Don't worry about that for now; you do not need to understand any of it yet!
