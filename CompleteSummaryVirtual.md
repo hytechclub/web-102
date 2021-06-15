@@ -1,4 +1,4 @@
-- [Repl Setup](ReplSetup.md)
+- [Replit Setup](ReplitSetup.md)
 - [Week 1 - HTML & CSS](Week01/StudentDesc.md)
     - [Code-Along](Week01/HtmlCssReviewCodeAlong.md)
     - [Introduce Yourself](Week01/IntroduceYourself.md)
