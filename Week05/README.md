@@ -11,14 +11,14 @@ This quiz covers the content leading up to this lesson.
 ## Instruction
 Introduce booleans and conditional statements. Explain that the computer understands these statements in the same way humans understand English (or any other language). There is [a PowerPoint](Conditionals.pptx) which includes a mini-quiz covering these topics.
 
-## Be the Computer
-For this activity, each student will pretend they are a computer reading instructions through code. They will have to act out the actions described in pseudo-JavaScript programs. It may be helpful to invite one student to demonstrate for the examples.
+## Debugging Activity
+Give students a chance to work on the [Conditional Debugging Activity](ConditionalDebugging.md) independently. After 5-10 minutes, go over the bug fixes as a group.
 
-### Virtual Activity
-For a virtual activity, it may be necessary to update the PowerPoint instructions.
+## Chatbot Code-Along Activity
+Follow [the instructions](ChatbotCodeAlong.md) to walk through the construction of a rudimentary chatbot that can respond to some messages.
 
-## Individual Activity
-The individual activity tasks the students with creating a color mixing function, and then changing the background to the mixed color. Students should follow [the instructions](IndividualInstructions.md).
+## Chatbot Individual Exercises
+Have students work on the [individual exercises](ChatbotIndividual.md) where they will add more to the chatbot.
 
 ## Challenges
 There are a variety of [challenges](Challenges.md) for the students to attempt.
@@ -28,6 +28,7 @@ There are a variety of [challenges](Challenges.md) for the students to attempt.
 |-|-|
 | Warm Up | 15m |
 | Lecture | 20m |
-| Be the Computer | 15m |
+| Debugging Activity | 15m |
 | Break | 10m |
-| Individual Exercise/Challenge | 45m |
+| Code-Along | 30m |
+| Individual Work/Challenges | 30m |

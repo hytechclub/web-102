@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Individual Instructions · GitBook</title>
+        <title>Chatbot Code-Along Activity · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Challenges.html" />
+    <link rel="next" href="ChatbotIndividual.html" />
     
     
-    <link rel="prev" href="StudentDesc.html" />
+    <link rel="prev" href="ConditionalDebugging.html" />
     
 
     </head>
@@ -339,12 +339,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.7.1" data-path="IndividualInstructions.html">
+        <li class="chapter " data-level="1.7.1" data-path="ConditionalDebugging.html">
             
-                <a href="IndividualInstructions.html">
+                <a href="ConditionalDebugging.html">
             
                     
-                    Individual Instructions
+                    Conditional Debugging Activity
             
                 </a>
             
@@ -352,7 +352,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="Challenges.html">
+        <li class="chapter active" data-level="1.7.2" data-path="ChatbotCodeAlong.html">
+            
+                <a href="ChatbotCodeAlong.html">
+            
+                    
+                    Chatbot Code-Along Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="ChatbotIndividual.html">
+            
+                <a href="ChatbotIndividual.html">
+            
+                    
+                    Chatbot Individual Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="Challenges.html">
             
                 <a href="Challenges.html">
             
@@ -755,7 +781,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Individual Instructions</a>
+        <a href=".." >Chatbot Code-Along Activity</a>
     </h1>
 </div>
 
@@ -770,92 +796,177 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="individual-activity---booleans-and-conditionals">Individual Activity - Booleans and Conditionals</h1>
-<p>For this activity, create an HTML page that can change its background color based on two input colors. The user should be able to click a button, enter two colors, and see the background change to the mix of those two colors.</p>
-<p>For more information about color mixing, check out this site: <a href="https://www.enchantedlearning.com/crafts/Colormixing.shtml" target="_blank">https://www.enchantedlearning.com/crafts/Colormixing.shtml</a></p>
-<h2 id="part-1---basic-setup">Part 1 - Basic Setup</h2>
-<p>Start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb#index.html" target="_blank">this empty Repl</a>, then follow the steps below.</p>
+                                <h1 id="chatbot-code-along">Chatbot Code-Along</h1>
+<p>In this activity, create a simple <a href="https://en.wikipedia.org/wiki/Chatbot" target="_blank">chatbot</a> that can respond to some basic messages.</p>
+<h2 id="eliza">ELIZA</h2>
+<p>Start by talking to <a href="http://psych.fullerton.edu/mbirnbaum/psych101/eliza.htm" target="_blank">ELIZA</a>, a &quot;Rogerian Therapist&quot; chatbot from the 1960s. This is a small example of what is possible with chatbots.</p>
+<h2 id="basic-setup">Basic Setup</h2>
+<p>To get started, fork <a href="https://replit.com/@HylandOutreach/Chatbot" target="_blank">this Repl project</a>. It contains some basic HTML and CSS, but no JavaScript yet!</p>
+<p>Add a new JavaScript file to the Repl project, and link it from the <strong>html</strong> file.</p>
 <ol>
-<li>Fill out the basic starting tags for the <strong>index.html</strong> file - <code>html</code>, <code>body</code>, <code>head</code></li>
-<li>Create a new JavaScript file<ul>
-<li>Be sure the save it with the <code>.js</code> file extension!</li>
+<li>In the <strong>Files</strong> area of the Repl, click the &quot;Add file&quot; button</li>
+<li>Name the new file <strong>script.js</strong></li>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>Between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code>, under the <code>&lt;link&gt;</code>, make a new line</li>
+<li>There, add a <code>&lt;script&gt;&lt;/script&gt;</code> element</li>
+<li>Set the <code>src</code> attribute of the <code>script</code> to <code>script.js</code></li>
+</ol>
+<p>The added HTML should look something like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;script.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h2 id="function--button">Function &amp; Button</h2>
+<p>Next, it&apos;s time to define a JavaScript function, and hook it up to a button in HTML.</p>
+<h3 id="defining-the-function">Defining the Function</h3>
+<p>Start by defining the function.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>Add code to define a function named <code>chat</code><ul>
+<li>Keyword: <code>function</code></li>
+<li>Function name: <code>chat</code></li>
+<li>Parentheses: <code>()</code></li>
+<li>Curly brackets: <code>{}</code></li>
 </ul>
 </li>
-<li>Link the JavaScript file using a <code>script</code> tag in the HTML file</li>
-<li>Add a header and a paragraph to your HTML page explaining its purpose</li>
+<li>In the <em>body</em> of the function (between <code>{</code> and <code>}</code>), make a new line</li>
+<li>Add an <code>alert</code> statement that says &quot;Welcome to the Friend Proxy Chatbot!&quot;</li>
 </ol>
-<h2 id="part-2---button-and-function">Part 2 - Button and Function</h2>
+<p>The code in the <strong>script.js</strong> file should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">chat</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&quot;Welcome to the Friend Proxy Chatbot!&quot;</span>);
+}
+</code></pre>
+<p>Now the function is defined, but there is no way to run it yet!</p>
+<h3 id="creating-the-button">Creating the Button</h3>
+<p>Create a button and hook it up to the function.</p>
 <ol>
-<li>Add a <code>button</code> to the HTML file. The text should read &quot;Change Background Color&quot;</li>
-<li>Define a <code>changeBackground</code> function in the JavaScript file<ul>
-<li>use the <code>function</code> keyword, function name, parentheses, and curly braces</li>
-<li>in the body of the function, show a message to the user saying &quot;Changing Background Color&quot;</li>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>Between the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>, under the <code>&lt;p&gt;&lt;/p&gt;</code>, make a new line</li>
+<li>There, add a <code>&lt;button&gt;&lt;/button&gt;</code> element</li>
+<li>Set the <code>onclick</code> attribute of the <code>button</code> to call the <code>chat</code> function<ul>
+<li><code>chat()</code></li>
 </ul>
 </li>
-<li>Set the <code>onclick</code> attribute of the button to call the <code>changeBackground</code> function</li>
+<li>Make the text of the button say &quot;Chat&quot;</li>
 </ol>
-<h2 id="part-3---asking-for-colors">Part 3 - Asking for Colors</h2>
+<p>The added HTML should look something like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;chat()&quot;</span>&gt;</span>Chat<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<p>Run the code. Click the &quot;Chat&quot; button on the page, and verify that a message appears!</p>
+<h2 id="prompt-for-message">Prompt for Message</h2>
+<p>Now, all new changes for the site will happen in the <strong>script.js</strong> file, within the <code>chat</code> function body. Start by prompting for the user to enter a message.</p>
 <ol>
-<li>Inside of the <code>changeBackground</code> function, use two <code>prompt</code>s to ask the user for two different colors</li>
-<li>Store the color strings in two variables</li>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>Make a new line between the <code>{</code> and <code>}</code>, under the <code>alert</code> statement</li>
+<li>Create a new variable named <code>message</code></li>
+<li>Set the <code>message</code> variable to a <code>prompt</code></li>
+<li>Make the text for the prompt say &quot;Please enter a message...&quot;</li>
 </ol>
-<h2 id="part-4---color-mixing">Part 4 - Color Mixing</h2>
-<blockquote>
-<p>NOTE: For this part, if the user enters any colors other than &quot;Red&quot;, &quot;Blue&quot;, or &quot;Yellow&quot;, there is no need to calculate a mix color.</p>
-</blockquote>
-<p>Once the user has entered the two colors, it&apos;s time to calculate the mix of those colors. There are 9 possible combinations of the three colors:</p>
+<p>The added JavaScript should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> message = prompt(<span class="hljs-string">&quot;Please enter a message...&quot;</span>);
+</code></pre>
+<p>Run the code. Click the button, and verify that a prompt appears asking for a message. Nothing will happen when entering a message yet though!</p>
+<h2 id="responding-to-the-message">Responding to the Message</h2>
+<p>Next, the chatbot should respond to certain messages the user enters. This is where <code>if</code> statements come in: the response should be different depending on the message.</p>
+<p>To start, have the chatbot respond to a message of &quot;Hello&quot; from the user.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>Make a new line between the <code>{</code> and <code>}</code>, under the <code>message</code> variable</li>
+<li>There, create an <code>if</code> statement<ul>
+<li>Keyword: <code>if</code></li>
+<li>Parentheses: <code>()</code></li>
+<li>Curly brackets: <code>{}</code></li>
+</ul>
+</li>
+<li>For the <code>if</code> condition, check if the user said &quot;Hello&quot;<ul>
+<li>Condition goes between the parentheses</li>
+<li>Use <code>message</code> variable, <code>===</code>, and <code>&quot;Hello&quot;</code> to compare</li>
+</ul>
+</li>
+<li>In the <em>body</em> of the <code>if</code>, display a message saying &quot;Well hi there!&quot;<ul>
+<li>Body is between the curly brackets</li>
+<li>Use <code>alert(&quot;Well hi there!&quot;);</code></li>
+</ul>
+</li>
+</ol>
+<p>The added JavaScript should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (message === <span class="hljs-string">&quot;Hello&quot;</span>) {
+    alert(<span class="hljs-string">&quot;Well hi there!&quot;</span>);
+}
+</code></pre>
+<p>Run the code. Click the button, enter &quot;Hello&quot; as the message, and verify that the proper response appears! If any other message is entered, no response should appear.</p>
+<h2 id="more-responses">More Responses</h2>
+<p>The chatbot is functional, but it is not very powerful yet. It needs to be able to respond to some more messages! Add a couple more responses using <code>if</code> statements.</p>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Red</th>
-<th>Blue</th>
-<th>Yellow</th>
+<th>Message</th>
+<th>Response</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Red</strong></td>
-<td>Red</td>
-<td>Purple</td>
-<td>Orange</td>
+<td>I love you</td>
+<td>That&apos;s nice</td>
 </tr>
 <tr>
-<td><strong>Blue</strong></td>
-<td>Purple</td>
-<td>Blue</td>
-<td>Green</td>
-</tr>
-<tr>
-<td><strong>Yellow</strong></td>
-<td>Orange</td>
-<td>Green</td>
-<td>Yellow</td>
+<td>Are you my friend?</td>
+<td>Yes, of course...</td>
 </tr>
 </tbody>
 </table>
-<p>You should create a variable in your function to keep track of the mix of the two colors, and set it based on the values of the colors the user enters.</p>
-<h4 id="operator"><code>&amp;&amp;</code> Operator</h4>
-<p>Read this article about <em>Logical Operators</em> to familiarize yourself with the <code>&amp;&amp;</code> operator: <a href="https://javascript.info/logical-operators#and" target="_blank">https://javascript.info/logical-operators#and</a></p>
-<p>For this activity, you can check the values of both colors in the same <code>if</code>! For example, to check if both colors entered are &quot;Red&quot;, use the following:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (color1 === <span class="hljs-string">&quot;Red&quot;</span> &amp;&amp; color2 === <span class="hljs-string">&quot;Red&quot;</span>) {
-    <span class="hljs-comment">// ... do something</span>
+<p>These <code>if</code> statements will look very similar to the previous <code>if</code> statement. For each of the responses, follow these steps:</p>
+<ol>
+<li>Have the <strong>script.js</strong> file open for editing</li>
+<li>Make a new line at the bottom of the <code>chat</code> body (above <code>}</code>)</li>
+<li>Add an <code>if</code> statement: <code>if () {}</code></li>
+<li>For the condition (between <code>(</code> and <code>)</code>), check if <code>message ===</code> the given message</li>
+<li>In the body (between <code>{</code> and <code>}</code>), <code>alert</code> with the response</li>
+</ol>
+<p>The added JavaScript should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (message === <span class="hljs-string">&quot;I love you&quot;</span>) {
+    alert(<span class="hljs-string">&quot;That&apos;s nice&quot;</span>);
+}
+
+<span class="hljs-keyword">if</span> (message === <span class="hljs-string">&quot;Are you my friend?&quot;</span>) {
+    alert(<span class="hljs-string">&quot;Yes, of course...&quot;</span>);
 }
 </code></pre>
-<p><em>(this example assumes the first color is stored in a variable named <code>color1</code>, and the second color is stored in a variable named <code>color2</code>)</em></p>
-<h2 id="part-5---change-the-background">Part 5 - Change the Background!</h2>
-<p>Once you have calculated the mix color, use the following code to change the background color:</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.body.style.background = mixColor;
+<p>Run the code. Click the button, and try out each of the messages. Make sure to enter them exactly right, with proper punctuation/capitalization/etc. Each message should produce the correct response!</p>
+<h2 id="final-code">Final Code</h2>
+<p>By the end of the activity, the code should look something like this:</p>
+<p><strong>index.html</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;script.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Friend Proxy Chatbot &#x1F5E3;&#xFE0F;&#x1F916;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Press the &quot;Chat&quot; button to talk to the friend proxy chatbot.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;chat()&quot;</span>&gt;</span>Chat<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<p><em>(this example assumes the mix color is stored in a variable named <code>mixColor</code>)</em></p>
-<h2 id="challenges">Challenges</h2>
-<p>Once you have finished the main activity, attempt the challenges below, <strong>OR</strong> attempt the other challenges in the <a href="Challenges.html">Challenges</a> file. Feel free to hop around from one challenge to another if you like.</p>
-<h3 id="case-insensitivity">Case Insensitivity</h3>
-<p>Allow the user to enter the colors using any case. For example, they should be able to enter either &quot;red&quot; or &quot;Red&quot;, and the program should deal with the color in the same way.</p>
-<h3 id="change-the-text-color">Change the Text Color</h3>
-<p>Add another button and function to change the text color on the page. It should work the same as the background color, taking in two colors and mixing them together.</p>
-<h4 id="reusing-functionality">Reusing Functionality</h4>
-<p>For an added challenge, reuse the code from the <code>changeBackground</code> function for changing the text color. Create a new function that simply calculates a mix color, and call that function for both the Background button and the Text Color button.</p>
+<p><strong>script.js</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">chat</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&quot;Welcome to the Friend Proxy Chatbot!&quot;</span>);
+
+    <span class="hljs-keyword">var</span> message = prompt(<span class="hljs-string">&quot;Please enter a message...&quot;</span>);
+
+    <span class="hljs-keyword">if</span> (message === <span class="hljs-string">&quot;Hello&quot;</span>) {
+        alert(<span class="hljs-string">&quot;Well hi there!&quot;</span>);
+    }
+
+    <span class="hljs-keyword">if</span> (message === <span class="hljs-string">&quot;I love you&quot;</span>) {
+        alert(<span class="hljs-string">&quot;That&apos;s nice&quot;</span>);
+    }
+
+    <span class="hljs-keyword">if</span> (message === <span class="hljs-string">&quot;Are you my friend?&quot;</span>) {
+        alert(<span class="hljs-string">&quot;Yes, of course...&quot;</span>);
+    }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -883,12 +994,12 @@
 
             
                 
-                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 5 - Conditionals">
+                <a href="ConditionalDebugging.html" class="navigation navigation-prev " aria-label="Previous page: Conditional Debugging Activity">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Challenges.html" class="navigation navigation-next " aria-label="Next page: Challenges">
+                <a href="ChatbotIndividual.html" class="navigation navigation-next " aria-label="Next page: Chatbot Individual Exercise">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -899,7 +1010,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Individual Instructions","level":"1.7.1","depth":2,"next":{"title":"Challenges","level":"1.7.2","depth":2,"path":"Week05/Challenges.md","ref":"Week05/Challenges.md","articles":[]},"previous":{"title":"Week 5 - Conditionals","level":"1.7","depth":1,"path":"Week05/StudentDesc.md","ref":"Week05/StudentDesc.md","articles":[{"title":"Individual Instructions","level":"1.7.1","depth":2,"path":"Week05/IndividualInstructions.md","ref":"Week05/IndividualInstructions.md","articles":[]},{"title":"Challenges","level":"1.7.2","depth":2,"path":"Week05/Challenges.md","ref":"Week05/Challenges.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week05/IndividualInstructions.md","mtime":"2021-06-18T18:31:53.062Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-18T18:32:43.752Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Chatbot Code-Along Activity","level":"1.7.2","depth":2,"next":{"title":"Chatbot Individual Exercise","level":"1.7.3","depth":2,"path":"Week05/ChatbotIndividual.md","ref":"Week05/ChatbotIndividual.md","articles":[]},"previous":{"title":"Conditional Debugging Activity","level":"1.7.1","depth":2,"path":"Week05/ConditionalDebugging.md","ref":"Week05/ConditionalDebugging.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week05/ChatbotCodeAlong.md","mtime":"2021-06-21T13:45:22.597Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-21T13:46:08.484Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

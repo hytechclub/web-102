@@ -1,15 +1,6 @@
 # Booleans and Conditionals Challenges
 First, create a new HTML file and a new JS file. The HTML file should link to the JS file. Then, complete the following challenges.
 
-## Simple Chat Bot
-Add a button to the HTML page. When clicked, ask the user to enter a message for the chat bot. Create at least 5 responses to five different messages. If the user enters a message the program does not recognize, it should display "I do not understand your message".
-
-### Examples
-If the user enters "Hello", the chatbot could respond with "Goodbye".
-If the user enters "How are you?" the chatbot could respond with "I am well, thank you".
-
-The specific messages/responses are up to you to decide!
-
 ## Quiz Me
 Add a button to the HTML page. When clicked, the program should ask the user at least 3 questions that have correct answers. If the user answers all of the questions correctly, the program should display a message saying they passed. If the user does NOT answer all questions correctly, the program should display a message saying they did NOT pass.
 
