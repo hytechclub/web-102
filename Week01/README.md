@@ -30,3 +30,14 @@ If the students complete the Individual activity with time to spare, they can at
 
 ## Review Kahoot
 End the session with a Kahoot to gauge what the students ultimately remember from HTML/CSS: https://play.kahoot.it/#/k/9da0c22b-48ae-479f-9c7f-c0bfd458a2b5
+
+## Agenda
+
+| Activity | Time |
+|-|-|
+| Student Introductions | 15m |
+| Icebreaker | 15m |
+| HTML & CSS Review Code-Along | 20m |
+| Break | 10m |
+| Individual Updates & Challenge | 45m |
+| Review Kahoot | 15m |
