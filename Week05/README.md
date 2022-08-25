@@ -6,7 +6,7 @@ Introduce program flow and the boolean data type. This lesson covers:
 ## Warm Up
 Review Quizizz: https://quizizz.com/admin/quiz/5bacd1a1abe7b5001921fb7d/javascript-basics-review
 
-This quiz covers the content leading up to this lesson.
+This quiz covers the content leading up to this lesson. A Quizizz account is required to present the quiz. If there are issues with Quizizz, there is also a [Blooket](https://dashboard.blooket.com/set/6307aea9c892499a2745fc1f) quiz with the same questions (a Blooket account is required).
 
 ## Instruction
 Introduce booleans and conditional statements. Explain that the computer understands these statements in the same way humans understand English (or any other language). There is [a PowerPoint](Conditionals.pptx) which includes a mini-quiz covering these topics.
