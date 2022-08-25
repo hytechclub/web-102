@@ -25,7 +25,7 @@ Follow the instructions in the [SpeedCalculatorInstructions.md](SpeedCalculatorI
 ## Review Activity
 After the Follow-Along activity, play a game to review some of the concepts covered up until this point.
 
-Have the students split into two teams. Each team will line up, and have one representative face off against a representative from the opposing team. Questions are in the Review.pptx slides. Whichever student answers first wins a point for their team. Keep track of the points on the whiteboard. The winning team receives candy.
+Have the students split into two teams. Each team will line up, and have one representative face off against a representative from the opposing team. Questions are in the [Review](Review.pptx) slides. Whichever student answers first wins a point for their team. Keep track of the points on the whiteboard. The winning team receives candy.
 
 ## Individual Activity
 The students should follow the instructions in the [GeometryCalculationsInstructions.md](GeometryCalculationsInstructions.md) file. The goal is to create a simple triangle area calculator.

@@ -34,6 +34,8 @@ Place a **scrap of paper** in a **cup** to represent _setting_ the value of a va
 
 Pull the **scrap of paper** out of a **cup** to represent _using_ a variable. After looking at the value, return the paper to the cup.
 
+>Note: This activity can be skipped in a hybrid or virtual setting.
+
 ## Review Kahoot
 A Kahoot that covers the concepts from the lecture: https://play.kahoot.it/#/k/4a6c1a18-b5cc-4a58-945f-4774fa9187e2
 
@@ -49,8 +51,8 @@ The challenge this week is included as part of the Individual activity (at the b
 ## Suggested Schedule
 | Activity | Time |
 |-|-|
-| Warm Up | 5:30-5:40 |
-| Lecture | 5:40-6:20 |
-| Kahoot | 6:20-6:35 |
-| Break | 6:35-6:40 |
-| Individual Exercise/Challenge | 6:40-7:30 |
+| Warm Up | 10m |
+| Lecture | 40m |
+| Kahoot | 15m |
+| Break | 5, |
+| Individual Exercise/Challenge | 50m |
