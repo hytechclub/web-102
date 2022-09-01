@@ -2,7 +2,7 @@
 Previously, we created a webpage that could change its background color on a button click. The page would ask for colors using `prompt`s, and then set the background color. Let's improve that webpage by using an HTML input instead of `prompt`s to get a color from the user!
 
 ## Setup - HTML
-Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), then follow the steps below.
+Start by forking [this empty Repl](https://replit/@HylandOutreach/EmptyWeb), then follow the steps below.
 
 1. Open the **index.html** file, and add the basic tags: `html`, `head`, `body`
 1. In the body, add an `h1` header saying "Background Changer"
@@ -17,7 +17,7 @@ Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html)
 
 At the end of this section, the page should look like this:
 
-![](https://i.imgur.com/NAWNnFU.png)
+![](Assets/BgChanger.png)
 
 ## Setup - JS
 1. Create a new JS file named **BackgroundChanger.js**

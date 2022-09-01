@@ -5,24 +5,10 @@ Manipulating the DOM is one of the best ways to create interactive web experienc
 We want to create a simple webpage that allows a user to enter a password. If they enter the correct password, the webpage should inform them that they entered the correct password with a nice green message, and display an image. If they enter an incorrect password, the webpage should inform them that they entered the wrong password with a red message, and hide the image.
 
 ## HTML
-### Basic Setup
-Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), open the **index.html** file, and add the basic tags (`html`, `body`, `head`, `style`). Additionally, add the header and a paragraph:
-
-```html
-<html>
-    <head>
-        <style>
-        </style>
-    </head>
-    <body>
-        <h1>Password Checker</h1>
-        <p>Please enter the correct password to see an image.</p>
-    </body>
-</html>
-```
+Start by forking [this starter Repl](https://replit.com/@HylandOutreach/StyleUpdates). It has some basic setup, but it does not do much yet.
 
 ### Text Input and Button
-Next, we need a text input and a button. We want them to appear together, on their own line. We can place them inside a `div` to achieve this structure (right under the paragraph). Note that the input also requires an `id` so that we can select it in the JavaScript.
+To make this work, we first need a text input and a button. We want them to appear together, on their own line. We can place them inside a `div` to achieve this structure (right under the paragraph). Note that the input also requires an `id` so that we can select it in the JavaScript.
 
 ```html
 <div>
@@ -41,10 +27,10 @@ Next, let's add a paragraph that will contain messages for the user. We need thi
 We also want to add an image underneath this paragraph. We need the image to have an `id` so that we can select it and update it in the JavaScript. We also need to set its source.
 
 ```html
-<img id="hiddenImage" src="https://i.imgur.com/5NGCWUo.jpg" />
+<img id="hiddenImage" src="Sunglasses.gif" />
 ```
 
-When a user first loads up the webpage, the image should actually be hidden. We can make this happen with CSS. We will select the image using its `id`, and then set its `display` property to `none`. The CSS should go in the `style` tag of the HTML page.
+When a user first loads up the webpage, the image should actually be hidden. We can make this happen with CSS. We will select the image using its `id`, and then set its `display` property to `none`. The CSS should go in the **style.css** file that is already linked to the HTML page.
 
 ```css
 #hiddenImage {
@@ -55,13 +41,7 @@ When a user first loads up the webpage, the image should actually be hidden. We 
 Now, if a user opens the webpage, the image should be invisible.
 
 ## JavaScript Setup
-Create a new JavaScript file, and link it in the HTML file:
-
-```html
-<script src="FollowAlong.js"></script>
-```
-
-Inside the JavaScript file, define a new function called `submitPassword`. For testing purposes, place an `alert` in the body of the function, saying that the function was called:
+Inside the **script.js** file, define a new function called `submitPassword`. For testing purposes, place an `alert` in the body of the function, saying that the function was called:
 
 ```js
 function submitPassword() {
@@ -163,17 +143,15 @@ if (passwordValue === "opensesame") {
 
 Test out your code again. Now, the image should show up when you enter the correct password, and hide otherwise!
 
-## Final Product
-#### HTML
+## Final Code
+When complete, the code should look something like this:
+
+**index.html**
 ```html
 <html>
     <head>
-        <script src="FollowAlong.js"></script>
-        <style>
-            #hiddenImage {
-                display: none;
-            }
-        </style>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
     </head>
     <body>
         <h1>Password Checker</h1>
@@ -183,12 +161,19 @@ Test out your code again. Now, the image should show up when you enter the corre
             <button onclick="submitPassword()">Submit</button>
         </div>
         <p id="passwordMessage"></p>
-        <img id="hiddenImage" src="https://i.imgur.com/5NGCWUo.jpg" />
+        <img id="hiddenImage" src="Sunglasses.gif" />
     </body>
 </html>
 ```
 
-#### JavaScript
+**style.css**
+```css
+#hiddenImage {
+    display: none;
+}
+```
+
+**script.js**
 ```js
 function submitPassword() {
     var passwordInput = document.querySelector("#passwordInput");

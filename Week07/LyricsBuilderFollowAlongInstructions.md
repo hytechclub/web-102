@@ -1,12 +1,12 @@
 # Lyrics Builder
 We want to create a webpage that will allow us to enter lyrics into a text box line-by-line, and then display them in a nice container. When we're done, it should look something like this:
 
-![lyrics builder](https://i.imgur.com/wOv6a01.png)
+![lyrics builder](Assets/LyricsBuilder.png)
 
 We'll start with the HTML, and then add some JavaScript to make the "Add" button create a new paragraph and add it to the container!
 
 ## Basic HTML
-Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), and add the basic tags to the **index.html** file:
+Start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), and add the basic tags to the **index.html** file:
 
 ```html
 <html>

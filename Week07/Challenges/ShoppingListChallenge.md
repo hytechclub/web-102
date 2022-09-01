@@ -6,12 +6,12 @@ For this challenge, we want to make a simple shopping list that allows you to dy
 - (BONUS) Each item should be given a button that can be pressed to delete that item off the list
 - The finished product should look like this:
 
-![oh my gosh](https://i.imgur.com/ZAUaYmc.jpg)
+![oh my gosh](../Assets/OhMyGosh.png)
 
 
 Not really. Actually, it should look something like this:
 
-![shopping list](https://i.imgur.com/I1MyJQc.png)
+![shopping list](../Assets/ShoppingList.png)
 
 To complete the exercise, follow the steps below, and make sure that the list behaves as described above.
 

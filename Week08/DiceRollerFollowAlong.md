@@ -1,5 +1,5 @@
 # Functions Follow-Along: Dice Roller
-We currently have [a webpage](https://repl.it/@JosephMaxwell/DiceRoller#index.html) that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well.
+We currently have [a webpage](https://replit.com/@HylandOutreach/DiceRollerStart) that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well.
 
 ## Background Information - Random Number Generation
 Random numbers can be an extremely useful tool when creating games. Any time there is any sort of probability in a game, it's probably using random numbers!
@@ -138,20 +138,11 @@ Again, it is incredibly easy to add an additional button. All we have to do is a
 ```html
 <html>
 	<head>
-		<style>
-			body {
-				background-color: red;
-				text-align: center;
-			}
-
-			h1 {
-				color: black;
-			}
-		</style>
+		<link href="style.css" rel="stylesheet" type="text/css" />
 		<script src="DiceRoller.js"></script>
 	</head>
 	<body>
-	<img src="https://i.imgur.com/XvxwZTp.jpg">
+	<img src="DungeonsAndDragons.jpg">
 	<h1>Dice</h1>
 		<button onclick="rollD(6);">D6</button>
 		<button onclick="rollD(4);">D4</button>
@@ -169,9 +160,9 @@ Again, it is incredibly easy to add an additional button. All we have to do is a
 function rollD(sides) {
 	var randomDecimal = Math.random();
 	var randomDecimalRange = randomDecimal * sides;
-    var randomDiceRoll = Math.floor(randomDecimalRange)+1;
-    
-    var paragraphElement = document.querySelector("#myParagraph");
-    paragraphElement.textContent = "You rolled a " + randomDiceRoll + "!";
+  var randomDiceRoll = Math.floor(randomDecimalRange)+1;
+
+  var paragraphElement = document.querySelector("#myParagraph");
+  paragraphElement.textContent = "You rolled a " + randomDiceRoll + "!";
 }
 ```

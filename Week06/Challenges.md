@@ -37,7 +37,7 @@ When the `=` button is pressed, the program should:
 ## March Madness
 Create an HTML page to represent a bracket (like March Madness). Start with a simplified Final Four bracket, with four inputs, each feeding into the tournament:
 
-![](https://i.imgur.com/95qwylq.png)
+![](Assets/FinalFour.png)
 
 The user should be able to enter four teams for each Final Four spot. There should be a button to simulate a bracket situation by randomizing the winners of each game. The page should fill in the remaining bracket inputs with the randomized results.
 
