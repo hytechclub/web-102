@@ -1,10 +1,10 @@
 # Mad Libs Follow-Along
 Create a webpage that will allow the user to enter some individual words and tell a silly story.
 
-![](https://i.imgur.com/L0Yd6g4.png)
+![](Assets/MadLibs.png)
 
 ## Basic Setup
-Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), then follow the steps below.
+Start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), then follow the steps below.
 
 1. Open the **index.html** file
 1. Add the basic tags: `html`, `head`, `body`

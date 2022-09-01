@@ -1,9 +1,9 @@
 # HTML & CSS Review Code-Along
-Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb), then follow the instructions below to build a simple webpage!
+Start from [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), then follow the instructions below to build a simple webpage!
 
-To fork the Repl, click the "Fork" button on the page:
+To fork the Repl, click the "Fork Repl" button on the page:
 
-![](https://i.imgur.com/iTPah53.png)
+![](../Assets/ForkRepl.png)
 
 ## Add the Basic HTML Elements
 Add the foundational elements to the **index.html** file. Start with `<html></html>`, then add `<head></head>` and `<body></body>` between the HTML tags.
@@ -27,12 +27,12 @@ Between the opening and closing `body` tags, add an `h3` element. Within the `h3
 ## Add an Image
 Add an image to the page.
 
-1. Go to [Google Images](https://images.google.com)
+1. Go to [Google Images](https://google.com/images/)
 1. Find an image, and copy the image address/URL/location
 1. Create an `img` tag, and set its `src` attribute to be the URL for the image
 
 ```html
-<img src="https://i.imgur.com/EQdshBM.jpg">
+<img src="https://styles.redditmedia.com/t5_jp9q6/styles/communityIcon_fxzkwfcw07f41.jpg">
 ```
 
 ## Add a Paragraph
@@ -116,7 +116,7 @@ That's it! The Despicable Me Fan Site looks pretty good.
 	</head>
 	<body>
 		<h3 id="main">Despicable Me Fan Site</h3>
-		<img src="https://i.imgur.com/EQdshBM.jpg">
+		<img src="https://styles.redditmedia.com/t5_jp9q6/styles/communityIcon_fxzkwfcw07f41.jpg">
 		<p>Despicable Me is a great film filled with several memorable characters and zany plot lines.</p>
 
 		<h3>Top Three Movies Of All Time</h3>

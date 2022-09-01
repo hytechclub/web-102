@@ -1,5 +1,5 @@
 # Mad Libs Individual Exercise
-![](https://i.imgur.com/L0Yd6g4.png)
+![](Assets/MadLibs.png)
 
 Continue creating the "Pizza" Mad Libs with the next sentence in the story: "To make a pizza, you need to take a lump of \_\_\__noun_\_\_\_ and make a thin, round \_\_\__adjective_\_\_\_ \_\_\__noun_\_\_\_."
 

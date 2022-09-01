@@ -11,21 +11,11 @@ document.body.style.background = "url(<your url here>)";
 Refer back to this code when you need it.
 
 ## Setup
-Start from [this empty Repl](https://repl.it/@JosephMaxwell/EmptyWeb#index.html), then follow the steps below.
-
-- Open the **index.html** file
-- In the **index.html** file, add the basic tags: `html`, `head`, `style`, `body`
-- Create a new JavaScript file
-- In the **index.html** file, use a `<script>` tag to link the JavaScript file
-
-Once you complete this setup, complete each of the exercises below in the HTML file and JavaScript file.
-
-## Background Image
-In the `style` tag, use the following CSS to give the page a background image:
+Start by forking [this starter Repl](https://replit.com/@HylandOutreach/BackgroundChangerStart), then follow the steps below to add an initial background image. In the `style` tag, use the following CSS:
 
 ```css
 body {
-    background: url(https://i.imgur.com/cOxUQHY.jpg);
+    background: url(Planet.jpg);
 }
 ```
 
@@ -34,12 +24,12 @@ This is the ruleset we will update with JavaScript when our buttons are clicked.
 ## One Button
 - In the JavaScript file, define a function named `changeBackground`
     - Remember, to define a function, you need: `function`, the name of the function, parentheses, and curly brackets
-- In the body of the `changeBackground` function (between `{` and `}`), insert the code to update the background image to this one: https://i.imgur.com/MdvJ4C2.jpg
+- In the body of the `changeBackground` function (between `{` and `}`), insert the code to update the background image to this one: **Pokemon.jpg**
 - In the HTML file, add a button to the `body` of the page with the text "Image 1"
 - Add in code so that when the "Image 1" button is clicked, the `changeBackground` function is called, and the background changes
 
 ## Two Buttons
-Repeat the steps above to create ANOTHER button AND function that will change the background to this image: https://i.imgur.com/yfQ8Uj4.jpg
+Repeat the steps above to create ANOTHER button AND function that will change the background to this image: **City.jpg**
 
 The function name and button text should be different. Name the function `changeBackground2` and give the button the text "Image 2".
 
@@ -53,13 +43,13 @@ Now, your JavaScript file should contain two very similar functions. The only di
 
 ### Updating the Function Calls
 - In the HTML file, update the call to `changeBackground` so that it passes in the original URL as the parameter
-    - Because this call is within double quotes, surround the url with single quotes inside of the parentheses, ex: `onclick="changeBackground('https://i.imgur.com/MdvJ4C2.jpg')"`
+    - Because this call is within double quotes, surround the url with single quotes inside of the parentheses, ex: `onclick="changeBackground('Pokemon.jpg')"`
 - Update the "Image 2" button to call the `changeBackground` function on click as well, passing in its own URL
 
 Now we can get rid of our `changeBackground2` function, and everything should still work!
 
 ## Three Buttons
-In the HTML, add a third button. This button should again call the `changeBackground` function, but it should pass in a new URL: https://i.imgur.com/r9ywXwx.jpg. The button text should be "Image 3". Notice that we can add this button without making any changes to the JavaScript!
+In the HTML, add a third button. This button should again call the `changeBackground` function, but it should pass in a new URL: **CalvinAndHobbes.jpg**. The button text should be "Image 3". Notice that we can add this button without making any changes to the JavaScript!
 
 ## (BONUS) Prompt for Image
 Add another button to the page that, when clicked, will ask the user for a URL, and set the background image to whatever they enter.

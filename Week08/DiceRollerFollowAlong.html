@@ -784,7 +784,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="functions-follow-along-dice-roller">Functions Follow-Along: Dice Roller</h1>
-<p>We currently have <a href="https://repl.it/@JosephMaxwell/DiceRoller#index.html" target="_blank">a webpage</a> that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well.</p>
+<p>We currently have <a href="https://replit.com/@HylandOutreach/DiceRollerStart" target="_blank">a webpage</a> that can simulate a 6-sided die roll on the click of a button. Our task is to add buttons so that we can roll other types of dice as well.</p>
 <h2 id="background-information---random-number-generation">Background Information - Random Number Generation</h2>
 <p>Random numbers can be an extremely useful tool when creating games. Any time there is any sort of probability in a game, it&apos;s probably using random numbers!</p>
 <h3 id="mathrandom"><code>Math.random</code></h3>
@@ -876,20 +876,11 @@ paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quo
 <h4 id="html">HTML</h4>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-            <span class="hljs-selector-tag">body</span> {
-                <span class="hljs-attribute">background-color</span>: red;
-                <span class="hljs-attribute">text-align</span>: center;
-            }
-
-            <span class="hljs-selector-tag">h1</span> {
-                <span class="hljs-attribute">color</span>: black;
-            }
-        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;DiceRoller.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.imgur.com/XvxwZTp.jpg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;DungeonsAndDragons.jpg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Dice<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(6);&quot;</span>&gt;</span>D6<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;rollD(4);&quot;</span>&gt;</span>D4<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -904,10 +895,10 @@ paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quo
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollD</span>(<span class="hljs-params">sides</span>) </span>{
     <span class="hljs-keyword">var</span> randomDecimal = <span class="hljs-built_in">Math</span>.random();
     <span class="hljs-keyword">var</span> randomDecimalRange = randomDecimal * sides;
-    <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
+  <span class="hljs-keyword">var</span> randomDiceRoll = <span class="hljs-built_in">Math</span>.floor(randomDecimalRange)+<span class="hljs-number">1</span>;
 
-    <span class="hljs-keyword">var</span> paragraphElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myParagraph&quot;</span>);
-    paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>;
+  <span class="hljs-keyword">var</span> paragraphElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myParagraph&quot;</span>);
+  paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quot;</span> + randomDiceRoll + <span class="hljs-string">&quot;!&quot;</span>;
 }
 </code></pre>
 
@@ -953,7 +944,7 @@ paragraphElement.textContent = <span class="hljs-string">&quot;You rolled a &quo
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Dice Roller Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Individual Instructions","level":"1.9.3","depth":2,"path":"Week08/IndividualInstructions.md","ref":"Week08/IndividualInstructions.md","articles":[]},"previous":{"title":"Warm Up","level":"1.9.1","depth":2,"path":"Week08/WarmUp.md","ref":"Week08/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/DiceRollerFollowAlong.md","mtime":"2022-08-25T18:15:11.092Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-25T18:15:54.630Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Dice Roller Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Individual Instructions","level":"1.9.3","depth":2,"path":"Week08/IndividualInstructions.md","ref":"Week08/IndividualInstructions.md","articles":[]},"previous":{"title":"Warm Up","level":"1.9.1","depth":2,"path":"Week08/WarmUp.md","ref":"Week08/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/DiceRollerFollowAlong.md","mtime":"2022-09-01T18:20:07.804Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-01T18:20:42.897Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
