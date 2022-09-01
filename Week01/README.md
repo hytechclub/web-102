@@ -11,10 +11,13 @@ Complete a virtual activity to allow the students to get to know each other, and
 The first session should begin with a quick icebreaker activity where the instructors and students can introduce themselves.
 
 ### HTML/CSS Review
-Create a new private room in [Drawasaurs](https://www.drawasaurus.org/) (online pictionary). Keep the round count and draw time to small numbers to limit the total amount of time for the activity. In the "Custom Words" text area, add some HTML- and CSS-related words that the students should recognize from Web 101. For example:
+Create a new private room in [Drawasaurus](https://www.drawasaurus.org/) (online pictionary). Keep the round count and draw time to small numbers to limit the total amount of time for the activity. In the "Custom Words" text area, add some HTML- and CSS-related words that the students should recognize from Web 101. For example:
 
 ```
-HTML, CSS, element, attribute, style, tag, h1, paragraph, img, link, list, ul, ol, list item, input, textarea, button, table, iframe, div, span, background, color, font-size, class, id, selector, text-align, height, width, font-family, responsive, bootstrap
+HTML, CSS, element, attribute, style, tag, h1, paragraph, img, link,
+list, ul, ol, list item, input, textarea, button, table, iframe, div,
+span, background, color, font-size, class, id, selector, text-align,
+height, width, font-family, responsive, bootstrap
 ```
 
 Play the game with the students!
@@ -29,7 +32,7 @@ The students should work on their "About Me" websites on their own, following [t
 If the students complete the Individual activity with time to spare, they can attempt the challenge.
 
 ## Review Kahoot
-End the session with a [Kahoot](https://play.kahoot.it/#/k/9da0c22b-48ae-479f-9c7f-c0bfd458a2b5) to gauge what the students ultimately remember from HTML/CSS.
+End the session with a [Kahoot](https://create.kahoot.it/share/9da0c22b-48ae-479f-9c7f-c0bfd458a2b5) to gauge what the students ultimately remember from HTML/CSS.
 
 ## Agenda
 
@@ -39,5 +42,6 @@ End the session with a [Kahoot](https://play.kahoot.it/#/k/9da0c22b-48ae-479f-9c
 | Icebreaker | 15m |
 | HTML & CSS Review Code-Along | 20m |
 | Break | 10m |
-| Individual Updates & Challenge | 45m |
+| Individual Updates & Challenge | 30m |
+| Website Sharing | 15m |
 | Review Kahoot | 15m |
