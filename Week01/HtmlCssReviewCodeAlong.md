@@ -1,5 +1,5 @@
 # HTML & CSS Review Code-Along
-Start from [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), then follow the instructions below to build a simple webpage!
+Start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), then follow the instructions below to build a simple webpage!
 
 To fork the Repl, click the "Fork Repl" button on the page:
 

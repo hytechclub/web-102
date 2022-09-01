@@ -1,5 +1,6 @@
 # Week 2: Introduction to JavaScript
 Introduce JavaScript at a basic level. This should be a fairly light introduction. This lesson covers:
+
 - `alert` function
 - variables
 - `prompt` function
@@ -11,16 +12,18 @@ Ask the students to answer the following questions:
 
 Discussion will take place during the lecture.
 
-## Lecture
-The first lecture defines JavaScript and explains how developers use JavaScript.
+## Lecture 1: Introduction to JavaScript
+The [first presentation](IntroductionToJavaScript.pptx) defines JavaScript and explains how developers use JavaScript.
 
-The second lecture dives in to the following concepts:
+## Lecture 2: JavaScript Variables
+The [second presentation](JavaScriptVariables.pptx) dives in to the following concepts:
+
 - Script tag
 - `alert`
 - Variables
 - `prompt`
 
-### Variables Activity - In-Person
+### OPTIONAL: Variables Activity
 During the second lecture, after introducing variables, instructors can use this tangible representation of variables to help explain them. Use cups, nametags, and scraps of paper to represent what's happening in the computer.
 
 - A **cup** represents a block of space in memory
@@ -36,23 +39,21 @@ Pull the **scrap of paper** out of a **cup** to represent _using_ a variable. Af
 
 >Note: This activity can be skipped in a hybrid or virtual setting.
 
-## Review Kahoot
-A Kahoot that covers the concepts from the lecture: https://play.kahoot.it/#/k/4a6c1a18-b5cc-4a58-945f-4774fa9187e2
+## Formative Assessment: Kahoot
+Facilitate the [Kahoot](https://create.kahoot.it/share/4a6c1a18-b5cc-4a58-945f-4774fa9187e2) that covers the content from the lectures.
 
-## Follow-Along Activity
-There is no Follow-Along activity for this lesson. The students should have an opportunity to type along with the instructor during the lecture.
+## Self-Paced Exercise: Questions
+The students can practice the concepts from the lesson by following the [Self-Paced Exercise](SelfPacedExercise.md) instructions; they will build a simple website that asks the user some questions, and then displays the answers.
 
-## Individual Activity
-The students can practice the concepts from the lesson by following the IndividualInstructions.md file.
+Some additional are also included within the instructions.
 
-## Challenge
-The challenge this week is included as part of the Individual activity (at the bottom).
+## Agenda
 
-## Suggested Schedule
 | Activity | Time |
 |-|-|
 | Warm Up | 10m |
-| Lecture | 40m |
-| Kahoot | 15m |
-| Break | 5, |
-| Individual Exercise/Challenge | 50m |
+| Lecture 1 | 15m |
+| Lecture 2 | 20m |
+| Break | 10m |
+| Formative Assessment | 15m |
+| Self-Paced Exercise | 50m |
