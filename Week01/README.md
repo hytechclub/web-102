@@ -1,16 +1,12 @@
 # Week 1: HTML & CSS Review
-Review content from HTML and CSS. Note, depending on how much the students remember, it may be worth spending more than one day on these concepts.
+Review content from HTML and CSS. Note, depending on how much the students remember, it may be worth spending more than one session on these concepts.
 
-## Live Student Introductions
+## Student Introductions
 Since this is the first week of the club, allow the students to introduce themselves. They can share their school and grade level, and something fun like their favorite movie or tv show or an interesting fact about themselves.
 
-## Virtual Student Introductions
-Complete a virtual activity to allow the students to get to know each other, and encourage them to share their screen/mic/video. One possibility is to have each student go to [Sketchpad](https://sketch.io/sketchpad/) and have them draw something. Then, go around the room and have each student introduce their drawing by sharing their screen.
-
-## Icebreaker
+## Icebreaker: Online Pictionary
 The first session should begin with a quick icebreaker activity where the instructors and students can introduce themselves.
 
-### HTML/CSS Review
 Create a new private room in [Drawasaurus](https://www.drawasaurus.org/) (online pictionary). Keep the round count and draw time to small numbers to limit the total amount of time for the activity. In the "Custom Words" text area, add some HTML- and CSS-related words that the students should recognize from Web 101. For example:
 
 ```
@@ -22,16 +18,16 @@ height, width, font-family, responsive, bootstrap
 
 Play the game with the students!
 
-## HTML & CSS Review Code-Along
+## Code-Along: HTML & CSS Review
 Walk through [the code-along instructions](HtmlCssReviewCodeAlong.md) with the students.
 
-## Individual "About Me" Websites
+## Self-Paced Work: "About Me" Websites
 The students should work on their "About Me" websites on their own, following [the instructions](IntroduceYourself.md). They will need to build out a basic HTML file from scratch, using the concepts reviewed in the Code-Along. The webpage will be them introducing themselves to the rest of the class, and each student can present what they come up with briefly.
 
-## Challenge
-If the students complete the Individual activity with time to spare, they can attempt the challenge.
+## Challenges
+If the students complete the Individual activity with time to spare, they can attempt the [challenges](Challenges.md).
 
-## Review Kahoot
+## Formative Assessment: Kahoot
 End the session with a [Kahoot](https://create.kahoot.it/share/9da0c22b-48ae-479f-9c7f-c0bfd458a2b5) to gauge what the students ultimately remember from HTML/CSS.
 
 ## Agenda
@@ -40,8 +36,8 @@ End the session with a [Kahoot](https://create.kahoot.it/share/9da0c22b-48ae-479
 |-|-|
 | Student Introductions | 15m |
 | Icebreaker | 15m |
-| HTML & CSS Review Code-Along | 20m |
+| Code-Along | 20m |
 | Break | 10m |
-| Individual Updates & Challenge | 30m |
+| Self-Paced Work | 30m |
 | Website Sharing | 15m |
-| Review Kahoot | 15m |
+| Formative Assessment | 15m |
