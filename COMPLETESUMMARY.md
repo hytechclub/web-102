@@ -1,7 +1,7 @@
 - [Week 1 - HTML & CSS](Week01/StudentDesc.md)
     - [Code-Along](Week01/HtmlCssReviewCodeAlong.md)
     - [Introduce Yourself](Week01/IntroduceYourself.md)
-    - [Challenge](Week01/Challenge.md)
+    - [Challenges](Week01/Challenges.md)
 - [Week 2 - Introduction to JavaScript](Week02/StudentDesc.md)
     - [Individual Instructions](Week02/IndividualInstructions.md)
 - [Week 3 - Comments, Data Types, and Math](Week03/StudentDesc.md)
