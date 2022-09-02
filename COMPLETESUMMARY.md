@@ -3,7 +3,7 @@
     - [Introduce Yourself](Week01/IntroduceYourself.md)
     - [Challenges](Week01/Challenges.md)
 - [Week 2 - Introduction to JavaScript](Week02/StudentDesc.md)
-    - [Individual Instructions](Week02/IndividualInstructions.md)
+    - [Questions Exercise](Week02/SelfPacedWork.md)
 - [Week 3 - Comments, Data Types, and Math](Week03/StudentDesc.md)
     - [Speed Calculator Code-Along](Week03/SpeedCalculatorInstructions.md)
     - [Geometry Calculations Individual Exercise](Week03/GeometryCalculationsInstructions.md)

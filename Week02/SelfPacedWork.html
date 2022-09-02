@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Geometry Calculations Individual Exercise · GitBook</title>
+        <title>Questions Exercise · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="AdditionalChallenges.html" />
+    <link rel="next" href="../Week03/StudentDesc.html" />
     
     
-    <link rel="prev" href="SpeedCalculatorInstructions.html" />
+    <link rel="prev" href="StudentDesc.html" />
     
 
     </head>
@@ -164,9 +164,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../Week02/StudentDesc.html">
+        <li class="chapter " data-level="1.3" data-path="StudentDesc.html">
             
-                <a href="../Week02/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 2 - Introduction to JavaScript
@@ -178,9 +178,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../Week02/SelfPacedWork.html">
+        <li class="chapter active" data-level="1.3.1" data-path="SelfPacedWork.html">
             
-                <a href="../Week02/SelfPacedWork.html">
+                <a href="SelfPacedWork.html">
             
                     
                     Questions Exercise
@@ -196,9 +196,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.4" data-path="../Week03/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../Week03/StudentDesc.html">
             
                     
                     Week 3 - Comments, Data Types, and Math
@@ -210,9 +210,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="SpeedCalculatorInstructions.html">
+        <li class="chapter " data-level="1.4.1" data-path="../Week03/SpeedCalculatorInstructions.html">
             
-                <a href="SpeedCalculatorInstructions.html">
+                <a href="../Week03/SpeedCalculatorInstructions.html">
             
                     
                     Speed Calculator Code-Along
@@ -223,9 +223,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="GeometryCalculationsInstructions.html">
+        <li class="chapter " data-level="1.4.2" data-path="../Week03/GeometryCalculationsInstructions.html">
             
-                <a href="GeometryCalculationsInstructions.html">
+                <a href="../Week03/GeometryCalculationsInstructions.html">
             
                     
                     Geometry Calculations Individual Exercise
@@ -236,9 +236,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="AdditionalChallenges.html">
+        <li class="chapter " data-level="1.4.3" data-path="../Week03/AdditionalChallenges.html">
             
-                <a href="AdditionalChallenges.html">
+                <a href="../Week03/AdditionalChallenges.html">
             
                     
                     Additional Challenges
@@ -768,7 +768,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Geometry Calculations Individual Exercise</a>
+        <a href=".." >Questions Exercise</a>
     </h1>
 </div>
 
@@ -783,53 +783,82 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="individual-exercise---geometry-calculations">Individual Exercise - Geometry Calculations</h1>
-<p>In this exercise, start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb#index.html" target="_blank">this empty Repl</a>. Then, follow the instructions below to complete the activity. You will be creating a basic Triangle area calculator.</p>
-<h2 id="background">Background</h2>
-<p>Read the following article to learn how to calculate the area of a triangle: <a href="http://www.softschools.com/math/geometry/topics/area_of_triangles_part_1/" target="_blank">http://www.softschools.com/math/geometry/topics/area_of_triangles_part_1/</a></p>
+                                <h1 id="self-paced-exercise-questions">Self-Paced Exercise: Questions</h1>
+<p>For this exercise, start by forking <a href="https://replit.com/@HylandOutreach/EmptyWeb" target="_blank">this empty Repl</a>. Then, follow the instructions below to build a little text-based JavaScript program. The program will ask the user a number of questions, and then display some information using the answers the user provides.</p>
 <h2 id="part-1---setup">Part 1 - Setup</h2>
+<p>Start by creating and hooking up a JavaScript file.</p>
 <ol>
-<li>Open the <strong>index.html</strong> file</li>
-<li>Add the basic elements to the HTML file - <code>html</code>, <code>head</code>, <code>script</code></li>
+<li>Create a new file named <strong>script.js</strong></li>
+<li>Within the <strong>script.js</strong> file, add a statement that will show a message to the user</li>
+<li>In the <strong>index.html</strong>, add a <code>&lt;head&gt;&lt;/head&gt;</code> element</li>
+<li>Within the <code>&lt;head&gt;&lt;/head&gt;</code> element, add a <code>&lt;script&gt;</code></li>
+<li>Add a <code>src</code> attribute to the <code>script</code> opening tag to point to the <strong>script.js</strong> file</li>
 </ol>
-<h2 id="part-2---prompting-for-numbers">Part 2 - Prompting for Numbers</h2>
-<ol>
-<li>Display a message to the user welcoming them to your calculator</li>
-<li>Ask the user for the length of the base of their triangle in inches<ul>
-<li>Be sure to store their answer in a variable!</li>
-</ul>
-</li>
-<li>Ask the user for the height of their triangle in inches<ul>
-<li>Be sure to store their answer in a variable!</li>
-</ul>
-</li>
-</ol>
-<h2 id="part-3---performing-the-calculation">Part 3 - Performing the Calculation</h2>
-<ol>
-<li>Currently, the base and height variables are <strong>strings</strong><ul>
-<li>Can we do numeric arithmetic with strings?</li>
-</ul>
-</li>
-<li>Convert the strings into numbers so we can use them in our equation</li>
-<li>Once we have the numbers for the base and height, we can find our answer!<ul>
-<li>HINT: Figure out how to calculate the area from the article in the Background section above</li>
-</ul>
-</li>
-<li>Display a message to the user showing them the answer</li>
-</ol>
-<h2 id="part-4---mini-challenge">Part 4 - Mini Challenge</h2>
-<p>Instead of showing the user the answer in inches, first convert it to centimeters, and then display it!</p>
-<h2 id="challenge">Challenge</h2>
-<p>Create more HTML pages and JavaScript files for additional math calculations. You can find a list of common formulas here: <a href="http://www.mdc.edu/main/images/common_math_formulas_tcm6-33520.pdf" target="_blank">http://www.mdc.edu/main/images/common_math_formulas_tcm6-33520.pdf</a>. Choose some cool ones, and create calculators for them. If you&apos;re feeling ambitious, you can make up some of your own formulas too! Create at least five formula calculators.</p>
-<p>Some good formulas to try:</p>
+<p>Run the webpage, and make sure the alert pop-up with the message appears!</p>
+<blockquote>
+<p><em>Note: a <code>&lt;body&gt;&lt;/body&gt;</code> is not required for this HTML page.</em></p>
+</blockquote>
+<h2 id="part-2---asking-questions">Part 2 - Asking Questions</h2>
+<p>For each of the questions below, show a text box to the user allowing them to answer. Store all of the user&apos;s answers in their own variables. Make sure to choose good variable names!</p>
 <ul>
-<li>Volume of a Sphere</li>
-<li>Volume of a Cone</li>
-<li>Distance between two points</li>
-<li>Quadratic formula</li>
+<li>What is your full name?</li>
+<li>What is your favorite color?</li>
+<li>What is your favorite movie?</li>
+<li>What is the date today?</li>
 </ul>
-<p>Each page should ask the user for input, perform a calculation, and show the answer. For some of the more involved formulas, you may need to use some of the JavaScript math utilities: <a href="https://www.w3schools.com/js/js_math.asp" target="_blank">https://www.w3schools.com/js/js_math.asp</a></p>
-<p>Finally, create one main HTML page that links to each of your calculators.</p>
+<h2 id="part-3---displaying-answers">Part 3 - Displaying Answers</h2>
+<p>For each of the answers retrieved in the previous part, show the user a formatted message like &quot;Name: Charlie Chaplin&quot;.</p>
+<h3 id="extra-challenge">Extra Challenge</h3>
+<p>For an added challenge, attempt to display all the information in only one message box.</p>
+<p>To add a new line into the long text value, use <code>\n</code>.<code>\n</code> is an escape sequence that allows a developer to add a <em>line break</em> to a message.</p>
+<p>Basically, if the message was:</p>
+<pre><code class="lang-js"><span class="hljs-string">&quot;Hello\nJim&quot;</span>
+</code></pre>
+<p>It would display as:</p>
+<pre><code>Hello
+Jim
+</code></pre><p>The <code>\n</code> is automatically taken out, and everything that comes after it is on its own line!</p>
+<h2 id="challenges">Challenges</h2>
+<p>For these challenges, do some research on your own and try to figure out how to solve them. Please feel free to hop around from one challenge to another, they are not listed in order of difficulty. You should also be able to complete all of these challenges without using <code>if</code> statements, <code>switch</code> statements, <code>for</code> loops, or <code>while</code> loops (which are more advanced topics).</p>
+<p>These may be helpful resources:</p>
+<ul>
+<li><a href="https://www.w3schools.com/js/js_string_methods.asp" target="_blank">String Methods</a></li>
+<li><a href="https://www.w3schools.com/js/js_date_methods.asp" target="_blank">Date Methods</a></li>
+<li><a href="https://www.w3schools.com/jsref/met_win_confirm.asp" target="_blank">Confirm Window</a></li>
+</ul>
+<h3 id="1-uppercase-movie">1. Uppercase Movie</h3>
+<p>No matter what the user enters, display their favorite movie in all in uppercase letters.</p>
+<h3 id="2-removing-whitespace-from-movie">2. Removing Whitespace from Movie</h3>
+<p>Remove all spaces from the beginning and end of the text the user enters for their favorite movie.</p>
+<h3 id="3-replacing-red">3. Replacing Red</h3>
+<p>If the user enters &quot;red&quot; as their favorite color, replace it with &quot;blue&quot; instead.</p>
+<h3 id="4-separate-first-and-last-name">4. Separate First and Last Name</h3>
+<p>Instead of displaying the user&apos;s full name in one line, display their first name and last name separately. For this challenge, assume the user will enter their first name, then a space, then their last name.</p>
+<p><strong>Example</strong></p>
+<p>Instead of displaying &quot;Name: Charlie Chaplin&quot;, display &quot;First Name: Charlie&quot; and &quot;Last Name: Chaplin&quot; on separate lines.</p>
+<h3 id="5-display-actual-date">5. Display Actual Date</h3>
+<p>Instead of displaying the date the user enters, display the actual date.</p>
+<h3 id="6-okcancel">6. OK/Cancel</h3>
+<p>After the last question, display a pop-up box that has both &quot;OK&quot; and &quot;Cancel&quot; options. The text in the box should say &quot;Continue?&quot;.</p>
+<ul>
+<li>If the user clicks OK, display a message saying &quot;You chose to continue: true&quot;</li>
+<li>If the user clicks Cancel, display a message saying &quot;You chose to continue: false&quot;</li>
+</ul>
+<p>Regardless of what the user chooses to do, continue on and display their information.</p>
+<h3 id="7-half-birthday">7. Half-birthday</h3>
+<p>Ask the user for their date of birth, then display their half birthday based on what they enter.</p>
+<ul>
+<li>Assume the user will enter their information in the form of &quot;MM/DD&quot;</li>
+<li>When displaying their half birthday, only show the month and day, in the form &quot;MM/DD&quot;</li>
+<li>Do not worry about leap years</li>
+</ul>
+<h3 id="8-days-until-the-new-year">8. Days Until the New Year</h3>
+<p>In addition to displaying today&apos;s date, display the number of days until the New Year. For example, if today were 12/31, it should display &quot;1&quot;. If today were 3/9, it should display &quot;298&quot;.</p>
+<h3 id="9-template-literals">9. Template Literals</h3>
+<blockquote>
+<p>Resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></p>
+</blockquote>
+<p>Figure out how to use template literals to display multi-line text and include variable values <em>without</em> using <code>+</code> or <code>\n</code>!</p>
 
                                 
                                 </section>
@@ -857,12 +886,12 @@
 
             
                 
-                <a href="SpeedCalculatorInstructions.html" class="navigation navigation-prev " aria-label="Previous page: Speed Calculator Code-Along">
+                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 2 - Introduction to JavaScript">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="AdditionalChallenges.html" class="navigation navigation-next " aria-label="Next page: Additional Challenges">
+                <a href="../Week03/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Week 3 - Comments, Data Types, and Math">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -873,7 +902,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Geometry Calculations Individual Exercise","level":"1.4.2","depth":2,"next":{"title":"Additional Challenges","level":"1.4.3","depth":2,"path":"Week03/AdditionalChallenges.md","ref":"Week03/AdditionalChallenges.md","articles":[]},"previous":{"title":"Speed Calculator Code-Along","level":"1.4.1","depth":2,"path":"Week03/SpeedCalculatorInstructions.md","ref":"Week03/SpeedCalculatorInstructions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week03/GeometryCalculationsInstructions.md","mtime":"2022-09-02T17:11:20.856Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-02T17:11:53.491Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Questions Exercise","level":"1.3.1","depth":2,"next":{"title":"Week 3 - Comments, Data Types, and Math","level":"1.4","depth":1,"path":"Week03/StudentDesc.md","ref":"Week03/StudentDesc.md","articles":[{"title":"Speed Calculator Code-Along","level":"1.4.1","depth":2,"path":"Week03/SpeedCalculatorInstructions.md","ref":"Week03/SpeedCalculatorInstructions.md","articles":[]},{"title":"Geometry Calculations Individual Exercise","level":"1.4.2","depth":2,"path":"Week03/GeometryCalculationsInstructions.md","ref":"Week03/GeometryCalculationsInstructions.md","articles":[]},{"title":"Additional Challenges","level":"1.4.3","depth":2,"path":"Week03/AdditionalChallenges.md","ref":"Week03/AdditionalChallenges.md","articles":[]}]},"previous":{"title":"Week 2 - Introduction to JavaScript","level":"1.3","depth":1,"path":"Week02/StudentDesc.md","ref":"Week02/StudentDesc.md","articles":[{"title":"Questions Exercise","level":"1.3.1","depth":2,"path":"Week02/SelfPacedWork.md","ref":"Week02/SelfPacedWork.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week02/SelfPacedWork.md","mtime":"2022-09-02T17:11:20.848Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-02T17:11:53.491Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

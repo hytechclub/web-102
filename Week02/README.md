@@ -5,6 +5,9 @@ Introduce JavaScript at a basic level. This should be a fairly light introductio
 - variables
 - `prompt` function
 
+### Note: `let` and `var`
+In modern JavaScript, the `let` keyword is preferred over the `var` keyword in most cases. For the purposes of this course, the two keywords are all but interchangeable; however, `let` should be the standard. There may be instances of `var` in some of this curriculum; those should all be replaced with `let`. [The differences between `let` and `var` are far beyond the scope (haha) of this course](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#description).
+
 ## Warm Up
 Ask the students to answer the following questions:
 - What are your favorite websites?
@@ -42,10 +45,10 @@ Pull the **scrap of paper** out of a **cup** to represent _using_ a variable. Af
 ## Formative Assessment: Kahoot
 Facilitate the [Kahoot](https://create.kahoot.it/share/4a6c1a18-b5cc-4a58-945f-4774fa9187e2) that covers the content from the lectures.
 
-## Self-Paced Exercise: Questions
-The students can practice the concepts from the lesson by following the [Self-Paced Exercise](SelfPacedExercise.md) instructions; they will build a simple website that asks the user some questions, and then displays the answers.
+## Self-Paced Work: Questions Exercise
+The students can practice the concepts from the lesson by following the [Self-Paced Work](SelfPacedWork.md) instructions; they will build a simple website that asks the user some questions, and then displays the answers. There is also a [solution for the basic self-paced work](SelfPacedWorkComplete.js).
 
-Some additional are also included within the instructions.
+Some additional challenges are also included within the instructions. There are also [solutions for the challenges](ChallengesComplete.js).
 
 ## Agenda
 
@@ -55,5 +58,6 @@ Some additional are also included within the instructions.
 | Lecture 1 | 15m |
 | Lecture 2 | 20m |
 | Break | 10m |
+| Variables Activity | 10m |
 | Formative Assessment | 15m |
-| Self-Paced Exercise | 50m |
+| Self-Paced Work | 40m |
