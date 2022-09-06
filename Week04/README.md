@@ -15,7 +15,7 @@ The [presentation](Buttons.pptx) covers functions and buttons.
 ## Code-Along: Darth Vader Soundboard
 Walk through the [code-along instructions](SoundboardCodeAlong.md) with the students to build a simple Darth Vader "sound"board (not using real sound).
 
-## Review Activity
+## Formative Assessment: Review Activity
 For this activity, the students will be split up into 3 teams. Each team will be given a whiteboard to fill out their answers. In a virtual setting, breakout rooms can be utilized. Teams should only be able to talk amongst themselves, and there can be one instructor per room checking answers.
 
 The instructors will pull up the [Review PowerPoint](Review.pptx) to display the review questions to the students (Note: the answers are displayed on the slides following the questions). The students will have time to fill out an answer. After a certain amount of time, the instructors will count down and ask each of the teams to hold up their answers. Each team will get a point for every answer they get correctly. If anyone is talking outside of the time they have to discuss an answer, that team will be deducted a point.
@@ -37,6 +37,6 @@ Students can work on the [additional challenges](Challenges.md) after completing
 | Warm Up | 5m |
 | Lecture | 25m |
 | Code-Along | 25m |
-| Review Activity | 20m |
+| Formative Assessment | 20m |
 | Break | 10m |
 | Self-Paced Work/Challenges | 40m |

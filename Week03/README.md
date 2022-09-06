@@ -22,7 +22,7 @@ The [presentation](DataTypes.pptx) introduces the following concepts:
 ## Code-Along: Speed Calculator
 Follow the instructions to complete the [Speed Calculator Code-Along](SpeedCalcCodeAlong.md).
 
-## Review Activity
+## Formative Assessment: Review Activity
 After the Follow-Along activity, play a game to review some of the concepts covered up until this point.
 
 Have the students split into two teams. Each team will line up, and have one representative face off against a representative from the opposing team. Questions are in the [Review](Review.pptx) slides, and the answers are in the slide notes. Whichever student answers first wins a point for their team. Keep track of the points on the whiteboard. The winning team receives candy.
@@ -39,7 +39,7 @@ Students can continue working on their mad libs if desired. There is also a sepa
 |-|-|
 | Warm Up | 15m |
 | Lecture | 30m |
-| Follow-Along | 20m |
+| Code-Along | 20m |
 | Break | 10m |
-| Review Activity | 15m |
+| Formative Assessment | 15m |
 | Self-Paced Work/Challenges | 30m |
