@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chatbot Code-Along Activity · GitBook</title>
+        <title>Code-Along · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,7 +61,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ChatbotIndividual.html" />
+    <link rel="next" href="ChatbotSelfPaced.html" />
     
     
     <link rel="prev" href="ConditionalDebugging.html" />
@@ -344,7 +344,7 @@
                 <a href="ChatbotCodeAlong.html">
             
                     
-                    Chatbot Code-Along Activity
+                    Code-Along
             
                 </a>
             
@@ -352,12 +352,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3" data-path="ChatbotIndividual.html">
+        <li class="chapter " data-level="1.6.3" data-path="ChatbotSelfPaced.html">
             
-                <a href="ChatbotIndividual.html">
+                <a href="ChatbotSelfPaced.html">
             
                     
-                    Chatbot Individual Exercise
+                    Self-Paced Work
             
                 </a>
             
@@ -768,7 +768,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Chatbot Code-Along Activity</a>
+        <a href=".." >Code-Along</a>
     </h1>
 </div>
 
@@ -783,13 +783,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chatbot-code-along">Chatbot Code-Along</h1>
+                                <h1 id="code-along-chatbot">Code-Along: Chatbot</h1>
 <p>In this activity, create a simple <a href="https://en.wikipedia.org/wiki/Chatbot" target="_blank">chatbot</a> that can respond to some basic messages.</p>
 <h2 id="eliza">ELIZA</h2>
 <p>Start by talking to <a href="http://psych.fullerton.edu/mbirnbaum/psych101/eliza.htm" target="_blank">ELIZA</a>, a &quot;Rogerian Therapist&quot; chatbot from the 1960s. This is a small example of what is possible with chatbots.</p>
 <h2 id="basic-setup">Basic Setup</h2>
-<p>To get started, fork <a href="https://replit.com/@HylandOutreach/Chatbot" target="_blank">this Repl project</a>. It contains some basic HTML and CSS, but no JavaScript yet!</p>
-<p>Add a new JavaScript file to the Repl project, and link it from the <strong>html</strong> file.</p>
+<p>To get started, fork <a href="https://replit.com/@HylandOutreach/Chatbot" target="_blank">this Repl project</a>. It contains some basic HTML and CSS, but no JavaScript yet! Manually adding some of the basic starter code will be helpful practice.</p>
+<p>Add a new JavaScript file to the Repl project, and link it from the <strong>index.html</strong> file.</p>
 <ol>
 <li>In the <strong>Files</strong> area of the Repl, click the &quot;Add file&quot; button</li>
 <li>Name the new file <strong>script.js</strong></li>
@@ -849,9 +849,9 @@
 <li>Make the text for the prompt say &quot;Please enter a message...&quot;</li>
 </ol>
 <p>The added JavaScript should look something like this:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> message = prompt(<span class="hljs-string">&quot;Please enter a message...&quot;</span>);
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> message = prompt(<span class="hljs-string">&quot;Please enter a message...&quot;</span>);
 </code></pre>
-<p>Run the code. Click the button, and verify that a prompt appears asking for a message. Nothing will happen when entering a message yet though!</p>
+<p>Run the code. Click the button, and verify that a prompt appears asking for a message. Nothing should happen when entering a message yet though!</p>
 <h2 id="responding-to-the-message">Responding to the Message</h2>
 <p>Next, the chatbot should respond to certain messages the user enters. This is where <code>if</code> statements come in: the response should be different depending on the message.</p>
 <p>To start, have the chatbot respond to a message of &quot;Hello&quot; from the user.</p>
@@ -939,7 +939,7 @@
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">chat</span>(<span class="hljs-params"></span>) </span>{
     alert(<span class="hljs-string">&quot;Welcome to the Friend Proxy Chatbot!&quot;</span>);
 
-    <span class="hljs-keyword">var</span> message = prompt(<span class="hljs-string">&quot;Please enter a message...&quot;</span>);
+    <span class="hljs-keyword">let</span> message = prompt(<span class="hljs-string">&quot;Please enter a message...&quot;</span>);
 
     <span class="hljs-keyword">if</span> (message === <span class="hljs-string">&quot;Hello&quot;</span>) {
         alert(<span class="hljs-string">&quot;Well hi there!&quot;</span>);
@@ -986,7 +986,7 @@
                 </a>
                 
                 
-                <a href="ChatbotIndividual.html" class="navigation navigation-next " aria-label="Next page: Chatbot Individual Exercise">
+                <a href="ChatbotSelfPaced.html" class="navigation navigation-next " aria-label="Next page: Self-Paced Work">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -997,7 +997,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chatbot Code-Along Activity","level":"1.6.2","depth":2,"next":{"title":"Chatbot Individual Exercise","level":"1.6.3","depth":2,"path":"Week05/ChatbotIndividual.md","ref":"Week05/ChatbotIndividual.md","articles":[]},"previous":{"title":"Conditional Debugging Activity","level":"1.6.1","depth":2,"path":"Week05/ConditionalDebugging.md","ref":"Week05/ConditionalDebugging.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week05/ChatbotCodeAlong.md","mtime":"2022-09-06T20:11:10.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-06T20:11:47.004Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.6.2","depth":2,"next":{"title":"Self-Paced Work","level":"1.6.3","depth":2,"path":"Week05/ChatbotSelfPaced.md","ref":"Week05/ChatbotSelfPaced.md","articles":[]},"previous":{"title":"Conditional Debugging Activity","level":"1.6.1","depth":2,"path":"Week05/ConditionalDebugging.md","ref":"Week05/ConditionalDebugging.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week05/ChatbotCodeAlong.md","mtime":"2022-09-06T20:44:59.966Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-06T20:45:30.282Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

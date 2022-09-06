@@ -1,4 +1,4 @@
-# Chatbot Individual Work
+# Self-Paced Work: Chatbot Updates
 Update the chatbot to make it more robust.
 
 ## More Responses
@@ -39,4 +39,4 @@ if (message === "Hello") {
 Update the existing `chat` function so that it can respond to other messages by saying "I do not understand your message."
 
 ## Challenges
-After completing the individual work, take a look at the [challenges](Challenges.md).
+After completing the self-paced work, take a look at the [challenges](Challenges.md).

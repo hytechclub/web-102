@@ -64,7 +64,7 @@
     <link rel="next" href="../Week06/StudentDesc.html" />
     
     
-    <link rel="prev" href="ChatbotIndividual.html" />
+    <link rel="prev" href="ChatbotSelfPaced.html" />
     
 
     </head>
@@ -344,7 +344,7 @@
                 <a href="ChatbotCodeAlong.html">
             
                     
-                    Chatbot Code-Along Activity
+                    Code-Along
             
                 </a>
             
@@ -352,12 +352,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3" data-path="ChatbotIndividual.html">
+        <li class="chapter " data-level="1.6.3" data-path="ChatbotSelfPaced.html">
             
-                <a href="ChatbotIndividual.html">
+                <a href="ChatbotSelfPaced.html">
             
                     
-                    Chatbot Individual Exercise
+                    Self-Paced Work
             
                 </a>
             
@@ -783,16 +783,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="booleans-and-conditionals-challenges">Booleans and Conditionals Challenges</h1>
-<p>First, create a new HTML file and a new JS file. The HTML file should link to the JS file. Then, complete the following challenges.</p>
+                                <h1 id="challenges">Challenges</h1>
+<p>First, create a new Repl project by <a href="https://replit.com/@HylandOutreach/JavaScriptStarter" target="_blank">forking this one</a>. Then, complete the following challenges.</p>
 <h2 id="quiz-me">Quiz Me</h2>
-<p>Add a button to the HTML page. When clicked, the program should ask the user at least 3 questions that have correct answers. If the user answers all of the questions correctly, the program should display a message saying they passed. If the user does NOT answer all questions correctly, the program should display a message saying they did NOT pass.</p>
+<p>Add a button to the <strong>index.html</strong> file. When clicked, the program should ask the user at least <em>three</em> questions that have correct answers. If the user answers all of the questions correctly, the program should display a message saying they passed. If the user does NOT answer all questions correctly, the program should display a message saying they did NOT pass.</p>
 <h3 id="additional-challenge">Additional Challenge</h3>
 <p>In addition to displaying whether the user passed or not, display their final score. For example, if they scored 2 out of 3, display &quot;You scored 2/3&quot;.</p>
 <h2 id="five-questions">Five Questions</h2>
-<p>Create a simplified Twenty Questions-style game where your program will attempt to guess what object the user has in mind. For reference, it should work something like this: <a href="http://www.20q.net/" target="_blank">http://www.20q.net/</a></p>
+<p>Create a simplified <a href="https://en.wikipedia.org/wiki/20Q" target="_blank">Twenty Questions</a>-style game where your program will attempt to guess what object the user has in mind.</p>
 <p>The user should click a button to start the game. Then, the program should ask at least 5 questions in attempt to determine the user&apos;s object. The user should be able to answer either &quot;Yes&quot; or &quot;No&quot;. When the user answers the questions, the program should narrow down the possible answers. After 5 (or more) questions, the program should display a guess.</p>
-<h3 id="additional-challenges">Additional challenges</h3>
+<h3 id="additional-challenges">Additional Challenges</h3>
 <ul>
 <li>Add more questions to the game, and more possible guesses</li>
 <li>Ask different questions based on the user&apos;s answers to the previous questions</li>
@@ -800,21 +800,23 @@
 </ul>
 <h2 id="boolean-logical-operators">Boolean Logical Operators</h2>
 <blockquote>
-<p>Resource: <a href="https://javascript.info/logical-operators" target="_blank">https://javascript.info/logical-operators</a></p>
+<p>Resource: <a href="https://javascript.info/logical-operators" target="_blank">JavaScript Logical Operators</a></p>
 </blockquote>
-<p>Simplify each of the following boolean values. The result should either be true, false, or a simplified expression including variables. If the variables get confusing, try using a truth table: <a href="https://en.wikipedia.org/wiki/Truth_table" target="_blank">https://en.wikipedia.org/wiki/Truth_table</a></p>
+<p>Simplify each of the following boolean expressions (under <strong>Expressions</strong>). The result should either be true, false, or a simplified expression including variables. If the variables get confusing, try using a <a href="https://en.wikipedia.org/wiki/Truth_table" target="_blank">truth table</a>.</p>
 <h3 id="examples">Examples</h3>
-<p>No variables</p>
+<p>Take a look at these examples to see what&apos;s expected.</p>
+<p><strong>Expressions with no variables</strong></p>
 <ul>
 <li>Expression: <code>(true || false) &amp;&amp; true</code></li>
 <li>Simplified: <code>true</code></li>
 </ul>
-<p>Variables</p>
+<p><strong>Expressions with variables</strong></p>
 <ul>
 <li>Expression: <code>(x || y) &amp;&amp; (y || x)</code></li>
 <li>Simplified: <code>x || y</code></li>
 </ul>
 <h3 id="expressions">Expressions</h3>
+<p>Here are some expressions to try and evaluate:</p>
 <ol>
 <li><code>(true &amp;&amp; !(true || false)) || false</code></li>
 <li><code>(true &amp;&amp; x) || (false &amp;&amp; x)</code></li>
@@ -825,10 +827,10 @@
 </ol>
 <h2 id="ternary-conditionals">Ternary Conditionals</h2>
 <blockquote>
-<p>Resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></p>
+<p>Resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank">JavaScript Conditional Operator</a></p>
 </blockquote>
-<p>Convert all of your conditionals into ternary statements. For example, if you had</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> message;
+<p>Convert all conditionals into ternary statements. For example, if the code looked like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> message;
 <span class="hljs-keyword">if</span> (x === <span class="hljs-number">5</span>) {
     message = <span class="hljs-string">&quot;x is 5&quot;</span>;
 } <span class="hljs-keyword">else</span> {
@@ -837,8 +839,8 @@
 
 alert(message);
 </code></pre>
-<p>you would convert it to</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> message = x === <span class="hljs-number">5</span> ? <span class="hljs-string">&quot;x is 5&quot;</span> : <span class="hljs-string">&quot;x is not 5&quot;</span>;
+<p>it could be converted to this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> message = x === <span class="hljs-number">5</span> ? <span class="hljs-string">&quot;x is 5&quot;</span> : <span class="hljs-string">&quot;x is not 5&quot;</span>;
 
 alert(message);
 </code></pre>
@@ -869,7 +871,7 @@ alert(message);
 
             
                 
-                <a href="ChatbotIndividual.html" class="navigation navigation-prev " aria-label="Previous page: Chatbot Individual Exercise">
+                <a href="ChatbotSelfPaced.html" class="navigation navigation-prev " aria-label="Previous page: Self-Paced Work">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -885,7 +887,7 @@ alert(message);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Challenges","level":"1.6.4","depth":2,"next":{"title":"Week 6 - DOM Manipulation (Read from Input)","level":"1.7","depth":1,"path":"Week06/StudentDesc.md","ref":"Week06/StudentDesc.md","articles":[{"title":"Warm Up","level":"1.7.1","depth":2,"path":"Week06/WarmUp.md","ref":"Week06/WarmUp.md","articles":[]},{"title":"DOM Manipulation - Read from Input","level":"1.7.2","depth":2,"path":"Week06/DomManipulationReadFromInput.md","ref":"Week06/DomManipulationReadFromInput.md","articles":[]},{"title":"Mad Libs Follow-Along","level":"1.7.3","depth":2,"path":"Week06/MadLibsFollowAlong.md","ref":"Week06/MadLibsFollowAlong.md","articles":[]},{"title":"Mad Libs Individual Exercise","level":"1.7.4","depth":2,"path":"Week06/MadLibsIndividual.md","ref":"Week06/MadLibsIndividual.md","articles":[]},{"title":"Challenges","level":"1.7.5","depth":2,"path":"Week06/Challenges.md","ref":"Week06/Challenges.md","articles":[]}]},"previous":{"title":"Chatbot Individual Exercise","level":"1.6.3","depth":2,"path":"Week05/ChatbotIndividual.md","ref":"Week05/ChatbotIndividual.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week05/Challenges.md","mtime":"2022-09-06T20:11:10.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-06T20:11:47.004Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Challenges","level":"1.6.4","depth":2,"next":{"title":"Week 6 - DOM Manipulation (Read from Input)","level":"1.7","depth":1,"path":"Week06/StudentDesc.md","ref":"Week06/StudentDesc.md","articles":[{"title":"Warm Up","level":"1.7.1","depth":2,"path":"Week06/WarmUp.md","ref":"Week06/WarmUp.md","articles":[]},{"title":"DOM Manipulation - Read from Input","level":"1.7.2","depth":2,"path":"Week06/DomManipulationReadFromInput.md","ref":"Week06/DomManipulationReadFromInput.md","articles":[]},{"title":"Mad Libs Follow-Along","level":"1.7.3","depth":2,"path":"Week06/MadLibsFollowAlong.md","ref":"Week06/MadLibsFollowAlong.md","articles":[]},{"title":"Mad Libs Individual Exercise","level":"1.7.4","depth":2,"path":"Week06/MadLibsIndividual.md","ref":"Week06/MadLibsIndividual.md","articles":[]},{"title":"Challenges","level":"1.7.5","depth":2,"path":"Week06/Challenges.md","ref":"Week06/Challenges.md","articles":[]}]},"previous":{"title":"Self-Paced Work","level":"1.6.3","depth":2,"path":"Week05/ChatbotSelfPaced.md","ref":"Week05/ChatbotSelfPaced.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week05/Challenges.md","mtime":"2022-09-06T20:44:59.966Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-06T20:45:30.282Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
