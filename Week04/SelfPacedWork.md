@@ -1,15 +1,20 @@
-# Darth Vader "Sound" board: Individual Exercises
+# Self-Paced Work: Darth Vader "Sound"board:
 Update the soundboard with some additional quotes and buttons!
 
-###### Resource: Making Buttons
+**Resource: Making Buttons**
+
 Remember, the steps to add a button for a quote are as follows:
-1. Create a new `button` element in the HTML file, and give it text to display
-1. _Define_ a new **function** in the JS file
-    - To _define_ a function, use the `function` keyword, a function name, and curly brackets
-1. Within the body of the **function**, use an `alert` to display the quote in a message
-1. Back in the HTML file, set the `onclick` attribute of the button so that it _calls_ the function
-    - To _call_ a function, use the function name and open/close parentheses
-1. Open your webpage in the browser to test the button!
+
+1. Create a new `<button>` element in the **index.html** file, and give it text to display between the _opening_ and _closing_ tags
+1. _Define a new function_ in the **script.js** file:
+    - Start with the `function` keyword
+    - Next, add a space and the function name
+    - After that, add left and right parentheses
+    - Finally, add left and right curly brackets
+1. Within the body of the **function** (between `{` and `}`), use an `alert` to display the quote in a message
+1. Back in the **index.html** file, set the `onclick` attribute of the button so that it _calls_ the function
+    - To _call_ a function, use the function name and left/right parentheses
+1. Open the webpage in the browser to test the button!
 
 ## More Quotes
 Add new buttons for each of the following quotes:
@@ -30,5 +35,27 @@ Update the "No, I am your father" function so that it asks the user for their na
 1. Update the `alert` so that instead of saying "No," it says the user's name
     - For example, if the user entered "Luke" as their name, it should say "Luke, I am your father."
 
-## New Character
-Instead of Darth Vader, update your "sound" board so that it features a different character! Change the image and the quotes.
+## Challenge: New Character
+Instead of Darth Vader, update your "sound"board so that it features a different character! Change the image and the quotes.
+
+## Challenge: Real Audio
+The biggest part of this challenge will be finding good, safe audio files to download and use.
+
+### Step 1: Getting the Audio File
+Follow these steps to get the audio file ready to go.
+
+1. Find an audio file somewhere (this is the difficult part)
+1. Download the audio file locally
+1. Drag the audio file into the Repl project
+
+After the audio file has been added to Replit, it should be possible to click on it and preview it!
+
+### Step 2: Playing the Audio File
+Once the file has been added to the Repl project, it only takes a couple of lines of code to play it. For example, for a file named **sound.mp3**, the code would look like this:
+
+```js
+let audio = new Audio('sound.mp3');
+audio.play();
+```
+
+It is simply a matter of placing that code into the body of a function - after that, the sound should play whenever the function is called!
