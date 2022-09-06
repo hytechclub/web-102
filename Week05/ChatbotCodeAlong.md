@@ -1,13 +1,13 @@
-# Chatbot Code-Along
+# Code-Along: Chatbot
 In this activity, create a simple [chatbot](https://en.wikipedia.org/wiki/Chatbot) that can respond to some basic messages.
 
 ## ELIZA
 Start by talking to [ELIZA](http://psych.fullerton.edu/mbirnbaum/psych101/eliza.htm), a "Rogerian Therapist" chatbot from the 1960s. This is a small example of what is possible with chatbots.
 
 ## Basic Setup
-To get started, fork [this Repl project](https://replit.com/@HylandOutreach/Chatbot). It contains some basic HTML and CSS, but no JavaScript yet!
+To get started, fork [this Repl project](https://replit.com/@HylandOutreach/Chatbot). It contains some basic HTML and CSS, but no JavaScript yet! Manually adding some of the basic starter code will be helpful practice.
 
-Add a new JavaScript file to the Repl project, and link it from the **html** file.
+Add a new JavaScript file to the Repl project, and link it from the **index.html** file.
 
 1. In the **Files** area of the Repl, click the "Add file" button
 1. Name the new file **script.js**
@@ -77,10 +77,10 @@ Now, all new changes for the site will happen in the **script.js** file, within 
 The added JavaScript should look something like this:
 
 ```js
-var message = prompt("Please enter a message...");
+let message = prompt("Please enter a message...");
 ```
 
-Run the code. Click the button, and verify that a prompt appears asking for a message. Nothing will happen when entering a message yet though!
+Run the code. Click the button, and verify that a prompt appears asking for a message. Nothing should happen when entering a message yet though!
 
 ## Responding to the Message
 Next, the chatbot should respond to certain messages the user enters. This is where `if` statements come in: the response should be different depending on the message.
@@ -164,7 +164,7 @@ By the end of the activity, the code should look something like this:
 function chat() {
     alert("Welcome to the Friend Proxy Chatbot!");
 
-    var message = prompt("Please enter a message...");
+    let message = prompt("Please enter a message...");
 
     if (message === "Hello") {
         alert("Well hi there!");
