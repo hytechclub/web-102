@@ -1,22 +1,19 @@
-# Week 4: Functions
-This lesson introduces ways to make JavaScript more usable. These concepts will be used throughout the remainder of the course. This lesson covers:
-- Separate JavaScript Files
-- Buttons
+# Week 4: Buttons & Functions
+This lesson introduces ways to make JavaScript more usable. These concepts will be used throughout the remainder of the course. This shows how to use JavaScript functions to create working buttons.
 
 ## Warm Up
 Prompt the students with the following, and allow them to ponder it briefly:
+
 - How many different buttons might you find on a website?
 - Based on how we currently make our webpages, do you foresee any problems as our websites become more complex?
 
-Discussion will take place during the lecture. The purpose of this will be to help the students understand _why_ it is important to split up code into multiple files.
+Discussion will take place during the lecture. The purpose of this will be to help the students understand _why_ it is important to use buttons instead of simply run all the code when the page loads.
 
-## Lecture
-The lecture introduces the following concepts:
-- External JS Files
-- Buttons
+## Lecture: Buttons
+The [presentation](Buttons.pptx) covers functions and buttons.
 
-## Follow-Along Activity
-Create a Darth Vader soundboard: [SoundboardFollowAlongInstructions.md](SoundboardFollowAlongInstructions.md)
+## Code-Along: Darth Vader Soundboard
+Walk through the [code-along instructions](SoundboardCodeAlong.md) with the students to build a simple Darth Vader "sound"board (not using real sound).
 
 ## Review Activity
 For this activity, the students will be split up into 3 teams. Each team will be given a whiteboard to fill out their answers. In a virtual setting, breakout rooms can be utilized. Teams should only be able to talk amongst themselves, and there can be one instructor per room checking answers.
@@ -27,18 +24,19 @@ If there is a tie at the end of the round, the tie-breaker question will be used
 
 The team with the highest amount of points wins.
 
-## Individual Activity
-The students will update the Darth Vader soundboard by following the instructions in [SoundboardIndividualInstructions.md](SoundboardIndividualInstructions.md).
+## Self-Paced Work: Soundboard Updates
+The students should update the Darth Vader soundboard by following the [instructions](SelfPacedWork.md). The completed self-paced work (HTML + JavaScript files) can be found [in this folder](SelfPacedWorkComplete/).
 
-## Challenge
-There are additional challenges contained in [Challenges.md](Challenges.md)
+## Challenges
+Students can work on the [additional challenges](Challenges.md) after completing the self-paced work. The completed challenges (HTML + JavaScript files) can be found [in this folder](ChallengesComplete/).
 
-## Suggested Schedule
+## Agenda
+
 | Activity | Time |
 |-|-|
 | Warm Up | 5m |
 | Lecture | 25m |
-| Follow-Along | 25m |
+| Code-Along | 25m |
 | Review Activity | 20m |
 | Break | 10m |
-| Individual Exercise/Challenge | 40m |
+| Self-Paced Work/Challenges | 40m |

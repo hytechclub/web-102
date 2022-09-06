@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Soundboard Individual Exercise · GitBook</title>
+        <title>Self-Paced Work · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -64,7 +64,7 @@
     <link rel="next" href="Challenges.html" />
     
     
-    <link rel="prev" href="SoundboardFollowAlongInstructions.html" />
+    <link rel="prev" href="SoundboardCodeAlong.html" />
     
 
     </head>
@@ -268,12 +268,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="SoundboardFollowAlongInstructions.html">
+        <li class="chapter " data-level="1.5.1" data-path="SoundboardCodeAlong.html">
             
-                <a href="SoundboardFollowAlongInstructions.html">
+                <a href="SoundboardCodeAlong.html">
             
                     
-                    Soundboard Follow-Along Instructions
+                    Code-Along
             
                 </a>
             
@@ -281,12 +281,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.2" data-path="SoundboardIndividualInstructions.html">
+        <li class="chapter active" data-level="1.5.2" data-path="SelfPacedWork.html">
             
-                <a href="SoundboardIndividualInstructions.html">
+                <a href="SelfPacedWork.html">
             
                     
-                    Soundboard Individual Exercise
+                    Self-Paced Work
             
                 </a>
             
@@ -768,7 +768,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Soundboard Individual Exercise</a>
+        <a href=".." >Self-Paced Work</a>
     </h1>
 </div>
 
@@ -783,22 +783,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="darth-vader-sound-board-individual-exercises">Darth Vader &quot;Sound&quot; board: Individual Exercises</h1>
+                                <h1 id="self-paced-work-darth-vader-soundboard">Self-Paced Work: Darth Vader &quot;Sound&quot;board:</h1>
 <p>Update the soundboard with some additional quotes and buttons!</p>
-<h6 id="resource-making-buttons">Resource: Making Buttons</h6>
+<p><strong>Resource: Making Buttons</strong></p>
 <p>Remember, the steps to add a button for a quote are as follows:</p>
 <ol>
-<li>Create a new <code>button</code> element in the HTML file, and give it text to display</li>
-<li><em>Define</em> a new <strong>function</strong> in the JS file<ul>
-<li>To <em>define</em> a function, use the <code>function</code> keyword, a function name, and curly brackets</li>
+<li>Create a new <code>&lt;button&gt;</code> element in the <strong>index.html</strong> file, and give it text to display between the <em>opening</em> and <em>closing</em> tags</li>
+<li><em>Define a new function</em> in the <strong>script.js</strong> file:<ul>
+<li>Start with the <code>function</code> keyword</li>
+<li>Next, add a space and the function name</li>
+<li>After that, add left and right parentheses</li>
+<li>Finally, add left and right curly brackets</li>
 </ul>
 </li>
-<li>Within the body of the <strong>function</strong>, use an <code>alert</code> to display the quote in a message</li>
-<li>Back in the HTML file, set the <code>onclick</code> attribute of the button so that it <em>calls</em> the function<ul>
-<li>To <em>call</em> a function, use the function name and open/close parentheses</li>
+<li>Within the body of the <strong>function</strong> (between <code>{</code> and <code>}</code>), use an <code>alert</code> to display the quote in a message</li>
+<li>Back in the <strong>index.html</strong> file, set the <code>onclick</code> attribute of the button so that it <em>calls</em> the function<ul>
+<li>To <em>call</em> a function, use the function name and left/right parentheses</li>
 </ul>
 </li>
-<li>Open your webpage in the browser to test the button!</li>
+<li>Open the webpage in the browser to test the button!</li>
 </ol>
 <h2 id="more-quotes">More Quotes</h2>
 <p>Add new buttons for each of the following quotes:</p>
@@ -824,8 +827,24 @@
 </ul>
 </li>
 </ol>
-<h2 id="new-character">New Character</h2>
-<p>Instead of Darth Vader, update your &quot;sound&quot; board so that it features a different character! Change the image and the quotes.</p>
+<h2 id="challenge-new-character">Challenge: New Character</h2>
+<p>Instead of Darth Vader, update your &quot;sound&quot;board so that it features a different character! Change the image and the quotes.</p>
+<h2 id="challenge-real-audio">Challenge: Real Audio</h2>
+<p>The biggest part of this challenge will be finding good, safe audio files to download and use.</p>
+<h3 id="step-1-getting-the-audio-file">Step 1: Getting the Audio File</h3>
+<p>Follow these steps to get the audio file ready to go.</p>
+<ol>
+<li>Find an audio file somewhere (this is the difficult part)</li>
+<li>Download the audio file locally</li>
+<li>Drag the audio file into the Repl project</li>
+</ol>
+<p>After the audio file has been added to Replit, it should be possible to click on it and preview it!</p>
+<h3 id="step-2-playing-the-audio-file">Step 2: Playing the Audio File</h3>
+<p>Once the file has been added to the Repl project, it only takes a couple of lines of code to play it. For example, for a file named <strong>sound.mp3</strong>, the code would look like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> audio = <span class="hljs-keyword">new</span> Audio(<span class="hljs-string">&apos;sound.mp3&apos;</span>);
+audio.play();
+</code></pre>
+<p>It is simply a matter of placing that code into the body of a function - after that, the sound should play whenever the function is called!</p>
 
                                 
                                 </section>
@@ -853,7 +872,7 @@
 
             
                 
-                <a href="SoundboardFollowAlongInstructions.html" class="navigation navigation-prev " aria-label="Previous page: Soundboard Follow-Along Instructions">
+                <a href="SoundboardCodeAlong.html" class="navigation navigation-prev " aria-label="Previous page: Code-Along">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -869,7 +888,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Soundboard Individual Exercise","level":"1.5.2","depth":2,"next":{"title":"Challenges","level":"1.5.3","depth":2,"path":"Week04/Challenges.md","ref":"Week04/Challenges.md","articles":[]},"previous":{"title":"Soundboard Follow-Along Instructions","level":"1.5.1","depth":2,"path":"Week04/SoundboardFollowAlongInstructions.md","ref":"Week04/SoundboardFollowAlongInstructions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week04/SoundboardIndividualInstructions.md","mtime":"2022-09-06T17:13:39.238Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-06T17:14:11.927Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.5.2","depth":2,"next":{"title":"Challenges","level":"1.5.3","depth":2,"path":"Week04/Challenges.md","ref":"Week04/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.5.1","depth":2,"path":"Week04/SoundboardCodeAlong.md","ref":"Week04/SoundboardCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week04/SelfPacedWork.md","mtime":"2022-09-06T19:59:52.838Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-06T20:00:24.680Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
