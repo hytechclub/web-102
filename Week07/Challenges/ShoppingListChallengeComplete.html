@@ -2,14 +2,14 @@
     <head>
         <script>
             function addItem() {
-                var list = document.querySelector("#list");
-                var input = document.querySelector("#item");
-                var myItem = input.value;
+                let list = document.querySelector("#list");
+                let input = document.querySelector("#item");
+                let myItem = input.value;
                 input.value = "";
         
-                var listItem = document.createElement("li");
-                var listText = document.createElement("span");
-                var listBtn = document.createElement("button");
+                let listItem = document.createElement("li");
+                let listText = document.createElement("span");
+                let listBtn = document.createElement("button");
         
                 listItem.appendChild(listText);
                 listText.textContent = myItem;
