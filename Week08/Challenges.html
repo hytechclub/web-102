@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Individual Instructions · GitBook</title>
+        <title>Challenges · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Challenge.html" />
+    <link rel="next" href="../Week09/StudentDesc.html" />
     
     
-    <link rel="prev" href="DiceRollerFollowAlong.html" />
+    <link rel="prev" href="SelfPacedWork.html" />
     
 
     </head>
@@ -578,12 +578,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="DiceRollerFollowAlong.html">
+        <li class="chapter " data-level="1.9.2" data-path="DiceRollerCodeAlong.html">
             
-                <a href="DiceRollerFollowAlong.html">
+                <a href="DiceRollerCodeAlong.html">
             
                     
-                    Dice Roller Follow-Along
+                    Code-Along
             
                 </a>
             
@@ -591,12 +591,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9.3" data-path="IndividualInstructions.html">
+        <li class="chapter " data-level="1.9.3" data-path="SelfPacedWork.html">
             
-                <a href="IndividualInstructions.html">
+                <a href="SelfPacedWork.html">
             
                     
-                    Individual Instructions
+                    Self-Paced Work
             
                 </a>
             
@@ -604,12 +604,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="Challenge.html">
+        <li class="chapter active" data-level="1.9.4" data-path="Challenges.html">
             
-                <a href="Challenge.html">
+                <a href="Challenges.html">
             
                     
-                    Challenge
+                    Challenges
             
                 </a>
             
@@ -768,7 +768,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Individual Instructions</a>
+        <a href=".." >Challenges</a>
     </h1>
 </div>
 
@@ -783,86 +783,87 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="individual-exercise---background-images">Individual Exercise - Background Images</h1>
-<p>Follow the instructions below to create a webpage that allows the user to change the background image dynamically. By the end, the user should be able to click buttons to change the background, and enter their own backgrounds image URLs too! Use previous HTML and JavaScript files as references.</p>
-<h4 id="javascript-code-to-update-the-background-image">JavaScript code to update the background image</h4>
-<p>Later on in this exercise, you will need to update the background image of the page using JavaScript. Here is how you can do that (Replace <code>&lt;your url here&gt;</code> with the URL of the image):</p>
-<pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.style.background = <span class="hljs-string">&quot;url(&lt;your url here&gt;)&quot;</span>;
-</code></pre>
-<p>Refer back to this code when you need it.</p>
+                                <h1 id="challenge---various-functions">Challenge - Various Functions</h1>
+<p>Create a webpage where users can perform various functions on two inputs.</p>
 <h2 id="setup">Setup</h2>
-<p>Start by forking <a href="https://replit.com/@HylandOutreach/BackgroundChangerStart" target="_blank">this starter Repl</a>, then follow the steps below to add an initial background image. In the <code>style</code> tag, use the following CSS:</p>
-<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(Planet.jpg);
-}
+<p>Start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb#index.html" target="_blank">this empty Repl</a>, then follow the steps below.</p>
+<h3 id="basics">Basics</h3>
+<ul>
+<li>Create a new JS file</li>
+<li>Update the <strong>index.html</strong> file with all the basic boiler-plate</li>
+<li>Also in the <strong>index.html</strong> file:<ul>
+<li>Create two text inputs, each with an id</li>
+<li>Create a paragraph with an id</li>
+<li>Create a button with the text &quot;Add&quot;</li>
+</ul>
+</li>
+</ul>
+<h3 id="first-button">First Button</h3>
+<ul>
+<li>In the JavaScript file, define a function named <code>addNumbers</code></li>
+<li>The <code>addNumbers</code> function should:<ul>
+<li>Retrieve the text values from the two text inputs in the HTML</li>
+<li>Convert the text values into numbers</li>
+<li>Add the two numbers together</li>
+<li>Retrieve the paragraph from the HTML</li>
+<li>Set the paragraph&apos;s text to be the result of the calculation</li>
+<li>Clear the text input values</li>
+</ul>
+</li>
+<li>In the HTML file, set the <code>onclick</code> attribute of the button to call the <code>addNumbers</code> function</li>
+</ul>
+<h3 id="second-button">Second Button</h3>
+<p>Repeat the steps above for a new function: <code>multiplyNumbers</code>. Add a new button to the HTML, and test out both of your buttons.</p>
+<h2 id="abstracting-the-functionality">Abstracting the Functionality</h2>
+<p>So far, we are able to execute two functions on the two input values. We want to expand this to make it easier to add more functions, without repeating a lot of code.</p>
+<h3 id="simplifying-functions">Simplifying Functions</h3>
+<p>Our <code>addNumbers</code> and <code>multiplyNumbers</code> functions are doing too much right now. In general, functions should do as little as possible, so we don&apos;t have to repeat code.</p>
+<p>Simplify the <code>addNumbers</code> and <code>multiplyNumbers</code> functions. They should:</p>
+<ul>
+<li>Take in the text values as <em>parameters</em></li>
+<li>Convert the values to numbers</li>
+<li>Perform the calculation</li>
+<li>Return the result of the calculation (see below)</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">// assuming the result of the calculation is stored in calcResult</span>
+<span class="hljs-keyword">return</span> calcResult;
 </code></pre>
-<p>This is the ruleset we will update with JavaScript when our buttons are clicked.</p>
-<h2 id="one-button">One Button</h2>
+<h3 id="runner-function">Runner Function</h3>
+<p>The next step is to create a runner function that will call all other functions as needed. Each button should be identifiable by a number. The runner function will call the corresponding function.</p>
 <ul>
-<li>In the JavaScript file, define a function named <code>changeBackground</code><ul>
-<li>Remember, to define a function, you need: <code>function</code>, the name of the function, parentheses, and curly brackets</li>
+<li>In the JavaScript file, define a function named <code>runButton</code></li>
+<li>The <code>runButton</code> function should:<ul>
+<li>Take in a numeric parameter representing which function to call</li>
+<li>Retrieve the text values from the two text inputs in the HTML</li>
+<li>Call the appropriate function, passing the text values as parameters<ul>
+<li>E.g., if the numeric parameter is <code>1</code>, add. If the numeric parameter is <code>2</code>, multiply.</li>
 </ul>
 </li>
-<li>In the body of the <code>changeBackground</code> function (between <code>{</code> and <code>}</code>), insert the code to update the background image to this one: <strong>Pokemon.jpg</strong></li>
-<li>In the HTML file, add a button to the <code>body</code> of the page with the text &quot;Image 1&quot;</li>
-<li>Add in code so that when the &quot;Image 1&quot; button is clicked, the <code>changeBackground</code> function is called, and the background changes</li>
+<li>Set the paragraph&apos;s text to the result of the function call</li>
+<li>Clear the text input values</li>
 </ul>
-<h2 id="two-buttons">Two Buttons</h2>
-<p>Repeat the steps above to create ANOTHER button AND function that will change the background to this image: <strong>City.jpg</strong></p>
-<p>The function name and button text should be different. Name the function <code>changeBackground2</code> and give the button the text &quot;Image 2&quot;.</p>
-<h2 id="parameter-time">Parameter Time</h2>
-<p>Now, your JavaScript file should contain two very similar functions. The only differences are the names of the functions, and the actual URLs for the images. Looks like a parameter could help us simplify our code!</p>
-<h3 id="updating-the-function-definition">Updating the Function Definition</h3>
+</li>
+</ul>
+<p>For example, let&apos;s say the &quot;Add&quot; button is <code>1</code>, and the &quot;Multiply&quot; button is <code>2</code>. Calling <code>runButton(1)</code> should perform the <code>addNumbers</code> action, and calling <code>runButton(2)</code> should perform the <code>multiplyNumbers</code>. Note that these identifiers are completely arbitrary. You could use any sort of parameter, as long as the <code>runButton</code> calls the right function!</p>
+<h3 id="updating-function-calls">Updating Function Calls</h3>
+<p>Now, our <code>runButton</code> function should be able to handle any of our buttons! Update the <code>onclick</code> attribute for each button so that it calls <code>runButton</code> with the appropriate numeric identifier.</p>
+<h2 id="adding-new-buttons">Adding New Buttons</h2>
+<p>Now, to add a new button and function, take these steps:</p>
 <ul>
-<li>In the <code>changeBackground</code> function, replace the actual URL in the string with a new variable named <code>backgroundUrl</code><ul>
-<li>To do this, you will have to add together three values: <code>&quot;url(&quot; + backgroundUrl + &quot;)&quot;</code></li>
+<li>In the JavaScript, define a new function that will take in two values, and return the result</li>
+<li>Call this function within the <code>runButton</code> function based on its numeric identifier (e.g., 3)</li>
+<li>In the HTML, create a new button that will call <code>runButton</code> with the numeric identifier as the parameter (e.g., 3)</li>
 </ul>
-</li>
-<li>Instead of declaring <code>backgroundUrl</code> as a variable, make it a <strong>parameter</strong> by placing it within the parentheses of the function definition</li>
-</ul>
-<h3 id="updating-the-function-calls">Updating the Function Calls</h3>
-<ul>
-<li>In the HTML file, update the call to <code>changeBackground</code> so that it passes in the original URL as the parameter<ul>
-<li>Because this call is within double quotes, surround the url with single quotes inside of the parentheses, ex: <code>onclick=&quot;changeBackground(&apos;Pokemon.jpg&apos;)&quot;</code></li>
-</ul>
-</li>
-<li>Update the &quot;Image 2&quot; button to call the <code>changeBackground</code> function on click as well, passing in its own URL</li>
-</ul>
-<p>Now we can get rid of our <code>changeBackground2</code> function, and everything should still work!</p>
-<h2 id="three-buttons">Three Buttons</h2>
-<p>In the HTML, add a third button. This button should again call the <code>changeBackground</code> function, but it should pass in a new URL: <strong>CalvinAndHobbes.jpg</strong>. The button text should be &quot;Image 3&quot;. Notice that we can add this button without making any changes to the JavaScript!</p>
-<h2 id="bonus-prompt-for-image">(BONUS) Prompt for Image</h2>
-<p>Add another button to the page that, when clicked, will ask the user for a URL, and set the background image to whatever they enter.</p>
-<ul>
-<li>In the JavaScript file, define a new function called <code>promptForBg</code></li>
-<li>In the body of the <code>promptForBg</code> function, use a prompt to ask the user what they want the background to be<ul>
-<li>Make sure to store their response in a variable</li>
-</ul>
-</li>
-<li>Under that prompt, call the <code>changeBackground</code> function and pass in the value the user entered</li>
-<li>In the HTML file, create a new button with the text &quot;Prompt for Bg&quot; that should call the <code>promptForBg</code> function when clicked<ul>
-<li>Note that we do not have to pass in a URL to the <code>promptForBg</code> function - the function will get the URL from the user</li>
-</ul>
-</li>
-</ul>
-<p>This is a good example of reusing code to implement new features. By calling the <code>changeBackground</code> function, we were able to avoid unnecessary code duplication!</p>
-<h2 id="bonus-input-for-image">(BONUS) Input for Image</h2>
-<p>Finally, we want to create an HTML input and a button that will set the background image to whatever URL the user has entered in the input when clicked.</p>
-<ul>
-<li>In the HTML file, create a new <code>div</code> element</li>
-<li>Inside the new <code>div</code> element, create a new text input and a new button<ul>
-<li>The input should have an id of &quot;bgInput&quot;</li>
-<li>The button should say &quot;Input for Bg&quot;</li>
-</ul>
-</li>
-<li>In the JavaScript file, define a new function called <code>inputForBg</code></li>
-<li>In the body of the <code>inputForBg</code> function, <strong>select</strong> the input element from the HTML, and store it in a variable named <code>bgInputElement</code></li>
-<li>Declare another variable named <code>bgInputValue</code>, and set its value to the <code>value</code> of the <code>bgInputElement</code></li>
-<li>Call the <code>changeBackground</code> function and pass in the <code>bgInputValue</code> variable</li>
-<li>Set the <code>value</code> of the <code>bgInputElement</code> to be empty</li>
-<li>In the HTML file, make &quot;Input for Bg&quot; button call the <code>inputForBg</code> function when clicked</li>
-</ul>
-<p>That&apos;s it! Now you should be able to easily set the background of your webpage to any image you like.</p>
+<p>That&apos;s all! Next, add buttons that will perform the following actions:</p>
+<ol>
+<li>Divide the two inputs</li>
+<li>Say whether or not the two inputs are equal (return a string)</li>
+<li>Return the larger input</li>
+<li>Return the average of the two inputs</li>
+<li>Return the larger input minus the smaller input</li>
+</ol>
+<h2 id="more-functions---single-input">More Functions - Single Input</h2>
+<p>Try to think of possible calculations to perform on a single input. Try playing this game for inspiration: <a href="http://www.functiongame.com/" target="_blank">http://www.functiongame.com/</a></p>
 
                                 
                                 </section>
@@ -890,12 +891,12 @@
 
             
                 
-                <a href="DiceRollerFollowAlong.html" class="navigation navigation-prev " aria-label="Previous page: Dice Roller Follow-Along">
+                <a href="SelfPacedWork.html" class="navigation navigation-prev " aria-label="Previous page: Self-Paced Work">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Challenge.html" class="navigation navigation-next " aria-label="Next page: Challenge">
+                <a href="../Week09/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Week 9 - JavaScript Objects">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -906,7 +907,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Individual Instructions","level":"1.9.3","depth":2,"next":{"title":"Challenge","level":"1.9.4","depth":2,"path":"Week08/Challenge.md","ref":"Week08/Challenge.md","articles":[]},"previous":{"title":"Dice Roller Follow-Along","level":"1.9.2","depth":2,"path":"Week08/DiceRollerFollowAlong.md","ref":"Week08/DiceRollerFollowAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/IndividualInstructions.md","mtime":"2022-09-07T17:35:42.600Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T17:36:13.208Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Challenges","level":"1.9.4","depth":2,"next":{"title":"Week 9 - JavaScript Objects","level":"1.10","depth":1,"path":"Week09/StudentDesc.md","ref":"Week09/StudentDesc.md","articles":[{"title":"Profile Builder Follow-Along","level":"1.10.1","depth":2,"path":"Week09/ProfileBuilderFollowAlong.md","ref":"Week09/ProfileBuilderFollowAlong.md","articles":[]},{"title":"Profile Builder Individual","level":"1.10.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},{"title":"Objects Challenges","level":"1.10.3","depth":2,"path":"Week09/Challenges.md","ref":"Week09/Challenges.md","articles":[]}]},"previous":{"title":"Self-Paced Work","level":"1.9.3","depth":2,"path":"Week08/SelfPacedWork.md","ref":"Week08/SelfPacedWork.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/Challenges.md","mtime":"2022-09-07T17:44:35.367Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T17:45:11.330Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
