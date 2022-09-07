@@ -1,122 +1,158 @@
-# Mad Libs Follow-Along
+# Code-Along: Mad Libs Redux
 Create a webpage that will allow the user to enter some individual words and tell a silly story.
 
 ![](Assets/MadLibs.png)
 
-## Basic Setup
+For this activity, start with the first sentence of the text:
+
+>Pizza was invented by a \_\_\__adjective_\_\_\_ \_\_\__nationality_\_\_\_ chef named \_\_\__person_\_\_\_.
+
+## Part 1 - Basic Setup
 Start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), then follow the steps below.
 
-1. Open the **index.html** file
-1. Add the basic tags: `html`, `head`, `body`
-1. Create a new JavaScript file called `MadLibs.js`
-1. Link the JavaScript file in the HTML file using a `script` tag
+1. Open the **index.html** file for editing
+1. Add the basic elements: `<html>`, `<head>`, `<body>`
+1. Create a new JavaScript file named **script.js**
+1. Link the JavaScript file in the HTML file using a `<script>` element
 
-## Creating the Inputs in HTML
-1. In the HTML file, create an appropriate header for the webpage saying "Pizza Pizza"
-1. Create a `p` paragraph element containing a text label and a textbox input for "Adjective"
-    - Ensure that the `input` element has an `id` attribute
-1. Create additional `p` elements containing labels and inputs for "Nationality" and "Person"
+## Part 2 - Creating the Inputs in HTML
+The next step is to create some text boxes in the HTML that will appear on the webpage.
 
-##### index.html
+1. In the **index.html** file, create a header for the webpage that says "Pizza Pizza"
+1. Under that, create a `<p>` element containing a text label that says "Adjective"
+1. Within that `<p></p>` element, after the text, create an `<input />` element
+    - Ensure that the `<input />` has an `id` attribute
+1. Create additional `<p>` elements containing labels and inputs for "Nationality" and "Person"
+
+At this point, the code in the **index.html** file should look something like this:
+
 ```html
 <html>
     <head>
-        <script src="MadLibs.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <h1>Pizza Pizza</h1>
-        <p>Adjective: <input id="adj1"></p>
-        <p>Nationality: <input id="nationality"></p>
-        <p>Person: <input id="person"></p>
+        <p>Adjective: <input id="adjective1" /></p>
+        <p>Nationality: <input id="nationality1" /></p>
+        <p>Person: <input id="person1" /></p>
     </body>
 </html>
 ```
 
-## Defining the Function in JavaScript
-In the JavaScript file, define a new function named `madLibs`:
-- `function` keyword
-- function name (`madLibs`)
-- parentheses (`()`)
-- curly brackets (`{}`)
+## Part 3 - Defining the Function in JavaScript
+The next step is to _define a function_ that will put the story together. At the top of the **script.js** file, define a function named `madLibs`:
 
-##### MadLibs.js
+1. Start with the `function` keyword
+1. Next, add the function name (`madLibs`)
+1. After that, add left/right parentheses
+1. Finally, add left/right curly brackets
+
+The function in the **script.js** file should look something like this:
+
 ```js
 function madLibs() {
 
 }
 ```
 
-## Getting the Values from Inputs
-In the body of the `madLibs` function:
+## Part 4 - Getting the Values from Inputs
+Now it's time to look at what the user has entered into the text boxes, and pull the values into JavaScript!
 
-1. Store the"Adjective" input element in a variable
-    - new variable (`var adj1El = `)
-    - `document.querySelector()`
-    - quotes (`""`)
-    - selector for the first input (`#adj`)
-1. Store the text from the input element in a variable
-    - new variable (`var adj1Val = `)
-    - element variable (`adj1El`)
-    - `.value`
-1. Repeat the above steps for each of the three inputs
+In the _body_ of the `madLibs` function (between `{` and `}`):
 
-##### MadLibs.js
+1. Store the "Adjective" `<input />` element in a variable
+    - Create a new variable with `let adjective1Element = `
+    - Set it equal to `document.querySelector()`
+    - Add quotes (`""`) within the parentheses
+    - Within the quotes, add the selector for the first input (`#adjective1`)
+1. Get the text from the input element
+    - Create another new variable w with `let adjective1Value = `
+    - Set it equal to the element `adjective1Element`...
+    - But get its value with `.value`
+1. Repeat the above steps for each of the remaining two inputs
+
+After these steps, the code in the _body_ of the `madLibs` function (within **script.js**) should look something like this:
+
 ```js
-var adj1El = document.querySelector("#adj1");
-var adj1Val = adj1El.value;
+let adjective1Element = document.querySelector("#adjective1");
+let adjective1Value = adjective1Element.value;
 
-var nationalityEl = document.querySelector("#nationality");
-var nationalityVal = nationalityEl.value;
+let nationality1Element = document.querySelector("#nationality1");
+let nationality1Value = nationality1Element.value;
 
-var personEl = document.querySelector("#person");
-var personVal = personEl.value;
+let person1Element = document.querySelector("#person1");
+let person1Value = person1Element.value;
 ```
 
-## Displaying the Story
-Create an alert and put the story together. It should use the variables in place of the blanks for the first sentence of the Mad Libs.
+## Part 5 - Building the Story
+Now that all of the inputs have been filled, the story can be completed! It should use the variables in place of the blanks for the first sentence of the Mad Libs pizza text.
 
-##### MadLibs.js
+1. Create a new variable named `story` containing the full first sentence:
+    - `Pizza was invented by a ___adjective___ ___nationality___ chef named ___person___.`
+    - Make sure to use backticks to make it a [template literal](https://www.w3schools.com/js/js_string_templates.asp)!
+1. Replace the blanks in the story with the value variables containing the text from the inputs
+    - Note: these should _not_ be the element variables that hold the entire HTML elements
+1. At the bottom of the function body, use an `alert` to display the story!
+
+The additional code at the bottom of the `madLibs` function (in **script.js**) should look something like this:
+
 ```js
-alert("Pizza was invented by a " + adj1Val + " " + nationalityVal + " chef named " + personVal + ".");
+let story = `Pizza was invented by a ${adjective1Value} ${nationality1Value} chef named ${person1Value}.`;
+alert(story);
 ```
 
-## Hooking Up a Button
-Finally, create a button in the HTML that will call the `madLibs` function when clicked! Place it inside of a `p` so it appears on its own line.
+## Part 6 - Hooking Up a Button
+All that's left is to create a button to _call_ the function!
 
-##### index.html
+1. Open the **index.html** file for editing
+1. Under the last `<p></p>` in the `<body></body>`, add another `<p></p>`
+1. Within the `<p></p>`, create a `<button></button>`
+1. Set the button text to say "Generate Mad Libs!"
+1. Set the `onclick` attribute of the button to call the `madLibs` function
+
+The added button in the **index.html** file should look something like this:
+
 ```html
 <p><button onclick="madLibs()">Generate Mad Libs!</button></p>
 ```
 
+Load up the page, enter some values in the text boxes, and click the button! The story should display with the words properly replaced 😊
+
 ## Final Code
-##### index.html
+At the end of the activity, the code should look something like this:
+
+**index.html**
+
 ```html
 <html>
     <head>
-        <script src="MadLibs.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <h1>Pizza Pizza</h1>
-        <p>Adjective: <input id="adj1"></p>
-        <p>Nationality: <input id="nationality"></p>
-        <p>Person: <input id="person"></p>
+        <p>Adjective: <input id="adjective1" /></p>
+        <p>Nationality: <input id="nationality1" /></p>
+        <p>Person: <input id="person1" /></p>
         <p><button onclick="madLibs()">Generate Mad Libs!</button></p>
     </body>
 </html>
 ```
 
-##### MadLibs.js
+**script.js**
+
 ```js
 function madLibs() {
-    var adj1El = document.querySelector("#adj1");
-    var adj1Val = adj1El.value;
+    let adjective1Element = document.querySelector("#adjective1");
+    let adjective1Value = adjective1Element.value;
     
-    var nationalityEl = document.querySelector("#nationality");
-    var nationalityVal = nationalityEl.value;
+    let nationality1Element = document.querySelector("#nationality1");
+    let nationality1Value = nationality1Element.value;
 
-    var personEl = document.querySelector("#person");
-    var personVal = personEl.value;
+    let person1Element = document.querySelector("#person1");
+    let person1Value = person1Element.value;
 
-    alert("Pizza was invented by a " + adj1Val + " " + nationalityVal + " chef named " + personVal + ".");
+    let story = `Pizza was invented by a ${adjective1Value} ${nationality1Value} chef named ${person1Value}.`;
+    alert(story);
 }
 ```
