@@ -1,125 +1,89 @@
-# Lyrics Builder
-We want to create a webpage that will allow us to enter lyrics into a text box line-by-line, and then display them in a nice container. When we're done, it should look something like this:
+# Code-Along: Lyrics Builder
+The goal of this activity is to create a webpage that will allow the user to enter lyrics into a text box line-by-line, and then display them in a nice container. At the end, it should look something like this:
 
 ![lyrics builder](Assets/LyricsBuilder.png)
 
-We'll start with the HTML, and then add some JavaScript to make the "Add" button create a new paragraph and add it to the container!
+Start with the HTML, and then add some JavaScript to make the "Add" button create a new paragraph and add it to the container! Fork [this Repl project](https://replit.com/@HylandOutreach/JavaScriptStarter) to begin. Then, follow the instructions below!
 
-## Basic HTML
-Start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), and add the basic tags to the **index.html** file:
+## Part 1 - Adding Content Tags
+First, add the elements that will make up the page. Open up the **index.html** file, and add each of these elements within the `<body></body>`:
 
-```html
-<html>
-    <head>
-        <style>
-        </style>
-    </head>
-    <body>
-    </body>
-<html>
-```
+1. An `<h2>` for "Lyrics"
+1. A `<div>` for the container where the lyrics will go
+1. Another `<h2>` for "Add Line"
+1. Finally, another `<div>` containing:
+    1. A text `<input />`
+    1. A `<button>` that says "Add"
 
-## Adding Content Tags
-Next, add in the tags that make up the page: an `<h2>` for "Lyrics", a `<div>` for the container where the lyrics will go, another `<h2>` for "Add Line", and finally, another `<div>` containing the text input and the "Add" button:
+The code between `<body>` and `</body>` should look something like this:
 
 ```html
-<html>
-    <head>
-        <style>
-        </style>
-    </head>
-    <body>
-        <h2>Lyrics</h1>
-        <div></div>
-        <h2>Add Line</h2>
-        <div>
-            <input type="text">
-            <button>Add</button>
-        </div>
-    </body>
-</html>
+<h2>Lyrics</h1>
+<div></div>
+<h2>Add Line</h2>
+<div>
+    <input type="text" />
+    <button>Add</button>
+</div>
 ```
 
-## Adding IDs
-We will also need to provide `id` attributes for the HTML elements we want to manipulate in JavaScript. We will need the lyrics container `<div>`, and the text `<input>`:
+## Part 2 - Adding IDs
+It will be necessary to provide `id` attributes for the HTML elements that are to be manipulated in JavaScript. These elements are the lyrics container `<div>` and the text box `<input />`.
+
+| Element | `id` attribute value |
+|-|-|
+| Lyrics Container `<div>` | `lyrics-container` |
+| Add Line `<input />` | `line-text` |
+
+The updated code in the `<body>` in **index.html** should look something like this:
 
 ```html
-<html>
-    <head>
-        <style>
-        </style>
-    </head>
-    <body>
-        <h2>Lyrics</h1>
-        <div id="lyricsContainer"></div>
-        <h2>Add Line</h2>
-        <div>
-            <input type="text" id="lineText">
-            <button>Add</button>
-        </div>
-    </body>
-</html>
+<h2>Lyrics</h1>
+<div id="lyrics-container"></div>
+<h2>Add Line</h2>
+<div>
+    <input type="text" id="line-text" />
+    <button>Add</button>
+</div>
 ```
 
-## Styling the Lyrics Box
-Currently, the `<div>` that will contain the lyrics doesn't have any content, so it won't show up on our page. We want to add a border, a height, a width, and some padding to the box. This `<div>` already has an `id` attribute, so we can use that to select it in CSS in the `<style></style>` tag (`#lyricsContainer`):
+## Part 3 - Styling the Lyrics Box
+Currently, the `<div>` that will contain the lyrics doesn't have any content, so it won't show up on the page. Add some CSS to select the `<div>` and style it so it appears!
 
-```html
-<html>
-    <head>
-        <style>
-            #lyricsContainer {
-                border: 1px dotted black;
-                height: 500px;
-                width: 500px;
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>Lyrics</h1>
-        <div id="lyricsContainer"></div>
-        <h2>Add Line</h2>
-        <div>
-            <input type="text" id="lineText">
-            <button>Add</button>
-        </div>
-    </body>
-</html>
+1. Open the **style.css** file for editing
+1. Create a new ruleset, and select the Lyrics Container by its `id` value
+    - `#lyrics-container { }`
+1. Set some properties within the ruleset:
+    - `border: 1px dotted black;`
+    - `height: 500px;`
+    - `width: 500px;`
+    - `padding: 10px`
+
+The code in the **style.css** file should look something like this:
+
+```css
+#lyrics-container {
+    border: 1px dotted black;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+}
 ```
 
-## Adding Interactivity with JavaScript
-Now that we have our HTML all set up, the only thing left to do is make it work! We can start by creating a new JavaScript file called **LyricsBuilder.js**. Then, we can link the file to our HTML page in a `<script>` tag:
+Run the program, and verify that the `<div>` now appears with a dotted black outline!
 
-```html
-<html>
-    <head>
-        <script src="LyricsBuilder.js"></script>
-        <style>
-            #lyricsContainer {
-                border: 1px dotted black;
-                height: 500px;
-                width: 500px;
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>Lyrics</h1>
-        <div id="lyricsContainer"></div>
-        <h2>Add Line</h2>
-        <div>
-            <input type="text" id="lineText">
-            <button>Add</button>
-        </div>
-    </body>
-</html>
-```
+## Part 4 - Button Function
+Now that the HTML is setup, the only thing left to do is make it work! Start by hooking up the button.
 
-### Button Function
-Once we have a linked JavaScript file, we can use it to define a function that will execute when the user clicks our "Add" button. We will name our function `addLine`:
+### JavaScript
+In the **script.js** file, _define_ a function that will execute when the user clicks our "Add" button. The function should be named `addLine`. There are four pieces of a basic function definition:
 
-#### JavaScript File
+1. `function` keyword
+1. Function name `addLine`
+1. Parentheses (left/right)
+1. Curly brackets (left/right)
+
+The code in the **script.js** file should look something like this:
 
 ```js
 function addLine() {
@@ -127,169 +91,129 @@ function addLine() {
 }
 ```
 
-#### HTML File
+### HTML
+Next, in the **index.html** file, add an `onclick` attribute to the `<button>` that will _call_ the `addLine` function. The code should look something like this:
 
 ```html
-<html>
-    <head>
-        <script src="LyricsBuilder.js"></script>
-        <style>
-            #lyricsContainer {
-                border: 1px dotted black;
-                height: 500px;
-                width: 500px;
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>Lyrics</h1>
-        <div id="lyricsContainer"></div>
-        <h2>Add Line</h2>
-        <div>
-            <input type="text" id="lineText">
-            <button onclick="addLine();">Add</button>
-        </div>
-    </body>
-</html>
+<button onclick="addLine();">Add</button>
 ```
 
-Now when the user clicks the "Add" button on our HTML page, the code within the `addLine` function will run!
+Now when the user clicks the "Add" button on the page, the code within the `addLine` function will run!
 
-### Getting Text from the `<input>`
-Whenever the user clicks "Add", we want to look at the text within the `lineText` input. First, we need to use `document.querySelector` to find the `<input>` element and store it in a variable:
+## Part 5 - Getting Text from the `<input />`
+Whenever the user clicks "Add", the program should look at the text within the `line-text` input.
 
-```javascript
-function addLine() {
-    var lineTextInput = document.querySelector("#lineText");
-}
+1. Open the **script.js** file for editing
+1. In the body of the `addLine` function, create a new variable named `lineTextInput`
+1. Set the variable to be a call to `document.querySelector("")`
+1. For the selector string, select the Line Text input by its `id` value (`line-text`)
+
+Creating this variable should look something like this in JavaScript:
+
+```js
+let lineTextInput = document.querySelector("#line-text");
 ```
 
-Notice the selector we are using here: "#lineText". After we have the `<input>` element stored in a variable, we want to use `.value` to retrieve the text that has been entered into the field:
+Notice the selector string used here: `"#line-text"`. After the `<input />` element is stored in a variable, it will be necessary to use `.value` to retrieve the text that has been entered into the field.
 
-```javascript
-function addLine() {
-    var lineTextInput = document.querySelector("#lineText");
-    var lineText = lineTextInput.value;
-}
+1. Make a new line under the `lineTextInput` variable
+1. Create a new variable named `lineText`
+1. Set it equal to the `.value` of the `lineTextInput` variable
+
+Creating this variable should look something like this:
+
+```js
+let lineText = lineTextInput.value;
 ```
 
 Now, the text the user entered will be stored in the `lineText` variable!
 
-### Creating the New `<p>` Element
-Now that we have the text, we can create a new paragraph and place the text in it. To create a new element and store it in a variable, we will use `document.createElement`:
+## Part 6 - Creating the New `<p>` Element
+Now that the text has been retrieved, it will be possible to create a new paragraph and place the text in it.
 
-```javascript
-function addLine() {
-    var lineTextInput = document.querySelector("#lineText");
-    var lineText = lineTextInput.value;
+1. At the bottom of the `addLine` function, make a couple new lines
+1. Create a new variable named `nextLine`
+1. Set the variable to be a call to `document.createElement("")`
+1. Pass in `p` for the tag name string
 
-    var nextLine = document.createElement("p");
-}
+Creating this variable should look something like this:
+
+```js
+let nextLine = document.createElement("p");
 ```
 
-Next, we want to set the text of this new paragraph (stored in the `nextLine` variable) to the value of our `lineText` variable, using `.textContent`:
+Next, properly set the _text value_ of this new paragraph element. This is possible with `.textContent`:
 
-```javascript
-function addLine() {
-    var lineTextInput = document.querySelector("#lineText");
-    var lineText = lineTextInput.value;
-    
-    var nextLine = document.createElement("p");
-    nextLine.textContent = lineText;
-}
+```js
+nextLine.textContent = lineText;
 ```
 
-Now we have a brand new paragraph!
+The new element has been created and fully formed!
 
-### Inserting the New `<p>` Element into the `<div>`
-We have created a new paragraph, but it still won't appear on our webpage until we insert it somewhere. We want to place it in the lyrics box, our `lyricsContainer` div. The first thing we need to do is find that `<div>` element and store it in a variable:
+## Part 7 - Inserting the New `<p>` Element into the `<div>`
+The new paragraph exists, but it will not appear on the webpage until it is inserted somewhere. It should go in the Lyrics Container `<div>`.
 
-```javascript
-function addLine() {
-    var lineTextInput = document.querySelector("#lineText");
-    var lineText = lineTextInput.value;
-    
-    var nextLine = document.createElement("p");
-    nextLine.textContent = lineText;
+1. At the bottom of the `addLine` function, make some new lines
+1. create a new variable named `lyricsContainer`
+1. Set the variable to be a call to `document.querySelector("")`
+1. For the selector string, select the Line Text input by its `id` value (`lyrics-container`)
 
-    var lyricsContainer = document.querySelector("#lyricsContainer");
-}
+The code to store this HTML element should look something like this:
+
+```js
+let lyricsContainer = document.querySelector("#lyrics-container");
 ```
 
-Notice the selector we are using here: "#lyricsContainer". Now that we have our `<div>` element stored in the `lyricsContainer` variable, we can insert the paragraph into it! To do that, we use `.appendChild`:
+Notice the selector string used here: `"#lyrics-container"`. Now that the `<div>` element is stored in the `lyricsContainer` variable, it will be possible to insert the newly-created paragraph element into it! This is possible with `.appendChild`:
 
-```javascript
-function addLine() {
-    var lineTextInput = document.querySelector("#lineText");
-    var lineText = lineTextInput.value;
-    
-    var nextLine = document.createElement("p");
-    nextLine.textContent = lineText;
-
-    var lyricsContainer = document.querySelector("#lyricsContainer");
-    lyricsContainer.appendChild(nextLine);
-}
+```js
+lyricsContainer.appendChild(nextLine);
 ```
 
-Now, when we click our button, it should create a new paragraph and add it to the lyrics container!
+Now, the button on the page is clicked, it should create a new paragraph using the text from the text box and add it to the Lyrics Container!
 
-### Clearing the Input
-The last thing we need to do is clear out the value of our `<input>` after a line has been added. To accomplish this, we simply set `.value` of the `<input>` to the empty string (`""`):
+## Part 8 - Clearing the Input
+The last thing needed is to clear out the value of the `<input>` after a line has been added. To accomplish this, set `.value` of the `<input>` to the empty string (`""`):
 
-```javascript
-function addLine() {
-    var lineTextInput = document.querySelector("#lineText");
-    var lineText = lineTextInput.value;
-    
-    var nextLine = document.createElement("p");
-    nextLine.textContent = lineText;
-
-    var lyricsContainer = document.querySelector("#lyricsContainer");
-    lyricsContainer.appendChild(nextLine);
-
-    lineTextInput.value = "";
-}
+```js
+lineTextInput.value = "";
 ```
 
-Now our Lyrics Builder is fully functional!
+And that's it! At this point, the Lyrics Builder should be fully functional! Test it out to make sure everything is working.
 
-## Final Product
-#### HTML
+## Final Code
+The final code should look something like this:
+
+**index.html**
+
 ```html
 <html>
     <head>
-        <script src="LyricsBuilder.js"></script>
-        <style>
-            #lyricsContainer {
-                border: 1px dotted black;
-                height: 500px;
-                width: 500px;
-                padding: 10px;
-            }
-        </style>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
     </head>
     <body>
         <h2>Lyrics</h1>
-        <div id="lyricsContainer"></div>
+        <div id="lyrics-container"></div>
         <h2>Add Line</h2>
         <div>
-            <input type="text" id="lineText">
+            <input type="text" id="line-text" />
             <button onclick="addLine();">Add</button>
         </div>
     </body>
 </html>
 ```
 
-#### JavaScript (LyricsBuilder.js)
-```javascript
+**script.js**
+
+```js
 function addLine() {
-    var lineTextInput = document.querySelector("#lineText");
-    var lineText = lineTextInput.value;
-    var nextLine = document.createElement("p");
+    let lineTextInput = document.querySelector("#line-text");
+    let lineText = lineTextInput.value;
+    let nextLine = document.createElement("p");
     nextLine.textContent = lineText;
 
-    var lyricsContainer = document.querySelector("#lyricsContainer");
+    let lyricsContainer = document.querySelector("#lyrics-container");
     lyricsContainer.appendChild(nextLine);
 
     lineTextInput.value = "";

@@ -783,244 +783,188 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="lyrics-builder">Lyrics Builder</h1>
-<p>We want to create a webpage that will allow us to enter lyrics into a text box line-by-line, and then display them in a nice container. When we&apos;re done, it should look something like this:</p>
+                                <h1 id="code-along-lyrics-builder">Code-Along: Lyrics Builder</h1>
+<p>The goal of this activity is to create a webpage that will allow the user to enter lyrics into a text box line-by-line, and then display them in a nice container. At the end, it should look something like this:</p>
 <p><img src="Assets/LyricsBuilder.png" alt="lyrics builder"></p>
-<p>We&apos;ll start with the HTML, and then add some JavaScript to make the &quot;Add&quot; button create a new paragraph and add it to the container!</p>
-<h2 id="basic-html">Basic HTML</h2>
-<p>Start by forking <a href="https://replit.com/@HylandOutreach/EmptyWeb" target="_blank">this empty Repl</a>, and add the basic tags to the <strong>index.html</strong> file:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
-        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<p>Start with the HTML, and then add some JavaScript to make the &quot;Add&quot; button create a new paragraph and add it to the container! Fork <a href="https://replit.com/@HylandOutreach/JavaScriptStarter" target="_blank">this Repl project</a> to begin. Then, follow the instructions below!</p>
+<h2 id="part-1---adding-content-tags">Part 1 - Adding Content Tags</h2>
+<p>First, add the elements that will make up the page. Open up the <strong>index.html</strong> file, and add each of these elements within the <code>&lt;body&gt;&lt;/body&gt;</code>:</p>
+<ol>
+<li>An <code>&lt;h2&gt;</code> for &quot;Lyrics&quot;</li>
+<li>A <code>&lt;div&gt;</code> for the container where the lyrics will go</li>
+<li>Another <code>&lt;h2&gt;</code> for &quot;Add Line&quot;</li>
+<li>Finally, another <code>&lt;div&gt;</code> containing:<ol>
+<li>A text <code>&lt;input /&gt;</code></li>
+<li>A <code>&lt;button&gt;</code> that says &quot;Add&quot;</li>
+</ol>
+</li>
+</ol>
+<p>The code between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> should look something like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lyrics<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Add Line<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-<h2 id="adding-content-tags">Adding Content Tags</h2>
-<p>Next, add in the tags that make up the page: an <code>&lt;h2&gt;</code> for &quot;Lyrics&quot;, a <code>&lt;div&gt;</code> for the container where the lyrics will go, another <code>&lt;h2&gt;</code> for &quot;Add Line&quot;, and finally, another <code>&lt;div&gt;</code> containing the text input and the &quot;Add&quot; button:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
-        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lyrics<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Add Line<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+<h2 id="part-2---adding-ids">Part 2 - Adding IDs</h2>
+<p>It will be necessary to provide <code>id</code> attributes for the HTML elements that are to be manipulated in JavaScript. These elements are the lyrics container <code>&lt;div&gt;</code> and the text box <code>&lt;input /&gt;</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th><code>id</code> attribute value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lyrics Container <code>&lt;div&gt;</code></td>
+<td><code>lyrics-container</code></td>
+</tr>
+<tr>
+<td>Add Line <code>&lt;input /&gt;</code></td>
+<td><code>line-text</code></td>
+</tr>
+</tbody>
+</table>
+<p>The updated code in the <code>&lt;body&gt;</code> in <strong>index.html</strong> should look something like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lyrics<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lyrics-container&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Add Line<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;line-text&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-<h2 id="adding-ids">Adding IDs</h2>
-<p>We will also need to provide <code>id</code> attributes for the HTML elements we want to manipulate in JavaScript. We will need the lyrics container <code>&lt;div&gt;</code>, and the text <code>&lt;input&gt;</code>:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
-        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lyrics<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lyricsContainer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Add Line<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lineText&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+<h2 id="part-3---styling-the-lyrics-box">Part 3 - Styling the Lyrics Box</h2>
+<p>Currently, the <code>&lt;div&gt;</code> that will contain the lyrics doesn&apos;t have any content, so it won&apos;t show up on the page. Add some CSS to select the <code>&lt;div&gt;</code> and style it so it appears!</p>
+<ol>
+<li>Open the <strong>style.css</strong> file for editing</li>
+<li>Create a new ruleset, and select the Lyrics Container by its <code>id</code> value<ul>
+<li><code>#lyrics-container { }</code></li>
+</ul>
+</li>
+<li>Set some properties within the ruleset:<ul>
+<li><code>border: 1px dotted black;</code></li>
+<li><code>height: 500px;</code></li>
+<li><code>width: 500px;</code></li>
+<li><code>padding: 10px</code></li>
+</ul>
+</li>
+</ol>
+<p>The code in the <strong>style.css</strong> file should look something like this:</p>
+<pre><code class="lang-css"><span class="hljs-selector-id">#lyrics-container</span> {
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> dotted black;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+}
 </code></pre>
-<h2 id="styling-the-lyrics-box">Styling the Lyrics Box</h2>
-<p>Currently, the <code>&lt;div&gt;</code> that will contain the lyrics doesn&apos;t have any content, so it won&apos;t show up on our page. We want to add a border, a height, a width, and some padding to the box. This <code>&lt;div&gt;</code> already has an <code>id</code> attribute, so we can use that to select it in CSS in the <code>&lt;style&gt;&lt;/style&gt;</code> tag (<code>#lyricsContainer</code>):</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-            <span class="hljs-selector-id">#lyricsContainer</span> {
-                <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> dotted black;
-                <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
-                <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;
-                <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
-            }
-        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lyrics<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lyricsContainer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Add Line<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lineText&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-<h2 id="adding-interactivity-with-javascript">Adding Interactivity with JavaScript</h2>
-<p>Now that we have our HTML all set up, the only thing left to do is make it work! We can start by creating a new JavaScript file called <strong>LyricsBuilder.js</strong>. Then, we can link the file to our HTML page in a <code>&lt;script&gt;</code> tag:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;LyricsBuilder.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-            <span class="hljs-selector-id">#lyricsContainer</span> {
-                <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> dotted black;
-                <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
-                <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;
-                <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
-            }
-        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lyrics<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lyricsContainer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Add Line<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lineText&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-<h3 id="button-function">Button Function</h3>
-<p>Once we have a linked JavaScript file, we can use it to define a function that will execute when the user clicks our &quot;Add&quot; button. We will name our function <code>addLine</code>:</p>
-<h4 id="javascript-file">JavaScript File</h4>
+<p>Run the program, and verify that the <code>&lt;div&gt;</code> now appears with a dotted black outline!</p>
+<h2 id="part-4---button-function">Part 4 - Button Function</h2>
+<p>Now that the HTML is setup, the only thing left to do is make it work! Start by hooking up the button.</p>
+<h3 id="javascript">JavaScript</h3>
+<p>In the <strong>script.js</strong> file, <em>define</em> a function that will execute when the user clicks our &quot;Add&quot; button. The function should be named <code>addLine</code>. There are four pieces of a basic function definition:</p>
+<ol>
+<li><code>function</code> keyword</li>
+<li>Function name <code>addLine</code></li>
+<li>Parentheses (left/right)</li>
+<li>Curly brackets (left/right)</li>
+</ol>
+<p>The code in the <strong>script.js</strong> file should look something like this:</p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
 
 }
 </code></pre>
-<h4 id="html-file">HTML File</h4>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;LyricsBuilder.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-            <span class="hljs-selector-id">#lyricsContainer</span> {
-                <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> dotted black;
-                <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
-                <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;
-                <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
-            }
-        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lyrics<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lyricsContainer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Add Line<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lineText&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;addLine();&quot;</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+<h3 id="html">HTML</h3>
+<p>Next, in the <strong>index.html</strong> file, add an <code>onclick</code> attribute to the <code>&lt;button&gt;</code> that will <em>call</em> the <code>addLine</code> function. The code should look something like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;addLine();&quot;</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 </code></pre>
-<p>Now when the user clicks the &quot;Add&quot; button on our HTML page, the code within the <code>addLine</code> function will run!</p>
-<h3 id="getting-text-from-the-input">Getting Text from the <code>&lt;input&gt;</code></h3>
-<p>Whenever the user clicks &quot;Add&quot;, we want to look at the text within the <code>lineText</code> input. First, we need to use <code>document.querySelector</code> to find the <code>&lt;input&gt;</code> element and store it in a variable:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
-}
+<p>Now when the user clicks the &quot;Add&quot; button on the page, the code within the <code>addLine</code> function will run!</p>
+<h2 id="part-5---getting-text-from-the-input-">Part 5 - Getting Text from the <code>&lt;input /&gt;</code></h2>
+<p>Whenever the user clicks &quot;Add&quot;, the program should look at the text within the <code>line-text</code> input.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>In the body of the <code>addLine</code> function, create a new variable named <code>lineTextInput</code></li>
+<li>Set the variable to be a call to <code>document.querySelector(&quot;&quot;)</code></li>
+<li>For the selector string, select the Line Text input by its <code>id</code> value (<code>line-text</code>)</li>
+</ol>
+<p>Creating this variable should look something like this in JavaScript:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#line-text&quot;</span>);
 </code></pre>
-<p>Notice the selector we are using here: &quot;#lineText&quot;. After we have the <code>&lt;input&gt;</code> element stored in a variable, we want to use <code>.value</code> to retrieve the text that has been entered into the field:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
-    <span class="hljs-keyword">var</span> lineText = lineTextInput.value;
-}
+<p>Notice the selector string used here: <code>&quot;#line-text&quot;</code>. After the <code>&lt;input /&gt;</code> element is stored in a variable, it will be necessary to use <code>.value</code> to retrieve the text that has been entered into the field.</p>
+<ol>
+<li>Make a new line under the <code>lineTextInput</code> variable</li>
+<li>Create a new variable named <code>lineText</code></li>
+<li>Set it equal to the <code>.value</code> of the <code>lineTextInput</code> variable</li>
+</ol>
+<p>Creating this variable should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> lineText = lineTextInput.value;
 </code></pre>
 <p>Now, the text the user entered will be stored in the <code>lineText</code> variable!</p>
-<h3 id="creating-the-new-p-element">Creating the New <code>&lt;p&gt;</code> Element</h3>
-<p>Now that we have the text, we can create a new paragraph and place the text in it. To create a new element and store it in a variable, we will use <code>document.createElement</code>:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
-    <span class="hljs-keyword">var</span> lineText = lineTextInput.value;
-
-    <span class="hljs-keyword">var</span> nextLine = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
-}
+<h2 id="part-6---creating-the-new-p-element">Part 6 - Creating the New <code>&lt;p&gt;</code> Element</h2>
+<p>Now that the text has been retrieved, it will be possible to create a new paragraph and place the text in it.</p>
+<ol>
+<li>At the bottom of the <code>addLine</code> function, make a couple new lines</li>
+<li>Create a new variable named <code>nextLine</code></li>
+<li>Set the variable to be a call to <code>document.createElement(&quot;&quot;)</code></li>
+<li>Pass in <code>p</code> for the tag name string</li>
+</ol>
+<p>Creating this variable should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> nextLine = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
 </code></pre>
-<p>Next, we want to set the text of this new paragraph (stored in the <code>nextLine</code> variable) to the value of our <code>lineText</code> variable, using <code>.textContent</code>:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
-    <span class="hljs-keyword">var</span> lineText = lineTextInput.value;
-
-    <span class="hljs-keyword">var</span> nextLine = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
-    nextLine.textContent = lineText;
-}
+<p>Next, properly set the <em>text value</em> of this new paragraph element. This is possible with <code>.textContent</code>:</p>
+<pre><code class="lang-js">nextLine.textContent = lineText;
 </code></pre>
-<p>Now we have a brand new paragraph!</p>
-<h3 id="inserting-the-new-p-element-into-the-div">Inserting the New <code>&lt;p&gt;</code> Element into the <code>&lt;div&gt;</code></h3>
-<p>We have created a new paragraph, but it still won&apos;t appear on our webpage until we insert it somewhere. We want to place it in the lyrics box, our <code>lyricsContainer</code> div. The first thing we need to do is find that <code>&lt;div&gt;</code> element and store it in a variable:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
-    <span class="hljs-keyword">var</span> lineText = lineTextInput.value;
-
-    <span class="hljs-keyword">var</span> nextLine = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
-    nextLine.textContent = lineText;
-
-    <span class="hljs-keyword">var</span> lyricsContainer = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lyricsContainer&quot;</span>);
-}
+<p>The new element has been created and fully formed!</p>
+<h2 id="part-7---inserting-the-new-p-element-into-the-div">Part 7 - Inserting the New <code>&lt;p&gt;</code> Element into the <code>&lt;div&gt;</code></h2>
+<p>The new paragraph exists, but it will not appear on the webpage until it is inserted somewhere. It should go in the Lyrics Container <code>&lt;div&gt;</code>.</p>
+<ol>
+<li>At the bottom of the <code>addLine</code> function, make some new lines</li>
+<li>create a new variable named <code>lyricsContainer</code></li>
+<li>Set the variable to be a call to <code>document.querySelector(&quot;&quot;)</code></li>
+<li>For the selector string, select the Line Text input by its <code>id</code> value (<code>lyrics-container</code>)</li>
+</ol>
+<p>The code to store this HTML element should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> lyricsContainer = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lyrics-container&quot;</span>);
 </code></pre>
-<p>Notice the selector we are using here: &quot;#lyricsContainer&quot;. Now that we have our <code>&lt;div&gt;</code> element stored in the <code>lyricsContainer</code> variable, we can insert the paragraph into it! To do that, we use <code>.appendChild</code>:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
-    <span class="hljs-keyword">var</span> lineText = lineTextInput.value;
-
-    <span class="hljs-keyword">var</span> nextLine = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
-    nextLine.textContent = lineText;
-
-    <span class="hljs-keyword">var</span> lyricsContainer = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lyricsContainer&quot;</span>);
-    lyricsContainer.appendChild(nextLine);
-}
+<p>Notice the selector string used here: <code>&quot;#lyrics-container&quot;</code>. Now that the <code>&lt;div&gt;</code> element is stored in the <code>lyricsContainer</code> variable, it will be possible to insert the newly-created paragraph element into it! This is possible with <code>.appendChild</code>:</p>
+<pre><code class="lang-js">lyricsContainer.appendChild(nextLine);
 </code></pre>
-<p>Now, when we click our button, it should create a new paragraph and add it to the lyrics container!</p>
-<h3 id="clearing-the-input">Clearing the Input</h3>
-<p>The last thing we need to do is clear out the value of our <code>&lt;input&gt;</code> after a line has been added. To accomplish this, we simply set <code>.value</code> of the <code>&lt;input&gt;</code> to the empty string (<code>&quot;&quot;</code>):</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
-    <span class="hljs-keyword">var</span> lineText = lineTextInput.value;
-
-    <span class="hljs-keyword">var</span> nextLine = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
-    nextLine.textContent = lineText;
-
-    <span class="hljs-keyword">var</span> lyricsContainer = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lyricsContainer&quot;</span>);
-    lyricsContainer.appendChild(nextLine);
-
-    lineTextInput.value = <span class="hljs-string">&quot;&quot;</span>;
-}
+<p>Now, the button on the page is clicked, it should create a new paragraph using the text from the text box and add it to the Lyrics Container!</p>
+<h2 id="part-8---clearing-the-input">Part 8 - Clearing the Input</h2>
+<p>The last thing needed is to clear out the value of the <code>&lt;input&gt;</code> after a line has been added. To accomplish this, set <code>.value</code> of the <code>&lt;input&gt;</code> to the empty string (<code>&quot;&quot;</code>):</p>
+<pre><code class="lang-js">lineTextInput.value = <span class="hljs-string">&quot;&quot;</span>;
 </code></pre>
-<p>Now our Lyrics Builder is fully functional!</p>
-<h2 id="final-product">Final Product</h2>
-<h4 id="html">HTML</h4>
+<p>And that&apos;s it! At this point, the Lyrics Builder should be fully functional! Test it out to make sure everything is working.</p>
+<h2 id="final-code">Final Code</h2>
+<p>The final code should look something like this:</p>
+<p><strong>index.html</strong></p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;LyricsBuilder.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-            <span class="hljs-selector-id">#lyricsContainer</span> {
-                <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> dotted black;
-                <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
-                <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;
-                <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
-            }
-        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;script.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lyrics<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lyricsContainer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lyrics-container&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Add Line<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lineText&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;line-text&quot;</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;addLine();&quot;</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h4 id="javascript-lyricsbuilderjs">JavaScript (LyricsBuilder.js)</h4>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lineText&quot;</span>);
-    <span class="hljs-keyword">var</span> lineText = lineTextInput.value;
-    <span class="hljs-keyword">var</span> nextLine = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
+<p><strong>script.js</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addLine</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">let</span> lineTextInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#line-text&quot;</span>);
+    <span class="hljs-keyword">let</span> lineText = lineTextInput.value;
+    <span class="hljs-keyword">let</span> nextLine = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
     nextLine.textContent = lineText;
 
-    <span class="hljs-keyword">var</span> lyricsContainer = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lyricsContainer&quot;</span>);
+    <span class="hljs-keyword">let</span> lyricsContainer = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#lyrics-container&quot;</span>);
     lyricsContainer.appendChild(nextLine);
 
     lineTextInput.value = <span class="hljs-string">&quot;&quot;</span>;
@@ -1069,7 +1013,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.8.2","depth":2,"next":{"title":"Self-Paced Work","level":"1.8.3","depth":2,"path":"Week07/SelfPacedWork.md","ref":"Week07/SelfPacedWork.md","articles":[]},"previous":{"title":"Guide","level":"1.8.1","depth":2,"path":"Week07/DomManipulationUpdateHTML.md","ref":"Week07/DomManipulationUpdateHTML.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week07/LyricsCodeAlong.md","mtime":"2022-09-07T15:28:38.631Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T15:29:10.134Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.8.2","depth":2,"next":{"title":"Self-Paced Work","level":"1.8.3","depth":2,"path":"Week07/SelfPacedWork.md","ref":"Week07/SelfPacedWork.md","articles":[]},"previous":{"title":"Guide","level":"1.8.1","depth":2,"path":"Week07/DomManipulationUpdateHTML.md","ref":"Week07/DomManipulationUpdateHTML.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week07/LyricsCodeAlong.md","mtime":"2022-09-07T16:44:16.263Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T16:44:49.444Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
