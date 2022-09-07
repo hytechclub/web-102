@@ -27,7 +27,7 @@ After the students have learned about DOM Manipulation, and completed the follow
 The students should follow the [self-paced work instructions](SelfPacedWork.md) to complete the activity.
 
 ## Challenges
-There are a number of [challenges](Challenges/) for the students.
+There are a couple [challenges](Challenges/) for the students.
 
 ### Shopping List Challenge
 This [challenge](Challenges/ShoppingListChallenge.md) is copied from [Mozilla](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#Active_learning_A_dynamic_shopping_list).
