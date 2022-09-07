@@ -1,5 +1,5 @@
 # Warm-Up: Quiz
-Open up [this Repl project](https://repl.it/@JosephMaxwell/Web102Week8Warmup#index.html) and answer each question in the corresponding files.
+Open up [this Repl project](https://replit.com/@HylandOutreach/Web102Week8WarmUp) and answer each question in the corresponding files.
 
 1. For each of the expressions below, **True or False?**
     1. `10 + 2 === 12`
