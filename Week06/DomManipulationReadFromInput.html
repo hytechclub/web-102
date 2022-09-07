@@ -788,35 +788,55 @@
 <p>After reading through this guide, you should be able to <strong>use JavaScript</strong> to read from existing HTML elements.</p>
 <p>Before that, though, let&apos;s start with some background information.</p>
 <h2 id="background">Background</h2>
+<p>This information will help inform the steps required to read from inputs.</p>
 <h3 id="what-is-the-dom">What is the DOM?</h3>
-<p>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page. For more information, check out this article from Mozilla: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a></p>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">Document Object Model (DOM)</a> is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.</p>
 <h3 id="representing-html-elements-in-javascript">Representing HTML Elements in JavaScript</h3>
 <p>So far, we have stored a few different things in JavaScript variables: <code>Number</code>s, <code>String</code>s, and <code>Boolean</code>s. These are known as <strong>Data Types</strong>. To store something bigger, like a whole HTML input element, we need to use another data type: <code>Object</code>. <code>Object</code>s in JavaScript can store pretty much anything! For now, we are going to use them to store HTML elements that exist in our HTML document.</p>
 <h2 id="implementation">Implementation</h2>
 <p>Now, let&apos;s cover how we will actually use these concepts to make our webpages more interactive!</p>
 <h3 id="storing-an-html-element-in-a-javascript-variable">Storing an HTML Element in a JavaScript Variable</h3>
-<p>To find an element within our HTML page and store it in a variable, we use <code>document.querySelector</code>. This allows us to <strong>select</strong> an HTML element in the same way we would select it to style it in CSS. Note that here, we are storing the <em>ACTUAL HTML ELEMENT</em>, not just the text!</p>
-<h4 id="html">HTML</h4>
+<p>To find an element within our HTML page and store it in a variable, we use the <code>document.querySelector</code> function. This allows us to <strong>select</strong> an HTML element in the same way we would select it to style it in CSS. Note that here, we are storing the <em>ACTUAL HTML ELEMENT</em>, not just the text!</p>
+<p>Let&apos;s take a look at an example. Here&apos;s some HTML which includes an <code>&lt;input /&gt;</code> element:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        Input your message: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myInput&quot;</span>&gt;</span>
+        Input your message: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;my-input&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h4 id="javascript">JavaScript</h4>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myMessageVariable = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myInput&quot;</span>);
+<p>To <em>select</em> that element in JavaScript, and store it in a variable, you can do this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> myInputElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-input&quot;</span>);
 </code></pre>
 <blockquote>
-<p>Notice the text between the quotes in the JS: <code>#myInput</code>. This is exactly what we would use in CSS to select and style the input with an <code>id</code> of &quot;myInput&quot;.</p>
+<p>Notice the text between the quotes in the JS: <code>#my-input</code>. This is exactly what we would use in CSS to select and style the input with an <code>id</code> of &quot;myInput&quot;</p>
 </blockquote>
-<p>Here, our <code>document.querySelector</code> code allows us to grab that whole HTML input element, and store it in the <code>myMessageVariable</code> variable. Once we have our HTML element stored in the variable, we can interact with it! We can use <code>.value</code> to get and set the text entered in the <code>&lt;input&gt;</code> tag like so:</p>
-<h4 id="getting-the-input-value">Getting the <code>&lt;input&gt;</code> Value</h4>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myMessageVariable = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myInput&quot;</span>);
-<span class="hljs-keyword">var</span> myMessageValue = myMessageVariable.value;
-
-<span class="hljs-comment">// show a message with the contents of the #myInput input</span>
-alert(<span class="hljs-string">&quot;Your message was: &quot;</span> + myMessageValue);
+<p>Here, our <code>document.querySelector</code> code allows us to grab that whole HTML <code>&lt;input /&gt;</code> element, and store it in the <code>myInputElement</code> variable. Once we have our HTML element stored in the variable, we can interact with it! We can use <code>.value</code> to get and set the text entered into the actual text box on the page.</p>
+<p>Let&apos;s take a look at an example, following from above. The HTML will be the same; the only important part is the <code>&lt;input /&gt;</code> with that particular <code>id</code> attribute value:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;my-input&quot;</span> /&gt;</span>
 </code></pre>
+<p>Now, to <em>get</em> the value of that text within JavaScript code, it looks like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myInputElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-input&quot;</span>);
+<span class="hljs-keyword">let</span> myInputText = myInputElement.value;
+
+<span class="hljs-comment">// This would display a pop-up where the message is whatever the user had typed into the text box!</span>
+alert(<span class="hljs-string">`Your message was: <span class="hljs-subst">${myInputText}</span>`</span>);
+</code></pre>
+<p>It is also possible to <em>set</em> the text in the text box! The <code>.value</code> is set just like another variable. It could look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myInputElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-input&quot;</span>);
+<span class="hljs-keyword">let</span> myInputText = myInputElement.value;
+
+<span class="hljs-comment">// This will set the text inside the text box to &quot;my message&quot;</span>
+myInputElement.value = <span class="hljs-string">&quot;my message&quot;</span>;
+</code></pre>
+<p>It may also be desired to clear out the value; that&apos;s possible too!</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myInputElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-input&quot;</span>);
+<span class="hljs-keyword">let</span> myInputText = myInputElement.value;
+
+<span class="hljs-comment">// This will clear out any text in the text box</span>
+myInputElement.value = <span class="hljs-string">&quot;&quot;</span>;
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>It may be difficult to grasp the concept of the DOM, but it is an incredibly powerful tool. It can allow you to create truly interactive user experiences!</p>
 
                                 
                                 </section>
@@ -860,7 +880,7 @@ alert(<span class="hljs-string">&quot;Your message was: &quot;</span> + myMessag
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DOM Manipulation - Read from Input","level":"1.7.2","depth":2,"next":{"title":"Mad Libs Follow-Along","level":"1.7.3","depth":2,"path":"Week06/MadLibsFollowAlong.md","ref":"Week06/MadLibsFollowAlong.md","articles":[]},"previous":{"title":"Warm Up","level":"1.7.1","depth":2,"path":"Week06/WarmUp.md","ref":"Week06/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week06/DomManipulationReadFromInput.md","mtime":"2022-09-06T21:05:52.509Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-06T21:06:29.291Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"DOM Manipulation - Read from Input","level":"1.7.2","depth":2,"next":{"title":"Mad Libs Follow-Along","level":"1.7.3","depth":2,"path":"Week06/MadLibsFollowAlong.md","ref":"Week06/MadLibsFollowAlong.md","articles":[]},"previous":{"title":"Warm Up","level":"1.7.1","depth":2,"path":"Week06/WarmUp.md","ref":"Week06/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week06/DomManipulationReadFromInput.md","mtime":"2022-09-07T14:43:54.873Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T14:44:31.278Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
