@@ -21,7 +21,7 @@ There is also a [written guide](DomManipulationUpdateHtml.md) for reference.
 Follow the [instructions](LyricsCodeAlong.md) to build up to a simple app that adds lines of a song into a container one-by-one. Be sure to ask the students for suggestions about where to go next. There is no need to spend too long on this.
 
 ## Formative Assessment: Kahoot
-After the students have learned about DOM Manipulation, and completed the follow-along, test their retention with a [Kahoot quiz](https://create.kahoot.it/share/7bc99cd7-493b-4353-ac53-111b2a0488b3).
+After the students have learned about DOM Manipulation, and completed the follow-along, test their retention with a [Kahoot quiz](https://create.kahoot.it/details/7bc99cd7-493b-4353-ac53-111b2a0488b3).
 
 ## Self-Paced Work: Background Changer
 The students should follow the [self-paced work instructions](SelfPacedWork.md) to complete the activity.
