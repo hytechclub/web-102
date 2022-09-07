@@ -783,104 +783,105 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="background-changer-revisited">Background Changer Revisited</h1>
-<p>Previously, we created a webpage that could change its background color on a button click. The page would ask for colors using <code>prompt</code>s, and then set the background color. Let&apos;s improve that webpage by using an HTML input instead of <code>prompt</code>s to get a color from the user!</p>
-<h2 id="setup---html">Setup - HTML</h2>
-<p>Start by forking <a href="https://replit/@HylandOutreach/EmptyWeb" target="_blank">this empty Repl</a>, then follow the steps below.</p>
+                                <h1 id="self-paced-work-background-changer-revisited">Self-Paced Work: Background Changer Revisited</h1>
+<p>Previously, there was a webpage that could change its background color on a button click. The page would ask for colors using <code>prompt</code>s, and then set the background color. Improve that webpage by using an HTML input instead of <code>prompt</code>s to get a color from the user!</p>
+<h2 id="part-1---html-setup">Part 1 - HTML Setup</h2>
+<p>Start by forking <a href="https://replit.com/@HylandOutreach/JavaScriptStarter" target="_blank">this starter Repl</a>, then follow the steps below.</p>
 <ol>
-<li>Open the <strong>index.html</strong> file, and add the basic tags: <code>html</code>, <code>head</code>, <code>body</code></li>
-<li>In the body, add an <code>h1</code> header saying &quot;Background Changer&quot;</li>
-<li>Under the header, add a new <code>p</code> paragraph</li>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>In the <code>&lt;body&gt;&lt;/body&gt;</code>, add an <code>&lt;h1&gt;</code> header saying <code>Background Changer</code></li>
+<li>Under the header, add a new <code>&lt;p&gt;</code> paragraph</li>
 <li>Within the paragraph, add text that says &quot;Color: &quot;</li>
-<li>Within the paragraph, add an <code>input</code> with a <code>type</code> of &quot;text&quot;<ul>
-<li>Give the <code>input</code> an <code>id</code> attribute with value &quot;color&quot;</li>
+<li>Within the paragraph, add an <code>&lt;input /&gt;</code> with a <code>type</code> of <code>&quot;text&quot;</code><ul>
+<li>Give the <code>&lt;input /&gt;</code> an <code>id</code> attribute with value <code>&quot;color-input&quot;</code></li>
 </ul>
 </li>
-<li>Within the paragraph, add a <code>button</code> with text &quot;Change Background&quot;</li>
-<li>Underneath the paragraph, add a <code>div</code> element<ul>
-<li>Give the <code>div</code> an <code>id</code> attribute with value &quot;colorList&quot;</li>
-<li><em>NOTE: This <code>div</code> will not appear on the page</em></li>
+<li>Within the paragraph, add a <code>&lt;button&gt;</code> with text <code>Change Background</code></li>
+<li>Underneath the paragraph, add a <code>&lt;div&gt;</code> element<ul>
+<li>Give the <code>&lt;div&gt;</code> an <code>id</code> attribute with value <code>&quot;color-list&quot;</code></li>
+<li><em>Note: at this point, the <code>&lt;div&gt;</code> should not appear on the page</em></li>
 </ul>
 </li>
 </ol>
-<p>At the end of this section, the page should look like this:</p>
+<p>At the end of this section, the page should look something like this:</p>
 <p><img src="Assets/BgChanger.png" alt=""></p>
-<h2 id="setup---js">Setup - JS</h2>
+<h2 id="part-2---javascript-setup">Part 2 - JavaScript Setup</h2>
+<p>Now that the HTML is in place, it&apos;s time to add some JavaScript.</p>
 <ol>
-<li>Create a new JS file named <strong>BackgroundChanger.js</strong></li>
-<li>In the JS file, define a new function named <code>changeBackground</code><ul>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>In the file, <em>define</em> a new function named <code>changeBackground</code><ul>
 <li><code>function</code> keyword</li>
 <li>Function name (<code>changeBackground</code>)</li>
 <li>Parentheses (<code>()</code>)</li>
 <li>Curly brackets (<code>{}</code>)</li>
 </ul>
 </li>
-<li>In the HTML file, add a <code>script</code> as a child of the <code>head</code> element<ul>
-<li>Set the <code>src</code> attribute of the <code>script</code> to <strong>BackgroundChanger.js</strong></li>
-</ul>
-</li>
-<li>Set the <code>onclick</code> attribute of the HTML button to call the <code>changeBackground</code> function</li>
+<li>Open up the <strong>index.html</strong> file for editing</li>
+<li>Set the <code>onclick</code> attribute of the <code>&lt;button&gt;</code> element to <em>call</em> the <code>changeBackground</code> function</li>
 </ol>
-<h2 id="changing-the-background-color">Changing the Background Color</h2>
-<p>The background color should change to the color in the input when the user clicks the &quot;Change Background&quot; button.</p>
+<p>At this point, the code in the <code>changeBackground</code> function should run every time the button on the page is clicked!</p>
+<h2 id="part-3---changing-the-background-color">Part 3 - Changing the Background Color</h2>
+<p>Now that the button is hooked up, it should actually change the background color based on what is in the text box!</p>
 <h3 id="getting-the-color-from-the-input">Getting the Color from the Input</h3>
+<p>The first step is to pull the color from the text box <code>&lt;input /&gt;</code> element.</p>
 <ol>
-<li>In the JS file, within the body of the <code>changeBackground</code> function, declare a new variable named <code>colorInput</code></li>
-<li>Set the value of <code>colorInput</code>: use <code>document.querySelector</code> to select the HTML <code>input</code><ul>
-<li><code>document.querySelector</code></li>
-<li>Parentheses</li>
-<li>Quotes within the parentheses</li>
-<li><code>id</code> selector within the quotes</li>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>In the body of the <code>changeBackground</code> function, create a new variable named <code>colorInput</code></li>
+<li>Set the value of <code>colorInput</code> using <code>document.querySelector</code> to select the HTML <code>&lt;input /&gt;</code><ul>
+<li><code>document.querySelector(&quot;&quot;)</code></li>
+<li><code>id</code> selector within the quotes (<code>#color-input</code>)</li>
 </ul>
 </li>
-<li>Under the <code>colorInput</code> variable, declare a new variable named <code>color</code></li>
-<li>Set the value of <code>color</code>: use <code>.value</code> to get the text from the <code>colorInput</code> element</li>
+<li>Under the <code>colorInput</code> variable, create a new variable named <code>colorValue</code></li>
+<li>Set the value of <code>colorValue</code> using <code>.value</code> to get the actual text value from the <code>colorInput</code> element</li>
 </ol>
+<p>Now, the value entered into the text box should be stored in the <code>colorValue</code> variable.</p>
 <h3 id="setting-the-background-color-to-the-new-color">Setting the Background Color to the New Color</h3>
-<p>To set the background color, use the following code:</p>
-<pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.style.background = color;
+<p>Next, it&apos;s time to use that color value to set the background of the page. Use this line of code, in the body of the <code>changeBackground</code> function:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.style.background = colorValue;
 </code></pre>
 <p>Test out the button with a few different colors in the input, and verify that the background color changes!</p>
-<h2 id="listing-previous-colors">Listing Previous Colors</h2>
+<h2 id="part-4---listing-previous-colors">Part 4 - Listing Previous Colors</h2>
 <p>Whenever the background color changes, the web page should keep track of the new color and display a running list to the user.</p>
-<h3 id="getting-the-container-div">Getting the Container <code>div</code></h3>
+<h3 id="getting-the-container-div">Getting the Container <code>&lt;div&gt;</code></h3>
+<p>There is a <code>&lt;div&gt;</code> element meant to contain the list of previous colors. Start by storing that element in a variable.</p>
 <ol>
-<li>At the bottom of the <code>changeBackground</code> function, declare a new variable named <code>colorListDiv</code></li>
-<li>Set the value of <code>colorListDiv</code>: use <code>document.querySelector</code> to select the HTML <code>div</code><ul>
-<li><code>document.querySelector</code></li>
-<li>Parentheses</li>
-<li>Quotes within the parentheses</li>
-<li><code>id</code> selector within the quotes</li>
+<li>At the bottom of the <code>changeBackground</code> function, create a new variable named <code>colorListDiv</code></li>
+<li>Set the value of <code>colorListDiv</code> using <code>document.querySelector</code> to select the HTML <code>&lt;div&gt;</code><ul>
+<li><code>document.querySelector(&quot;&quot;)</code></li>
+<li><code>id</code> selector within the quotes (the <code>id</code> is <code>color-list</code>)</li>
 </ul>
 </li>
 </ol>
-<h3 id="creating-a-new-p-element">Creating a New <code>p</code> Element</h3>
+<p>Now, the container should be available in the body of the <code>changeBackground</code> function.</p>
+<h3 id="creating-a-new-p-element">Creating a New <code>&lt;p&gt;</code> Element</h3>
+<p>Now that the <code>&lt;div&gt;</code> has been stored, it will be necessary to create something to add to it!</p>
 <ol>
-<li>Underneath the <code>colorListDiv</code> variable, declare a new variable named <code>newColorP</code></li>
-<li>Set the value of <code>newColorP</code>: use <code>document.createElement</code> to create a new <code>p</code> paragraph<ul>
-<li><code>document.createElement</code></li>
-<li>Parentheses</li>
-<li>Quotes within the parentheses</li>
-<li>Tag name within the quotes</li>
+<li>Underneath the <code>colorListDiv</code> variable, create a new variable named <code>newColorPara</code></li>
+<li>Set the value of <code>newColorPara</code>: use <code>document.createElement</code> to create a new <code>p</code> paragraph<ul>
+<li><code>document.createElement(&quot;&quot;)</code></li>
+<li>Tag name within the quotes (<code>p</code>)</li>
 </ul>
 </li>
-<li>Under the variable declaration, use <code>.textContent</code> to set the text value of <code>newColorP</code><ul>
+<li>Under the variable creation, use <code>.textContent</code> to set the text value of <code>newColorPara</code><ul>
 <li>Variable name</li>
 <li><code>.textContent</code></li>
-<li>Set the value to the color the user entered (stored in the <code>color</code> variable)</li>
+<li>Set the value to the color the user entered (stored in the <code>colorValue</code> variable)</li>
 </ul>
 </li>
 </ol>
-<h3 id="appending-the-new-p-element-to-the-container-div">Appending the New <code>p</code> Element to the Container <code>div</code></h3>
-<p>At the bottom of the <code>changeBackground</code> function, use <code>.appendChild</code> to add <code>newColorP</code> as a child of <code>colorListDiv</code>.</p>
+<p>Now, the new paragraph element has been created and fully formed!</p>
+<h3 id="appending-the-new-p-element-to-the-container-div">Appending the New <code>&lt;p&gt;</code> Element to the Container <code>&lt;div&gt;</code></h3>
+<p>So the new <code>&lt;p&gt;</code> element exists, but it should not appear yet... it must be appended to another element!</p>
+<p>At the bottom of the <code>changeBackground</code> function, use <code>.appendChild</code> to add <code>newColorPara</code> as a child of <code>colorListDiv</code>:</p>
 <ul>
 <li>Parent element variable (container)</li>
-<li><code>.appendChild</code></li>
-<li>Parentheses</li>
+<li><code>.appendChild()</code></li>
 <li>Child element variable (new paragraph) within the parentheses</li>
 </ul>
+<p>After these changes, try running the program. Enter some colors, click the button a few times, and verify that the background changes <em>and</em> the list populates with each new color!</p>
 <h2 id="challenges">Challenges</h2>
-<p>When you have completed this activity, attempt one or both of the following challenges:</p>
+<p>After this activity, there are some challenges to attempt:</p>
 <ul>
 <li><a href="Challenges/ShoppingListChallenge.html">Shopping List Challenge</a></li>
 <li><a href="Challenges/TableDataChallenge.html">Table Data Challenge</a></li>
@@ -928,7 +929,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.8.3","depth":2,"next":{"title":"Shopping List Challenge","level":"1.8.4","depth":2,"path":"Week07/Challenges/ShoppingListChallenge.md","ref":"Week07/Challenges/ShoppingListChallenge.md","articles":[]},"previous":{"title":"Code-Along","level":"1.8.2","depth":2,"path":"Week07/LyricsCodeAlong.md","ref":"Week07/LyricsCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week07/SelfPacedWork.md","mtime":"2022-09-07T16:44:16.263Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T16:44:49.444Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.8.3","depth":2,"next":{"title":"Shopping List Challenge","level":"1.8.4","depth":2,"path":"Week07/Challenges/ShoppingListChallenge.md","ref":"Week07/Challenges/ShoppingListChallenge.md","articles":[]},"previous":{"title":"Code-Along","level":"1.8.2","depth":2,"path":"Week07/LyricsCodeAlong.md","ref":"Week07/LyricsCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week07/SelfPacedWork.md","mtime":"2022-09-07T17:00:11.923Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T17:00:42.329Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
