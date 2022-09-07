@@ -14,6 +14,9 @@ Interestingly, professional web developers do not typically write raw HTML at al
 ## Lecture: Updating HTML with JavaScript
 Present the [DOM Manipulation Continued PowerPoint](DomManipulationContinued.pptx) to show more DOM possibilities, like updating or creating HTML elements.
 
+### Additional Guide
+There is also a [written guide](DomManipulationUpdateHtml.md) for reference.
+
 ## Code-Along: Lyrics Builder
 Follow the [instructions](LyricsCodeAlong.md) to build up to a simple app that adds lines of a song into a container one-by-one. Be sure to ask the students for suggestions about where to go next. There is no need to spend too long on this.
 
