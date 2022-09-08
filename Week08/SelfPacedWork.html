@@ -783,86 +783,165 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="individual-exercise---background-images">Individual Exercise - Background Images</h1>
-<p>Follow the instructions below to create a webpage that allows the user to change the background image dynamically. By the end, the user should be able to click buttons to change the background, and enter their own backgrounds image URLs too! Use previous HTML and JavaScript files as references.</p>
-<h4 id="javascript-code-to-update-the-background-image">JavaScript code to update the background image</h4>
-<p>Later on in this exercise, you will need to update the background image of the page using JavaScript. Here is how you can do that (Replace <code>&lt;your url here&gt;</code> with the URL of the image):</p>
-<pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.style.background = <span class="hljs-string">&quot;url(&lt;your url here&gt;)&quot;</span>;
+                                <h1 id="self-paced-work-background-images">Self-Paced Work: Background Images</h1>
+<p>Follow the instructions below to create a webpage that allows the user to change the background image dynamically. By the end, the user should be able to click buttons to change the background, and enter their own background image URLs too! Use previous HTML and JavaScript files as references.</p>
+<h4 id="reference-javascript-code-to-update-the-background-image">Reference: JavaScript Code to Update the Background Image</h4>
+<p>Later on in this exercise, it will be necessary to update the background image of the page using JavaScript. Here is how to do that. Replace <code>&lt;your image file here&gt;</code> with the filename of the image:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.style.background = <span class="hljs-string">&quot;url(&lt;your image file here&gt;)&quot;</span>;
 </code></pre>
-<p>Refer back to this code when you need it.</p>
-<h2 id="setup">Setup</h2>
-<p>Start by forking <a href="https://replit.com/@HylandOutreach/BackgroundChangerStart" target="_blank">this starter Repl</a>, then follow the steps below to add an initial background image. In the <code>style</code> tag, use the following CSS:</p>
+<p>Refer back to this code when it is needed.</p>
+<h2 id="part-1---setup">Part 1 - Setup</h2>
+<p>Start by forking <a href="https://replit.com/@HylandOutreach/BackgroundChangerStart" target="_blank">this starter Repl</a>, then add an initial background image. In the <strong>style.css</strong> file, use the following code:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
     <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(Planet.jpg);
 }
 </code></pre>
-<p>This is the ruleset we will update with JavaScript when our buttons are clicked.</p>
-<h2 id="one-button">One Button</h2>
-<ul>
-<li>In the JavaScript file, define a function named <code>changeBackground</code><ul>
-<li>Remember, to define a function, you need: <code>function</code>, the name of the function, parentheses, and curly brackets</li>
+<p>This is the ruleset that will be updated with JavaScript when buttons are clicked.</p>
+<h2 id="part-2---one-button">Part 2 - One Button</h2>
+<p>Add a button that will set the background image when clicked.</p>
+<h3 id="javascript">JavaScript</h3>
+<p>Start by <em>defining a function</em> in JavaScript.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>At the top of the file, define a new function named <code>changeBackground</code><ul>
+<li><code>function</code> keyword</li>
+<li>Function name: <code>changeBackground</code></li>
+<li>Parentheses (left/right)</li>
+<li>Curly brackets (left/right)</li>
 </ul>
 </li>
-<li>In the body of the <code>changeBackground</code> function (between <code>{</code> and <code>}</code>), insert the code to update the background image to this one: <strong>Pokemon.jpg</strong></li>
-<li>In the HTML file, add a button to the <code>body</code> of the page with the text &quot;Image 1&quot;</li>
-<li>Add in code so that when the &quot;Image 1&quot; button is clicked, the <code>changeBackground</code> function is called, and the background changes</li>
+<li>In the <em>body</em> of the function (between <code>{</code> and <code>}</code>), make a new line</li>
+<li>On the new line, add the code to update the background image to <strong>Pokemon.jpg</strong></li>
+</ol>
+<p>Now the function should be <em>defined</em>... but it needs to be <em>called</em>!</p>
+<h3 id="html">HTML</h3>
+<p>Add a button in the HTML to call the newly-defined function.</p>
+<ol>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>Within the <code>&lt;body&gt;&lt;/body&gt;</code>, create a <code>&lt;button&gt;</code> element</li>
+<li>Make the text for the button be <code>Image 1</code></li>
+<li>Set the <code>onclick</code> of the <code>&lt;button&gt;</code> to <em>call</em> the <code>changeBackground</code> function<ul>
+<li>Use the function name and parentheses (left/right)</li>
 </ul>
-<h2 id="two-buttons">Two Buttons</h2>
-<p>Repeat the steps above to create ANOTHER button AND function that will change the background to this image: <strong>City.jpg</strong></p>
-<p>The function name and button text should be different. Name the function <code>changeBackground2</code> and give the button the text &quot;Image 2&quot;.</p>
-<h2 id="parameter-time">Parameter Time</h2>
-<p>Now, your JavaScript file should contain two very similar functions. The only differences are the names of the functions, and the actual URLs for the images. Looks like a parameter could help us simplify our code!</p>
+</li>
+</ol>
+<p>At this point, load up the page and try clicking the button. The background image should update!</p>
+<h2 id="part-3---two-buttons">Part 3 - Two Buttons</h2>
+<p>Now, create <em>another</em> HTML <code>&lt;button&gt;</code> and JavaScript function that will change the background to another image. This will be very similar to the steps above!</p>
+<h3 id="javascript">JavaScript</h3>
+<p>In the <strong>script.js</strong> function, define a new function named <code>changeBackground2</code>. It should be almost exactly the same as the <code>changeBackground</code> function, except that it should set the background URL to <strong>City.jpg</strong>.</p>
+<h3 id="html">HTML</h3>
+<p>In the <strong>index.html</strong> file, create a new <code>&lt;button&gt;</code>. Place it under the existing <code>&lt;button&gt;</code>, within the <code>&lt;body&gt;&lt;/body&gt;</code>. It should be almost exactly the same as the other <code>&lt;button&gt;</code>, but the text should be <code>Image 2</code> and the <code>onclick</code> attribute should call the <code>changeBackground2</code> function.</p>
+<p>Once the functional button has been added, load up the page and click it. It should change the background to the new image!</p>
+<h2 id="part-4---parameter-time">Part 4 - Parameter Time</h2>
+<p>At this point, the <strong>script.js</strong> file should contain two very similar functions. The only differences are the names of the functions, and the actual filenames for the images. Looks like a parameter could help simplify this code!</p>
 <h3 id="updating-the-function-definition">Updating the Function Definition</h3>
-<ul>
-<li>In the <code>changeBackground</code> function, replace the actual URL in the string with a new variable named <code>backgroundUrl</code><ul>
-<li>To do this, you will have to add together three values: <code>&quot;url(&quot; + backgroundUrl + &quot;)&quot;</code></li>
+<p>Start by changing one of the existing function definitions so that it uses a <em>parameter</em>.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>In the <code>changeBackground</code> function definition, add a parameter named <code>backgroundUrl</code><ul>
+<li>It should go in between the parentheses right after the function name</li>
 </ul>
 </li>
-<li>Instead of declaring <code>backgroundUrl</code> as a variable, make it a <strong>parameter</strong> by placing it within the parentheses of the function definition</li>
+<li>In the body of the <code>changeBackground</code> function, replace <strong>Pokemon.jpg</strong> with the variable value of the parameter<ul>
+<li>Using a template literal, it should look something like this:<pre><code class="lang-js">  <span class="hljs-string">`url(<span class="hljs-subst">${backgroundUrl}</span>)`</span>;<span class="hljs-string">`
+</span></code></pre>
+</li>
 </ul>
+</li>
+</ol>
+<p>Now the function has been redefined, which means it can set the background to any image!</p>
 <h3 id="updating-the-function-calls">Updating the Function Calls</h3>
-<ul>
-<li>In the HTML file, update the call to <code>changeBackground</code> so that it passes in the original URL as the parameter<ul>
-<li>Because this call is within double quotes, surround the url with single quotes inside of the parentheses, ex: <code>onclick=&quot;changeBackground(&apos;Pokemon.jpg&apos;)&quot;</code></li>
+<p>Redefining the function means that the function <em>call</em> is currently broken. Update each function call so they each pass in an <em>argument</em>.</p>
+<ol>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>Find the <code>&lt;button&gt;</code> where the <code>onclick</code> attribute calls the <code>changeBackground</code> function</li>
+<li>Update this call by placing <code>&apos;Pokemon.jpg&apos;</code> between the parentheses - this will be the <em>argument</em><ul>
+<li>Note that the argument value should be surrounded by <strong>single quotes</strong>; this is because the attribute is within double quotes</li>
 </ul>
 </li>
-<li>Update the &quot;Image 2&quot; button to call the <code>changeBackground</code> function on click as well, passing in its own URL</li>
-</ul>
-<p>Now we can get rid of our <code>changeBackground2</code> function, and everything should still work!</p>
-<h2 id="three-buttons">Three Buttons</h2>
-<p>In the HTML, add a third button. This button should again call the <code>changeBackground</code> function, but it should pass in a new URL: <strong>CalvinAndHobbes.jpg</strong>. The button text should be &quot;Image 3&quot;. Notice that we can add this button without making any changes to the JavaScript!</p>
-<h2 id="bonus-prompt-for-image">(BONUS) Prompt for Image</h2>
-<p>Add another button to the page that, when clicked, will ask the user for a URL, and set the background image to whatever they enter.</p>
-<ul>
-<li>In the JavaScript file, define a new function called <code>promptForBg</code></li>
-<li>In the body of the <code>promptForBg</code> function, use a prompt to ask the user what they want the background to be<ul>
-<li>Make sure to store their response in a variable</li>
-</ul>
-</li>
-<li>Under that prompt, call the <code>changeBackground</code> function and pass in the value the user entered</li>
-<li>In the HTML file, create a new button with the text &quot;Prompt for Bg&quot; that should call the <code>promptForBg</code> function when clicked<ul>
-<li>Note that we do not have to pass in a URL to the <code>promptForBg</code> function - the function will get the URL from the user</li>
+<li>Update the second <code>&lt;button&gt;</code> to call <code>changeBackground</code> and pass in <code>&apos;City.jpg&apos;</code> as the argument</li>
+</ol>
+<p>Now try loading up the page. Click each button and verify that they still work as intended!</p>
+<p>At this point, it will be possible to remove the <code>changeBackground2</code> function; it should not be needed any longer.</p>
+<h2 id="part-5---three-buttons">Part 5 - Three Buttons</h2>
+<p>In addition to refactoring the other buttons, adding this parameter makes it much simpler to add another new button! Note that no changes in the <strong>script.js</strong> file are required.</p>
+<ol>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>Within the <code>&lt;body&gt;&lt;/body&gt;</code>, under the existing <code>&lt;button&gt;</code>s, create a new <code>&lt;button&gt;</code> element</li>
+<li>Make the text for the button be <code>Image 3</code></li>
+<li>Set the <code>onclick</code> of the <code>&lt;button&gt;</code> to <em>call</em> the <code>changeBackground</code> function<ul>
+<li>Use the function name and parentheses (left/right)</li>
 </ul>
 </li>
-</ul>
-<p>This is a good example of reusing code to implement new features. By calling the <code>changeBackground</code> function, we were able to avoid unnecessary code duplication!</p>
-<h2 id="bonus-input-for-image">(BONUS) Input for Image</h2>
-<p>Finally, we want to create an HTML input and a button that will set the background image to whatever URL the user has entered in the input when clicked.</p>
-<ul>
-<li>In the HTML file, create a new <code>div</code> element</li>
-<li>Inside the new <code>div</code> element, create a new text input and a new button<ul>
-<li>The input should have an id of &quot;bgInput&quot;</li>
-<li>The button should say &quot;Input for Bg&quot;</li>
+<li>Pass in an argument of <code>&apos;CalvinAndHobbes.jpg&apos;</code> to the function</li>
+</ol>
+<p>Load up the page again, click the third button, and verify that the background changes to yet another new image! All this without changing anything in the JavaScript &#x1F60E;</p>
+<h2 id="challenge-1---prompt-for-image">Challenge 1 - Prompt for Image</h2>
+<p>Try to expand the functionality of the page by adding a button that, when clicked, will prompt the user for a URL, and set the background image to whatever they enter.</p>
+<h3 id="javascript">JavaScript</h3>
+<p>Start by defining a new function in the JavaScript.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>Under the existing function, define a new function named <code>promptForBg</code></li>
+<li>In the body of the <code>promptForBg</code> function, use a <code>prompt</code> to ask the user what they want the background to be<ul>
+<li>Make sure to store their answer in a variable</li>
 </ul>
 </li>
-<li>In the JavaScript file, define a new function called <code>inputForBg</code></li>
-<li>In the body of the <code>inputForBg</code> function, <strong>select</strong> the input element from the HTML, and store it in a variable named <code>bgInputElement</code></li>
-<li>Declare another variable named <code>bgInputValue</code>, and set its value to the <code>value</code> of the <code>bgInputElement</code></li>
-<li>Call the <code>changeBackground</code> function and pass in the <code>bgInputValue</code> variable</li>
-<li>Set the <code>value</code> of the <code>bgInputElement</code> to be empty</li>
-<li>In the HTML file, make &quot;Input for Bg&quot; button call the <code>inputForBg</code> function when clicked</li>
+<li>Under that prompt, call the <code>changeBackground</code> function and pass in the value the user entered as the argument</li>
+</ol>
+<p>That should do it for the JavaScript!</p>
+<h3 id="html">HTML</h3>
+<p>To actually use the <code>promptForBg</code> function, it will be necessary to add a button to the page.</p>
+<ol>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>In the <code>&lt;body&gt;&lt;/body&gt;</code>, under the existing <code>&lt;button&gt;</code>s, add a new <code>&lt;button&gt;</code></li>
+<li>Make the text for the button be <code>Image from Prompt</code></li>
+<li>Set the <code>onclick</code> attribute for the <code>&lt;button&gt;</code> to call the <code>promptForBg</code> function<ul>
+<li>Note that it is not necessary to pass in a URL here; the function will take care of that with the <code>prompt</code>!</li>
 </ul>
-<p>That&apos;s it! Now you should be able to easily set the background of your webpage to any image you like.</p>
+</li>
+</ol>
+<p>Load up the page, click the button, and verify that a new URL can be entered! Try to find an image somewhere online and copy its URL for fun custom backgrounds!</p>
+<p>This is a good example of reusing code to implement new features. By calling the <code>changeBackground</code> function, it was possible to avoid unnecessary code duplication!</p>
+<h2 id="challenge-2---input-for-image">Challenge 2 - Input for Image</h2>
+<p>Finally, expand the functionality a little more by creating a button that will set the background image based on an input on the page.</p>
+<h3 id="html">HTML</h3>
+<p>Start by updating the HTML with the necessary elements.</p>
+<ol>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>In the <code>&lt;body&gt;&lt;/body&gt;</code>, under the <code>&lt;button&gt;</code> elements, create a new <code>&lt;div&gt;</code> element</li>
+<li>Within the <code>&lt;div&gt;&lt;/div&gt;</code>, create a new <code>&lt;input /&gt;</code> element</li>
+<li>Set the <code>type</code> attribute of the <code>&lt;input /&gt;</code> element to be <code>&quot;text&quot;</code></li>
+<li>Set the <code>id</code> attribute of the <code>&lt;input /&gt;</code> element to be <code>bg-input</code></li>
+<li>Under the <code>&lt;input /&gt;</code> element, still within the <code>&lt;div&gt;&lt;/div&gt;</code>, create a <code>&lt;button&gt;</code></li>
+<li>Make the text for the <code>&lt;button&gt;</code> be <code>Image from Input</code></li>
+</ol>
+<p>Now the elements should all be in place - but the button needs something to do!</p>
+<h3 id="javascript">JavaScript</h3>
+<p>Define a new function to set the background image based on the new text box element.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>Under the existing function, define a new function named <code>inputForBg</code></li>
+<li>In the body of the <code>inputForBg</code> function, create a new variable named <code>bgInputElement</code></li>
+<li>Set the variable to be a call to the <code>document.querySelector</code> function<ul>
+<li>It should select the <code>&lt;input /&gt;</code> from the HTML based on its <code>id</code></li>
+</ul>
+</li>
+<li>Under that, create another new variable named <code>bgInputValue</code></li>
+<li>Set that variable to be the <code>.value</code> of the <code>bgInputElement</code> variable</li>
+<li>Under that, call the <code>changeBackground</code> function, and pass in the <code>bgInputValue</code> variable as the <em>argument</em></li>
+<li>Under that, set the <code>.value</code> of the <code>bgInputElement</code> variable to be empty (<code>&quot;&quot;</code>)</li>
+</ol>
+<p>That should be it for the JavaScript! The function is defined and ready to go... it just needs to be called from the HTML.</p>
+<h3 id="back-to-the-html">Back to the HTML</h3>
+<p>Update the new button so that it does the right thing.</p>
+<ol>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>Find the <code>&lt;button&gt;</code> element with the text <code>Image from Input</code></li>
+<li>Set the <code>onclick</code> attribute for that <code>&lt;button&gt;</code> to call the <code>inputForBg</code> function</li>
+</ol>
+<p>That&apos;s it! Load up the page, enter a URL into the text box, and click the button. The new background image should appear, and the text box should go back to being empty!</p>
 
                                 
                                 </section>
@@ -906,7 +985,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.9.3","depth":2,"next":{"title":"Challenges","level":"1.9.4","depth":2,"path":"Week08/Challenges.md","ref":"Week08/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.9.2","depth":2,"path":"Week08/DiceRollerCodeAlong.md","ref":"Week08/DiceRollerCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/SelfPacedWork.md","mtime":"2022-09-08T13:52:47.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-08T13:53:23.030Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.9.3","depth":2,"next":{"title":"Challenges","level":"1.9.4","depth":2,"path":"Week08/Challenges.md","ref":"Week08/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.9.2","depth":2,"path":"Week08/DiceRollerCodeAlong.md","ref":"Week08/DiceRollerCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/SelfPacedWork.md","mtime":"2022-09-08T17:14:48.522Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-08T17:15:25.532Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
