@@ -36,8 +36,8 @@
             }
         </style>
         <script>
-            var currentPlayer = "X";
-            var board = {
+            let currentPlayer = "X";
+            let board = {
                 "p0": "",
                 "p1": "",
                 "p2": "",
@@ -52,13 +52,13 @@
             function setPiece(player, position) {
                 board[position] = player;
 
-                var square = document.querySelector("#" + position);
+                let square = document.querySelector("#" + position);
                 square.textContent = player;
                 square.classList.add("occupied");
             }
 
             function victory(player) {
-                var checkPositions = (x,y,z) =>
+                let checkPositions = (x,y,z) =>
                     board["p"+x] === player &&
                     board["p"+y] === player &&
                     board["p"+z] === player;
@@ -84,16 +84,16 @@
             }
 
             function setMessage(msg) {
-                var messageP = document.querySelector("#message");
+                let messageP = document.querySelector("#message");
                 messageP.textContent = msg;
             }
 
             function endGame() {
-                var containerDiv = document.querySelector("#container");
+                let containerDiv = document.querySelector("#container");
                 containerDiv.classList.add("off");
 
                 for (square in board) {
-                    var el = document.querySelector("#" + square);
+                    let el = document.querySelector("#" + square);
                     el.onclick = null;
                     el.classList.remove("occupied");
 
@@ -115,11 +115,11 @@
             }
 
             function startGame() {
-                var containerDiv = document.querySelector("#container");
+                let containerDiv = document.querySelector("#container");
                 containerDiv.classList.remove("off");
 
                 for (square in board) {
-                    var el = document.querySelector("#" + square);
+                    let el = document.querySelector("#" + square);
                     el.textContent = "";
 
                     el.onclick = function() {

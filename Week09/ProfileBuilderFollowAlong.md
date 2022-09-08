@@ -38,7 +38,7 @@ The webpage should have labels for the profile information going down the left s
 Since all of this information is related, it would make sense to store it within one JavaScript _object_.
 
 1. At the top of the "ProfileBuilder.js" file, define a new JavaScript object variable named `profileInfo`
-    - `var `
+    - `let `
     - variable name
     - `=`
     - `{}`
@@ -54,7 +54,7 @@ Since all of this information is related, it would make sense to store it within
 
 ### Code
 ```js
-var profileInfo = {
+let profileInfo = {
     Name: "Jack",
     Height: 60,
     Age: 33,
@@ -81,16 +81,16 @@ Try out the webpage to see if it works!
 ### Code
 ```js
 function generateProfile() {
-    var nameEl = document.querySelector("#name");
+    let nameEl = document.querySelector("#name");
     nameEl.textContent = profileInfo.Name;
 
-    var heightEl = document.querySelector("#height");
+    let heightEl = document.querySelector("#height");
     heightEl.textContent = profileInfo.Height;
 
-    var ageEl = document.querySelector("#age");
+    let ageEl = document.querySelector("#age");
     ageEl.textContent = profileInfo.Age;
 
-    var locationEl = document.querySelector("#location");
+    let locationEl = document.querySelector("#location");
     locationEl.textContent = profileInfo.Location;
 }
 ```
@@ -131,7 +131,7 @@ Try out the webpage. Note that when updating, it only updates the JavaScript obj
 
 #### JS
 ```js
-var profileInfo = {
+let profileInfo = {
     Name: "Jack",
     Height: 60,
     Age: 33,
@@ -139,21 +139,21 @@ var profileInfo = {
 }
 
 function generateProfile() {
-    var nameEl = document.querySelector("#name");
+    let nameEl = document.querySelector("#name");
     nameEl.textContent = profileInfo.Name;
 
-    var heightEl = document.querySelector("#height");
+    let heightEl = document.querySelector("#height");
     heightEl.textContent = profileInfo.Height;
 
-    var ageEl = document.querySelector("#age");
+    let ageEl = document.querySelector("#age");
     ageEl.textContent = profileInfo.Age;
 
-    var locationEl = document.querySelector("#location");
+    let locationEl = document.querySelector("#location");
     locationEl.textContent = profileInfo.Location;
 }
 
 function updateName() {
-    var newName = prompt("Enter a new name:");
+    let newName = prompt("Enter a new name:");
     profileInfo.Name = newName;
 }
 ```

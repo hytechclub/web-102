@@ -19,7 +19,7 @@ function escape() {
 }
 
 function father() {
-    var yourName = prompt("What is your name?");
+    let yourName = prompt("What is your name?");
     alert(yourName + ", I am your father.");
 }
 
