@@ -783,78 +783,81 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="challenge---various-functions">Challenge - Various Functions</h1>
+                                <h1 id="challenges-various-functions">Challenges: Various Functions</h1>
 <p>Create a webpage where users can perform various functions on two inputs.</p>
 <h2 id="setup">Setup</h2>
-<p>Start from <a href="https://repl.it/@JosephMaxwell/EmptyWeb#index.html" target="_blank">this empty Repl</a>, then follow the steps below.</p>
+<p>Start by forking <a href="https://replit.com/@HylandOutreach/EmptyWeb" target="_blank">this empty Repl</a>, then follow the steps below.</p>
 <h3 id="basics">Basics</h3>
-<ul>
-<li>Create a new JS file</li>
-<li>Update the <strong>index.html</strong> file with all the basic boiler-plate</li>
-<li>Also in the <strong>index.html</strong> file:<ul>
-<li>Create two text inputs, each with an id</li>
-<li>Create a paragraph with an id</li>
-<li>Create a button with the text &quot;Add&quot;</li>
+<p>Do some initial setup to begin.</p>
+<ol>
+<li>Create a new <strong>script.js</strong> file</li>
+<li>Update the <strong>index.html</strong> file with the basic starter code<ul>
+<li><code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;script&gt;</code></li>
 </ul>
 </li>
+<li>Also in the <strong>index.html</strong> file:<ul>
+<li>Create two text <code>&lt;inputs /&gt;</code>, each with a unique <code>id</code></li>
+<li>Create a <code>&lt;p&gt;</code> with a unique id</li>
+<li>Create a <code>&lt;button&gt;</code> with the text &quot;Add&quot;</li>
 </ul>
+</li>
+</ol>
 <h3 id="first-button">First Button</h3>
-<ul>
-<li>In the JavaScript file, define a function named <code>addNumbers</code></li>
-<li>The <code>addNumbers</code> function should:<ul>
-<li>Retrieve the text values from the two text inputs in the HTML</li>
+<p>Make the button add the two numbers from the inputs together, and display the result on the page.</p>
+<ol>
+<li>In the <strong>script.js</strong> file, define a function named <code>addNumbers</code></li>
+<li>In the body of the <code>addNumbers</code> function:<ul>
+<li>Retrieve the text values from the two text <code>&lt;inputs /&gt;</code> in the HTML</li>
 <li>Convert the text values into numbers</li>
 <li>Add the two numbers together</li>
-<li>Retrieve the paragraph from the HTML</li>
+<li>Retrieve the <code>&lt;p&gt;</code> from the HTML</li>
 <li>Set the paragraph&apos;s text to be the result of the calculation</li>
-<li>Clear the text input values</li>
+<li>Clear the text <code>&lt;input /&gt;</code> values</li>
 </ul>
 </li>
-<li>In the HTML file, set the <code>onclick</code> attribute of the button to call the <code>addNumbers</code> function</li>
-</ul>
+<li>In the <strong>index.html</strong> file, set the <code>onclick</code> attribute of the button to call the <code>addNumbers</code> function</li>
+</ol>
 <h3 id="second-button">Second Button</h3>
-<p>Repeat the steps above for a new function: <code>multiplyNumbers</code>. Add a new button to the HTML, and test out both of your buttons.</p>
+<p>Repeat the steps above for a new function: <code>multiplyNumbers</code>. Add a new <code>&lt;button&gt;</code> to the HTML, and test out both of the buttons.</p>
 <h2 id="abstracting-the-functionality">Abstracting the Functionality</h2>
-<p>So far, we are able to execute two functions on the two input values. We want to expand this to make it easier to add more functions, without repeating a lot of code.</p>
+<p>So far, it has been possible to execute two functions on the two input values. Expand this to make it easier to add more functions, without repeating a lot of code.</p>
 <h3 id="simplifying-functions">Simplifying Functions</h3>
-<p>Our <code>addNumbers</code> and <code>multiplyNumbers</code> functions are doing too much right now. In general, functions should do as little as possible, so we don&apos;t have to repeat code.</p>
+<p>The <code>addNumbers</code> and <code>multiplyNumbers</code> functions are doing too much right now. In general, functions should do as little as possible, so repeated code is not necessary.</p>
 <p>Simplify the <code>addNumbers</code> and <code>multiplyNumbers</code> functions. They should:</p>
 <ul>
 <li>Take in the text values as <em>parameters</em></li>
 <li>Convert the values to numbers</li>
 <li>Perform the calculation</li>
-<li>Return the result of the calculation (see below)</li>
+<li>Return the result of the calculation</li>
 </ul>
-<pre><code class="lang-js"><span class="hljs-comment">// assuming the result of the calculation is stored in calcResult</span>
-<span class="hljs-keyword">return</span> calcResult;
-</code></pre>
 <h3 id="runner-function">Runner Function</h3>
 <p>The next step is to create a runner function that will call all other functions as needed. Each button should be identifiable by a number. The runner function will call the corresponding function.</p>
-<ul>
-<li>In the JavaScript file, define a function named <code>runButton</code></li>
-<li>The <code>runButton</code> function should:<ul>
-<li>Take in a numeric parameter representing which function to call</li>
-<li>Retrieve the text values from the two text inputs in the HTML</li>
-<li>Call the appropriate function, passing the text values as parameters<ul>
-<li>E.g., if the numeric parameter is <code>1</code>, add. If the numeric parameter is <code>2</code>, multiply.</li>
+<ol>
+<li>In the <strong>script.js</strong> file, define a function named <code>runButton</code></li>
+<li>In the body of the <code>runButton</code> function:<ul>
+<li>Take in a numeric <em>parameter</em> representing which function to call</li>
+<li>Retrieve the text values from the two text <code>&lt;input /&gt;</code>s in the HTML</li>
+<li>Call the appropriate function, passing the text values as <em>parameters</em><ul>
+<li>E.g., if the numeric parameter is <code>1</code>, call <code>addNumbers</code>. If the numeric parameter is <code>2</code>, call <code>multiplyNumbers</code>.</li>
 </ul>
 </li>
 <li>Set the paragraph&apos;s text to the result of the function call</li>
 <li>Clear the text input values</li>
 </ul>
 </li>
-</ul>
-<p>For example, let&apos;s say the &quot;Add&quot; button is <code>1</code>, and the &quot;Multiply&quot; button is <code>2</code>. Calling <code>runButton(1)</code> should perform the <code>addNumbers</code> action, and calling <code>runButton(2)</code> should perform the <code>multiplyNumbers</code>. Note that these identifiers are completely arbitrary. You could use any sort of parameter, as long as the <code>runButton</code> calls the right function!</p>
+</ol>
+<p>For example, say the &quot;Add&quot; button is <code>1</code>, and the &quot;Multiply&quot; button is <code>2</code>. Calling <code>runButton(1)</code> should perform the <code>addNumbers</code> action, and calling <code>runButton(2)</code> should perform the <code>multiplyNumbers</code>. Note that these identifiers are completely arbitrary. Any sort of parameter works, as long as the <code>runButton</code> calls the right function!</p>
 <h3 id="updating-function-calls">Updating Function Calls</h3>
-<p>Now, our <code>runButton</code> function should be able to handle any of our buttons! Update the <code>onclick</code> attribute for each button so that it calls <code>runButton</code> with the appropriate numeric identifier.</p>
+<p>Now, the <code>runButton</code> function should be able to handle any of the buttons! Update the <code>onclick</code> attribute for each button so that they each call <code>runButton</code> with the appropriate numeric identifier.</p>
 <h2 id="adding-new-buttons">Adding New Buttons</h2>
-<p>Now, to add a new button and function, take these steps:</p>
+<p>Now, it should be possible to add a new buttons for new calculations.</p>
+<p>To add a new button and function:</p>
 <ul>
-<li>In the JavaScript, define a new function that will take in two values, and return the result</li>
-<li>Call this function within the <code>runButton</code> function based on its numeric identifier (e.g., 3)</li>
-<li>In the HTML, create a new button that will call <code>runButton</code> with the numeric identifier as the parameter (e.g., 3)</li>
+<li>In the <strong>script.js</strong> file, define a new function that will take in two values as parameters, and return the result</li>
+<li>Call this function within the <code>runButton</code> function based on its numeric identifier (e.g., <code>3</code>)</li>
+<li>In the <strong>index.html</strong> file, create a new button that will call <code>runButton</code> with the numeric identifier as the parameter (e.g., <code>3</code>)</li>
 </ul>
-<p>That&apos;s all! Next, add buttons that will perform the following actions:</p>
+<p>That&apos;s all! Try to create buttons that will perform the following actions:</p>
 <ol>
 <li>Divide the two inputs</li>
 <li>Say whether or not the two inputs are equal (return a string)</li>
@@ -863,7 +866,7 @@
 <li>Return the larger input minus the smaller input</li>
 </ol>
 <h2 id="more-functions---single-input">More Functions - Single Input</h2>
-<p>Try to think of possible calculations to perform on a single input. Try playing this game for inspiration: <a href="http://www.functiongame.com/" target="_blank">http://www.functiongame.com/</a></p>
+<p>Try to think of possible calculations to perform on a single input. Try playing <a href="https://functiongame.com/" target="_blank">this function game</a> for inspiration.</p>
 
                                 
                                 </section>
@@ -907,7 +910,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Challenges","level":"1.9.4","depth":2,"next":{"title":"Week 9 - JavaScript Objects","level":"1.10","depth":1,"path":"Week09/StudentDesc.md","ref":"Week09/StudentDesc.md","articles":[{"title":"Profile Builder Follow-Along","level":"1.10.1","depth":2,"path":"Week09/ProfileBuilderFollowAlong.md","ref":"Week09/ProfileBuilderFollowAlong.md","articles":[]},{"title":"Profile Builder Individual","level":"1.10.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},{"title":"Objects Challenges","level":"1.10.3","depth":2,"path":"Week09/Challenges.md","ref":"Week09/Challenges.md","articles":[]}]},"previous":{"title":"Self-Paced Work","level":"1.9.3","depth":2,"path":"Week08/SelfPacedWork.md","ref":"Week08/SelfPacedWork.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/Challenges.md","mtime":"2022-09-08T17:14:48.518Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-08T17:15:25.532Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Challenges","level":"1.9.4","depth":2,"next":{"title":"Week 9 - JavaScript Objects","level":"1.10","depth":1,"path":"Week09/StudentDesc.md","ref":"Week09/StudentDesc.md","articles":[{"title":"Profile Builder Follow-Along","level":"1.10.1","depth":2,"path":"Week09/ProfileBuilderFollowAlong.md","ref":"Week09/ProfileBuilderFollowAlong.md","articles":[]},{"title":"Profile Builder Individual","level":"1.10.2","depth":2,"path":"Week09/ProfileBuilderIndividual.md","ref":"Week09/ProfileBuilderIndividual.md","articles":[]},{"title":"Objects Challenges","level":"1.10.3","depth":2,"path":"Week09/Challenges.md","ref":"Week09/Challenges.md","articles":[]}]},"previous":{"title":"Self-Paced Work","level":"1.9.3","depth":2,"path":"Week08/SelfPacedWork.md","ref":"Week08/SelfPacedWork.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week08/Challenges.md","mtime":"2022-09-08T17:29:02.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-08T17:29:41.348Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
