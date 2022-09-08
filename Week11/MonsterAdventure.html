@@ -37,16 +37,16 @@
             }
         </style>
         <script>
-            var momCalls = 0;
-            var goneEast = false;
-            var goneSouth = false;
-            var goneSouth2 = false;
-            var monsterHit = -30;
+            let momCalls = 0;
+            let goneEast = false;
+            let goneSouth = false;
+            let goneSouth2 = false;
+            let monsterHit = -30;
             
-            var winProb = .1;
+            let winProb = .1;
             
             function updateHP(change) {
-                var hp = document.querySelector("#hp");
+                let hp = document.querySelector("#hp");
                 hp.value = parseInt(hp.value) + change;
                 
                 if (hp.value <= 0) {

@@ -19,7 +19,7 @@ Open up [this Repl project](https://replit.com/@HylandOutreach/Web102Week8WarmUp
 
 1. What message will the user see?
     ```js
-    var x = 9;
+    let x = 9;
 
     if (x >= 9) {
         x = 4;

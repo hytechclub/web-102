@@ -64,14 +64,14 @@ Our JavaScript function should check the value the user entered into the text in
 The first thing we need to do is select the text input from the HTML, so that we can get its value. Use `document.querySelector`, along with the `id` of the input, to accomplish this. Remember, we also need to store this text input in a JavaScript variable. This line should replace the `alert` at the top of the `submitPassword` function body:
 
 ```js
-var passwordInput = document.querySelector("#passwordInput");
+let passwordInput = document.querySelector("#passwordInput");
 ```
 
 In addition to selecting the password input, we are also going to need to select the paragraph for message text, and the image. We can do this in a very similar way:
 
 ```js
-var passwordMessage = document.querySelector("#passwordMessage");
-var hiddenImage = document.querySelector("#hiddenImage");
+let passwordMessage = document.querySelector("#passwordMessage");
+let hiddenImage = document.querySelector("#hiddenImage");
 ```
 
 Place these lines directly below the `passwordInput` variable declaration/setting.
@@ -80,7 +80,7 @@ Place these lines directly below the `passwordInput` variable declaration/settin
 We have the text input stored in a JavaScript variable (`passwordInput`), but we need to get its actual value (what the user entered). We do this by using `.value`, and we have to store the result in another variable:
 
 ```js
-var passwordValue = passwordInput.value;
+let passwordValue = passwordInput.value;
 ```
 
 Now that we have the text the user entered, we can compare it to the correct password. In our case, let's say the correct password is "opensesame". We can use an `if`/`else` structure to change program flow based on whether their password is correct or incorrect. For now, let's simply alert whether the password was correct or not:
@@ -176,11 +176,11 @@ When complete, the code should look something like this:
 **script.js**
 ```js
 function submitPassword() {
-    var passwordInput = document.querySelector("#passwordInput");
-    var passwordMessage = document.querySelector("#passwordMessage");
-    var hiddenImage = document.querySelector("#hiddenImage");
+    let passwordInput = document.querySelector("#passwordInput");
+    let passwordMessage = document.querySelector("#passwordMessage");
+    let hiddenImage = document.querySelector("#hiddenImage");
 
-    var passwordValue = passwordInput.value;
+    let passwordValue = passwordInput.value;
 
     if (passwordValue === "opensesame") {
         passwordMessage.textContent = "You entered the correct password";

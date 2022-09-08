@@ -3,7 +3,7 @@
 ## HTML
 ### Link a JavaScript file
 ```html
-<script src="JavaScriptFile.js"></script>
+<script src="script.js"></script>
 ```
 
 ### Create a button that calls a function
@@ -13,12 +13,12 @@
 
 ### Create a text input
 ```html
-<input type="text" id="myInput">
+<input type="text" id="my-input" />
 ```
 
 ### Create an image
 ```html
-<img src="http://example.com/urlToImage.png">
+<img src="http://example.com/urlToImage.png" />
 ```
 
 ## JavaScript
@@ -31,12 +31,12 @@ function myFunction() {
 
 ### Call a function
 ```js
-myFunction()
+myFunction(parameter);
 ```
 
-### Declare a variable
+### Create a variable
 ```js
-var x;
+let x = "new variable";
 ```
 
 ### Set a variable
@@ -56,16 +56,17 @@ x += 10;
 ```
 
 ### Find the maximum of some variables
->Assume `count1`, `count2`, and `count3` are all numeric variables
-
 ```js
-var maximumCount = Math.max(count1, count2, count3);
+let count1 = 5;
+let count2 = 9;
+let count3 = 4;
+
+let maximumCount = Math.max(count1, count2, count3);
 ```
 
-### Generate a random number between 1 and any number (like 10)
+### Generate a random number between 1 and any number
 ```js
-// replace 10 with the desired number
-var random = Math.ceil(Math.random()*10);
+let random = Math.ceil(Math.random()*10);
 ```
 
 ### Display a message to the user
@@ -73,30 +74,46 @@ var random = Math.ceil(Math.random()*10);
 alert("This is a message");
 ```
 
-### Make a string with linebreaks
+### Make a string with embedded expressions and linebreaks
 ```js
-// "\n" will add a new line in your string
-alert("Hello \n This is a new line \n this is too");
+let adjective = "good";
+let noun = "statement";
+
+let myMessage = `this is
+a very ${adjective} message.
+and it is a ${noun}.`;
+
+alert(myMessage);
+```
+
+Will print:
+
+```
+this is
+a very good message.
+and it is a statement.
 ```
 
 ### Ask a question to the user
 ```js
-var answer = prompt("This is a question");
+let answer = prompt("This is a question");
 ```
 
 ### Do something if a condition is true
->Assume `answer` is a variable with a value
-
 ```js
+let answer = "question";
+
 if (answer === "Answer") {
     alert("Do something");
 }
 ```
 
-### Do something if a condition is false
->Assume `answer` is a variable with a value
+Will print nothing; condition is not met.
 
+### Do something if a condition is false
 ```js
+let answer = "Answer2";
+
 if (answer === "Answer1") {
     alert("Do something");
 } else if (answer === "Answer2") {
@@ -106,42 +123,46 @@ if (answer === "Answer1") {
 }
 ```
 
+Will print:
+
+```
+Do something else if
+```
+
 ### Get the value from an HTML text input
+#### HTML
+```html
+<input id="my-input" />
+```
+
+#### JavaScript
 ```js
-var textInput = document.querySelector("#myInput");
-var textValue = textInput.value;
+let textInput = document.querySelector("#my-input");
+let textValue = textInput.value;
 ```
 
 ### Create a new HTML element
 ```js
-var newParagraph = document.createElement("p");
+let newParagraph = document.createElement("p");
 ```
 
 ### Insert an HTML element into the `body` of the page
->Assume `newParagraph` is a variable containing a newly created HTML paragraph
-
 ```js
 document.body.appendChild(newParagraph);
 ```
 
 ### Insert an HTML element into another element
->Assume `newParagraph` is a variable containing a newly created HTML paragraph
-
 ```js
-var myDiv = document.querySelector("#myDiv");
+let myDiv = document.querySelector("#my-div");
 myDiv.appendChild(newParagraph);
 ```
 
 ### Set the text content of an HTML element
->Assume `myParagraph` is a variable containing an HTML paragraph
-
 ```js
 myParagraph.textContent = "New Text Content";
 ```
 
 ### Set a CSS property of an HTML element
->Assume `myParagraph` is a variable containing an HTML paragraph
-
 ```js
 myParagraph.style.color = "red";
 ```
