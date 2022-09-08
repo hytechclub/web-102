@@ -8,7 +8,7 @@ The [warm-up activity](WarmUp.md) is a little quiz with some review questions. S
 The [presentation](FunctionParameters.pptx) formalizes functions a little more, and introduces parameters.
 
 ## Code-Along: Dice Roller
-Follow the [instructions](DiceRollerCodeAlong.md) to build up a webpage capable of rolling different types of dice. Start from the [DiceRoller Repl](https://replit.com/@HylandOutreach/DiceRollerStart). This walkthrough covers:
+Follow the [instructions](DiceRollerCodeAlong.md) to build up a webpage capable of rolling different types of dice. This walkthrough covers:
 
 - Defining multiple functions
 - Random number generation
