@@ -34,13 +34,13 @@ Start by asking the user for each word they will need to replace!
 1. At the top of the file, add an `alert` statement welcoming the user to the page
     - It should say "Welcome to the Mad Libs game!"
 1. Under that, create a new variable named `noun`
-1. Set the variable of the `noun` variable to a `prompt`, with the message `"Enter a noun"`
+1. Set the value of the `noun` variable to a `prompt`, with the message `"Enter a noun"`
 1. Under that, create a new variable named `pluralNoun`
-1. Set the variable of the `pluralNoun` variable to a `prompt`, with the message `"Enter a plural noun"`
+1. Set the value of the `pluralNoun` variable to a `prompt`, with the message `"Enter a plural noun"`
 1. Under that, create a new variable named `adjective1`
-1. Set the variable of the `adjective1` variable to a `prompt`, with the message `"Enter an adjective"`
+1. Set the value of the `adjective1` variable to a `prompt`, with the message `"Enter an adjective"`
 1. Under that, create a new variable named `adjective2`
-1. Set the variable of the `adjective2` variable to a `prompt`, with the message `"Enter an adjective"`
+1. Set the value of the `adjective2` variable to a `prompt`, with the message `"Enter an adjective"`
 
 Try running the code at this point, and make sure it successfully prompts the user for these four words!
 
