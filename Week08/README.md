@@ -1,7 +1,7 @@
 # Week 8: Functions and Review
 Dive deeper into the concepts behind functions and practice using them. This lesson covers function parameters.
 
-## Warm-Up
+## Warm-Up: Quiz
 The [warm-up activity](WarmUp.md) is a little quiz with some review questions. Students should answer the questions in a new text file, or on paper. Give the students 5-10 minutes to complete the quiz, and then go over the answers briefly.
 
 ## Lecture: Function Parameters
@@ -27,7 +27,7 @@ There are some additional [challenges](Challenges.md). If a student finishes the
 
 | Activity | Time |
 |-|-|
-| Warm Up | 15m |
+| Warm-Up | 15m |
 | Lecture | 20m |
 | Code-Along | 20m |
 | Break | 10m |

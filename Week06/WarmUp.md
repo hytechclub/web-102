@@ -1,4 +1,4 @@
-# Warm Up: Cotton Candy Inputs
+# Warm-Up: Cotton Candy Inputs
 Start by opening up [this Repl](https://replit.com/@HylandOutreach/CssRefresher) and creating a fork. It contains a simple HTML page that has a header and two input boxes.
 
 The goal of this activity is to give one of the boxes a pink background, and the other one an aqua background.

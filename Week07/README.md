@@ -4,7 +4,7 @@ Show how DOM manipulation can be used to update the HTML of a webpage. This less
 - Updating existing HTML elements
 - Creating new HTML elements
 
-## Warm Up
+## Warm-Up: Question
 Pose the following question to the students:
 
 >How much HTML do you think professional web developers write?
@@ -44,7 +44,7 @@ The [Table Data challenge](Challenges/TableDataChallenge.md) has the students cr
 
 | Activity | Time |
 |-|-|
-| Warm Up | 5m |
+| Warm-Up | 5m |
 | Lecture | 25m |
 | Code-Along | 40m |
 | Break | 10m |

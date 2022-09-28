@@ -1,7 +1,7 @@
 # Week 4: Buttons & Functions
 This lesson introduces ways to make JavaScript more usable. These concepts will be used throughout the remainder of the course. This shows how to use JavaScript functions to create working buttons.
 
-## Warm Up
+## Warm-Up: Questions
 Prompt the students with the following, and allow them to ponder it briefly:
 
 - How many different buttons might you find on a website?
@@ -34,7 +34,7 @@ Students can work on the [additional challenges](Challenges.md) after completing
 
 | Activity | Time |
 |-|-|
-| Warm Up | 5m |
+| Warm-Up | 5m |
 | Lecture | 25m |
 | Code-Along | 25m |
 | Formative Assessment | 20m |

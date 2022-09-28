@@ -1,7 +1,7 @@
 # Week 3: Data Types
 This lesson covers two basic data types in JavaScript: strings and numbers. It also includes a brief introduction to code comments.
 
-## Warm Up
+## Warm-Up: Questions
 Prompt the students with the following, and allow them to ponder it briefly:
 
 - Think of some different types of data you might see on a website.
@@ -14,7 +14,7 @@ The [presentation](DataTypes.pptx) introduces the following concepts:
 
 - JavaScript comments
 - Data Types in JavaScript (only strings and numbers for now)
-    - This ties back to the Warm Up activity
+    - This ties back to the Warm-Up activity
 - Math with numbers
     - Converting a string to a number
 - Template literals
@@ -37,7 +37,7 @@ Students can continue working on their mad libs if desired. There is also a sepa
 
 | Activity | Time |
 |-|-|
-| Warm Up | 15m |
+| Warm-Up | 15m |
 | Lecture | 30m |
 | Code-Along | 20m |
 | Break | 10m |

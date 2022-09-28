@@ -4,7 +4,7 @@ Introduce program flow and the boolean data type. This lesson covers:
 - The Boolean data type
 - Conditional Statements
 
-## Warm Up
+## Warm-Up: Review Quiz
 Start things off with a review quiz. There is a [quizizz](https://quizizz.com/admin/quiz/5bacd1a1abe7b5001921fb7d/javascript-basics-review) with the questions. This quiz covers the content leading up to this lesson.
 
 A Quizizz account is required to present the quiz. If there are issues with Quizizz, there is also a [Blooket](https://dashboard.blooket.com/set/6307aea9c892499a2745fc1f) quiz with the same questions (a Blooket account is required).
@@ -28,7 +28,7 @@ There are a variety of [challenges](Challenges.md) for the students to attempt.
 
 | Activity | Time |
 |-|-|
-| Warm Up | 15m |
+| Warm-Up | 15m |
 | Lecture | 20m |
 | Conditional Debugging | 15m |
 | Break | 10m |
