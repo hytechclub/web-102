@@ -8,8 +8,9 @@ Introduce JavaScript at a basic level. This should be a fairly light introductio
 ### Note: `let` and `var`
 In modern JavaScript, the `let` keyword is preferred over the `var` keyword in most cases. For the purposes of this course, the two keywords are all but interchangeable; however, `let` should be the standard. There may be instances of `var` in some of this curriculum; those should all be replaced with `let`. [The differences between `let` and `var` are far beyond the scope (haha) of this course](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#description).
 
-## Warm Up
+## Warm-Up: Questions
 Ask the students to answer the following questions:
+
 - What are your favorite websites?
 - What can you do to interact with those websites? E.g., clicking buttons, typing in fields, etc.
 
@@ -54,7 +55,7 @@ Some additional challenges are also included within the instructions. There are 
 
 | Activity | Time |
 |-|-|
-| Warm Up | 10m |
+| Warm-Up | 10m |
 | Lecture 1 | 15m |
 | Lecture 2 | 20m |
 | Break | 10m |

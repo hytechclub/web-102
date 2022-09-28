@@ -3,8 +3,8 @@ Show how the Document Object Model can make JavaScript more interactive by manip
 
 - Retrieving values from inputs and using them in JavaScript
 
-## Warm Up: CSS Refresher
-Review some HTML/CSS concepts before diving into the JavaScript by having the students complete the [Warm Up Activity](WarmUp.md). The concept of selecting elements by ID in CSS will transfer to JS. Give the students no more than 5 minutes to accomplish this, and then briefly present the solution.
+## Warm-Up: CSS Refresher
+Review some HTML/CSS concepts before diving into the JavaScript by having the students complete the [Warm-Up Activity](WarmUp.md). The concept of selecting elements by ID in CSS will transfer to JS. Give the students no more than 5 minutes to accomplish this, and then briefly present the solution.
 
 ## Lecture: DOM Manipulation Introduction
 Present the [DOM Manipulation Intro PowerPoint](DomManipulationIntro.pptx) to introduce DOM manipulation.
@@ -25,7 +25,7 @@ There are some [challenges](Challenges.md) for the students.
 
 | Activity | Time |
 |-|-|
-| Warm Up | 5m |
+| Warm-Up | 5m |
 | Lecture | 20m |
 | Code-Along | 40m |
 | Break | 10m |

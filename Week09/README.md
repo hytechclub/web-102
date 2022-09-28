@@ -27,7 +27,7 @@ There are some additional [challenges](Challenges.md). The first few challenges 
 
 | Activity | Time |
 |-|-|
-| Warm Up | 10m |
+| Warm-Up | 10m |
 | Lecture | 30m |
 | Break | 10m |
 | Formative Assessment | 15m |
