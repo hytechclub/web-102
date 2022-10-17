@@ -9,8 +9,8 @@ Have the students complete the warm-up activity by following [the instructions](
 ## Lecture: Arrays
 The [presentation](Arrays.pptx) introduces the concept of arrays, explains their importance, and shows the JavaScript syntax.
 
-## Formative Assessment:
-
+## Formative Assessment: Blooket
+Facilitate the [Blooket quiz game](https://dashboard.blooket.com/set/634d515cc58b2e2965206248). Note than an account is required to host the game.
 
 ## Code-Along: Movie Watchlist
 Follow the [instructions](WatchlistCodeAlong.md) to build up a website meant to track movies on a watchlist.
