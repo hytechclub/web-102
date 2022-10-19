@@ -34,7 +34,7 @@ That should be it! Run the program, click the "Generate" button, and verify that
 ## Aside - Separate Challenges
 At this point, feel free to switch over to the [separate challenges](Challenges.md). These start off a little simpler than the challenges listed below; however, if you want to keep working on the Babel website, go ahead!
 
-## Challenge - Custom Cell Size
+## Challenge 1 - Custom Cell Size
 Currently, the actual user of the website has very little control over the image generated. Allow the user to decide the size of the cell by entering the value in an HTML `<input />`!
 
 ### HTML
@@ -76,7 +76,7 @@ Next, use that cell size to determine the widths and heights for the grid elemen
 
 That should be it! Run the program, enter a cell size in the text box, click the generate button, and see what happens!
 
-## Challenge - Custom Grid Dimensions
+## Challenge 2 - Custom Grid Dimensions
 Now the cell size is being determined by the user, but they might also want to control the number of cells. Allow them to enter the height/width in grid pixels.
 
 ### HTML
