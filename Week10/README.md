@@ -31,8 +31,3 @@ There are some additional [challenges](Challenges.md).
 | Break | 10m |
 | Code-Along | 25m |
 | Self-Paced Work/Challenges | 30m |
-
-
-## Things
-- https://replit.com/@HylandOutreach/the-best-songs
-- https://replit.com/@HylandOutreach/Watchlist#index.html

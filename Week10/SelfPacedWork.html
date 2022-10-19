@@ -869,6 +869,193 @@
                                 
                                 <h1 id="self-paced-work-movie-watchlist-updates">Self-Paced Work: Movie Watchlist Updates</h1>
 <p>Follow these instructions to update the movie watchlist website.</p>
+<h2 id="numbered-html-list">Numbered HTML List</h2>
+<p>Currently, the list displays with bullet points. Update the code in the <strong>index.html</strong> file to make the list display as an <em>ordered</em> list.</p>
+<h2 id="more-different-starting-movies">More Different Starting Movies</h2>
+<p>Currently, there should be three movies when the <code>moviesToWatch</code> array is initially created. Under that, add some new movies to the list! In addition to adding new movies, update some of the existing movies as well.</p>
+<p>Remember, to add an item to an array, use the <code>push</code> function. It should look something like this for an array named <code>myArray</code>:</p>
+<pre><code class="lang-js">myArray.push(<span class="hljs-string">&quot;My new item&quot;</span>);
+</code></pre>
+<p>To update an existing value in an array, use the array name, square brackets, and the index of the value. It should look something like this for an array named <code>myArray</code>:</p>
+<pre><code class="lang-js">myArray[<span class="hljs-number">1</span>] = <span class="hljs-string">&quot;My updated second item&quot;</span>;
+</code></pre>
+<p>Note that the updates to the array values should <em>not</em> happen when the array is initially created! The line below should remain the same:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> moviesToWatch = [<span class="hljs-string">&quot;The Lego Movie&quot;</span>, <span class="hljs-string">&quot;Despicable Me&quot;</span>, <span class="hljs-string">&quot;Spider-Man: Into the Spider-Verse&quot;</span>];
+</code></pre>
+<h2 id="movie-edits">Movie Edits</h2>
+<p>Currently, there is no way to adjust a movie once it has been added to the Watchlist. Create a button that will allow the user to do this!</p>
+<h3 id="adding-a-button-in-html">Adding a Button in HTML</h3>
+<p>The first step is to create a new HTML button element.</p>
+<ol>
+<li>Open the <strong>index.html</strong> file for editing</li>
+<li>Find the existing <code>&lt;button&gt;</code> elements (within a <code>&lt;p&gt;&lt;/p&gt;</code>), and make a new line under the last one</li>
+<li>There, create a new <code>&lt;button&gt;&lt;/button&gt;</code> element</li>
+<li>Set the <code>onclick</code> of the button to call a function named <code>editMovie</code></li>
+<li>Set the text of the button to say &quot;Edit a Movie&quot;</li>
+</ol>
+<p>Run the project, and verify that a new button appears! It should not do anything yet, though.</p>
+<h3 id="hooking-up-the-button-in-javascript">Hooking Up the Button in JavaScript</h3>
+<p>Now it&apos;s time to make the button run some code.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>Make a couple new lines at the bottom of the file</li>
+<li>There, define a new function named <code>editMovie</code><ul>
+<li><code>function</code> keyword</li>
+<li>Function name</li>
+<li>Parentheses <code>()</code></li>
+<li>Curly brackets <code>{}</code></li>
+</ul>
+</li>
+<li>In the <em>body</em> of the function (between <code>{</code> and <code>}</code>), add an <code>alert</code> statement for testing</li>
+</ol>
+<p>Run the project, and verify that a pop-up message appears when the &quot;Edit a Movie&quot; button is clicked!</p>
+<h3 id="getting-the-index-of-the-value-to-update">Getting the Index of the Value to Update</h3>
+<p>Next, grab the index of the movie from the user. Remember, to convert a string to a number, use code that looks something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myString = <span class="hljs-string">&quot;47&quot;</span>;
+
+<span class="hljs-keyword">let</span> myNumber = <span class="hljs-built_in">Number</span>(myString);
+
+<span class="hljs-comment">// myNumber will be the number 47 instead of the text &quot;47&quot;</span>
+</code></pre>
+<ol>
+<li>Remove the <code>alert</code> from the body of the <code>editMovie</code> function</li>
+<li>In its place, create a new variable named <code>idxString</code></li>
+<li>Set <code>idxString</code> to a <code>prompt</code></li>
+<li>Set the text for the <code>prompt</code> to say &quot;Enter the index of the movie you would like to edit.&quot;</li>
+<li>Under that, create a new variable named <code>idx</code></li>
+<li>Call the <code>Number</code> function on <code>idxString</code> to set the value of <code>idx</code></li>
+</ol>
+<p>Run the project, click the button, and verify that the prompt appears!</p>
+<h3 id="getting-the-new-value">Getting the New Value</h3>
+<p>Next, grab the new title the user would like for the given index.</p>
+<ol>
+<li>Make a new line in the body of the <code>editMovie</code> function</li>
+<li>On that line, create a new variable named <code>newTitle</code></li>
+<li>Set <code>newTitle</code> to a <code>prompt</code></li>
+<li>Set the text for the <code>prompt</code> to say &quot;Enter a new value for the movie title.&quot;</li>
+</ol>
+<p>Run the project, click the button, and verify that <em>two</em> prompts appear!</p>
+<h3 id="setting-the-new-title">Setting the New Title</h3>
+<p>Now it&apos;s time to actually update the list! Remember, to set the value of an array at a certain index, use code that looks something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myArray = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>];
+<span class="hljs-keyword">let</span> myIndex = <span class="hljs-number">1</span>;
+
+myArray[myIndex] = <span class="hljs-string">&quot;Orange&quot;</span>;
+
+<span class="hljs-comment">// myArray will be [&quot;Banana&quot;, &quot;Orange&quot;]</span>
+</code></pre>
+<ol>
+<li>Make a new line in the body of the <code>editMovie</code> function</li>
+<li>On that line, value of the <code>moviesToWatch</code> array at the index of <code>idx</code> to be <code>newTitle</code></li>
+<li>Under that, call the <code>displayList</code> function to update the HTML</li>
+</ol>
+<p>Run the project, and test out the &quot;Edit a Movie&quot; button! At this point, it should be fully functional &#x1F60E;</p>
+<h2 id="challenge-1---item-number-instead-of-index">Challenge 1 - Item Number Instead of Index</h2>
+<p>Currently, the <code>editMovie</code> function will edit an item by its index. For example, if the user entered <code>1</code> for the index, it would edit the <em>second</em> item in the array. Update this so that instead of using the index directly, it subtracts one from what the user enters; that way, if for example the user enters <code>2</code> for the item they want to edit, it will edit the item at index <code>1</code> (the actual <em><code>2</code>nd</em> element)!</p>
+<h2 id="challenge-2---deleting-a-movie">Challenge 2 - Deleting a Movie</h2>
+<p>Currently, there is no way to remove a movie from the watchlist. Add a button that allows the user to delete an item by its index!</p>
+<h3 id="creating-a-button">Creating a Button</h3>
+<p>Start by creating a new <code>&lt;button&gt;</code> element in the <strong>index.html</strong> file. Set its <code>onclick</code> attribute to <em>call</em> a function named <code>deleteMovie</code>. Then, in the <strong>script.js</strong> file, <em>define</em> the function named <code>deleteMovie</code>.</p>
+<h3 id="getting-the-index">Getting the Index</h3>
+<p>Getting the index to delete will be very similar to the <code>editMovie</code> function. Use a <code>prompt</code> to get the index string value, and then make sure to convert it to a number using the <code>Number</code> function! After this step, you should have a variable named <code>idx</code> that holds the index to delete.</p>
+<blockquote>
+<p>For a more friendly user experience, subtract <code>1</code> from this <code>idx</code> before using it - that way, the number will line up with the position in the displayed list.</p>
+</blockquote>
+<h3 id="removing-the-value-from-the-array">Removing the Value from the Array</h3>
+<p>Read through these instructions to learn how to remove the value at the <code>idx</code> index.</p>
+<h4 id="background">Background</h4>
+<p>Unfortunately, there is not a direct way to do this in JavaScript; however, the <code>splice</code> method generally works fairly well. Here is an <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_remove" target="_blank">example</a>, and here is some more in-depth <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" target="_blank">documentation</a>. It can end up looking something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myArray = [<span class="hljs-string">&quot;Planes&quot;</span>, <span class="hljs-string">&quot;Trains&quot;</span>, <span class="hljs-string">&quot;Scooters&quot;</span>, <span class="hljs-string">&quot;Automobiles&quot;</span>];
+<span class="hljs-keyword">let</span> indexToDelete = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">let</span> numberOfElementsToDelete = <span class="hljs-number">1</span>;
+
+myArray.splice(indexToDelete, numberOfElementsToDelete);
+
+<span class="hljs-comment">// myArray will be [&quot;Planes&quot;, &quot;Trains&quot;, &quot;Automobiles&quot;]</span>
+</code></pre>
+<p>There are many ways to use <code>splice</code>, but if you just want to remove a value, you can pass in the index of the value to delete as the first argument, and <code>1</code> as the second argument. This will delete <code>1</code> element at that index.</p>
+<h4 id="code-to-add">Code to Add</h4>
+<p>For the <code>deleteMovie</code> function, use the <code>splice</code> function to remove one value at the <code>idx</code> index. Remember, <code>moviesToWatch</code> is the array name, <code>splice</code> is the function, <code>idx</code> is the first argument, and <code>1</code> is the second argument.</p>
+<p>After the <code>splice</code>, make sure to call the <code>displayList</code> function to update the HTML on the page!</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>At this point, the &quot;Delete a Movie&quot; button should be fully functional. Run the project, click on the button, enter an index, and verify that the item disappears from the list!</p>
+<h2 id="challenge-3---persistent-movies">Challenge 3 - Persistent Movies</h2>
+<p>This challenge will require a bit of additional research. The goal is to store the list of movies somewhere so that if a user reloads the page, it remembers what the movies were.</p>
+<h3 id="background-local-storage">Background: Local Storage</h3>
+<p>This is possible using something called <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank"><code>localStorage</code></a> - it&apos;s basically a way to store data in the browser for a given user. This can make basic front-end web applications much more powerful!</p>
+<p><code>localStorage</code> has two main functions: storing values (setting), and retrieving values (getting).</p>
+<h4 id="setting-an-item">Setting an Item</h4>
+<p>Setting an item looks like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myValue = <span class="hljs-string">&quot;This will be stored&quot;</span>;
+
+localStorage.setItem(<span class="hljs-string">&quot;myValue&quot;</span>, myValue);
+</code></pre>
+<h4 id="getting-an-item">Getting an Item</h4>
+<p>If an item has already been stored, you can get it like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myValue = localStorage.getItem(<span class="hljs-string">&quot;myValue&quot;</span>);
+</code></pre>
+<h3 id="background-json-strings">Background: JSON Strings</h3>
+<p>The <code>localStorage</code> object can only store string values - this means that we cannot directly store an array. However, it is possible to work around this using <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a> strings. Essentially, we can convert an array to a string to store it, and then convert it back to an array when we grab it.</p>
+<h4 id="array-to-string">Array to String</h4>
+<p>To convert an array into a string, use <code>JSON.stringify</code> like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myArray = [<span class="hljs-string">&quot;Sunday&quot;</span>, <span class="hljs-string">&quot;Monday&quot;</span>, <span class="hljs-string">&quot;Tuesday&quot;</span>];
+
+<span class="hljs-keyword">let</span> myString = <span class="hljs-built_in">JSON</span>.stringify(myArray);
+
+<span class="hljs-comment">// myString will be the string version of the array: `[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;]`</span>
+</code></pre>
+<h4 id="string-to-array">String to Array</h4>
+<p>To convert a string into an array, use <code>JSON.parse</code> like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myString = <span class="hljs-string">`[&quot;Sunday&quot;,&quot;Monday&quot;,&quot;Tuesday&quot;]`</span>;
+
+<span class="hljs-keyword">let</span> myArray = <span class="hljs-built_in">JSON</span>.parse(myString);
+
+<span class="hljs-comment">// myArray will be the actual array object: [&quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;]</span>
+</code></pre>
+<h3 id="background-localstorage--json-strings">Background: <code>localStorage</code> + JSON Strings</h3>
+<p>Combine these two concepts to successfully store array objects within <code>localStorage</code>! Here is a <a href="https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage" target="_blank">brief explanation</a>.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Storing myArray in localStorage</span>
+<span class="hljs-keyword">let</span> myArray = [<span class="hljs-string">&quot;Leonardo&quot;</span>, <span class="hljs-string">&quot;Raphael&quot;</span>, <span class="hljs-string">&quot;Donatello&quot;</span>, <span class="hljs-string">&quot;Michelangelo&quot;</span>];
+<span class="hljs-keyword">let</span> myArrayString = <span class="hljs-built_in">JSON</span>.stringify(myArray);
+localStorage.setItem(<span class="hljs-string">&quot;myArray&quot;</span>, myArrayString);
+
+<span class="hljs-comment">// Retrieving myArray from localStorage</span>
+<span class="hljs-keyword">let</span> myStoredArrayString = localStorage.getItem(<span class="hljs-string">&quot;myArray&quot;</span>);
+<span class="hljs-keyword">let</span> myStoredArray = <span class="hljs-built_in">JSON</span>.parse(myStoredArrayString);
+
+<span class="hljs-comment">// At this point, myStoredArray will contain the array object from myArray!</span>
+</code></pre>
+<h3 id="implementation-updating-the-movie-watchlist">Implementation: Updating the Movie Watchlist</h3>
+<p>After trying to grasp the concepts of <code>localStorage</code> and JSON strings, apply them to the Movie Watchlist website!</p>
+<h4 id="storing-the-movies-array">Storing the Movies Array</h4>
+<p>A good place to store the current movies would be in the <code>displayList</code> function.</p>
+<ol>
+<li>Go to the bottom of the <code>displayList</code> function</li>
+<li>Create a new variable named <code>stringToStore</code></li>
+<li>Call the <code>JSON.stringify</code> function on <code>moviesToWatch</code>, and store it in the <code>stringToStore</code> variable</li>
+<li>Under that, call the <code>localStorage.setItem</code> function</li>
+<li>Pass in <code>&quot;moviesToWatch&quot;</code> as the first argument, and <code>stringToStore</code> as the second argument</li>
+</ol>
+<p>This should successfully store the value in <code>localStorage</code> every time the user clicks the &quot;Display List&quot; button. It is possible to check this out by opening up developer tools, going to the &quot;Application&quot; window, and clicking on the &quot;localStorage&quot; option. Here is a <a href="https://stackoverflow.com/questions/9404813/how-to-view-or-edit-localstorage" target="_blank">quick example</a> - it&apos;s not necessary to look at it there, but it&apos;s pretty cool!</p>
+<h4 id="retrieving-the-movies-array">Retrieving the Movies Array</h4>
+<p>Now that the movies array has been stored, it can be retrieved! Instead of setting the <code>moviesToWatch</code> array statically at the top of the file, use <code>localStorage</code> to check if there is a stored version of the array.</p>
+<ol>
+<li>At the very top of the file, create a new variable named <code>storedMoviesString</code></li>
+<li>Call the <code>localStorage.getItem</code> function, passing in <code>&quot;moviesToWatch&quot;</code> as the argument<ul>
+<li>Set <code>storedMovieString</code> to this value</li>
+</ul>
+</li>
+<li>Under that, create the <code>moviesToWatch</code> variable - but with no value!</li>
+<li>Under that, create an <code>if</code>/<code>else</code> structure</li>
+<li>For the <code>if</code> condition, simply pass in <code>storedMoviesString</code><ul>
+<li>This checks if the variable has any value</li>
+</ul>
+</li>
+<li>In the body of the <code>if</code> (between <code>{</code> and <code>}</code>), set the <code>moviesToWatch</code> variable</li>
+<li>Call <code>JSON.parse</code>, and pass in <code>storedMoviesString</code> - store that result inb <code>moviesToWatch</code></li>
+<li>In the body of the <code>else</code>, set the <code>moviesToWatch</code> variable to the original starter array</li>
+</ol>
+<p>Now, the first time the page loads, it should set the <code>moviesToWatch</code> array to <code>[&quot;The Lego Movie&quot;, &quot;Despicable Me&quot;, &quot;Spider-Man: Into the Spider-Verse&quot;]</code>. However, if the user decides to add, edit, or delete any movies, the <code>moviesToWatch</code> array should update, and persist to <code>localStorage</code>. When the page is loaded again, it should retrieve the stored movie list!</p>
 
                                 
                                 </section>
@@ -912,7 +1099,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.11.3","depth":2,"next":{"title":"Challenges","level":"1.11.4","depth":2,"path":"Week10/Challenges.md","ref":"Week10/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.11.2","depth":2,"path":"Week10/WatchlistCodeAlong.md","ref":"Week10/WatchlistCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week10/SelfPacedWork.md","mtime":"2022-10-19T13:54:08.815Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-19T13:54:53.299Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.11.3","depth":2,"next":{"title":"Challenges","level":"1.11.4","depth":2,"path":"Week10/Challenges.md","ref":"Week10/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.11.2","depth":2,"path":"Week10/WatchlistCodeAlong.md","ref":"Week10/WatchlistCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week10/SelfPacedWork.md","mtime":"2022-10-19T15:45:52.335Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-19T15:46:23.008Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
