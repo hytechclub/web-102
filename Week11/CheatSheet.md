@@ -24,14 +24,14 @@
 ## JavaScript
 ### Define a function
 ```js
-function myFunction() {
+function myFunction(parameter1, parameter2...) {
 
 }
 ```
 
 ### Call a function
 ```js
-myFunction(parameter);
+myFunction(argument1, argument2...);
 ```
 
 ### Create a variable
@@ -170,4 +170,45 @@ myParagraph.style.color = "red";
 ### Change the background color of the whole page
 ```js
 document.body.style.background = "red";
+```
+
+### Repeat code a certain number of times
+```js
+// replace 10 with the desired number
+for (let i = 0; i < 10; i++) {
+    alert("Repeat");
+}
+```
+
+### Create a new array
+```js
+let myArray = ["Item One", "Item Two", "Item Three"];
+```
+
+### Access an array element by index
+```js
+let myFirstElement = myArray[0];
+```
+
+### Set an array element by index
+```js
+myArray[0] = "New Item One";
+```
+
+### Add an item to an array
+```js
+myArray.push("Item Four");
+```
+
+### Get the number of items in an array
+```js
+let elementsCount = myArray.length;
+```
+
+### Loop through each item in an array
+```js
+for (let i = 0; i < myArray.length; i++) {
+    let currentItem = myArray[i];
+    alert(currentItem);
+}
 ```
