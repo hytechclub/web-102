@@ -869,6 +869,136 @@
                                 
                                 <h1 id="code-along-movie-watchlist">Code-Along: Movie Watchlist</h1>
 <p>Follow these instructions to build a movie watchlist website!</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>To begin, fork <a href="https://replit.com/@HylandOutreach/Watchlist#index.html" target="_blank">this Starter Repl project</a>. It contains some HTML and CSS, but no JavaScript yet &#x1F613;</p>
+<h2 id="creating-the-array">Creating the Array</h2>
+<p>The first step is to create the array that will store the list of movies.</p>
+<ol>
+<li>Open the <strong>script.js</strong> file for editing</li>
+<li>At the top of the file, create a new variable named <code>moviesToWatch</code></li>
+<li>Set it equal to a new array with square brackets: <code>[</code> and <code>]</code></li>
+<li>In the array, add three string values, separated by commas:  <ul>
+<li><code>&quot;The Lego Movie&quot;</code></li>
+<li><code>&quot;Despicable Me&quot;</code></li>
+<li><code>&quot;Spider-Man: Into the Spider-Verse&quot;</code></li>
+</ul>
+</li>
+</ol>
+<p>Feel free to change up the films if desired! The code should end up looking something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> moviesToWatch = [<span class="hljs-string">&quot;The Lego Movie&quot;</span>, <span class="hljs-string">&quot;Despicable Me&quot;</span>, <span class="hljs-string">&quot;Spider-Man: Into the Spider-Verse&quot;</span>];
+</code></pre>
+<h2 id="defining-the-displaylist-function">Defining the <code>displayList</code> Function</h2>
+<p>Now it&apos;s time to start making the buttons functional. In the <strong>index.html</strong> file, there is a <code>&lt;button&gt;</code> with an <code>onclick</code> set to call the <code>displayList</code> function... but it doesn&apos;t exist yet! It must be <em>defined</em>.</p>
+<ol>
+<li>Make a new line under the existing code in the <strong>script.js</strong> file</li>
+<li>There, define a new function named <code>displayList</code>:  <ul>
+<li><code>function</code> keyword</li>
+<li>Function name</li>
+<li>Parentheses</li>
+<li>Curly brackets</li>
+</ul>
+</li>
+<li>In the <em>body</em> of the function (between <code>{</code> and <code>}</code>), add an <code>alert</code> statement for testing purposes</li>
+</ol>
+<p>Run the project, and verify that clicking the &quot;Display List&quot; button properly executes the code in the newly defined function! It should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">displayList</span>(<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">&quot;Displaying List...&quot;</span>);
+}
+</code></pre>
+<h2 id="looping-through-the-array">Looping Through the Array</h2>
+<p>Now that the button is hooked up to a function, we have to make sure the function actually does something! The goal is for this function to display each movie in the <code>moviesToWatch</code> array. This will be possible with a <code>for</code> loop!</p>
+<ol>
+<li>Delete the <code>alert</code> from the body of the <code>displayList</code> function</li>
+<li>In its place, create the basic <code>for</code> loop structure:  <ul>
+<li><code>for</code></li>
+<li>Parentheses</li>
+<li>Curly brackets</li>
+</ul>
+</li>
+<li>For the first expression of the loop in the parentheses (<em>init</em>), create a variable <code>i</code> and set it to <code>0</code></li>
+<li>For the second expression (<em>cond</em>), check if <code>i</code> is less than the length of the array</li>
+<li>For the final expression (<em>inc</em>), add one to the value of <code>i</code></li>
+<li>Now, in the <em>body</em> of the <code>for</code> loop (between <code>{</code> and <code>}</code>), create a new variable <code>movieTitle</code></li>
+<li>Set the <code>movieTitle</code> variable to be the value in the <code>moviesToWatch</code> array at the current index</li>
+<li>Under that, use an <code>alert</code> to display the current <code>movieTitle</code></li>
+</ol>
+<p>Run the project, click the &quot;Display List&quot; button, and verify that all movie titles are displayed! The code in the body of the <code>displayList</code> function should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; moviesToWatch.length; i++) {
+  <span class="hljs-keyword">let</span> movieTitle = moviesToWatch[i];
+
+  alert(movieTitle);
+}
+</code></pre>
+<h2 id="displaying-movies-in-html">Displaying Movies in HTML</h2>
+<p>Showing the movies in pop-ups is functional, but the user experience could definitely be better. Use some DOM manipulation to add the array items to the HTML list instead!</p>
+<h3 id="getting-the-list-element">Getting the List Element</h3>
+<p>The first step will be to grab the HTML <code>&lt;ul id=&quot;list&quot;&gt;&lt;/ul&gt;</code> so that we can add things to it.</p>
+<ol>
+<li>Make a new line at the <em>top</em> of the body of the <code>displayList</code> function</li>
+<li>There, create a new variable named <code>listElement</code></li>
+<li>Set the value of <code>listElement</code> to be the HTML element with an <code>id</code> of <code>list</code></li>
+<li>Under that, set the <code>innerHTML</code> of the <code>listElement</code> variable to be empty</li>
+</ol>
+<p>Nothing should change at this point, but storing the <code>listElement</code> value will make it possible to add list items for each movie! The additional JavaScript code should look something like this: </p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> listElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#list&quot;</span>);
+listElement.innerHTML = <span class="hljs-string">&quot;&quot;</span>;
+</code></pre>
+<h3 id="creating-the-list-items">Creating the List Items</h3>
+<p>Now that the <code>&lt;ul id=&quot;list&quot;&gt;&lt;/ul&gt;</code> has been attained, it will be possible to add some list items! All of this will take place in the body of the <code>for</code> loop.</p>
+<ol>
+<li>In the body of the <code>for</code> loop (within the <code>displayList</code> function), remove the <code>alert</code> statement</li>
+<li>In its place, create a new variable named <code>itemElement</code></li>
+<li>Set the value of <code>itemElement</code> to be a newly-created HTML <code>&lt;li&gt;</code> element</li>
+<li>Under that, set the <code>textContent</code> of the <code>itemElement</code> variable to be the current movie title</li>
+<li>Under that, append <code>itemElement</code> to <code>listElement</code></li>
+</ol>
+<p>Run the project, click the button, and verify that the movies are added to the page as bulleted list items! The additional code should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> itemElement = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;li&quot;</span>);
+itemElement.textContent = movieTitle;
+
+listElement.appendChild(itemElement);
+</code></pre>
+<h2 id="defining-the-addmovie-function">Defining the <code>addMovie</code> Function</h2>
+<p>Now the basic list is all set up, but what if we want to add a new movie? There is an &quot;Add Movie&quot; button, but its function does not exist yet! Let&apos;s <em>define</em> it.</p>
+<ol>
+<li>Make a new line under the existing code in the <strong>script.js</strong> file</li>
+<li>There, define a new function named <code>addMovie</code>:  <ul>
+<li><code>function</code> keyword</li>
+<li>Function name</li>
+<li>Parentheses</li>
+<li>Curly brackets</li>
+</ul>
+</li>
+<li>In the <em>body</em> of the function (between <code>{</code> and <code>}</code>), add an <code>alert</code> statement for testing purposes</li>
+</ol>
+<p>Run the project, and verify that clicking the &quot;Add Movie&quot; button properly executes the code in the newly defined function! It should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addMovie</span>(<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">&quot;Adding Movie...&quot;</span>);
+}
+</code></pre>
+<h2 id="getting-the-new-movie">Getting the New Movie</h2>
+<p>Now the button has been hooked up, but the function needs to do a lot more than it&apos;s currently doing! To start, it needs to get a new movie from the user.</p>
+<ol>
+<li>In the <em>body</em> of the <code>addMovie</code> function, create a new variable named <code>movieToAdd</code></li>
+<li>Set the value of <code>movieToAdd</code> to be the result of a <code>prompt</code> statement</li>
+<li>Set the text of the <code>prompt</code> to ask &quot;Which movie do you want to add?&quot;</li>
+</ol>
+<p>Run the project, and verify that clicking the &quot;Add Movie&quot; button will now prompt the user for a new movie! The added code should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> movieToAdd = prompt(<span class="hljs-string">&quot;Which movie do you want to add?&quot;</span>);
+</code></pre>
+<h2 id="adding-the-new-movie">Adding the New Movie</h2>
+<p>Now we have the movie they want to add, so we can add it to the array!</p>
+<ol>
+<li>Make a new line under the <code>movieToAdd</code> variable, still in the body <code>addMovie</code></li>
+<li>Call the <code>push</code> function on the <code>moviesToWatch</code> array</li>
+<li>Pass in <code>movieToAdd</code> as the argument for the function</li>
+<li>Under that, call the <code>displayList</code> function to update the HTML</li>
+</ol>
+<p>Run the project, and verify that a new movie can be added to the list on the page! The added code should look something like this:</p>
+<pre><code class="lang-js">moviesToWatch.push(movieToAdd);
+displayList();
+</code></pre>
+<p>The basic functionality of the Movie Watchlist should now be working as expected!</p>
 <h2 id="final-code">Final Code</h2>
 <p>By the end of the activity, the JavaScript code in the <strong>script.js</strong> file should look something like this:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> moviesToWatch = [<span class="hljs-string">&quot;The Lego Movie&quot;</span>, <span class="hljs-string">&quot;Despicable Me&quot;</span>, <span class="hljs-string">&quot;Spider-Man: Into the Spider-Verse&quot;</span>];
@@ -936,7 +1066,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.11.2","depth":2,"next":{"title":"Self-Paced Work","level":"1.11.3","depth":2,"path":"Week10/SelfPacedWork.md","ref":"Week10/SelfPacedWork.md","articles":[]},"previous":{"title":"Warm-Up","level":"1.11.1","depth":2,"path":"Week10/WarmUp.md","ref":"Week10/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week10/WatchlistCodeAlong.md","mtime":"2022-10-17T20:00:16.594Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-17T20:01:00.106Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.11.2","depth":2,"next":{"title":"Self-Paced Work","level":"1.11.3","depth":2,"path":"Week10/SelfPacedWork.md","ref":"Week10/SelfPacedWork.md","articles":[]},"previous":{"title":"Warm-Up","level":"1.11.1","depth":2,"path":"Week10/WarmUp.md","ref":"Week10/WarmUp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week10/WatchlistCodeAlong.md","mtime":"2022-10-19T13:54:08.815Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-19T13:54:53.299Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
