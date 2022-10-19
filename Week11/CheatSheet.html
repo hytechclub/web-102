@@ -883,12 +883,12 @@
 </code></pre>
 <h2 id="javascript">JavaScript</h2>
 <h3 id="define-a-function">Define a function</h3>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span>(<span class="hljs-params">parameter1, parameter2...</span>) </span>{
 
 }
 </code></pre>
 <h3 id="call-a-function">Call a function</h3>
-<pre><code class="lang-js">myFunction(parameter);
+<pre><code class="lang-js">myFunction(argument1, argument2...);
 </code></pre>
 <h3 id="create-a-variable">Create a variable</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> x = <span class="hljs-string">&quot;new variable&quot;</span>;
@@ -981,6 +981,33 @@ myDiv.appendChild(newParagraph);
 <h3 id="change-the-background-color-of-the-whole-page">Change the background color of the whole page</h3>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.style.background = <span class="hljs-string">&quot;red&quot;</span>;
 </code></pre>
+<h3 id="repeat-code-a-certain-number-of-times">Repeat code a certain number of times</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// replace 10 with the desired number</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+    alert(<span class="hljs-string">&quot;Repeat&quot;</span>);
+}
+</code></pre>
+<h3 id="create-a-new-array">Create a new array</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myArray = [<span class="hljs-string">&quot;Item One&quot;</span>, <span class="hljs-string">&quot;Item Two&quot;</span>, <span class="hljs-string">&quot;Item Three&quot;</span>];
+</code></pre>
+<h3 id="access-an-array-element-by-index">Access an array element by index</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myFirstElement = myArray[<span class="hljs-number">0</span>];
+</code></pre>
+<h3 id="set-an-array-element-by-index">Set an array element by index</h3>
+<pre><code class="lang-js">myArray[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;New Item One&quot;</span>;
+</code></pre>
+<h3 id="add-an-item-to-an-array">Add an item to an array</h3>
+<pre><code class="lang-js">myArray.push(<span class="hljs-string">&quot;Item Four&quot;</span>);
+</code></pre>
+<h3 id="get-the-number-of-items-in-an-array">Get the number of items in an array</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> elementsCount = myArray.length;
+</code></pre>
+<h3 id="loop-through-each-item-in-an-array">Loop through each item in an array</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; myArray.length; i++) {
+    <span class="hljs-keyword">let</span> currentItem = myArray[i];
+    alert(currentItem);
+}
+</code></pre>
 
                                 
                                 </section>
@@ -1024,7 +1051,7 @@ myDiv.appendChild(newParagraph);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cheat Sheet","level":"1.12.2","depth":2,"next":{"title":"Style Manipulation","level":"1.12.3","depth":2,"path":"Archive/StyleManipulationLesson/StyleManipulation.md","ref":"Archive/StyleManipulationLesson/StyleManipulation.md","articles":[]},"previous":{"title":"Final Project","level":"1.12.1","depth":2,"path":"Week11/FinalProject.md","ref":"Week11/FinalProject.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week11/CheatSheet.md","mtime":"2022-10-19T15:45:52.335Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-19T15:46:23.008Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cheat Sheet","level":"1.12.2","depth":2,"next":{"title":"Style Manipulation","level":"1.12.3","depth":2,"path":"Archive/StyleManipulationLesson/StyleManipulation.md","ref":"Archive/StyleManipulationLesson/StyleManipulation.md","articles":[]},"previous":{"title":"Final Project","level":"1.12.1","depth":2,"path":"Week11/FinalProject.md","ref":"Week11/FinalProject.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week11/CheatSheet.md","mtime":"2022-10-19T16:05:30.686Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-19T16:06:01.227Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

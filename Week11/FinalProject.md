@@ -4,7 +4,7 @@ For the final project for this course, you can make anything you want with JavaS
 ## Requirements
 Your project must have:
 
-### HTML
+### HTML & CSS
 - An HTML file
 - A proper link to a JavaScript file
 - At least one (1) `input`
@@ -24,6 +24,8 @@ Your project must have:
     - Creating a new HTML element in JavaScript
     - Updating the text content of an HTML element in JavaScript
     - Changing a style on the page in JavaScript
+- At least one (1) `for` loop
+- At least one (1) array
 
 ## Presentations
 Students will be expected to present their projects at the last meeting of the semester.
@@ -38,6 +40,7 @@ The presentation should include:
 - A discussion of any challenges that arose during the project development
 
 ### Procedure
+Here are some guidelines for the presentations:
 
 - If a student is able to share their screen and talk through their project on Zoom, that is preferred
     - If a student does not have a microphone, they can join the Zoom meeting from a telephone
