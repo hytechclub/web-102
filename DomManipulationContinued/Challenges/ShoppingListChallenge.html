@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Style Manipulation · GitBook</title>
+        <title>Shopping List Challenge · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,8 +61,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="TableDataChallenge.html" />
     
-    <link rel="prev" href="../../FinalProjects/CheatSheet.html" />
+    
+    <link rel="prev" href="../SelfPacedWork.html" />
     
 
     </head>
@@ -478,9 +480,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="../../DomManipulationContinued/StudentDesc.html">
+        <li class="chapter " data-level="1.9" data-path="../StudentDesc.html">
             
-                <a href="../../DomManipulationContinued/StudentDesc.html">
+                <a href="../StudentDesc.html">
             
                     
                     Week 8 - DOM Manipulation (Update HTML)
@@ -492,7 +494,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="../../DomManipulationContinued/DomManipulationUpdateHTML.md">
+        <li class="chapter " data-level="1.9.1" data-path="../DomManipulationUpdateHTML.md">
             
                 <span>
             
@@ -505,9 +507,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../../DomManipulationContinued/LyricsCodeAlong.html">
+        <li class="chapter " data-level="1.9.2" data-path="../LyricsCodeAlong.html">
             
-                <a href="../../DomManipulationContinued/LyricsCodeAlong.html">
+                <a href="../LyricsCodeAlong.html">
             
                     
                     Code-Along
@@ -518,9 +520,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../../DomManipulationContinued/SelfPacedWork.html">
+        <li class="chapter " data-level="1.9.3" data-path="../SelfPacedWork.html">
             
-                <a href="../../DomManipulationContinued/SelfPacedWork.html">
+                <a href="../SelfPacedWork.html">
             
                     
                     Self-Paced Work
@@ -531,9 +533,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="../../DomManipulationContinued/Challenges/ShoppingListChallenge.html">
+        <li class="chapter active" data-level="1.9.4" data-path="ShoppingListChallenge.html">
             
-                <a href="../../DomManipulationContinued/Challenges/ShoppingListChallenge.html">
+                <a href="ShoppingListChallenge.html">
             
                     
                     Shopping List Challenge
@@ -544,9 +546,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.5" data-path="../../DomManipulationContinued/Challenges/TableDataChallenge.html">
+        <li class="chapter " data-level="1.9.5" data-path="TableDataChallenge.html">
             
-                <a href="../../DomManipulationContinued/Challenges/TableDataChallenge.html">
+                <a href="TableDataChallenge.html">
             
                     
                     Table Data List Challenge
@@ -744,9 +746,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.12.3" data-path="StyleManipulation.html">
+        <li class="chapter " data-level="1.12.3" data-path="../../Archive/StyleManipulationLesson/StyleManipulation.html">
             
-                <a href="StyleManipulation.html">
+                <a href="../../Archive/StyleManipulationLesson/StyleManipulation.html">
             
                     
                     Style Manipulation
@@ -792,7 +794,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Style Manipulation</a>
+        <a href="../.." >Shopping List Challenge</a>
     </h1>
 </div>
 
@@ -807,144 +809,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="updating-css-styles-with-javascript">Updating CSS Styles with JavaScript</h1>
-<p>Manipulating the DOM is one of the best ways to create interactive web experiences using JavaScript. We can even manipulate CSS through the DOM! By updating the styles of a webpage dynamically, developers can provide fun and engaging visuals for users. Let&apos;s walk through an example.</p>
-<h2 id="example-description">Example Description</h2>
-<p>We want to create a simple webpage that allows a user to enter a password. If they enter the correct password, the webpage should inform them that they entered the correct password with a nice green message, and display an image. If they enter an incorrect password, the webpage should inform them that they entered the wrong password with a red message, and hide the image.</p>
+                                <h1 id="challenge-shopping-list">Challenge: Shopping List</h1>
+<p>For this challenge, make a simple shopping list that allows the user to dynamically add items to the list using a form input and button. When adding an item to the input and pressing the button:</p>
+<ul>
+<li>The item should appear in the list</li>
+<li>The input should be emptied</li>
+<li>(BONUS) Each item should be given a button that can be pressed to delete that item off the list</li>
+</ul>
+<p>The finished product should look like this:</p>
+<p><img src="../Assets/OhMyGosh.png" alt="oh my gosh"></p>
+<p>Not really. Actually, it should look something like this:</p>
+<p><img src="../Assets/ShoppingList.png" alt="shopping list"></p>
+<p>To complete the exercise, follow the steps below, and make sure that the list behaves as described above.</p>
 <h2 id="html">HTML</h2>
-<p>Start by forking <a href="https://replit.com/@HylandOutreach/StyleUpdates" target="_blank">this starter Repl</a>. It has some basic setup, but it does not do much yet.</p>
-<h3 id="text-input-and-button">Text Input and Button</h3>
-<p>To make this work, we first need a text input and a button. We want them to appear together, on their own line. We can place them inside a <code>div</code> to achieve this structure (right under the paragraph). Note that the input also requires an <code>id</code> so that we can select it in the JavaScript.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordInput&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-<h3 id="passwordmessage-paragraph-and-image"><code>passwordMessage</code> Paragraph and Image</h3>
-<p>Next, let&apos;s add a paragraph that will contain messages for the user. We need this paragraph to have an <code>id</code> so that we can select it and update it in the JavaScript. This should go under the <code>div</code>.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordMessage&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-</code></pre>
-<p>We also want to add an image underneath this paragraph. We need the image to have an <code>id</code> so that we can select it and update it in the JavaScript. We also need to set its source.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;hiddenImage&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;Sunglasses.gif&quot;</span> /&gt;</span>
-</code></pre>
-<p>When a user first loads up the webpage, the image should actually be hidden. We can make this happen with CSS. We will select the image using its <code>id</code>, and then set its <code>display</code> property to <code>none</code>. The CSS should go in the <strong>style.css</strong> file that is already linked to the HTML page.</p>
-<pre><code class="lang-css"><span class="hljs-selector-id">#hiddenImage</span> {
-    <span class="hljs-attribute">display</span>: none;
-}
-</code></pre>
-<p>Now, if a user opens the webpage, the image should be invisible.</p>
-<h2 id="javascript-setup">JavaScript Setup</h2>
-<p>Inside the <strong>script.js</strong> file, define a new function called <code>submitPassword</code>. For testing purposes, place an <code>alert</code> in the body of the function, saying that the function was called:</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">submitPassword</span>(<span class="hljs-params"></span>) </span>{
-    alert(<span class="hljs-string">&quot;submitPassword called&quot;</span>);
-}
-</code></pre>
-<p>Back in the HTML file, hook up the &quot;Submit&quot; button to the function:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;submitPassword()&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-</code></pre>
-<p>Now, a user should be able to load up the page, click the button, and see a message!</p>
-<h2 id="checking-the-password">Checking the Password</h2>
-<p>Our JavaScript function should check the value the user entered into the text input, and update the page accordingly.</p>
-<h3 id="selecting-html-elements">Selecting HTML Elements</h3>
-<p>The first thing we need to do is select the text input from the HTML, so that we can get its value. Use <code>document.querySelector</code>, along with the <code>id</code> of the input, to accomplish this. Remember, we also need to store this text input in a JavaScript variable. This line should replace the <code>alert</code> at the top of the <code>submitPassword</code> function body:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> passwordInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#passwordInput&quot;</span>);
-</code></pre>
-<p>In addition to selecting the password input, we are also going to need to select the paragraph for message text, and the image. We can do this in a very similar way:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> passwordMessage = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#passwordMessage&quot;</span>);
-<span class="hljs-keyword">let</span> hiddenImage = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#hiddenImage&quot;</span>);
-</code></pre>
-<p>Place these lines directly below the <code>passwordInput</code> variable declaration/setting.</p>
-<h3 id="getting-user-input">Getting User Input</h3>
-<p>We have the text input stored in a JavaScript variable (<code>passwordInput</code>), but we need to get its actual value (what the user entered). We do this by using <code>.value</code>, and we have to store the result in another variable:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> passwordValue = passwordInput.value;
-</code></pre>
-<p>Now that we have the text the user entered, we can compare it to the correct password. In our case, let&apos;s say the correct password is &quot;opensesame&quot;. We can use an <code>if</code>/<code>else</code> structure to change program flow based on whether their password is correct or incorrect. For now, let&apos;s simply alert whether the password was correct or not:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
-    alert(<span class="hljs-string">&quot;You entered the correct password&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    alert(<span class="hljs-string">&quot;You entered the wrong password&quot;</span>);
-}
-</code></pre>
-<p>Now, a user should be able to load up the webpage, enter a password, click the button, and see a message saying if the password is correct! Test out your code by entering the correct password, and an incorrect password, and making sure the webpage displays the right message.</p>
-<h3 id="setting-paragraph-text">Setting Paragraph Text</h3>
-<p>Instead of using those <code>alert</code>s, we can give the user a much nicer experience by simply updating an existing HTML element on the page. We&apos;ve already selected the message paragraph and stored it in a variable: <code>passwordMessage</code>. All we have to do is set its <code>textContent</code> from within the body of the <code>if</code> and <code>else</code>:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
-    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the correct password&quot;</span>;
-} <span class="hljs-keyword">else</span> {
-    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the wrong password&quot;</span>;
-}
-</code></pre>
-<p>Now, instead of displaying a message, the webpage should update with the message underneath the text input. Test out your code again by entering some different passwords.</p>
-<h2 id="updating-styles">Updating Styles</h2>
-<p>To update the styles of a selected HTML element in JavaScript, a developer can use <code>.style</code>. This will work for any variable holding an HTML element that has styles attached to it. This is similar to how we would use <code>.textContent</code> to update the text inside the element. After <code>.style</code>, you will have to specify which style to access.</p>
-<h3 id="setting-text-color">Setting Text Color</h3>
-<p>In addition to setting the <code>textContent</code> of the <code>passwordMessage</code> paragraph, we want to change its color to reflect the tone of the message. If the user enters the correct password, the color should be green. If they enter the wrong password, the color should be red. To set the text color of the element, use <code>.style.color</code>:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
-    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the correct password&quot;</span>;
-    passwordMessage.style.color = <span class="hljs-string">&quot;green&quot;</span>;
-} <span class="hljs-keyword">else</span> {
-    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the wrong password&quot;</span>;
-    passwordMessage.style.color = <span class="hljs-string">&quot;red&quot;</span>;
-}
-</code></pre>
-<p>Test out your code again. It should work the same, except when you enter the correct password, the message should be green. When you enter the wrong password, the message should be red.</p>
-<h3 id="showing-the-image">Showing the Image</h3>
-<p>To start off, we have CSS on our image setting its <code>display</code> property to the value <code>none</code>. This will hide the image. To show it, we need to set its <code>display</code> property to <code>block</code>. We can do this in a very similar way to setting the text color; we will use <code>.style.display</code>. We already have the HTML element for the image stored in a variable (<code>hiddenImage</code>). We just need to set its CSS.</p>
-<pre><code class="lang-js"><span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
-    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the correct password&quot;</span>;
-    passwordMessage.style.color = <span class="hljs-string">&quot;green&quot;</span>;
-    hiddenImage.style.display = <span class="hljs-string">&quot;block&quot;</span>;
-} <span class="hljs-keyword">else</span> {
-    passwordMessage.textContent = <span class="hljs-string">&quot;You entered the wrong password&quot;</span>;
-    passwordMessage.style.color = <span class="hljs-string">&quot;red&quot;</span>;
-    hiddenImage.style.display = <span class="hljs-string">&quot;none&quot;</span>;
-}
-</code></pre>
-<p>Test out your code again. Now, the image should show up when you enter the correct password, and hide otherwise!</p>
-<h2 id="final-code">Final Code</h2>
-<p>When complete, the code should look something like this:</p>
-<p><strong>index.html</strong></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;script.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Password Checker<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Please enter the correct password to see an image.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordInput&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;submitPassword()&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordMessage&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;hiddenImage&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;Sunglasses.gif&quot;</span> /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-<p><strong>style.css</strong></p>
-<pre><code class="lang-css"><span class="hljs-selector-id">#hiddenImage</span> {
-    <span class="hljs-attribute">display</span>: none;
-}
-</code></pre>
-<p><strong>script.js</strong></p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">submitPassword</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">let</span> passwordInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#passwordInput&quot;</span>);
-    <span class="hljs-keyword">let</span> passwordMessage = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#passwordMessage&quot;</span>);
-    <span class="hljs-keyword">let</span> hiddenImage = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#hiddenImage&quot;</span>);
-
-    <span class="hljs-keyword">let</span> passwordValue = passwordInput.value;
-
-    <span class="hljs-keyword">if</span> (passwordValue === <span class="hljs-string">&quot;opensesame&quot;</span>) {
-        passwordMessage.textContent = <span class="hljs-string">&quot;You entered the correct password&quot;</span>;
-        passwordMessage.style.color = <span class="hljs-string">&quot;green&quot;</span>;
-        hiddenImage.style.display = <span class="hljs-string">&quot;block&quot;</span>;
-    } <span class="hljs-keyword">else</span> {
-        passwordMessage.textContent = <span class="hljs-string">&quot;You entered the wrong password&quot;</span>;
-        passwordMessage.style.color = <span class="hljs-string">&quot;red&quot;</span>;
-        hiddenImage.style.display = <span class="hljs-string">&quot;none&quot;</span>;
-    }
-}
-</code></pre>
+<p>Start by forking <a href="https://replit.com/@HylandOutreach/JavaScriptStarter" target="_blank">this starter Repl</a>. Then, in the <strong>index.html</strong> file, add the following:</p>
+<ul>
+<li>A header saying &quot;My shopping list&quot;</li>
+<li>Some text saying &quot;Enter a new item:&quot;</li>
+<li>An input with a unique <code>id</code> attribute</li>
+<li>A button saying &quot;Add item&quot;</li>
+<li>An unordered list with a unique <code>id</code> attribute</li>
+</ul>
+<h2 id="javascript">JavaScript</h2>
+<p>In the <strong>script.js</strong> file, define a function that will run in response to the button being clicked. Make sure to hook up the function to the button in the HTML! Then, inside the function body:</p>
+<ul>
+<li>Create two variables that hold references to the list (<code>&lt;ul&gt;</code>), and <code>&lt;input&gt;</code> elements</li>
+<li>Store the current value of the input element in a variable</li>
+<li>Next, empty the input element by setting its value to an empty string - <code>&quot;&quot;</code></li>
+<li>Then, create three new elements - a list item (<code>&lt;li&gt;</code>), <code>&lt;span&gt;</code>, and <code>&lt;button&gt;</code>, and store them in variables</li>
+<li>Append the span and the button as children of the list item  </li>
+<li>Set the text content of the span to the input element value saved earlier, and the text content of the button to <code>&quot;Delete&quot;</code></li>
+<li>Append the list item as a child of the list</li>
+<li>(BONUS) Attach an event handler to the delete button, so that when clicked it will delete the entire list item it is inside</li>
+</ul>
+<p>After following all of these steps (including the BONUS), it should be possible to add and remove items from the shopping list! Feel free to add styles to the list to make it look a little nicer.</p>
 
                                 
                                 </section>
@@ -972,10 +870,14 @@
 
             
                 
-                <a href="../../FinalProjects/CheatSheet.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cheat Sheet">
+                <a href="../SelfPacedWork.html" class="navigation navigation-prev " aria-label="Previous page: Self-Paced Work">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="TableDataChallenge.html" class="navigation navigation-next " aria-label="Next page: Table Data List Challenge">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -984,7 +886,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Style Manipulation","level":"1.12.3","depth":2,"previous":{"title":"Cheat Sheet","level":"1.12.2","depth":2,"path":"FinalProjects/CheatSheet.md","ref":"FinalProjects/CheatSheet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Archive/StyleManipulationLesson/StyleManipulation.md","mtime":"2023-01-11T16:39:09.535Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-11T16:39:40.240Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Shopping List Challenge","level":"1.9.4","depth":2,"next":{"title":"Table Data List Challenge","level":"1.9.5","depth":2,"path":"DomManipulationContinued/Challenges/TableDataChallenge.md","ref":"DomManipulationContinued/Challenges/TableDataChallenge.md","articles":[]},"previous":{"title":"Self-Paced Work","level":"1.9.3","depth":2,"path":"DomManipulationContinued/SelfPacedWork.md","ref":"DomManipulationContinued/SelfPacedWork.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DomManipulationContinued/Challenges/ShoppingListChallenge.md","mtime":"2023-01-11T16:39:09.591Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-11T16:39:40.240Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
