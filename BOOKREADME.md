@@ -5,7 +5,7 @@ Welcome to the Web 102 Hy-Tech Club course!
 Follow the links below to view each week of material.
 
 - [Week 1 (/) - HTML & CSS Review](HtmlCssReview/StudentDesc.md)
-- [Week 2 (/) - Hello JS](IntroToJSStudentDesc.md)
+- [Week 2 (/) - Hello JS](IntroToJS/StudentDesc.md)
 - [Week 3 (/) - Comments, Data Types, and Math](DataTypes/StudentDesc.md)
 - [Week 4 (/) - Buttons](Buttons/StudentDesc.md)
 - [Week 5 (/) - Conditionals](Conditionals/StudentDesc.md)
