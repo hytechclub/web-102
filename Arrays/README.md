@@ -1,4 +1,4 @@
-# Week 10: Arrays
+# Arrays
 Introduce [arrays](https://www.w3schools.com/js/js_arrays.asp) as a way to store list data.
 
 Note that it is more important for students to be able to _use_ arrays than fully understand them. If they can memorize the basic structure and syntax, that should be sufficient.

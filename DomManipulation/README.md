@@ -1,4 +1,4 @@
-# Week 6: DOM Manipulation Part 1
+# Week 7: DOM Manipulation Part 1
 Show how the Document Object Model can make JavaScript more interactive by manipulating HTML and CSS. This lesson covers:
 
 - Retrieving values from inputs and using them in JavaScript

@@ -1,4 +1,4 @@
-# Week 8: Functions and Review
+# Week 9: Functions and Review
 Dive deeper into the concepts behind functions and practice using them. This lesson covers function parameters.
 
 ## Warm-Up: Quiz

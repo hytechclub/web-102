@@ -1,4 +1,4 @@
-# Week 9: For Loops
+# Week 10: For Loops
 Introduce [`for` loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) as a way to repeat code automatically.
 
 Note that it is more important for students to be able to _use_ for loops than fully understand each part of them. If they can memorize the basic structure and syntax, that should be sufficient.
