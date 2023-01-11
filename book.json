@@ -3,5 +3,6 @@
         "readme": "BOOKREADME.md",
         "summary": "COMPLETESUMMARY.md"
     },
+    "title": "Web 102",
     "plugins": ["toggle-chapters"]
 }
