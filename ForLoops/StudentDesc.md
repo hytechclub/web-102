@@ -5,7 +5,7 @@ Learn how to use `for` loops to programmatically repeat blocks of code.
 [Click here for the warm-up activity instructions.](WarmUp.md)
 
 ## PowerPoint Presentation
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/Week09/ForLoops.pptx' width='100%' height='450px' frameborder='0'></iframe>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/ForLoops/ForLoops.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Code-Along: Library of Babel
 [Click here for the code-along instructions.](BabelCodeAlong.md)

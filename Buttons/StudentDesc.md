@@ -2,7 +2,7 @@
 Learn how to define _functions_ that make buttons do things on a webpage!
 
 ## PowerPoint Presentation
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/Week04/Buttons.pptx' width='100%' height='450px' frameborder='0'></iframe>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/Buttons/Buttons.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Code-Along: Darth Vader Soundboard
 [Click here for the code-along instructions.](SoundboardCodeAlong.md)

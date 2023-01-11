@@ -5,7 +5,7 @@ Learn how to use _parameters_ to make JavaScript functions even more powerful.
 [Click here for the warm-up quiz.](WarmUp.md)
 
 ## PowerPoint Presentation
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/Week08/FunctionParameters.pptx' width='100%' height='450px' frameborder='0'></iframe>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/FunctionParameters/FunctionParameters.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Code-Along: Dice Roller
 [Click here for the code-along instructions.](DiceRollerCodeAlong.md)

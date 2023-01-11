@@ -4,7 +4,7 @@ Learn about data types for JavaScript variables!
 >_Note: this lesson also includes information about code comments, math, and template literals_
 
 ## PowerPoint Presentation
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/Week03/DataTypes.pptx' width='100%' height='450px' frameborder='0'></iframe>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/DataTypes/DataTypes.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Code-Along: Speed Calculator
 [Click here for the code-along instructions.](SpeedCalcCodeAlong.md)
