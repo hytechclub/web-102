@@ -25,7 +25,7 @@
     - [Self-Paced Work](DomManipulation/SelfPacedWork.md)
     - [Challenges](DomManipulation/Challenges.md)
 - [Week 8 - DOM Manipulation (Update HTML)](DomManipulationContinued/StudentDesc.md)
-    - [Guide](DomManipulationContinued/DomManipulationUpdateHTML.md)
+    - [Guide](DomManipulationContinued/DomManipulationUpdateHtml.md)
     - [Code-Along](DomManipulationContinued/LyricsCodeAlong.md)
     - [Self-Paced Work](DomManipulationContinued/SelfPacedWork.md)
     - [Shopping List Challenge](DomManipulationContinued/Challenges/ShoppingListChallenge.md)
