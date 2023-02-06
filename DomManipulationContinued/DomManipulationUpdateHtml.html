@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 6 - Review · Web 102</title>
+        <title>Guide · Web 102</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../DomManipulation/StudentDesc.html" />
+    <link rel="next" href="LyricsCodeAlong.html" />
     
     
-    <link rel="prev" href="../Conditionals/Challenges.html" />
+    <link rel="prev" href="StudentDesc.html" />
     
 
     </head>
@@ -383,9 +383,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.7" data-path="../MidSemesterReview/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../MidSemesterReview/StudentDesc.html">
             
                     
                     Week 6 - Review
@@ -480,9 +480,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="../DomManipulationContinued/StudentDesc.html">
+        <li class="chapter " data-level="1.9" data-path="StudentDesc.html">
             
-                <a href="../DomManipulationContinued/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 8 - DOM Manipulation (Update HTML)
@@ -494,9 +494,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="../DomManipulationContinued/DomManipulationUpdateHtml.html">
+        <li class="chapter active" data-level="1.9.1" data-path="DomManipulationUpdateHtml.html">
             
-                <a href="../DomManipulationContinued/DomManipulationUpdateHtml.html">
+                <a href="DomManipulationUpdateHtml.html">
             
                     
                     Guide
@@ -507,9 +507,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../DomManipulationContinued/LyricsCodeAlong.html">
+        <li class="chapter " data-level="1.9.2" data-path="LyricsCodeAlong.html">
             
-                <a href="../DomManipulationContinued/LyricsCodeAlong.html">
+                <a href="LyricsCodeAlong.html">
             
                     
                     Code-Along
@@ -520,9 +520,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../DomManipulationContinued/SelfPacedWork.html">
+        <li class="chapter " data-level="1.9.3" data-path="SelfPacedWork.html">
             
-                <a href="../DomManipulationContinued/SelfPacedWork.html">
+                <a href="SelfPacedWork.html">
             
                     
                     Self-Paced Work
@@ -533,9 +533,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="../DomManipulationContinued/Challenges/ShoppingListChallenge.html">
+        <li class="chapter " data-level="1.9.4" data-path="Challenges/ShoppingListChallenge.html">
             
-                <a href="../DomManipulationContinued/Challenges/ShoppingListChallenge.html">
+                <a href="Challenges/ShoppingListChallenge.html">
             
                     
                     Shopping List Challenge
@@ -546,9 +546,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.5" data-path="../DomManipulationContinued/Challenges/TableDataChallenge.html">
+        <li class="chapter " data-level="1.9.5" data-path="Challenges/TableDataChallenge.html">
             
-                <a href="../DomManipulationContinued/Challenges/TableDataChallenge.html">
+                <a href="Challenges/TableDataChallenge.html">
             
                     
                     Table Data List Challenge
@@ -794,7 +794,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Week 6 - Review</a>
+        <a href=".." >Guide</a>
     </h1>
 </div>
 
@@ -809,8 +809,68 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mid-semester-review">Mid-Semester Review</h1>
-<p>Use this session to review the concepts covered so far!</p>
+                                <h1 id="dom-manipulation-continued-updating-html">DOM Manipulation Continued: Updating HTML</h1>
+<p>So far, we have used DOM Manipulation to get input from the user, but we can also interact with the HTML in other ways! After reading through this guide, you should be able to <strong>use JavaScript</strong> to:</p>
+<ul>
+<li>Update existing HTML elements</li>
+<li>Create new HTML elements</li>
+<li>Add new HTML elements to your webpage</li>
+</ul>
+<h2 id="getting-and-setting-paragraph-text">Getting and Setting Paragraph Text</h2>
+<p>It is possible to read from existing paragraphs on the HTML page, and update their text as well.</p>
+<p>For example, if there was a <code>&lt;p&gt;&lt;/p&gt;</code> element in the <strong>index.html</strong> file like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;my-text&quot;</span>&gt;</span>This is a paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Within a JavaScript function in a <strong>script.js</strong> file, it could be selected like so:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myTextElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-text&quot;</span>);
+</code></pre>
+<p>Here, our <code>document.querySelector</code> code allows us to grab that whole HTML paragraph element, and store it in the <code>myTextElement</code> variable. Once we have our <code>&lt;p&gt;</code> element stored in the variable, we can use <code>.textContent</code> to do some neat things!</p>
+<p>Here&apos;s how we could get its text value:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myTextElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-text&quot;</span>);
+<span class="hljs-keyword">let</span> myTextValue = myTextElement.textContent;
+
+<span class="hljs-comment">// show a message with the contents of the #my-text paragraph</span>
+alert(myTextValue);
+</code></pre>
+<p>And here&apos;s how we could <em>set</em> its text value:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myTextElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-text&quot;</span>);
+
+<span class="hljs-comment">// update the contents of the #my-text paragraph</span>
+myTextElement.textContent = <span class="hljs-string">&quot;Different&quot;</span>;
+</code></pre>
+<p>After running this code, the paragraph from the HTML would display different text on the webpage! </p>
+<h2 id="creating-an-html-element-with-javascript">Creating an HTML Element with JavaScript</h2>
+<p>In addition to interacting with elements that already exist on the webpage, we can create totally new HTML elements and insert them wherever we want! To create an element, we use <code>document.createElement</code> in JavaScript. This spins up a whole new element, and we can store that element in a variable, like so:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myParagraph = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
+</code></pre>
+<p>Notice the text between the quotes: <code>p</code>. This means that we are creating a <code>&lt;p&gt;&lt;/p&gt;</code> element. If we wanted to create a different type of element, we could pass in the name of a different tag, like <code>a</code> or <code>h1</code>. With a <code>p</code> element, we can also set its text content using <code>.textContent</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myParagraph = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
+myParagraph.textContent = <span class="hljs-string">&quot;This is a new paragraph!&quot;</span>;
+</code></pre>
+<p>Now that we have a new HTML element created, we have to insert it into our HTML page. To do this, we use <code>.appendChild</code> on an existing HTML element on the page. Here&apos;s an example:</p>
+<p>Say this <code>&lt;div&gt;</code> element is already in the <strong>index.html</strong> file:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>We could use this JavaScript to add a new element within it:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// store the &lt;div&gt; element in a variable</span>
+<span class="hljs-keyword">let</span> containerDiv = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#container&quot;</span>);
+
+<span class="hljs-comment">// create a new &lt;p&gt; element</span>
+<span class="hljs-keyword">let</span> myParagraph = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
+
+<span class="hljs-comment">// give text to the new &lt;p&gt; element</span>
+myParagraph.textContent = <span class="hljs-string">&quot;Paragraph Text&quot;</span>;
+
+<span class="hljs-comment">// insert the new &lt;p&gt; element into the &lt;div&gt;</span>
+containerDiv.appendChild(myParagraph);
+</code></pre>
+<p>When the JavaScript code above is executed, the <code>&lt;div&gt;</code> element will have a new child <code>&lt;p&gt;</code> element saying <code>&quot;Paragraph Text&quot;</code>. It will look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph Text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>Hopefully after reading this, you&apos;ll be able to update HTML elements and create entirely new ones programmatically!</p>
 
                                 
                                 </section>
@@ -838,12 +898,12 @@
 
             
                 
-                <a href="../Conditionals/Challenges.html" class="navigation navigation-prev " aria-label="Previous page: Challenges">
+                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 8 - DOM Manipulation (Update HTML)">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../DomManipulation/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Week 7 - DOM Manipulation (Read from Input)">
+                <a href="LyricsCodeAlong.html" class="navigation navigation-next " aria-label="Next page: Code-Along">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -854,7 +914,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 6 - Review","level":"1.7","depth":1,"next":{"title":"Week 7 - DOM Manipulation (Read from Input)","level":"1.8","depth":1,"path":"DomManipulation/StudentDesc.md","ref":"DomManipulation/StudentDesc.md","articles":[{"title":"Warm-Up","level":"1.8.1","depth":2,"path":"DomManipulation/WarmUp.md","ref":"DomManipulation/WarmUp.md","articles":[]},{"title":"Guide","level":"1.8.2","depth":2,"path":"DomManipulation/DomManipulationReadFromInput.md","ref":"DomManipulation/DomManipulationReadFromInput.md","articles":[]},{"title":"Code-Along","level":"1.8.3","depth":2,"path":"DomManipulation/MadLibsCodeAlong.md","ref":"DomManipulation/MadLibsCodeAlong.md","articles":[]},{"title":"Self-Paced Work","level":"1.8.4","depth":2,"path":"DomManipulation/SelfPacedWork.md","ref":"DomManipulation/SelfPacedWork.md","articles":[]},{"title":"Challenges","level":"1.8.5","depth":2,"path":"DomManipulation/Challenges.md","ref":"DomManipulation/Challenges.md","articles":[]}]},"previous":{"title":"Challenges","level":"1.6.4","depth":2,"path":"Conditionals/Challenges.md","ref":"Conditionals/Challenges.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"MidSemesterReview/StudentDesc.md","mtime":"2023-02-06T20:57:48.502Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-06T20:58:22.972Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Guide","level":"1.9.1","depth":2,"next":{"title":"Code-Along","level":"1.9.2","depth":2,"path":"DomManipulationContinued/LyricsCodeAlong.md","ref":"DomManipulationContinued/LyricsCodeAlong.md","articles":[]},"previous":{"title":"Week 8 - DOM Manipulation (Update HTML)","level":"1.9","depth":1,"path":"DomManipulationContinued/StudentDesc.md","ref":"DomManipulationContinued/StudentDesc.md","articles":[{"title":"Guide","level":"1.9.1","depth":2,"path":"DomManipulationContinued/DomManipulationUpdateHtml.md","ref":"DomManipulationContinued/DomManipulationUpdateHtml.md","articles":[]},{"title":"Code-Along","level":"1.9.2","depth":2,"path":"DomManipulationContinued/LyricsCodeAlong.md","ref":"DomManipulationContinued/LyricsCodeAlong.md","articles":[]},{"title":"Self-Paced Work","level":"1.9.3","depth":2,"path":"DomManipulationContinued/SelfPacedWork.md","ref":"DomManipulationContinued/SelfPacedWork.md","articles":[]},{"title":"Shopping List Challenge","level":"1.9.4","depth":2,"path":"DomManipulationContinued/Challenges/ShoppingListChallenge.md","ref":"DomManipulationContinued/Challenges/ShoppingListChallenge.md","articles":[]},{"title":"Table Data List Challenge","level":"1.9.5","depth":2,"path":"DomManipulationContinued/Challenges/TableDataChallenge.md","ref":"DomManipulationContinued/Challenges/TableDataChallenge.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"DomManipulationContinued/DomManipulationUpdateHtml.md","mtime":"2023-02-06T20:57:48.462Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-06T20:58:22.972Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
