@@ -4,5 +4,12 @@
         "summary": "COMPLETESUMMARY.md"
     },
     "title": "Web 102",
-    "plugins": ["toggle-chapters"]
+    "plugins": ["toggle-chapters", "scripts"],
+    "pluginsConfig": {
+        "scripts": {
+            "files": [
+                "./passwordProtectedPages.js"
+            ]
+        }
+    }
 }
