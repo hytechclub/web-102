@@ -16,3 +16,8 @@ Follow the links below to view each week of material.
 - [Week 10 (5/2) - For Loops](ForLoops/StudentDesc.md)
 - [Week 11 (5/9) - Final Project](FinalProjects/StudentDesc.md)
 - Week 12 (5/16) - Final Project Presentations
+
+## Starter Repl Project
+[Click here for the **EmptyWeb** starter code.](https://replit.com/@HylandOutreach/EmptyWeb)
+
+[Click here for the **JavaScriptStarter** code.](https://replit.com/@HylandOutreach/JavaScriptStarter)

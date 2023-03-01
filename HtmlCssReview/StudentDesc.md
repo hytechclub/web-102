@@ -1,9 +1,6 @@
 # HTML & CSS Review
 This lesson reviews some foundational topics from HTML and CSS.
 
-## Starter Code
-[Click here for the **starter code** Repl project.](https://replit.com/@HylandOutreach/EmptyWeb)
-
 ## Code-Along: Despicable Me Fan Site
 [Click here for the code-along activity instructions.](HtmlCssReviewCodeAlong.md)
 
