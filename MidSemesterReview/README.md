@@ -17,6 +17,17 @@ Present each of these options to the students, and then let them decide what the
 ### Bug Fixing Challenges
 Students can follow [these instructions](BugFixing.md) to fix some bugs in existing projects.
 
+Here are the solutions:
+
+- Bug 1: **script.js** Line 1 - function name `runMe` does not match `onclick` attribute of `<button>` in **index.html**
+- Bug 2: **index.html** Line 4 - the **script.js** file must be linked in a `<script>` element
+- Bug 3: **index.html** Line 4 - the `<script>` element's `src` attribute value spells **script.js** wrong
+- Bug 4: **script.js** Line 3 - should use `Number(currentAgeString)` to convert the string to a number
+- Bug 5: **index.html** Line 9 - the `<button>` element's attribute should be spelled `onclick`
+- Bug 6: **script.js** Line 1 - function definition is missing `()` after `sayMovie` 
+- Bug 7: **script.js** Line 4 - `if` condition uses `=` when it should be `===` 
+- Bug 8: **script.js** Line 7 - need a `}` to close the `if` block before the `else`
+
 ### Other Challenges
 Students can follow [these instructions](Challenges.md) to work on some additional challenges.
 
