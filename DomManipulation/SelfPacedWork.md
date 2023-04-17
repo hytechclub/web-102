@@ -16,6 +16,7 @@ For the story continue, the first step is to add some additional replacement wor
 
 Repeat the steps above for each of these new word replacements:
 
+
 | Part-of-speech | `id` attribute |
 |-|-|
 | Noun | `noun1` |
