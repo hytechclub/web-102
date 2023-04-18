@@ -16,7 +16,6 @@ For the story continue, the first step is to add some additional replacement wor
 
 Repeat the steps above for each of these new word replacements:
 
-
 | Part-of-speech | `id` attribute |
 |-|-|
 | Noun | `noun1` |
@@ -43,6 +42,7 @@ Next, it's time to grab those values from the text boxes. It will be necessary t
 Repeat the steps above for each of the new input elements:
 
 | `id` for `<input />` | Element variable | Value variable |
+|-|-|-|
 | `noun1` | `noun1Element` | `noun1Value` |
 | `adj2` | `adj2Element` | `adj2Value` |
 | `noun2` | `noun2Element` | `noun2Value` |
