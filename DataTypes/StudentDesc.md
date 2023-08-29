@@ -15,5 +15,8 @@ Learn about data types for JavaScript variables!
 ## Challenges
 [Click here for some additional challenges.](Challenges.md)
 
+## Existing Projects
+[Click here to play around with some existing projects, and make them your own.](ExistingProjects.md)
+
 ## Past Session Recording
 <iframe width="100%" height="450px" src="https://www.youtube.com/embed/rrxwYUYVhYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

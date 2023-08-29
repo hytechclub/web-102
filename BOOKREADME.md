@@ -4,19 +4,24 @@ Welcome to the Web 102 Hy-Tech Club course!
 ## Schedule
 Follow the links below to view each week of material.
 
-- [Week 1 (2/28) - HTML & CSS Review](HtmlCssReview/StudentDesc.md)
-- [Week 2 (3/7) - Hello JS](IntroToJS/StudentDesc.md)
-- [Week 3 (3/14) - Comments, Data Types, and Math](DataTypes/StudentDesc.md)
-- [Week 4 (3/21) - Buttons](Buttons/StudentDesc.md)
-- [Week 5 (3/28) - Conditionals](Conditionals/StudentDesc.md)
-- [Week 6 (4/11) - Review + Check-Ins](MidSemesterReview/StudentDesc.md)
-- [Week 7 (4/18) - DOM Manipulation - Reading from Input](DomManipulation/StudentDesc.md)
-- [Week 8 (4/25) - DOM Manipulation - Updating HTML](DomManipulationContinued/StudentDesc.md)
-- Week 9 (5/2) - [Function Parameters](FunctionParameters/StudentDesc.md) and [For Loops](ForLoops/StudentDesc.md)
-- [Week 10 (5/9) - Final Project](FinalProjects/StudentDesc.md)
-- Week 11 (5/16) - Final Project Presentations
+- [Week 1 (9/19) - HTML & CSS Review](HtmlCssReview/StudentDesc.md)
+- [Week 2 (9/26) - Hello JS](IntroToJS/StudentDesc.md)
+- [Week 3 (10/3) - Comments, Data Types, and Math](DataTypes/StudentDesc.md)
+- [Week 4 (10/10) - Buttons](Buttons/StudentDesc.md)
+- [Week 5 (10/17) - Conditionals](Conditionals/StudentDesc.md)
+- [Week 6 (10/24) - Review + Check-Ins](MidSemesterReview/StudentDesc.md)
+- [Week 7 (10/31) - DOM Manipulation - Reading from Input](DomManipulation/StudentDesc.md)
+- [Week 8 (11/7) - DOM Manipulation - Updating HTML](DomManipulationContinued/StudentDesc.md)
+- [Week 9 (11/14) - Function Parameters](FunctionParameters/StudentDesc.md)
+- **NO CLUB 11/21**
+- [Week 10 (11/28) - For Loops](ForLoops/StudentDesc.md)
+- [Week 11 (12/5) - Final Project](FinalProjects/StudentDesc.md)
+- Week 11 (12/12) - Final Project Presentations
 
 ## Starter Repl Project
 [Click here for the **EmptyWeb** starter code.](https://replit.com/@HylandOutreach/EmptyWeb)
 
 [Click here for the **JavaScriptStarter** code.](https://replit.com/@HylandOutreach/JavaScriptStarter)
+
+## Multiplayer Repl Submissions
+[Click here to submit your Multiplayer Repl links!](https://forms.gle/NqfGw5UVQnEndtZL6)

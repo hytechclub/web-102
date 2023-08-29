@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Cheat Sheet · Web 102</title>
+        <title>Function Tests · Web 102</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Archive/StyleManipulationLesson/StyleManipulation.html" />
+    <link rel="next" href="../ForLoops/StudentDesc.html" />
     
     
-    <link rel="prev" href="FinalProject.html" />
+    <link rel="prev" href="Challenges.html" />
     
 
     </head>
@@ -635,9 +635,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../FunctionParameters/StudentDesc.html">
+        <li class="chapter " data-level="1.10" data-path="StudentDesc.html">
             
-                <a href="../FunctionParameters/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 9 - Function Parameters
@@ -649,9 +649,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="../FunctionParameters/WarmUp.html">
+        <li class="chapter " data-level="1.10.1" data-path="WarmUp.html">
             
-                <a href="../FunctionParameters/WarmUp.html">
+                <a href="WarmUp.html">
             
                     
                     Warm-Up
@@ -662,9 +662,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.2" data-path="../FunctionParameters/DiceRollerCodeAlong.html">
+        <li class="chapter " data-level="1.10.2" data-path="DiceRollerCodeAlong.html">
             
-                <a href="../FunctionParameters/DiceRollerCodeAlong.html">
+                <a href="DiceRollerCodeAlong.html">
             
                     
                     Code-Along
@@ -675,9 +675,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.3" data-path="../FunctionParameters/SelfPacedWork.html">
+        <li class="chapter " data-level="1.10.3" data-path="SelfPacedWork.html">
             
-                <a href="../FunctionParameters/SelfPacedWork.html">
+                <a href="SelfPacedWork.html">
             
                     
                     Self-Paced Work
@@ -688,9 +688,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.4" data-path="../FunctionParameters/Challenges.html">
+        <li class="chapter " data-level="1.10.4" data-path="Challenges.html">
             
-                <a href="../FunctionParameters/Challenges.html">
+                <a href="Challenges.html">
             
                     
                     Challenges
@@ -701,9 +701,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.5" data-path="../FunctionParameters/FunctionTests.html">
+        <li class="chapter active" data-level="1.10.5" data-path="FunctionTests.html">
             
-                <a href="../FunctionParameters/FunctionTests.html">
+                <a href="FunctionTests.html">
             
                     
                     Function Tests
@@ -790,9 +790,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.12" data-path="../FinalProjects/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../FinalProjects/StudentDesc.html">
             
                     
                     Week 11 - Final Project
@@ -804,9 +804,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.1" data-path="FinalProject.html">
+        <li class="chapter " data-level="1.12.1" data-path="../FinalProjects/FinalProject.html">
             
-                <a href="FinalProject.html">
+                <a href="../FinalProjects/FinalProject.html">
             
                     
                     Final Project
@@ -817,9 +817,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.12.2" data-path="CheatSheet.html">
+        <li class="chapter " data-level="1.12.2" data-path="../FinalProjects/CheatSheet.html">
             
-                <a href="CheatSheet.html">
+                <a href="../FinalProjects/CheatSheet.html">
             
                     
                     Cheat Sheet
@@ -878,7 +878,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Cheat Sheet</a>
+        <a href=".." >Function Tests</a>
     </h1>
 </div>
 
@@ -893,146 +893,72 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cheat-sheet">Cheat Sheet</h1>
-<h2 id="html">HTML</h2>
-<h3 id="link-a-javascript-file">Link a JavaScript file</h3>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;script.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+                                <h1 id="challenge-function-tests">Challenge: Function Tests</h1>
+<p>One of the most important practices in the real world of software quality is <a href="https://en.wikipedia.org/wiki/Unit_testing" target="_blank">unit testing</a>. Sometimes, with paradigms like <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">test-driven development</a>, unit tests are so important that they are written <em>before</em> the actual software!</p>
+<p>For this challenge, there is a mocked-up version of a test harness, and it&apos;s up to you to make sure all the tests pass. <a href="https://replit.com/@HylandOutreach/FunctionTests" target="_blank">Click here for the project.</a> Add code to the <strong>script.js</strong> file for each challenge.</p>
+<h2 id="challenge-1-age-calculator">Challenge 1: Age Calculator</h2>
+<p>Determine a person&apos;s age based on the year they were born.</p>
+<ul>
+<li>Function Name: <code>ageCalculator</code></li>
+<li>Parameter 1: Year of Birth (Number)</li>
+<li>Return: Estimated Age (assuming everyone was born on Jan 1) (Number)</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> result = ageCalculator(<span class="hljs-number">1990</span>);
+alert(result); <span class="hljs-comment">// Should display: 33</span>
 </code></pre>
-<h3 id="create-a-button-that-calls-a-function">Create a button that calls a function</h3>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;myFunction()&quot;</span>&gt;</span>My Function<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<h2 id="challenge-2-temperature-converter">Challenge 2: Temperature Converter</h2>
+<p>Convert a temperature in Celsius into Fahrenheit.</p>
+<ul>
+<li>Function Name: <code>tempConvert</code></li>
+<li>Parameter 1: Temperature in Celsius (Number)</li>
+<li>Return: Temperature in Fahrenheit (Number)</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> result = tempConvert(<span class="hljs-number">20</span>);
+alert(result); <span class="hljs-comment">// Should display: 68</span>
 </code></pre>
-<h3 id="create-a-text-input">Create a text input</h3>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;my-input&quot;</span> /&gt;</span>
+<h2 id="challenge-3-film-display">Challenge 3: Film Display</h2>
+<p>Given some information about a movie, create a display message with all of it formatted nicely.</p>
+<ul>
+<li>Function Name: <code>filmDisplay</code></li>
+<li>Parameter 1: Film Title (String)</li>
+<li>Parameter 2: Year Released (Number)</li>
+<li>Parameter 3: Film Director (String)</li>
+<li>Return: A nicely formatted message (String)</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> result = filmDisplay(<span class="hljs-string">&quot;T&#xE1;r&quot;</span>, <span class="hljs-number">2022</span>, <span class="hljs-string">&quot;Todd Field&quot;</span>);
+alert(result); <span class="hljs-comment">// Should display: Todd Field - T&#xC1;R (2022)</span>
 </code></pre>
-<h3 id="create-an-image">Create an image</h3>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://example.com/urlToImage.png&quot;</span> /&gt;</span>
-</code></pre>
-<h2 id="javascript">JavaScript</h2>
-<h3 id="define-a-function">Define a function</h3>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span>(<span class="hljs-params">parameter1, parameter2...</span>) </span>{
+<h2 id="challenge-4-string-mixer">Challenge 4: String Mixer</h2>
+<p>Given two words, return the combination of the two, slicing out and swapping the first two characters of each (see examples for reference).</p>
+<ul>
+<li>Function Name: <code>stringMixUp</code></li>
+<li>Parameter 1: First Word (String)</li>
+<li>Parameter 2: Second Word (String)</li>
+<li>Return: One Mixed Up string</li>
+</ul>
+<p>Examples:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> result = stringMixUp(<span class="hljs-string">&quot;mix&quot;</span>, <span class="hljs-string">&quot;pod&quot;</span>);
+alert(result); <span class="hljs-comment">// Should display: pox mid</span>
 
-}
+<span class="hljs-keyword">let</span> result2 = stringMixUp(<span class="hljs-string">&quot;dog&quot;</span>, <span class="hljs-string">&quot;dinner&quot;</span>);
+alert(result2); <span class="hljs-comment">// Should display: dig donner</span>
 </code></pre>
-<h3 id="call-a-function">Call a function</h3>
-<pre><code class="lang-js">myFunction(argument1, argument2...);
-</code></pre>
-<h3 id="create-a-variable">Create a variable</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> x = <span class="hljs-string">&quot;new variable&quot;</span>;
-</code></pre>
-<h3 id="set-a-variable">Set a variable</h3>
-<pre><code class="lang-js">x = <span class="hljs-number">5</span>;
-</code></pre>
-<h3 id="increment-the-value-of-a-variable-by-1">Increment the value of a variable by 1</h3>
-<pre><code class="lang-js">x++;
-</code></pre>
-<h3 id="increment-the-value-of-a-variable-by-any-number-like-10">Increment the value of a variable by any number (like 10)</h3>
-<pre><code class="lang-js"><span class="hljs-comment">// replace 10 with the desired number</span>
-x += <span class="hljs-number">10</span>;
-</code></pre>
-<h3 id="find-the-maximum-of-some-variables">Find the maximum of some variables</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> count1 = <span class="hljs-number">5</span>;
-<span class="hljs-keyword">let</span> count2 = <span class="hljs-number">9</span>;
-<span class="hljs-keyword">let</span> count3 = <span class="hljs-number">4</span>;
+<h2 id="challenge-5-number-reverser">Challenge 5: Number Reverser</h2>
+<p>Given a number, return the reverse of the number (see examples for reference).</p>
+<ul>
+<li>Function Name: <code>reverseNum</code></li>
+<li>Parameter 1: A Number (Number)</li>
+<li>Return: The number with digits reversed</li>
+</ul>
+<p>Examples:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> result = reverseNum(<span class="hljs-number">201</span>);
+alert(result); <span class="hljs-comment">// Should display: 102</span>
 
-<span class="hljs-keyword">let</span> maximumCount = <span class="hljs-built_in">Math</span>.max(count1, count2, count3);
-</code></pre>
-<h3 id="generate-a-random-number-between-1-and-any-number">Generate a random number between 1 and any number</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> random = <span class="hljs-built_in">Math</span>.ceil(<span class="hljs-built_in">Math</span>.random()*<span class="hljs-number">10</span>);
-</code></pre>
-<h3 id="display-a-message-to-the-user">Display a message to the user</h3>
-<pre><code class="lang-js">alert(<span class="hljs-string">&quot;This is a message&quot;</span>);
-</code></pre>
-<h3 id="make-a-string-with-embedded-expressions-and-linebreaks">Make a string with embedded expressions and linebreaks</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> adjective = <span class="hljs-string">&quot;good&quot;</span>;
-<span class="hljs-keyword">let</span> noun = <span class="hljs-string">&quot;statement&quot;</span>;
-
-<span class="hljs-keyword">let</span> myMessage = <span class="hljs-string">`this is
-a very <span class="hljs-subst">${adjective}</span> message.
-and it is a <span class="hljs-subst">${noun}</span>.`</span>;
-
-alert(myMessage);
-</code></pre>
-<p>Will print:</p>
-<pre><code>this is
-a very good message.
-and it is a statement.
-</code></pre><h3 id="ask-a-question-to-the-user">Ask a question to the user</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> answer = prompt(<span class="hljs-string">&quot;This is a question&quot;</span>);
-</code></pre>
-<h3 id="do-something-if-a-condition-is-true">Do something if a condition is true</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> answer = <span class="hljs-string">&quot;question&quot;</span>;
-
-<span class="hljs-keyword">if</span> (answer === <span class="hljs-string">&quot;Answer&quot;</span>) {
-    alert(<span class="hljs-string">&quot;Do something&quot;</span>);
-}
-</code></pre>
-<p>Will print nothing; condition is not met.</p>
-<h3 id="do-something-if-a-condition-is-false">Do something if a condition is false</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> answer = <span class="hljs-string">&quot;Answer2&quot;</span>;
-
-<span class="hljs-keyword">if</span> (answer === <span class="hljs-string">&quot;Answer1&quot;</span>) {
-    alert(<span class="hljs-string">&quot;Do something&quot;</span>);
-} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (answer === <span class="hljs-string">&quot;Answer2&quot;</span>) {
-    alert(<span class="hljs-string">&quot;Do something else if&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    alert(<span class="hljs-string">&quot;Do something else&quot;</span>);
-}
-</code></pre>
-<p>Will print:</p>
-<pre><code>Do something else if
-</code></pre><h3 id="get-the-value-from-an-html-text-input">Get the value from an HTML text input</h3>
-<h4 id="html">HTML</h4>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;my-input&quot;</span> /&gt;</span>
-</code></pre>
-<h4 id="javascript">JavaScript</h4>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> textInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-input&quot;</span>);
-<span class="hljs-keyword">let</span> textValue = textInput.value;
-</code></pre>
-<h3 id="create-a-new-html-element">Create a new HTML element</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> newParagraph = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;p&quot;</span>);
-</code></pre>
-<h3 id="insert-an-html-element-into-the-body-of-the-page">Insert an HTML element into the <code>body</code> of the page</h3>
-<pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.appendChild(newParagraph);
-</code></pre>
-<h3 id="insert-an-html-element-into-another-element">Insert an HTML element into another element</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> myDiv = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#my-div&quot;</span>);
-myDiv.appendChild(newParagraph);
-</code></pre>
-<h3 id="set-the-text-content-of-an-html-element">Set the text content of an HTML element</h3>
-<pre><code class="lang-js">myParagraph.textContent = <span class="hljs-string">&quot;New Text Content&quot;</span>;
-</code></pre>
-<h3 id="set-a-css-property-of-an-html-element">Set a CSS property of an HTML element</h3>
-<pre><code class="lang-js">myParagraph.style.color = <span class="hljs-string">&quot;red&quot;</span>;
-</code></pre>
-<h3 id="change-the-background-color-of-the-whole-page">Change the background color of the whole page</h3>
-<pre><code class="lang-js"><span class="hljs-built_in">document</span>.body.style.background = <span class="hljs-string">&quot;red&quot;</span>;
-</code></pre>
-<h3 id="repeat-code-a-certain-number-of-times">Repeat code a certain number of times</h3>
-<pre><code class="lang-js"><span class="hljs-comment">// replace 10 with the desired number</span>
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
-    alert(<span class="hljs-string">&quot;Repeat&quot;</span>);
-}
-</code></pre>
-<h3 id="create-a-new-array">Create a new array</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> myArray = [<span class="hljs-string">&quot;Item One&quot;</span>, <span class="hljs-string">&quot;Item Two&quot;</span>, <span class="hljs-string">&quot;Item Three&quot;</span>];
-</code></pre>
-<h3 id="access-an-array-element-by-index">Access an array element by index</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> myFirstElement = myArray[<span class="hljs-number">0</span>];
-</code></pre>
-<h3 id="set-an-array-element-by-index">Set an array element by index</h3>
-<pre><code class="lang-js">myArray[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;New Item One&quot;</span>;
-</code></pre>
-<h3 id="add-an-item-to-an-array">Add an item to an array</h3>
-<pre><code class="lang-js">myArray.push(<span class="hljs-string">&quot;Item Four&quot;</span>);
-</code></pre>
-<h3 id="get-the-number-of-items-in-an-array">Get the number of items in an array</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> elementsCount = myArray.length;
-</code></pre>
-<h3 id="loop-through-each-item-in-an-array">Loop through each item in an array</h3>
-<pre><code class="lang-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; myArray.length; i++) {
-    <span class="hljs-keyword">let</span> currentItem = myArray[i];
-    alert(currentItem);
-}
+<span class="hljs-keyword">let</span> result2 = reverseNum(<span class="hljs-number">4073</span>);
+alert(result2); <span class="hljs-comment">// 3704</span>
 </code></pre>
 
                                 
@@ -1061,12 +987,12 @@ myDiv.appendChild(newParagraph);
 
             
                 
-                <a href="FinalProject.html" class="navigation navigation-prev " aria-label="Previous page: Final Project">
+                <a href="Challenges.html" class="navigation navigation-prev " aria-label="Previous page: Challenges">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Archive/StyleManipulationLesson/StyleManipulation.html" class="navigation navigation-next " aria-label="Next page: Style Manipulation">
+                <a href="../ForLoops/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Week 10 - For Loops">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1077,7 +1003,7 @@ myDiv.appendChild(newParagraph);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cheat Sheet","level":"1.12.2","depth":2,"next":{"title":"Style Manipulation","level":"1.12.3","depth":2,"path":"Archive/StyleManipulationLesson/StyleManipulation.md","ref":"Archive/StyleManipulationLesson/StyleManipulation.md","articles":[]},"previous":{"title":"Final Project","level":"1.12.1","depth":2,"path":"FinalProjects/FinalProject.md","ref":"FinalProjects/FinalProject.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"FinalProjects/CheatSheet.md","mtime":"2023-08-29T14:08:24.099Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-29T14:08:57.702Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Function Tests","level":"1.10.5","depth":2,"next":{"title":"Week 10 - For Loops","level":"1.11","depth":1,"path":"ForLoops/StudentDesc.md","ref":"ForLoops/StudentDesc.md","articles":[{"title":"Warm-Up","level":"1.11.1","depth":2,"path":"ForLoops/WarmUp.md","ref":"ForLoops/WarmUp.md","articles":[]},{"title":"Code-Along","level":"1.11.2","depth":2,"path":"ForLoops/BabelCodeAlong.md","ref":"ForLoops/BabelCodeAlong.md","articles":[]},{"title":"Self-Paced Work","level":"1.11.3","depth":2,"path":"ForLoops/SelfPacedWork.md","ref":"ForLoops/SelfPacedWork.md","articles":[]},{"title":"Challenges","level":"1.11.4","depth":2,"path":"ForLoops/Challenges.md","ref":"ForLoops/Challenges.md","articles":[]}]},"previous":{"title":"Challenges","level":"1.10.4","depth":2,"path":"FunctionParameters/Challenges.md","ref":"FunctionParameters/Challenges.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"FunctionParameters/FunctionTests.md","mtime":"2023-08-29T14:08:24.139Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-29T14:08:57.702Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
