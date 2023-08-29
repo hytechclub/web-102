@@ -18,5 +18,8 @@ Learn how to change what happens in a program based on _conditions_.
 ## Challenges
 [Click here for some additional challenges.](Challenges.md)
 
+## Logic Operators
+[Click here to learn more about logic operators.](LogicOperators.md)
+
 ## Past Session Recording
 <iframe width="100%" height="450px" src="https://www.youtube.com/embed/SXgoP8-8y1U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

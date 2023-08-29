@@ -18,5 +18,8 @@ Learn how to use _parameters_ to make JavaScript functions even more powerful.
 ## Challenges
 [Click here for some additional challenges.](Challenges.md)
 
+## Function Tests
+[Click here for an additional challenge activity.](FunctionTests.md)
+
 ## Past Session Recording
 <iframe width="100%" height="450px" src="https://www.youtube.com/embed/7vAwnj7gGwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
