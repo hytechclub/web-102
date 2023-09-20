@@ -8,7 +8,7 @@ let passwordProtectedPages = {
     "DomManipulationContinued/LyricsCodeAlong.md": "byebyebye",
     "ForLoops/BabelCodeAlong.md": "infinitemonkeys",
     "FunctionParameters/DiceRollerCodeAlong.md": "nat20",
-    "HtmlCssReview/HtmlCssReviewCodeAlong.md": "banana"
+    // "HtmlCssReview/HtmlCssReviewCodeAlong.md": "banana"
 }
 
 document.addEventListener('DOMContentLoaded', function() {
