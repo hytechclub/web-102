@@ -12,7 +12,6 @@ Follow this schedule:
 - [Week 6](MidSemesterReview/) - Review + Check-ins
 - [Week 7](DomManipulation/) - DOM Manipulation - reading from input
 - [Week 8](DomManipulationContinued/) - DOM Manipulation - updating existing HTML and creating new HTML elements
-- [Week 9](FunctionParameters/) - Function parameters
-- [Week 10](ForLoops/) - For Loops
-- [Week 11](FinalProjects/) - Students work on Final Projects
-- [Week 12](FinalSession/) - Students present Final Projects
+- Week 9 - [Function Parameters](FunctionParameters/) & [For Loops](ForLoops/)
+- [Week 10](FinalProjects/) - Students work on Final Projects
+- [Week 11](FinalSession/) - Students present Final Projects
