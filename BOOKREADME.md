@@ -10,12 +10,12 @@ Follow the links below to view each week of material.
 - [Week 4 (10/10) - Buttons](Buttons/StudentDesc.md)
 - [Week 5 (10/17) - Conditionals](Conditionals/StudentDesc.md)
 - [Week 6 (10/24) - Review + Check-Ins](MidSemesterReview/StudentDesc.md)
-- [Week 7 (10/31) - DOM Manipulation - Reading from Input](DomManipulation/StudentDesc.md)
-- [Week 8 (11/7) - DOM Manipulation - Updating HTML](DomManipulationContinued/StudentDesc.md)
-- [Week 9 (11/14) - Function Parameters](FunctionParameters/StudentDesc.md)
+- **NO CLUB 10/31**
+- [Week 7 (11/7) - DOM Manipulation - Reading from Input](DomManipulation/StudentDesc.md)
+- [Week 8 (11/14) - DOM Manipulation - Updating HTML](DomManipulationContinued/StudentDesc.md)
 - **NO CLUB 11/21**
-- [Week 10 (11/28) - For Loops](ForLoops/StudentDesc.md)
-- [Week 11 (12/5) - Final Project](FinalProjects/StudentDesc.md)
+- Week 9 (11/28) - [Function Parameters](FunctionParameters/StudentDesc.md) & [For Loops](ForLoops/StudentDesc.md)
+- [Week 10 (12/5) - Final Project](FinalProjects/StudentDesc.md)
 - Week 11 (12/12) - Final Project Presentations
 
 ## Starter Repl Project
