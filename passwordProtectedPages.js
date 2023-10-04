@@ -3,7 +3,7 @@ let enabled = true;
 let passwordProtectedPages = {
     "Buttons/SoundboardCodeAlong.md": "fatherhood",
     "Conditionals/ChatbotCodeAlong.md": "eliza",
-    "DataTypes/SpeedCalcCodeAlong.md": "gottagofast",
+    // "DataTypes/SpeedCalcCodeAlong.md": "gottagofast",
     "DomManipulation/MadLibsCodeAlong.md": "hahaha",
     "DomManipulationContinued/LyricsCodeAlong.md": "byebyebye",
     "ForLoops/BabelCodeAlong.md": "infinitemonkeys",
