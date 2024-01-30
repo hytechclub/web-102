@@ -27,8 +27,8 @@ The students should work on their "About Me" websites on their own, following [t
 ## Challenges
 If the students complete the Individual activity with time to spare, they can attempt the [challenges](Challenges.md).
 
-## Formative Assessment: Kahoot
-End the session with a [Kahoot](https://create.kahoot.it/share/9da0c22b-48ae-479f-9c7f-c0bfd458a2b5) to gauge what the students ultimately remember from HTML/CSS.
+## Formative Assessment: Blooket
+End the session with a [Blooket](https://dashboard.blooket.com/set/65b8f133f29aed4ff8bea413) to gauge what the students ultimately remember from HTML/CSS.
 
 ## Agenda
 

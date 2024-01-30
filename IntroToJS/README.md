@@ -43,8 +43,8 @@ Pull the **scrap of paper** out of a **cup** to represent _using_ a variable. Af
 
 >Note: This activity can be skipped in a hybrid or virtual setting.
 
-## Formative Assessment: Kahoot
-Facilitate the [Kahoot](https://create.kahoot.it/share/4a6c1a18-b5cc-4a58-945f-4774fa9187e2) that covers the content from the lectures.
+## Formative Assessment: Blooket
+Facilitate the [Blooket](https://dashboard.blooket.com/set/65b8eeccf29aed4ff8bea349) that covers the content from the lectures.
 
 ## Self-Paced Work: Questions Exercise
 The students can practice the concepts from the lesson by following the [Self-Paced Work](SelfPacedWork.md) instructions; they will build a simple website that asks the user some questions, and then displays the answers. There is also a [solution for the basic self-paced work](SelfPacedWorkComplete.js).
