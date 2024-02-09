@@ -17,5 +17,4 @@ Follow this schedule:
 - [Week 11](FinalSession/) - Students present Final Projects
 
 ## Multiplayer Repls
-[View responses for Multiplayer Repl Submissions here.](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=iNuljKul90il4EzlCTX4B33juYEmlJlJpIkctSGCv9RUQlNLVDhHV0dIVUpNQkQ2V1VFNkdURlkwQy4u&Token=3e895ca20d224e1ea6f588fdd67e55e5)
-
+[View responses for Multiplayer Repl Submissions here.](https://forms.office.com/Pages/DesignPage.aspx?fragment=FormId%3DiNuljKul90il4EzlCTX4B33juYEmlJlJpIkctSGCv9RUN1FZV0tQNjNYSzlOT1IwUU5VTUdLSlZZSS4u%26Token%3D9e343249037f4fbc92cda50b597b17c1)
