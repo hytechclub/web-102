@@ -13,7 +13,7 @@ Follow the links below to view each week of material.
 - **NO CLUB 4/2**
 - [Week 7 (4/9) - DOM Manipulation - Reading from Input](DomManipulation/StudentDesc.md)
 - [Week 8 (4/16) - DOM Manipulation - Updating HTML](DomManipulationContinued/StudentDesc.md)
-- [Week 9 (4/23) - Function Parameters](FunctionParameters/StudentDesc.md) & 
+- [Week 9 (4/23) - Function Parameters](FunctionParameters/StudentDesc.md)
 - [Week 10 (4/30) - For Loops](ForLoops/StudentDesc.md)
 - [Week 11 (5/7) - Final Project](FinalProjects/StudentDesc.md)
 - Week 12 (5/14) - Final Project Presentations
