@@ -19,4 +19,4 @@ Learn how to use `for` loops to programmatically repeat blocks of code.
 [Click here for some additional challenges.](Challenges.md)
 
 ## Formative Assessment: Loop Tracing
-[Click here to quiz yourself on the execution of `for` loops.](https://looptracing.hylandoutreach.repl.co/)
+[Click here to quiz yourself on the execution of `for` loops.](LoopTracing/index.html)
