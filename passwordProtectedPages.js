@@ -7,7 +7,7 @@ let passwordProtectedPages = {
     // "DomManipulation/MadLibsCodeAlong.md": "hahaha",
     // "DomManipulationContinued/LyricsCodeAlong.md": "byebyebye",
     "ForLoops/BabelCodeAlong.md": "infinitemonkeys",
-    "FunctionParameters/DiceRollerCodeAlong.md": "nat20",
+    // "FunctionParameters/DiceRollerCodeAlong.md": "nat20",
     // "HtmlCssReview/HtmlCssReviewCodeAlong.md": "banana"
 }
 
