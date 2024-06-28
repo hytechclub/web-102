@@ -1,5 +1,5 @@
 # Web 102 Course Overview
-The Web 102 course introduces the basics of JavaScript.
+The Web 102 course introduces the basics of JavaScript. Students will learn fundamental programming topics like variables, input/output, functions, conditionals, and loops. By the end of the semester, they will be able to build their own interactive website! 
 
 ## Outline
 Follow this schedule:
