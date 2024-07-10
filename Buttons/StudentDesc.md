@@ -5,7 +5,7 @@ Learn how to define _functions_ that make buttons do things on a webpage!
 <button onclick="displayText()"> Click Me!</button>
 
 <div id="textField" style="display: none;">
-  This is the text that appears when you click the button.
+  Voila! This is the text that appears when you click the button.
 </div>
 <script>
   function displayText() {
