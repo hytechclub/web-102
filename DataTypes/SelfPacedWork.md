@@ -1,7 +1,7 @@
 # Self-Paced Work: Mad Libs Exercise
 Follow these instructions to build a simple [Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs) game using JavaScript!
 
-Begin by creating a fork of [this starter Repl project](https://replit.com/@HylandOutreach/JavaScriptStarter).
+Begin by creating a fork of [this starter Repl project](https://replit.com/@HylandOutreach/JavaScriptStarter). You could also add an button onto your Week 1 "About Me" page that links to this program. 
 
 ## The Story: Biography of Leonhard Euler
 The original story is as follows:
