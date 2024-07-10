@@ -59,3 +59,32 @@ audio.play();
 ```
 
 It is simply a matter of placing that code into the body of a function - after that, the sound should play whenever the function is called!
+
+## Challenge: Text to Speech
+Instead of having the program play pre-recorded audio files, change the code so that your "quotes" are read aloud by the browser's text to Speech!
+
+### Step 1: Adding New Functions to Each Button
+For each button, define a new function, for example "TTS1" that will be called when the button is pressed. 
+
+### Step 2: Adding Text to Speech Functionality
+In the javascript file script.js, add a Text to Speech function that reads the quote corresponding to the aformentioned button. More information can be found on [this website](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
+
+An example is shown below, using the function "TTS1". 
+```js
+function TTS1() {
+  const message = new SpeechSynthesisUtterance();
+
+  message.text = "Don’t be too proud of this technological terror you’ve constructed. The ability to destroy a planet is insignificant next to the power of the Force.";
+
+  
+  message.pitch = 0.1; 
+
+  const speechSynthesis = window.speechSynthesis;
+
+  speechSynthesis.speak(message);
+
+  alert("Don’t be too proud of this technological terror you’ve constructed. The ability to destroy a planet is insignificant next to the power of the Force.");
+}
+```
+
+Feel free to play around with the code and add alerts, change the pitch of the voice, and much more!
