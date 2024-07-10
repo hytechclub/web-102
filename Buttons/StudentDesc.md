@@ -8,7 +8,7 @@ Learn how to define _functions_ that make buttons do things on a webpage!
   This is the text that appears when you click the button.
 </div>
 <script>
-    function displayText() {
+  function displayText() {
   var text = document.getElementById("textField");
   text.style.display = "block";
 }
