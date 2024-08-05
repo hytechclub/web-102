@@ -1,6 +1,7 @@
 # DOM Manipulation (Update HTML)
 
 Learn how to update the HTML elements on a webpage using JavaScript.
+
 <h2>Ice Cream Flavors</h2>
 <ul id="itemList">
         <li>Chocolate</li>
@@ -17,7 +18,7 @@ Learn how to update the HTML elements on a webpage using JavaScript.
             newItem.textContent = prompt('What item would you like to add?');
             document.getElementById('itemList').appendChild(newItem);
         }
-        function Clear{
+        function Clear() {
            let itemlist = document.getElementById('itemList');
            itemlist.innerhtml = "";
         }
