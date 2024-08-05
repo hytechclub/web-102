@@ -20,29 +20,27 @@ document.addEventListener('keydown', function(event) {
         textElement.style.fontSize = textSize + 'px';
     }
 if (event.key == 'b') {
-    console.log('b');
         let fontweight;
         if (bold) {
             bold = false;
-            fontweight = normal;
+            fontweight = 'normal';
         }
         else {
              bold = true;
-             fontweight = bold;
+             fontweight = 'bold';
         }
         const textElement = document.getElementById('text');
         textElement.style.fontWeight = fontweight;
     }
     if (event.key == 'i') {
-            console.log('i');
         let fontstyle;
         if (italics) {
             italics = false;
-            fontstyle = normal;
+            fontstyle = 'normal';
         }
         else {
              italics = true;
-             fontstyle = italic;
+             fontstyle = 'italic';
         }
         const textElement = document.getElementById('text');
         textElement.style.fontStyle = fontstyle;
