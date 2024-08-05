@@ -1,22 +1,25 @@
 # DOM Manipulation (Read from Input)
 Learn how to use JavaScript to capture input from a webpage.
 
+<style>
+        .text {
+            font-size: 16px;
+        }
+    </style>
 
-<p id="myParagraph"><b>This is the original text.</b></p>
-<button id="myButton"><b>Change Text</b></button>
-
-
+<div class="text" id="text">
+        This is some sample text. Press 1-9 to change its size.
+    </div>
 <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-    const myButton = document.getElementById('myButton');
-    const myParagraph = document.getElementById('myParagraph');
-
-    myButton.addEventListener('click', () => {
-        myParagraph.innerHTML = '<i>The text has been changed!</i>';
-    });
+document.addEventListener('keydown', function(event) {
+    if (event.key >= '1' && event.key <= '9') {
+        const textSize = event.key * 10; 
+        const textElement = document.getElementById('text');
+        textElement.style.fontSize = textSize + 'px';
+    }
 });
-</script>
 
+</script>
 
 ## Warm-Up Activity: Cotton Candy Inputs
 [Click here for the CSS Refresher activity instructions.](WarmUp.md)
