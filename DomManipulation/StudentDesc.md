@@ -8,7 +8,7 @@ Learn how to use JavaScript to capture input from a webpage.
     </style>
 
 <div class="text" id="text">
-        This is some sample text. Press 1-9 to change its size. Press I or B to toggle italics or boldness respectively. 
+        This is some sample text. Press 1-9 to change its size. Press B or I to bold or italicize the text. 
     </div>
 <script>
     let bold = false;
