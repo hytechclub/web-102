@@ -1,6 +1,22 @@
 # DOM Manipulation (Update HTML)
 Learn how to update the HTML elements on a webpage using JavaScript.
 
+<ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button>
+
+ <script>
+        function addItem() {
+            let newItem = document.createElement('li');
+            newItem.textContent = 'New Item';
+            document.getElementById('itemList').appendChild(newItem);
+        }
+    </script>
+
+
+
 ## PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/DomManipulationContinued/DomManipulationContinued.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
