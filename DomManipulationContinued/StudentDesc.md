@@ -10,7 +10,7 @@ Learn how to update the HTML elements on a webpage using JavaScript.
 
 <button onclick="addItem()">Add Item</button>
 
-<button onclick="Clear()">Clear All</button>
+<button onclick="Cleary()">Clear All</button>
 
  <script>
         function addItem() {
@@ -18,9 +18,10 @@ Learn how to update the HTML elements on a webpage using JavaScript.
             newItem.textContent = prompt('What item would you like to add?');
             document.getElementById('itemList').appendChild(newItem);
         }
-        function Clear() {
+        function Cleary() {
            let itemlist = document.getElementById('itemList');
            itemlist.innerhtml = "";
+           console.log("clearing")
         }
 
     </script>
