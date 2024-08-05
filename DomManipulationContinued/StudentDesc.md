@@ -9,12 +9,19 @@ Learn how to update the HTML elements on a webpage using JavaScript.
 
 <button onclick="addItem()">Add Item</button>
 
+<button onclick="Clear()">Clear All</button>
+
  <script>
         function addItem() {
             let newItem = document.createElement('li');
             newItem.textContent = prompt('What item would you like to add?');
             document.getElementById('itemList').appendChild(newItem);
         }
+        function Clear{
+           let itemlist = document.getElementById('itemList');
+           itemlist.innerhtml = "";
+        }
+
     </script>
 
 ## PowerPoint Presentation
