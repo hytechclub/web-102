@@ -1,6 +1,22 @@
 # DOM Manipulation (Read from Input)
 Learn how to use JavaScript to capture input from a webpage.
 
+
+<p id="myParagraph">This is the original text.</p>
+<button id="myButton">Change Text</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const myButton = document.getElementById('myButton');
+    const myParagraph = document.getElementById('myParagraph');
+
+    myButton.addEventListener('click', () => {
+        myParagraph.textContent = 'The text has been changed!';
+    });
+});
+</script>
+
+
 ## Warm-Up Activity: Cotton Candy Inputs
 [Click here for the CSS Refresher activity instructions.](WarmUp.md)
 
