@@ -3,7 +3,7 @@ Learn how to use JavaScript to capture input from a webpage.
 
 <style>
         .text {
-            font-size: 16px;
+            font-size: 12px;
         }
     </style>
 
@@ -13,7 +13,7 @@ Learn how to use JavaScript to capture input from a webpage.
 <script>
 document.addEventListener('keydown', function(event) {
     if (event.key >= '1' && event.key <= '9') {
-        const textSize = event.key * 10; 
+        const textSize = (event.key * 2)+10; 
         const textElement = document.getElementById('text');
         textElement.style.fontSize = textSize + 'px';
     }
