@@ -20,6 +20,7 @@ document.addEventListener('keydown', function(event) {
         textElement.style.fontSize = textSize + 'px';
     }
 if (event.key == 'b') {
+    console.log('b');
         let fontweight;
         if (bold) {
             bold = false;
@@ -33,6 +34,7 @@ if (event.key == 'b') {
         textElement.style.fontWeight = fontweight;
     }
     if (event.key == 'i') {
+            console.log('i');
         let fontstyle;
         if (italics) {
             italics = false;
