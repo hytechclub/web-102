@@ -21,7 +21,7 @@ Learn how to update the HTML elements on a webpage using JavaScript.
         function Cleary() {
            let itemlist = document.getElementById('itemList');
            itemlist.innerhtml = "";
-           console.log("clearing")
+           console.log("clearing:\n1." + itemlist.innerHTML);
         }
 
     </script>
