@@ -12,7 +12,7 @@ Learn how to use JavaScript to capture input from a webpage.
     const myParagraph = document.getElementById('myParagraph');
 
     myButton.addEventListener('click', () => {
-        myParagraph.textContent = 'The text has been changed!';
+        myParagraph.innerHTML = '<i>The text has been changed!</i>';
     });
 });
 </script>
