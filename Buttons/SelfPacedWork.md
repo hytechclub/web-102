@@ -87,4 +87,4 @@ function TTS1() {
 }
 ```
 
-Feel free to play around with the code and add alerts, change the pitch of the voice, and much more!
+Feel free to play around with the code and add alerts, change the pitch of the voice, and much more! Good luck! 
