@@ -64,7 +64,7 @@ It is simply a matter of placing that code into the body of a function - after t
 Instead of having the program play pre-recorded audio files, change the code so that your "quotes" are read aloud by the browser's text to Speech!
 
 ### Step 1: Adding New Functions to Each Button
-For each button, define a new function, for example "TTS1" that will be called when the button is pressed. 
+For each button, define a new function, for example "TTS1", that will be called when the button is pressed. 
 
 ### Step 2: Adding Text to Speech Functionality
 In the javascript file script.js, add a Text to Speech function that reads the quote corresponding to the aformentioned button. More information can be found on [this website](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
