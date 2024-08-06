@@ -1,6 +1,12 @@
 # Self-Paced Work: Questions Exercise
 For this exercise, start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb). Then, follow the instructions below to build a little text-based JavaScript program. The program will ask the user a number of questions, and then display some information using the answers the user provides.
 
+You could also add a button onto your Week 1 "About Me" page that links to the Javascript Programs!
+>_`<a href="newpage.html">
+    <button>Javascript Programs</button>
+</a>`
+_
+
 ## Part 1 - Setup
 Start by creating and hooking up a JavaScript file.
 

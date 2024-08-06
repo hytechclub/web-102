@@ -1,6 +1,8 @@
 # HTML & CSS Review
 This lesson reviews some foundational topics from HTML and CSS.
 
+<p><a href="https://forms.office.com/r/ZENX9z6AAa" target="_blank">Make sure to submit your Multiplayer Repl links every week!</a></p>
+
 ## Code-Along: Despicable Me Fan Site
 [Click here for the code-along activity instructions.](HtmlCssReviewCodeAlong.md)
 

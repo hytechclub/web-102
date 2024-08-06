@@ -1,5 +1,6 @@
 # Code-Along: Speed Calculator
-Start by forking [this starter Repl](https://replit.com/@HylandOutreach/JavaScriptStarter). Then, follow the instructions below to build a little text-based JavaScript program that calculates speed using user input.
+Start by forking [this starter Repl](https://replit.com/@HylandOutreach/JavaScriptStarter). Then, follow the instructions below to build a little text-based JavaScript program that calculates speed using user input. You could also add an button onto your Week 1 "About Me" page that links to this program. 
+
 
 ## Part 1 - Calculating Speed with Hard-coded Values
 To start, simply create some [hard-coded](https://en.wikipedia.org/wiki/Hard_coding) variables, and use those to calculate the speed. This should all take place in the **script.js** file.
