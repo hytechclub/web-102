@@ -2,7 +2,7 @@
 
 Learn how to update the HTML elements on a webpage using JavaScript.
 
-<h2>Ice Cream Flavors</h2>
+<h2>Example List: Ice Cream Flavors</h2>
 <ul id="itemList">
         <li>Chocolate</li>
         <li>Cookie Dough</li>
