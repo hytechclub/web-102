@@ -24,6 +24,6 @@ Follow the links below to view each week of material.
 [Click here for the **JavaScriptStarter** code.](https://replit.com/@HylandOutreach/JavaScriptStarter)
 
 ## Multiplayer Repl Submissions
-[Click here to submit your Multiplayer Repl links!](https://forms.office.com/r/ZENX9z6AAa)
+[Click here to submit your Multiplayer Repl links!](https://hylandtechclub.com/MultiplayerLink)
 
-> _Note: [click here for help generating a Multiplayer Repl link](https://hylandtechclub.com/MultiplayerLink)_
+>_Note: only virtual students should submit Multiplayer Repl links_
