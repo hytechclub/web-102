@@ -8,7 +8,7 @@ Resources:
 - [Binary](https://www.mathsisfun.com/binary-number-system.html)
 - [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-For each challenge, create a new Repl project by forking [this starter project](https://replit.com/@HylandOutreach/JavaScriptStarter). Optionally, each challenge can be completed in the same Repl project. 
+For each challenge, create a new Repl project by forking [this starter project](https://replit.com/@HylandOutreach/JavaScriptStarter). Optionally, each challenge can be completed in the same Repl project, or can be added onto your existing Repl project. 
 
 ## 1. Repeater
 Create a new HTML page that, when opened, will repeat a message. Ask the user to enter a message, and then ask them how many times they would like to repeat it. Display the output.
