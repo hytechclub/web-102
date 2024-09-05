@@ -2,7 +2,7 @@
 Create a webpage where users can perform various functions on two inputs.
 
 ## Setup
-Start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), then follow the steps below.
+Start by forking [this empty project](https://glitch.com/edit/#!/emptyweb101), then follow the steps below.
 
 ### Basics
 Do some initial setup to begin.

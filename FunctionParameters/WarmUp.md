@@ -1,5 +1,5 @@
 # Warm-Up: Quiz
-Open up [this Repl project](https://replit.com/@HylandOutreach/Web102Week8WarmUp) and answer each question in the corresponding files.
+Open up [this project](https://glitch.com/edit/#!/web-102-week-8-warm-up) and answer each question in the corresponding files.
 
 1. For each of the expressions below, **True or False?**
     1. `10 + 2 === 12`

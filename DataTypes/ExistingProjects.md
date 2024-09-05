@@ -8,22 +8,22 @@ One of the most important parts of software development is reading and understan
 ## The HTML5 Canvas
 The [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) provides a means for drawing graphics via JavaScript and the HTML `<canvas>` element.
 
-[**Click here to view the Repl project.**](https://replit.com/@HylandOutreach/Spring2017-Animation) Fork the project to begin.
+[**Click here to view the project.**](https://glitch.com/edit/#!/linen-vagabond-principle) Remix the project to begin.
 
 ## Processing with p5.js
 The [p5.js library](https://p5js.org/) makes creative coding possible - you can make all kinds of different art with it. Here are some example projects:
 
-- [Embers](https://replit.com/@HylandOutreach/Embers)
-- [Waves](https://replit.com/@HylandOutreach/Waves)
-- [Greet](https://replit.com/@HylandOutreach/Greet)
+- [Embers](https://glitch.com/edit/#!/whispering-brash-pony)
+- [Waves](https://glitch.com/edit/#!/mangrove-cuddly-aragon)
+- [Greet](https://glitch.com/edit/#!/gray-bubbly-ship)
 
 ### Advanced Examples: Fractals
 The code for these projects is a bit more complex, but it does some interesting things.
 
-- [Fractal 1](https://replit.com/@HylandOutreach/Fractal)
-- [Fractal 2](https://replit.com/@HylandOutreach/Fractal2)
+- [Fractal 1](https://glitch.com/edit/#!/aged-exciting-moss)
+- [Fractal 2](https://glitch.com/edit/#!/flower-innovative-winter)
 
 ## Phaser: Platformer Game
 The [Phaser framework](https://github.com/photonstorm/phaser#phaser---html5-game-framework) is one way to make games with JavaScript.
 
-[**Click here to view the Repl project.**](https://replit.com/@HylandOutreach/Platformer) Fork the project to begin.
+[**Click here to view the project.**](https://glitch.com/edit/#!/platformer-hacker) Remix the project to begin.

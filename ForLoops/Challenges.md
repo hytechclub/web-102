@@ -1,7 +1,7 @@
 # Challenges: All `for` One and One `for` All
 Try to complete these `for` loop challenges!
 
-Start by forking [this Repl project](https://replit.com/@HylandOutreach/AllForOne). Run the program and test out some of the buttons. Some of them are working, some of them are a little broken, and some of them do not do anything! Follow these instructions to update the functionality of each button.
+Start by remixing [this project](https://glitch.com/edit/#!/remix/all-for-one-and-one-for-all). Run the program and test out some of the buttons. Some of them are working, some of them are a little broken, and some of them do not do anything! Follow these instructions to update the functionality of each button.
 
 Note that the **Existing Buttons** challenges are simpler than the **New Buttons** challenges. Feel free to hop around to whatever you would like!
 

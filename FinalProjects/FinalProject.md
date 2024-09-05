@@ -44,7 +44,7 @@ Here are some guidelines for the presentations:
 
 - If a student is able to share their screen and talk through their project on Zoom, that is preferred
     - If a student does not have a microphone, they can join the Zoom meeting from a telephone
-    - If a student cannot share their screen, they should share their Repl link with the instructors
+    - If a student cannot share their screen, they should share their project link with the instructors
 - A student also has the option of recording a video presentation
 - There will be a defined schedule and order for each student to present
 - **If a student does not present a final project, they may not be able to move onto the next level of Hy-Tech Club**

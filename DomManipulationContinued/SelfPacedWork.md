@@ -2,7 +2,7 @@
 Previously, there was a webpage that could change its background color on a button click. The page would ask for colors using `prompt`s, and then set the background color. Improve that webpage by using an HTML input instead of `prompt`s to get a color from the user!
 
 ## Part 1 - HTML Setup
-Start by forking [this starter Repl](https://replit.com/@HylandOutreach/JavaScriptStarter), then follow the steps below.
+Start by remixing [this starter project](https://glitch.com/edit/#!/remix/javascriptstarter), then follow the steps below.
 
 1. Open the **index.html** file for editing
 1. In the `<body></body>`, add an `<h1>` header saying `Background Changer`

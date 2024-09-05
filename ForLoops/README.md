@@ -18,7 +18,7 @@ Follow the [instructions](BabelCodeAlong.md) to update a webpage so that it uses
 There is a video at the start of the walkthrough - show the first three minutes or so. Make sure not to go beyond those three minutes, but note that students can watch the full video later if they desire.
 
 ## Self-Paced Work: Babel Updates
-Have the students follow [the instructions](SelfPacedWork.md) to continue working on the Babel website. At the end, if they complete all of the challenge portions, the project should look [something like this](http://replit.com/@HylandOutreach/BabelComplete). Note that the challenge portions of the self-paced work may be more challenging than the separate challenges - students can feel free to hop around and work on what they would like.
+Have the students follow [the instructions](SelfPacedWork.md) to continue working on the Babel website. At the end, if they complete all of the challenge portions, the project should look [something like this](https://glitch.com/edit/#!/honorable-tabby-papyrus). Note that the challenge portions of the self-paced work may be more challenging than the separate challenges - students can feel free to hop around and work on what they would like.
 
 ## Challenges
 There are some additional [challenges](Challenges.md). The first few challenges may actually be easier than the challenge portions of the self-paced work, so students are welcome to switch over even if they do not complete all the babel updates.

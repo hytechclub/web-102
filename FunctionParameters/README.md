@@ -18,7 +18,7 @@ Follow the [instructions](DiceRollerCodeAlong.md) to build up a webpage capable 
 - Using DOM manipulation to show messages to the user
 
 ## Self-Paced Work: Background Images
-Have the students follow [the instructions](SelfPacedWork.md) to create a webpage that allows the user to change the background image dynamically. To do this, they will define a function that takes a parameter. They will call that function from within another function. They will also use DOM Manipulation to get an image URL from a text box in the HTML. At the end, the project should look [something like this](https://replit.com/@HylandOutreach/BackgroundChangerComplete).
+Have the students follow [the instructions](SelfPacedWork.md) to create a webpage that allows the user to change the background image dynamically. To do this, they will define a function that takes a parameter. They will call that function from within another function. They will also use DOM Manipulation to get an image URL from a text box in the HTML. At the end, the project should look [something like this](https://glitch.com/edit/#!/background-changer-done).
 
 ## Challenges
 There are some additional [challenges](Challenges.md). If a student finishes the self-paced work with time to spare, they can attempt the challenges.

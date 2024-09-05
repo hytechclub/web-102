@@ -901,9 +901,9 @@
 </code></pre>
 <p>Refer back to this code when it is needed.</p>
 <h2 id="part-1---setup">Part 1 - Setup</h2>
-<p>Start by forking <a href="https://replit.com/@HylandOutreach/BackgroundChangerStart" target="_blank">this starter Repl</a>, then add an initial background image. In the <strong>style.css</strong> file, use the following code:</p>
+<p>Start by remixing <a href="https://glitch.com/edit/#!/background-changer-start" target="_blank">this starter project</a>, then update the initial background image. In the <strong>style.css</strong> file, use the following code:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(Planet.jpg);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(https://github.com/hytechclub/web-102/blob/master/Assets/City.jpg?raw=true);
 }
 </code></pre>
 <p>This is the ruleset that will be updated with JavaScript when buttons are clicked.</p>
@@ -921,7 +921,7 @@
 </ul>
 </li>
 <li>In the <em>body</em> of the function (between <code>{</code> and <code>}</code>), make a new line</li>
-<li>On the new line, add the code to update the background image to <strong>Pokemon.jpg</strong></li>
+<li>On the new line, add the code to update the background image to <strong><a href="https://github.com/hytechclub/web-102/blob/master/Assets/Pokemon.jpg?raw=true" target="_blank">https://github.com/hytechclub/web-102/blob/master/Assets/Pokemon.jpg?raw=true</a></strong></li>
 </ol>
 <p>Now the function should be <em>defined</em>... but it needs to be <em>called</em>!</p>
 <h3 id="html">HTML</h3>
@@ -939,7 +939,7 @@
 <h2 id="part-3---two-buttons">Part 3 - Two Buttons</h2>
 <p>Now, create <em>another</em> HTML <code>&lt;button&gt;</code> and JavaScript function that will change the background to another image. This will be very similar to the steps above!</p>
 <h3 id="javascript">JavaScript</h3>
-<p>In the <strong>script.js</strong> function, define a new function named <code>changeBackground2</code>. It should be almost exactly the same as the <code>changeBackground</code> function, except that it should set the background URL to <strong>City.jpg</strong>.</p>
+<p>In the <strong>script.js</strong> function, define a new function named <code>changeBackground2</code>. It should be almost exactly the same as the <code>changeBackground</code> function, except that it should set the background URL to <strong><a href="https://github.com/hytechclub/web-102/blob/master/Assets/City.jpg?raw=true" target="_blank">https://github.com/hytechclub/web-102/blob/master/Assets/City.jpg?raw=true</a></strong>.</p>
 <h3 id="html">HTML</h3>
 <p>In the <strong>index.html</strong> file, create a new <code>&lt;button&gt;</code>. Place it under the existing <code>&lt;button&gt;</code>, within the <code>&lt;body&gt;&lt;/body&gt;</code>. It should be almost exactly the same as the other <code>&lt;button&gt;</code>, but the text should be <code>Image 2</code> and the <code>onclick</code> attribute should call the <code>changeBackground2</code> function.</p>
 <p>Once the functional button has been added, load up the page and click it. It should change the background to the new image!</p>
@@ -953,7 +953,7 @@
 <li>It should go in between the parentheses right after the function name</li>
 </ul>
 </li>
-<li>In the body of the <code>changeBackground</code> function, replace <strong>Pokemon.jpg</strong> with the variable value of the parameter<ul>
+<li>In the body of the <code>changeBackground</code> function, replace the image URL with the variable value of the parameter<ul>
 <li>Using a template literal, it should look something like this:<pre><code class="lang-js">  <span class="hljs-string">`url(<span class="hljs-subst">${backgroundUrl}</span>)`</span>;<span class="hljs-string">`
 </span></code></pre>
 </li>
@@ -966,11 +966,11 @@
 <ol>
 <li>Open the <strong>index.html</strong> file for editing</li>
 <li>Find the <code>&lt;button&gt;</code> where the <code>onclick</code> attribute calls the <code>changeBackground</code> function</li>
-<li>Update this call by placing <code>&apos;Pokemon.jpg&apos;</code> between the parentheses - this will be the <em>argument</em><ul>
+<li>Update this call by placing <code>&apos;https://github.com/hytechclub/web-102/blob/master/Assets/Pokemon.jpg?raw=true&apos;</code> between the parentheses - this will be the <em>argument</em><ul>
 <li>Note that the argument value should be surrounded by <strong>single quotes</strong>; this is because the attribute is within double quotes</li>
 </ul>
 </li>
-<li>Update the second <code>&lt;button&gt;</code> to call <code>changeBackground</code> and pass in <code>&apos;City.jpg&apos;</code> as the argument</li>
+<li>Update the second <code>&lt;button&gt;</code> to call <code>changeBackground</code> and pass in <code>&apos;https://github.com/hytechclub/web-102/blob/master/Assets/City.jpg?raw=true&apos;</code> as the argument</li>
 </ol>
 <p>Now try loading up the page. Click each button and verify that they still work as intended!</p>
 <p>At this point, it will be possible to remove the <code>changeBackground2</code> function; it should not be needed any longer.</p>
@@ -984,9 +984,9 @@
 <li>Use the function name and parentheses (left/right)</li>
 </ul>
 </li>
-<li>Pass in an argument of <code>&apos;CalvinAndHobbes.jpg&apos;</code> to the function</li>
+<li>Pass in an argument of <code>&apos;https://github.com/hytechclub/web-102/blob/master/Assets/CalvinAndHobbes.jpg?raw=true&apos;</code> to the function</li>
 </ol>
-<p>Load up the page again, click the third button, and verify that the background changes to yet another new image! All this without changing anything in the JavaScript &#x1F60E;</p>
+<p>Load up the page again, click the third button, and verify that the background changes to yet another new image! All this without changing anything in the <strong>script.js</strong> file &#x1F60E;</p>
 <h2 id="challenge-1---prompt-for-image">Challenge 1 - Prompt for Image</h2>
 <p>Try to expand the functionality of the page by adding a button that, when clicked, will prompt the user for a URL, and set the background image to whatever they enter.</p>
 <h3 id="javascript">JavaScript</h3>
@@ -1095,7 +1095,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.10.3","depth":2,"next":{"title":"Challenges","level":"1.10.4","depth":2,"path":"FunctionParameters/Challenges.md","ref":"FunctionParameters/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.10.2","depth":2,"path":"FunctionParameters/DiceRollerCodeAlong.md","ref":"FunctionParameters/DiceRollerCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"FunctionParameters/SelfPacedWork.md","mtime":"2024-09-05T20:15:29.610Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-09-05T20:16:02.962Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.10.3","depth":2,"next":{"title":"Challenges","level":"1.10.4","depth":2,"path":"FunctionParameters/Challenges.md","ref":"FunctionParameters/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.10.2","depth":2,"path":"FunctionParameters/DiceRollerCodeAlong.md","ref":"FunctionParameters/DiceRollerCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"FunctionParameters/SelfPacedWork.md","mtime":"2024-09-05T20:51:33.107Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-09-05T20:52:03.367Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

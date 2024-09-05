@@ -8,7 +8,7 @@ Learn how to change what happens in a program based on _conditions_.
 [Click here for the Conditional Debugging activity instructions.](ConditionalDebugging.md)
 
 ## Code-Along: Chatbot
-[Click here for the code-along **starter code**.](https://replit.com/@HylandOutreach/Chatbot)
+[Click here for the code-along **starter code**.](https://glitch.com/edit/#!/chatbot-start)
 
 [Click here for the code-along instructions.](ChatbotCodeAlong.md)
 

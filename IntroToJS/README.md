@@ -19,7 +19,7 @@ Discussion will take place during the lecture.
 ## Lecture 1: Introduction to JavaScript
 The [first presentation](IntroductionToJavaScript.pptx) defines JavaScript and explains how developers use JavaScript.
 
-There is a mini-challenge within the lecture - students should make a new **HTML, CSS, JS Repl project** and open the **script.js** file to complete it. 
+There is a mini-challenge within the lecture - students should create a new Glitch project and open the **script.js** file to complete it. 
 
 ## Lecture 2: JavaScript Variables
 The [second presentation](JavaScriptVariables.pptx) dives in to the following concepts:
@@ -29,7 +29,7 @@ The [second presentation](JavaScriptVariables.pptx) dives in to the following co
 - Variables
 - `prompt`
 
-There are further mini-challenges within this lecture - students should use the same Repl project from the first lecture.
+There are further mini-challenges within this lecture - students should use the same project from the first lecture.
 
 ### OPTIONAL: Variables Activity
 During the second lecture, after introducing variables, instructors can use this tangible representation of variables to help explain them. Use cups, nametags, and scraps of paper to represent what's happening in the computer.
