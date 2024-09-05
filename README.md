@@ -16,6 +16,3 @@ Follow this schedule:
 - [Week 10](ForLoops/) - For Loops
 - [Week 11](FinalProjects/) - Students work on Final Projects
 - [Week 12](FinalSession/) - Students present Final Projects
-
-## Multiplayer Repls
-[View responses for Multiplayer Repl Submissions here.](https://forms.office.com/Pages/DesignPage.aspx?fragment=FormId%3DiNuljKul90il4EzlCTX4B33juYEmlJlJpIkctSGCv9RUN1FZV0tQNjNYSzlOT1IwUU5VTUdLSlZZSS4u%26Token%3D9e343249037f4fbc92cda50b597b17c1)

@@ -1,5 +1,5 @@
 # Challenges
-First, create a new Repl project by [forking this one](https://replit.com/@HylandOutreach/JavaScriptStarter). Then, complete the following challenges.
+First, create a new project by [remixing this one](https://glitch.com/edit/#!/remix/javascriptstarter). Then, complete the following challenges.
 
 ## Quiz Me
 Add a button to the **index.html** file. When clicked, the program should ask the user at least _three_ questions that have correct answers. If the user answers all of the questions correctly, the program should display a message saying they passed. If the user does NOT answer all questions correctly, the program should display a message saying they did NOT pass.

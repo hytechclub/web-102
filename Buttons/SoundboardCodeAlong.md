@@ -1,10 +1,10 @@
 # Code-Along: Darth Vader "Sound"board
 Create a new webpage featuring buttons that will say some Darth Vader quotes.
 
-- [Click here for an example of a board with real sound](https://darthvadersoundboard.hylandoutreach.repl.co/)
+- [Click here for an example of a board with real sound](https://darth-vader-soundboard.glitch.me/)
 - [Click here for Darth Vader quote source](https://www.quora.com/What-are-some-famous-Darth-Vader-quotes)
 
-Start by forking [this starter Repl](https://replit.com/@HylandOutreach/JavaScriptStarter). Then, follow the instructions below to build out the website.
+Start by remixing the [JavaScript starter project](https://glitch.com/edit/#!/remix/javascriptstarter). Then, follow the instructions below to build out the website.
 
 ## Part 1 - Basic Elements
 Add some basic elements to the webpage, and update a couple styles.

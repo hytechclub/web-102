@@ -1,7 +1,7 @@
 # Challenges: Decisions
 Complete these challenges based on a philosophical decision-making website.
 
-[Click here to view the Decisions Repl project.](https://replit.com/@HylandOutreach/Decisions) Fork the project to begin the challenges.
+[Click here to view the Decisions project.](https://glitch.com/edit/#!/decisions-decisions) Remix the project to begin the challenges.
 
 ## Part 1: Pick Between
 The first part of this challenge set involves the button with two galaxies (🌌🌌) - picking between multiple options.

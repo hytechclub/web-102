@@ -5,11 +5,11 @@ In this activity, create a simple [chatbot](https://en.wikipedia.org/wiki/Chatbo
 Start by talking to [ELIZA](http://psych.fullerton.edu/mbirnbaum/psych101/eliza.htm), a "Rogerian Therapist" chatbot from the 1960s. This is a small example of what is possible with chatbots.
 
 ## Basic Setup
-To get started, fork [this Repl project](https://replit.com/@HylandOutreach/Chatbot). It contains some basic HTML and CSS, but no JavaScript yet! Manually adding some of the basic starter code will be helpful practice.
+To get started, remix [this project](https://glitch.com/edit/#!/remix/chatbot-start). It contains some basic HTML and CSS, but no JavaScript yet! Manually adding some of the basic starter code will be helpful practice.
 
-Add a new JavaScript file to the Repl project, and link it from the **index.html** file.
+Add a new JavaScript file to the Giltch project, and link it from the **index.html** file.
 
-1. In the **Files** area of the Repl, click the "Add file" button
+1. In the **Files** area of the project, click the "+" button
 1. Name the new file **script.js**
 1. Open the **index.html** file for editing
 1. Between the `<head>` and `</head>`, under the `<link>`, make a new line

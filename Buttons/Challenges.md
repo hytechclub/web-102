@@ -1,7 +1,7 @@
 # Challenges: Functions
 Accomplish all of the challenges below without using `if`, `switch`, or any loops. Make sure to check the resource links if you're stuck!
 
-Start by creating a fork of [this starter Repl](https://replit.com/@HylandOutreach/JavaScriptStarter). Some of these are fairly challenging, but all of them are definitely possible!
+Start by remixing the [JavaScriptStarter project](https://glitch.com/edit/#!/remix/javascriptstarter). Some of these are fairly challenging, but all of them are definitely possible!
 
 **Resources**
 

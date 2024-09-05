@@ -1,9 +1,5 @@
 # HTML & CSS Review Code-Along
-Start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), then follow the instructions below to build a simple webpage!
-
-To fork the Repl, click the "Fork Repl" button on the page:
-
-![](../Assets/ForkRepl.png)
+Start by remixing [this empty project](https://glitch.com/edit/#!/remix/emptyweb101), then follow the instructions below to build a simple webpage!
 
 ## Add the Basic HTML Elements
 Add the foundational elements to the **index.html** file. Start with `<html></html>`, then add `<head></head>` and `<body></body>` between the HTML tags.

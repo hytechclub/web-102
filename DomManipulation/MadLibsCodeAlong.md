@@ -8,7 +8,7 @@ For this activity, start with the first sentence of the text:
 >Pizza was invented by a \_\_\__adjective_\_\_\_ \_\_\__nationality_\_\_\_ chef named \_\_\__person_\_\_\_.
 
 ## Part 1 - Basic Setup
-Start by forking [this empty Repl](https://replit.com/@HylandOutreach/EmptyWeb), then follow the steps below.
+Start by remixing [this empty project](https://glitch.com/edit/#!/remix/emptyweb101), then follow the steps below. _Note: this is emptier than usual - sometimes it's good to practice adding the basics!_
 
 1. Open the **index.html** file for editing
 1. Add the basic elements: `<html>`, `<head>`, `<body>`

@@ -8,7 +8,7 @@ Learn how to use `for` loops to programmatically repeat blocks of code.
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/ForLoops/ForLoops.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Code-Along: Library of Babel
-[Click here for the code-along **starter code**.](https://replit.com/@HylandOutreach/Babel)
+[Click here for the code-along **starter code**.](https://glitch.com/edit/#!/babel-js)
 
 [Click here for the code-along instructions.](BabelCodeAlong.md)
 

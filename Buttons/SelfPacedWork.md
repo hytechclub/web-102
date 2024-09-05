@@ -46,15 +46,15 @@ Follow these steps to get the audio file ready to go.
 
 1. Find an audio file somewhere (this is the difficult part)
 1. Download the audio file locally
-1. Drag the audio file into the Repl project
+1. Drag the audio file into the Glitch project, in the Assets section
 
-After the audio file has been added to Replit, it should be possible to click on it and preview it!
+After the audio file has been added to the Glitch, you will be able to get the link and use it in your project.
 
 ### Step 2: Playing the Audio File
-Once the file has been added to the Repl project, it only takes a couple of lines of code to play it. For example, for a file named **sound.mp3**, the code would look like this:
+Once the file has been added to the Glitch project, it only takes a couple of lines of code to play it. For example, for a file named **sound.mp3**, the code would look like this:
 
 ```js
-let audio = new Audio('sound.mp3');
+let audio = new Audio('https://cdn.glitch.global/....something.....mp3');
 audio.play();
 ```
 

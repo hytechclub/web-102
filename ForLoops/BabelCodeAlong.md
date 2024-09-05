@@ -10,10 +10,10 @@ Basically, the idea is that it is possible to create a program that, given an in
 
 <iframe width="100%" height="450px" src="https://www.youtube.com/embed/no_elVGGgW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-For this activity, there is a [much simpler version](https://babel.hylandoutreach.repl.co/) of this. It generates images that are 2 pixels tall and 2 pixels wide, and it only uses red, blue, and yellow. The goal will be to update the image-generating code so that it can generate more complex images.
+For this activity, there is a [much simpler version](https://babel-js.glitch.me/) of this. It generates images that are 2 pixels tall and 2 pixels wide, and it only uses red, blue, and yellow. The goal will be to update the image-generating code so that it can generate more complex images.
 
 ## Getting Started
-Fork [this Repl project](https://replit.com/@HylandOutreach/Babel) to begin. Run the program, click the button, and see the image it creates!
+Remix [this project](https://glitch.com/edit/#!/babel-js) to begin. Run the program, click the button, and see the image it creates!
 
 Next, take a look at the existing code to see how it works.
 
@@ -158,6 +158,6 @@ function generateImage() {
 ```
 
 ## Conclusion
-By the end of the activity, the project should look something like [this](https://replit.com/@HylandOutreach/BabelForLoop#script.js). Note that the only changes should have taken place in the **script.js** file.
+By the end of the activity, the project should look something like [this](https://glitch.com/edit/#!/honorable-tabby-papyrus). Note that the only changes should have taken place in the **script.js** file.
 
 The key takeaway from this activity is that `for` loops make code much more extendable and maintainable. Imagine trying to update the original code to be a 4x4 grid without the use of a `for` loop; it would have been really annoying! Now, it's possible to create images of any dimension without changing too much. For loops make it possible to make code do a lot with only a few lines!

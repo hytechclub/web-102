@@ -1,7 +1,7 @@
 # Challenge: Function Tests
 One of the most important practices in the real world of software quality is [unit testing](https://en.wikipedia.org/wiki/Unit_testing). Sometimes, with paradigms like [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development), unit tests are so important that they are written _before_ the actual software!
 
-For this challenge, there is a mocked-up version of a test harness, and it's up to you to make sure all the tests pass. [Click here for the project.](https://replit.com/@HylandOutreach/FunctionTests) Add code to the **script.js** file for each challenge.
+For this challenge, there is a mocked-up version of a test harness, and it's up to you to make sure all the tests pass. [Click here for the project.](https://glitch.com/edit/#!/function-tests) Add code to the **script.js** file for each challenge.
 
 ## Challenge 1: Age Calculator
 Determine a person's age based on the year they were born.

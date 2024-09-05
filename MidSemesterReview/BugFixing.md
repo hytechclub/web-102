@@ -1,13 +1,13 @@
 # Bug Fixing
-Find and fix all the issues with these projects. Start by forking and running the linked the Repl projects; the webpages themselves explain the bugs.
+Find and fix all the issues with these projects. Start by remixing and running the linked projects; the webpages themselves explain the bugs.
 
-- [Bug 1](https://replit.com/@HylandOutreach/MidBug-1)
-- [Bug 2](https://replit.com/@HylandOutreach/Web102-MidBug-2)
-- [Bug 3](https://replit.com/@HylandOutreach/Web102-MidBug-3)
-- [Bug 4](https://replit.com/@HylandOutreach/Web102-MidBug-4)
-- [Bug 5](https://replit.com/@HylandOutreach/Web102-MidBug-5)
-- [Bug 6](https://replit.com/@HylandOutreach/Web102-MidBug-6)
-- [Bug 7](https://replit.com/@HylandOutreach/Web102-MidBug-7)
-- [Bug 8](https://replit.com/@HylandOutreach/Web102-MidBug-8)
+- [Bug 1](https://glitch.com/edit/#!/flowery-furtive-coaster)
+- [Bug 2](https://glitch.com/edit/#!/twisty-kiwi-plate)
+- [Bug 3](https://glitch.com/edit/#!/wobbly-certain-fireplace)
+- [Bug 4](https://glitch.com/edit/#!/hill-pyrite-boot)
+- [Bug 5](https://glitch.com/edit/#!/periodic-candle-pawpaw)
+- [Bug 6](https://glitch.com/edit/#!/alive-zenith-watcher)
+- [Bug 7](https://glitch.com/edit/#!/longhaired-far-waxflower)
+- [Bug 8](https://glitch.com/edit/#!/foul-fork-blinker)
 
 Good luck!

@@ -1,7 +1,7 @@
 # Warm-Up: Counting
 In this activity, build a simple counting program that displays numbers sequentially! Ah ah ah!
 
-Start by forking [this starter Repl project](https://replit.com/@HylandOutreach/TheCount#script.js).
+Start by remixing [this starter project](https://glitch.com/edit/#!/the-count-warm-up).
 
 The project has some basic setup: an HTML `<button>` that calls a function named `count` when it is clicked. The function is defined as follows:
 

@@ -4,26 +4,26 @@ Welcome to the Web 102 Hy-Tech Club course!
 ## Schedule
 Follow the links below to view each week of material.
 
-- [Week 1 (2/20) - HTML & CSS Review](HtmlCssReview/StudentDesc.md)
-- [Week 2 (2/27) - Hello JS](IntroToJS/StudentDesc.md)
-- [Week 3 (3/5) - Comments, Data Types, and Math](DataTypes/StudentDesc.md)
-- [Week 4 (3/12) - Buttons](Buttons/StudentDesc.md)
-- [Week 5 (3/19) - Conditionals](Conditionals/StudentDesc.md)
-- [Week 6 (3/26) - Review + Check-Ins](MidSemesterReview/StudentDesc.md)
-- **NO CLUB 4/2**
-- [Week 7 (4/9) - DOM Manipulation - Reading from Input](DomManipulation/StudentDesc.md)
-- [Week 8 (4/16) - DOM Manipulation - Updating HTML](DomManipulationContinued/StudentDesc.md)
-- [Week 9 (4/23) - Function Parameters](FunctionParameters/StudentDesc.md)
-- [Week 10 (4/30) - For Loops](ForLoops/StudentDesc.md)
-- [Week 11 (5/7) - Final Project](FinalProjects/StudentDesc.md)
-- Week 12 (5/14) - Final Project Presentations
+- [Week 1 (9/17) - HTML & CSS Review](HtmlCssReview/StudentDesc.md)
+- [Week 2 (9/24) - Hello JS](IntroToJS/StudentDesc.md)
+- [Week 3 (10/1) - Comments, Data Types, and Math](DataTypes/StudentDesc.md)
+- [Week 4 (10/8) - Buttons](Buttons/StudentDesc.md)
+- [Week 5 (10/15) - Conditionals](Conditionals/StudentDesc.md)
+- [Week 6 (10/22) - Review + Check-Ins](MidSemesterReview/StudentDesc.md)
+- [Week 7 (10/29) - DOM Manipulation - Reading from Input](DomManipulation/StudentDesc.md)
+- [Week 8 (11/5) - DOM Manipulation - Updating HTML](DomManipulationContinued/StudentDesc.md)
+- [Week 9 (11/12) - Function Parameters](FunctionParameters/StudentDesc.md)
+- [Week 10 (11/19) - For Loops](ForLoops/StudentDesc.md)
+- **NO CLUB 11/26**
+- [Week 11 (12/3) - Final Project](FinalProjects/StudentDesc.md)
+- Week 12 (12/10) - Final Project Presentations
 
-## Starter Repl Project
-[Click here for the **EmptyWeb** starter code.](https://replit.com/@HylandOutreach/EmptyWeb)
+## Starter Glitch Project
+[Click here for the **EmptyWeb** starter code.](https://glitch.com/edit/#!/remix/emptyweb101)
 
-[Click here for the **JavaScriptStarter** code.](https://replit.com/@HylandOutreach/JavaScriptStarter)
+[Click here for the **JavaScriptStarter** code.](https://glitch.com/edit/#!/remix/javascriptstarter)
 
-## Multiplayer Repl Submissions
-[Click here to submit your Multiplayer Repl links!](https://hylandtechclub.com/MultiplayerLink)
+##  Submissions
+[Click here to submit your Glitch links!](https://hylandtechclub.com/GlitchLink)
 
->_Note: only virtual students should submit Multiplayer Repl links_
+>_Note: only virtual students should submit links_
