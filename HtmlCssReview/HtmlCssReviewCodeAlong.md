@@ -23,7 +23,7 @@ Between the opening and closing `body` tags, add an `h3` element. Within the `h3
 ## Add an Image
 Add an image to the page.
 
-1. Go to [Google Images](https://google.com/images/)
+1. Go to [Google Images](https://google.com/images)
 1. Find an image, and copy the image address/URL/location
 1. Create an `img` tag, and set its `src` attribute to be the URL for the image
 
