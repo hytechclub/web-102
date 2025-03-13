@@ -3,6 +3,8 @@ Accomplish all of the challenges below without using `if`, `switch`, or any loop
 
 Start by remixing the [JavaScriptStarter project](https://glitch.com/edit/#!/remix/javascriptstarter). Some of these are fairly challenging, but all of them are definitely possible!
 
+StackBlitz: [https://stackblitz.com/edit/web-platform-czabuz7h?file=index.html](https://stackblitz.com/edit/web-platform-czabuz7h?file=index.html)
+
 **Resources**
 
 - [JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)

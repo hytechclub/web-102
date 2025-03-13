@@ -42,7 +42,7 @@ Instead of Darth Vader, update your "sound"board so that it features a different
 The biggest part of this challenge will be finding good, safe audio files to download and use.
 
 ### Step 1: Getting the Audio File
-Follow these steps to get the audio file ready to go.
+Follow these steps to get the audio file ready to go. NOTE: this will be different depending on what online platform you use.
 
 1. Find an audio file somewhere (this is the difficult part)
 1. Download the audio file locally
