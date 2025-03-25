@@ -3,6 +3,8 @@ Complete these challenges based on a philosophical decision-making website.
 
 [Click here to view the Decisions project.](https://glitch.com/edit/#!/decisions-decisions) Remix the project to begin the challenges.
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-88unykhq?file=script.js) | [Direct Source](DecisionsDecisionsSource.md)
+
 ## Part 1: Pick Between
 The first part of this challenge set involves the button with two galaxies (🌌🌌) - picking between multiple options.
 

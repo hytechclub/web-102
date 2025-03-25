@@ -3,6 +3,10 @@ One of the most important parts of programming is [debugging](https://en.wikiped
 
 Start by remixing [this project](https://glitch.com/edit/#!/remix/conditional-bugs). Test out the buttons to see how they work - each of them has an issue. Fix all of the issues in the functions for each of the buttons. All changes should take place in the **script.js** file.
 
+[Source Code](ConditionalDebuggingSource.md)
+
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-5kjv94hy?file=script.js)
+
 **1. Clothing Check**
 
 - Button name: Clothing Check
