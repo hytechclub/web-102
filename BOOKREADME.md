@@ -10,7 +10,7 @@ Follow the links below to view each week of material.
 - [Week 4 (3/18) - Buttons](Buttons/StudentDesc.md)
 - **NO CLUB 3/25**
 - [Week 5 (4/1) - Conditionals](Conditionals/StudentDesc.md)
-- [Week 6 (4/8) - Review + Check-Ins](MidSemesterReview/StudentDesc.md)
+- [Week 6 (4/8) - Review](MidSemesterReview/StudentDesc.md)
 - [Week 7 (4/15) - DOM Manipulation - Reading from Input](DomManipulation/StudentDesc.md)
 - [Week 8 (4/22) - DOM Manipulation - Updating HTML](DomManipulationContinued/StudentDesc.md)
 - [Week 9 (4/29) - Function Parameters](FunctionParameters/StudentDesc.md)

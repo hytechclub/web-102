@@ -1,6 +1,8 @@
 # Bug Fixing
 Find and fix all the issues with these projects. Start by remixing and running the linked projects; the webpages themselves explain the bugs.
 
+[Direct Source](BugProjectsSource.md)
+
 - [Bug 1](https://glitch.com/edit/#!/flowery-furtive-coaster)
 - [Bug 2](https://glitch.com/edit/#!/twisty-kiwi-plate)
 - [Bug 3](https://glitch.com/edit/#!/wobbly-certain-fireplace)
