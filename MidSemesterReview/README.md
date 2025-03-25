@@ -42,6 +42,8 @@ If the students complete enough of the review activities satisfactorily, there s
 
 These games can take place while check-ins continue.
 
+https://untrustedgame.com/
+
 ## Baamboozle Team Quiz
 Hopefully, all check-ins will be completed with some time to spare at the end. At that point, bring everybody together and facilitate the [Baamboozle Team Quiz](https://www.baamboozle.com/game/1496316). The students should split into two teams, and the instructor should click through questions. Note that Baamboozle is _very_ unfair when using power-ups, and the best team may not win - but that's okay!
 
