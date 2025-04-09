@@ -5,6 +5,8 @@ The goal of this activity is to create a webpage that will allow the user to ent
 
 Start with the HTML, and then add some JavaScript to make the "Add" button create a new paragraph and add it to the container! Remix [this project](https://glitch.com/edit/#!/remix/javascriptstarter) to begin. Then, follow the instructions below!
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
+
 ## Part 1 - Adding Content Tags
 First, add the elements that will make up the page. Open up the **index.html** file, and add each of these elements within the `<body></body>`:
 

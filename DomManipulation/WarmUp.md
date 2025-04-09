@@ -1,6 +1,23 @@
 # Warm-Up: Cotton Candy Inputs
 Start by opening up [this project](https://glitch.com/edit/#!/wool-bumpy-receipt) and remixing it. It contains a simple HTML page that has a header and two input boxes.
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-yumf4jzd?file=index.html)
+
+**index.html**
+
+```html
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<h1>Two Inputs</h1>
+		<input type="text" />
+		<input type="text" />
+	</body>
+</html>
+```
+
 The goal of this activity is to give one of the boxes a pink background, and the other one an aqua background.
 
 1. Open the **index.html** file for editing

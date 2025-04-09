@@ -1,6 +1,8 @@
 # Challenges
 Use DOM manipulation to complete the following challenges. For each challenge, start by remixing [this starter project](https://glitch.com/edit/#!/remix/javascriptstarter).
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
+
 ## 1. Which is Bigger?
 Create an HTML page with two inputs and one button. When the button is clicked, the page should display which of the two inputs contains a larger value.
 

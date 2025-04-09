@@ -4,6 +4,8 @@ Create a webpage where users can perform various functions on two inputs.
 ## Setup
 Start by forking [this empty project](https://glitch.com/edit/#!/emptyweb101), then follow the steps below.
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
+
 ### Basics
 Do some initial setup to begin.
 

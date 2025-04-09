@@ -11,7 +11,13 @@ document.body.style.background = "url(<your image file here>)";
 Refer back to this code when it is needed.
 
 ## Part 1 - Setup
-Start by remixing [this starter project](https://glitch.com/edit/#!/background-changer-start), then update the initial background image. In the **style.css** file, use the following code:
+Start by remixing [this starter project](https://glitch.com/edit/#!/background-changer-start), then update the initial background image.
+
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-lwhuzkgn?file=style.css)
+
+[Direct Source](BackgroundImagesSource.md)
+
+In the **style.css** file, use the following code:
 
 ```css
 body {

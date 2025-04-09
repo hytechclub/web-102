@@ -4,14 +4,16 @@ Previously, there was a webpage that could change its background color on a butt
 ## Part 1 - HTML Setup
 Start by remixing [this starter project](https://glitch.com/edit/#!/remix/javascriptstarter), then follow the steps below.
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
+
 1. Open the **index.html** file for editing
-1. In the `<body></body>`, add an `<h1>` header saying `Background Changer`
-1. Under the header, add a new `<p>` paragraph
-1. Within the paragraph, add text that says "Color: "
-1. Within the paragraph, add an `<input />` with a `type` of `"text"`
+2. In the `<body></body>`, add an `<h1>` header saying `Background Changer`
+3. Under the header, add a new `<p>` paragraph
+4. Within the paragraph, add text that says "Color: "
+5. Within the paragraph, add an `<input />` with a `type` of `"text"`
     - Give the `<input />` an `id` attribute with value `"color-input"`
-1. Within the paragraph, add a `<button>` with text `Change Background`
-1. Underneath the paragraph, add a `<div>` element
+6. Within the paragraph, add a `<button>` with text `Change Background`
+7. Underneath the paragraph, add a `<div>` element
     - Give the `<div>` an `id` attribute with value `"color-list"`
     - _Note: at this point, the `<div>` should not appear on the page_
 

@@ -3,6 +3,10 @@ In this activity, build a simple counting program that displays numbers sequenti
 
 Start by remixing [this starter project](https://glitch.com/edit/#!/the-count-warm-up).
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-bq3qakcm?file=style.css)
+
+[Direct Source](CountingWarmUpSource.md)
+
 The project has some basic setup: an HTML `<button>` that calls a function named `count` when it is clicked. The function is defined as follows:
 
 ```js

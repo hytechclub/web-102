@@ -1,5 +1,5 @@
 # Code-Along: Dice Roller
-There is currently [a webpage](https://dungeons-and-dragons-dice-roller.glitch.me/) that can simulate a 6-sided die roll on the click of a button. The task at hand is to add buttons so that it is possible to roll other types of dice as well.
+There is currently [a webpage](https://hylandtechclub.com/showcase/Web102/DiceRoller.html) that can simulate a 6-sided die roll on the click of a button. The task at hand is to add buttons so that it is possible to roll other types of dice as well.
 
 ## Background Information - Random Number Generation
 Random numbers can be an extremely useful tool when creating games. Any time there is any sort of probability in a game, it's probably using random numbers!
@@ -19,6 +19,10 @@ When applied to the randomly-generated number from a given range, it is possible
 
 ## Part 1 - Getting Started
 Begin by remixing [this starter project](https://glitch.com/edit/#!/dungeons-and-dragons-dice-roller).
+
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-snhh3sdj?file=index.html,script.js,style.css)
+
+[Direct Source](DiceRollerSource.md)
 
 ## Part 2 - A 4-sided Die Roll
 Now it's time to start expanding this application. The first thing to do is add another die - this time, one with four sides. Add a button in the HTML, and make it call a JavaScript function that displays a random number between `1` and `4`.

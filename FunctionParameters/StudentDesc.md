@@ -8,8 +8,6 @@ Learn how to use _parameters_ to make JavaScript functions even more powerful.
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/FunctionParameters/FunctionParameters.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Code-Along: Dice Roller
-[Click here for the code-along **starter code**.](https://glitch.com/edit/#!/dungeons-and-dragons-dice-roller)
-
 [Click here for the code-along instructions.](DiceRollerCodeAlong.md)
 
 ## Self-Paced Work: Background Images

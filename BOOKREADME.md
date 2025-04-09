@@ -23,6 +23,10 @@ Follow the links below to view each week of material.
 
 [Click here for the **JavaScriptStarter** code.](https://glitch.com/edit/#!/remix/javascriptstarter)
 
+### StackBlitz Starters
+[EmptyWeb](https://stackblitz.com/edit/web-platform-fgwsf5bn?file=index.html)
+[JavaScript Starter](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
+
 ### VS Code for Education
 If Glitch glitches, it may be necessary to use [Visual Studio Code for Education](https://vscodeedu.com/) instead. Sign up with a Google or Microsoft account to get started.
 

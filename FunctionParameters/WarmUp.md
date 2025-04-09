@@ -1,6 +1,10 @@
 # Warm-Up: Quiz
 Open up [this project](https://glitch.com/edit/#!/web-102-week-8-warm-up) and answer each question in the corresponding files.
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-obdmm9ar?file=question5.html)
+
+You can also answer in a new text file, or on paper, or any other way you'd like!
+
 1. For each of the expressions below, **True or False?**
     1. `10 + 2 === 12`
     1. `"hello" !== "Hello"`

@@ -8,8 +8,6 @@ Learn how to use `for` loops to programmatically repeat blocks of code.
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/ForLoops/ForLoops.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Code-Along: Library of Babel
-[Click here for the code-along **starter code**.](https://glitch.com/edit/#!/babel-js)
-
 [Click here for the code-along instructions.](BabelCodeAlong.md)
 
 ## Self-Paced Work: Babel Updates
@@ -19,4 +17,4 @@ Learn how to use `for` loops to programmatically repeat blocks of code.
 [Click here for some additional challenges.](Challenges.md)
 
 ## Formative Assessment: Loop Tracing
-[Click here to quiz yourself on the execution of `for` loops.](LoopTracing/index.html)
+[Click here to quiz yourself on the execution of `for` loops.](https://hylandtechclub.com/showcase/Web102/LoopTracing/index.html)

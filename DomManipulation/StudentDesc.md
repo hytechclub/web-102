@@ -18,6 +18,3 @@ Learn how to use JavaScript to capture input from a webpage.
 
 ## Challenges
 [Click here for some additional challenges.](Challenges.md)
-
-## Past Session Recording
-[ShareBase Link](https://app.sharebase.com/#/document/10192850/share/3-eH--eEKVFvNS1Cj4LyCuzqJ1d3LM)

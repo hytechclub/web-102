@@ -16,7 +16,11 @@ Not really. Actually, it should look something like this:
 To complete the exercise, follow the steps below, and make sure that the list behaves as described above.
 
 ## HTML
-Start by remixing [this starter project](https://glitch.com/edit/#!/remix/javascriptstarter). Then, in the **index.html** file, add the following:
+Start by remixing [this starter project](https://glitch.com/edit/#!/remix/javascriptstarter).
+
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
+
+Then, in the **index.html** file, add the following:
 
 - A header saying "My shopping list"
 - Some text saying "Enter a new item:"

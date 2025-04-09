@@ -10,6 +10,8 @@ For this activity, start with the first sentence of the text:
 ## Part 1 - Basic Setup
 Start by remixing [this empty project](https://glitch.com/edit/#!/remix/emptyweb101), then follow the steps below. _Note: this is emptier than usual - sometimes it's good to practice adding the basics!_
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-fgwsf5bn?file=index.html)
+
 1. Open the **index.html** file for editing
 1. Add the basic elements: `<html>`, `<head>`, `<body>`
 1. Create a new JavaScript file named **script.js**
