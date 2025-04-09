@@ -3,6 +3,8 @@ One of the most important practices in the real world of software quality is [un
 
 For this challenge, there is a mocked-up version of a test harness, and it's up to you to make sure all the tests pass. [Click here for the project.](https://glitch.com/edit/#!/function-tests) Add code to the **script.js** file for each challenge.
 
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-4ykp6nyg?file=index.html)
+
 ## Challenge 1: Age Calculator
 Determine a person's age based on the year they were born.
 

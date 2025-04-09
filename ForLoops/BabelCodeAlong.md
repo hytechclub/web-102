@@ -13,7 +13,13 @@ Basically, the idea is that it is possible to create a program that, given an in
 For this activity, there is a [much simpler version](https://babel-js.glitch.me/) of this. It generates images that are 2 pixels tall and 2 pixels wide, and it only uses red, blue, and yellow. The goal will be to update the image-generating code so that it can generate more complex images.
 
 ## Getting Started
-Remix [this project](https://glitch.com/edit/#!/babel-js) to begin. Run the program, click the button, and see the image it creates!
+Remix [this project](https://glitch.com/edit/#!/babel-js) to begin.
+
+[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-rvjyuuot?file=style.css)
+
+[Direct Source](BabelSource.md)
+
+Run the program, click the button, and see the image it creates!
 
 Next, take a look at the existing code to see how it works.
 
