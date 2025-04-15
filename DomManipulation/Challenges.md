@@ -3,6 +3,9 @@ Use DOM manipulation to complete the following challenges. For each challenge, s
 
 [StackBlitz Mirror](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
 
+### Interactive Challenge
+[JsChallenger DOM Exercises](https://www.jschallenger.com/javascript-dom-exercises/)
+
 ## 1. Which is Bigger?
 Create an HTML page with two inputs and one button. When the button is clicked, the page should display which of the two inputs contains a larger value.
 
