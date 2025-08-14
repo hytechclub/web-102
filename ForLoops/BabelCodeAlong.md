@@ -13,7 +13,7 @@ Basically, the idea is that it is possible to create a program that, given an in
 For this activity, there is a [much simpler version](https://hytop.onrender.com/pf/babel) of this. It generates images that are 2 pixels tall and 2 pixels wide, and it only uses red, blue, and yellow. The goal will be to update the image-generating code so that it can generate more complex images.
 
 ## Getting Started
-Copy [this project](https://hytop.onrender.com/c/babel) to begin.
+Copy [this project](https://hytop.onrender.com/e/babel) to begin.
 
 Run the program, click the button, and see the image it creates!
 

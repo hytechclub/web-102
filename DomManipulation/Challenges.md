@@ -1,5 +1,5 @@
 # Challenges
-Use DOM manipulation to complete the following challenges. For each challenge, start by copying [this starter project](https://hytop.onrender.com/c/start).
+Use DOM manipulation to complete the following challenges. For each challenge, start by copying [this starter project](https://hytop.onrender.com/e/start).
 
 ### Interactive Challenge
 [JsChallenger DOM Exercises](https://www.jschallenger.com/javascript-dom-exercises/)

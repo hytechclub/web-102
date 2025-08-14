@@ -1,7 +1,7 @@
 # Self-Paced Work: Conditional Debugging
 One of the most important parts of programming is [debugging](https://en.wikipedia.org/wiki/Debugging) - the process of finding and fixing errors in code. In this activity, practice debugging an existing program.
 
-Start by copying [this project](https://hytop.onrender.com/c/conditionaldebugging). Test out the buttons to see how they work - each of them has an issue. Fix all of the issues in the functions for each of the buttons. All changes should take place in the **script.js** file.
+Start by copying [this project](https://hytop.onrender.com/e/conditionaldebugging). Test out the buttons to see how they work - each of them has an issue. Fix all of the issues in the functions for each of the buttons. All changes should take place in the **script.js** file.
 
 **1. Clothing Check**
 

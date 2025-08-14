@@ -1,5 +1,5 @@
 # Warm-Up: Cotton Candy Inputs
-Start by opening up [this project](https://hytop.onrender.com/c/cottoncandy). It contains a simple HTML page that has a header and two input boxes.
+Start by opening up [this project](https://hytop.onrender.com/e/cottoncandy). It contains a simple HTML page that has a header and two input boxes.
 
 **index.html**
 
