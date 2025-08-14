@@ -1,7 +1,7 @@
 # Warm-Up: Counting
 In this activity, build a simple counting program that displays numbers sequentially! Ah ah ah!
 
-Start by copying [this starter project](https://hytop.onrender.com/c/count).
+Start by copying [this starter project](https://hytop.onrender.com/e/count).
 
 The project has some basic setup: an HTML `<button>` that calls a function named `count` when it is clicked. The function is defined as follows:
 

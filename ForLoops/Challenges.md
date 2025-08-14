@@ -1,7 +1,7 @@
 # Challenges: All `for` One and One `for` All
 Try to complete these `for` loop challenges!
 
-Start by copying [this project](https://hytop.onrender.com/c/allforone).
+Start by copying [this project](https://hytop.onrender.com/e/allforone).
 
 Run the program and test out some of the buttons. Some of them are working, some of them are a little broken, and some of them do not do anything! Follow these instructions to update the functionality of each button.
 
