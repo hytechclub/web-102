@@ -14,7 +14,7 @@ Here are some (very) short stories:
 Our goal is to create a website that shares these stories, or other stories!
 
 ### Starter Project
-[Click here to copy the starter project.](https://hytop.onrender.com/stories)
+[Click here to copy the starter project.](https://hytop.onrender.com/c/stories)
 
 ## Part 1: Adding a Button Element
 The first step is to add a button to the page. This button will display the story of The Three Little Pigs when it is clicked.
