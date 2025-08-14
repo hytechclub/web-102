@@ -4,9 +4,7 @@ Create a new webpage featuring buttons that will say some Darth Vader quotes.
 - [Click here for an example of a board with real sound](https://darth-vader-soundboard.glitch.me/)
 - [Click here for Darth Vader quote source](https://www.quora.com/What-are-some-famous-Darth-Vader-quotes)
 
-Start by remixing the [JavaScript starter project](https://glitch.com/edit/#!/remix/javascriptstarter). Then, follow the instructions below to build out the website.
-
-StackBlitz: [https://stackblitz.com/edit/web-platform-czabuz7h?file=index.html](https://stackblitz.com/edit/web-platform-czabuz7h?file=index.html)
+Start by copying the [JavaScript starter project](https://hytop.onrender.com/c/js). Then, follow the instructions below to build out the website.
 
 ## Part 1 - Basic Elements
 Add some basic elements to the webpage, and update a couple styles.
