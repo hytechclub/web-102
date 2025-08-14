@@ -1,7 +1,5 @@
 # Challenges
-Use DOM manipulation to complete the following challenges. For each challenge, start by remixing [this starter project](https://glitch.com/edit/#!/remix/javascriptstarter).
-
-[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
+Use DOM manipulation to complete the following challenges. For each challenge, start by copying [this starter project](https://hytop.onrender.com/c/start).
 
 ### Interactive Challenge
 [JsChallenger DOM Exercises](https://www.jschallenger.com/javascript-dom-exercises/)

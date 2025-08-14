@@ -16,9 +16,7 @@ Not really. Actually, it should look something like this:
 To complete the exercise, follow the steps below, and make sure that the list behaves as described above.
 
 ## HTML
-Start by remixing [this starter project](https://glitch.com/edit/#!/remix/javascriptstarter).
-
-[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-oitfrwv3?file=index.html)
+Start by copying [this starter project](https://hytop.onrender.com/e/js).
 
 Then, in the **index.html** file, add the following:
 

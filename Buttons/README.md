@@ -1,44 +1,38 @@
-# Week 4: Buttons & Functions
-This lesson introduces ways to make JavaScript more usable. These concepts will be used throughout the remainder of the course. This shows how to use JavaScript functions to create working buttons.
+# Buttons
+This lesson introduces buttons as a way to create more interactive websites.
 
-## Warm-Up: Questions
-Prompt the students with the following, and allow them to ponder it briefly:
-
-- How many different buttons might you find on a website?
-- Based on how we currently make our webpages, do you foresee any problems as our websites become more complex?
-
-Discussion will take place during the lecture. The purpose of this will be to help the students understand _why_ it is important to use buttons instead of simply run all the code when the page loads.
-
-## Lecture: Buttons
-The [presentation](Buttons.pptx) covers functions and buttons.
-
-## Code-Along: Darth Vader Soundboard
-Walk through the [code-along instructions](SoundboardCodeAlong.md) with the students to build a simple Darth Vader "sound"board (not using real sound).
-
-## Formative Assessment: Review Activity
-For this activity, the students will be split up into 3 teams. Each team will be given a whiteboard to fill out their answers. In a virtual setting, breakout rooms can be utilized. Teams should only be able to talk amongst themselves, and there can be one instructor per room checking answers.
-
-**Note: There is not a great solution to do this virtually.**
-
-The instructors will pull up the [Review PowerPoint](Review.pptx) to display the review questions to the students (Note: the answers are displayed on the slides following the questions). The students will have time to fill out an answer. After a certain amount of time, the instructors will count down and ask each of the teams to hold up their answers. Each team will get a point for every answer they get correctly. If anyone is talking outside of the time they have to discuss an answer, that team will be deducted a point.
-
-If there is a tie at the end of the round, the tie-breaker question will be used.
-
-The team with the highest amount of points wins.
-
-## Self-Paced Work: Soundboard Updates
-The students should update the Darth Vader soundboard by following the [instructions](SelfPacedWork.md). The completed self-paced work (HTML + JavaScript files) can be found [in this folder](SelfPacedWorkComplete/).
-
-## Challenges
-Students can work on the [additional challenges](Challenges.md) after completing the self-paced work. The completed challenges (HTML + JavaScript files) can be found [in this folder](ChallengesComplete/).
-
-## Agenda
+### Agenda
 
 | Activity | Time |
 |-|-|
-| Warm-Up | 5m |
-| Lecture | 25m |
-| Code-Along | 25m |
-| Formative Assessment | 20m |
+| Warm-Up | 15m |
+| Presentation | 10m |
+| Formative Assessment | 15m |
 | Break | 10m |
-| Self-Paced Work/Challenges | 40m |
+| Code-Along | 30m |
+| Self-Paced Work | 30m |
+
+## Warm-Up: Blooket
+Facilitate the [Blooket](https://dashboard.blooket.com/set/65b8eeccf29aed4ff8bea349) that covers the content from the previous session.
+
+## Presentation: Buttons
+The [presentation](Buttons.pptx) covers functions and buttons.
+
+## Formative Assessment: Review Activity
+After the presentation, play a game to review some of the concepts covered up until this point.
+
+Have the students split into two teams. Each team will line up, and have one representative face off against a representative from the opposing team. Questions are in the [Review](Review.pptx) slides - the answers are in the slides following each question. If a student gets the answer right (regardless of speed), they win a point for their team. Keep track of the points on the whiteboard. The winning team receives candy. There is a tie-breaker at the end that should be based on speed.
+
+## Code-Along: Story Time
+Lead the students through the [code-along activity](StoryTimeCodeAlong.md).
+
+## Self-Paced Work
+There are a variety of self-paced work options listed at the end of the code-along activity.
+
+- Bonus Challenge: Multiple Pages
+- [Practice: Character Soundboard](SoundboardCodeAlong.md)
+- [Final Project Inspiration & Ideation](SelfPacedWork.md)
+
+### Final Project Idea Submissions
+[Click here to view the form responses.](https://hylandsw-my.sharepoint.com/:x:/g/personal/techoutreachteam_hyland_com/EULOr23r-bpGtxlGbJHtcG4BHvdu8JZ-xYdx83KgKFyLxg?e=mjO8Eb)
+

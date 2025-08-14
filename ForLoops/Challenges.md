@@ -1,11 +1,7 @@
 # Challenges: All `for` One and One `for` All
 Try to complete these `for` loop challenges!
 
-Start by remixing [this project](https://glitch.com/edit/#!/remix/all-for-one-and-one-for-all).
-
-[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-ls1jfqou?file=style.css)
-
-[Direct Source](AllForOneSource.md)
+Start by remixing [this project](https://hytop.onrender.com/c/allforone).
 
 Run the program and test out some of the buttons. Some of them are working, some of them are a little broken, and some of them do not do anything! Follow these instructions to update the functionality of each button.
 

@@ -8,14 +8,12 @@ For this activity, start with the first sentence of the text:
 >Pizza was invented by a \_\_\__adjective_\_\_\_ \_\_\__nationality_\_\_\_ chef named \_\_\__person_\_\_\_.
 
 ## Part 1 - Basic Setup
-Start by remixing [this empty project](https://glitch.com/edit/#!/remix/emptyweb101), then follow the steps below. _Note: this is emptier than usual - sometimes it's good to practice adding the basics!_
-
-[StackBlitz Mirror](https://stackblitz.com/edit/web-platform-fgwsf5bn?file=index.html)
+Start by copying [this empty project](https://hytop.onrender.com/c/web), then follow the steps below. _Note: this is emptier than usual - sometimes it's good to practice adding the basics!_
 
 1. Open the **index.html** file for editing
-1. Add the basic elements: `<html>`, `<head>`, `<body>`
-1. Create a new JavaScript file named **script.js**
-1. Link the JavaScript file in the HTML file using a `<script>` element
+2. Add the basic elements: `<html>`, `<head>`, `<body>`
+3. Create a new JavaScript file named **script.js**
+4. Link the JavaScript file in the HTML file using a `<script>` element
 
 ## Part 2 - Creating the Inputs in HTML
 The next step is to create some text boxes in the HTML that will appear on the webpage.

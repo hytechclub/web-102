@@ -18,6 +18,3 @@ There are a couple different challenges:
 
 - [Click here for the Shopping List challenge](Challenges/ShoppingListChallenge.md)
 - [Click here for the Table Data challenge](Challenges/TableDataChallenge.md)
-
-## Past Session Recording
-<iframe width="100%" height="450px" src="https://www.youtube.com/embed/NJYJDe5dbrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
