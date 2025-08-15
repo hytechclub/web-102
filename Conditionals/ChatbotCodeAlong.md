@@ -5,7 +5,7 @@ In this activity, create a simple [chatbot](https://en.wikipedia.org/wiki/Chatbo
 Start by talking to [ELIZA](http://psych.fullerton.edu/mbirnbaum/psych101/eliza.htm), a "Rogerian Therapist" chatbot from the 1960s. This is a small example of what is possible with chatbots.
 
 ## Basic Setup
-To get started, remix [this project](https://hytop.onrender.com/e/chatbot). It contains some basic HTML and CSS, but no JavaScript yet! Manually adding some of the basic starter code will be helpful practice.
+To get started, copy [this project](https://hytop.onrender.com/e/chatbot). It contains some basic HTML and CSS, but no JavaScript yet! Manually adding some of the basic starter code will be helpful practice.
 
 Add a new JavaScript file to the project, and link it from the **index.html** file.
 

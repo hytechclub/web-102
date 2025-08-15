@@ -5,7 +5,7 @@
     - [Code-Along](Buttons/StoryTimeCodeAlong.md)
     - [Practice](Buttons/SoundboardCodeAlong.md)
     - [Self-Paced Work](Buttons/SelfPacedWork.md)
-- [Week 5 - Conditionals](Conditionals/StudentDesc.md)
+- [Week 3 - Conditionals](Conditionals/StudentDesc.md)
     - [Conditional Debugging Activity](Conditionals/ConditionalDebugging.md)
     - [Code-Along](Conditionals/ChatbotCodeAlong.md)
     - [Self-Paced Work](Conditionals/SelfPacedWork.md)
