@@ -212,7 +212,7 @@
                 <a href="../../Conditionals/StudentDesc.html">
             
                     
-                    Week 5 - Conditionals
+                    Week 3 - Conditionals
             
                 </a>
             
@@ -683,7 +683,7 @@
 <h2 id="example-description">Example Description</h2>
 <p>We want to create a simple webpage that allows a user to enter a password. If they enter the correct password, the webpage should inform them that they entered the correct password with a nice green message, and display an image. If they enter an incorrect password, the webpage should inform them that they entered the wrong password with a red message, and hide the image.</p>
 <h2 id="html">HTML</h2>
-<p>Start by forking <a href="https://replit.com/@HylandOutreach/StyleUpdates" target="_blank">this starter Repl</a>. It has some basic setup, but it does not do much yet.</p>
+<p>Start by copying <a href="https://hytop.onrender.com/e/styleupdates" target="_blank">this project</a>. It has some basic setup, but it does not do much yet.</p>
 <h3 id="text-input-and-button">Text Input and Button</h3>
 <p>To make this work, we first need a text input and a button. We want them to appear together, on their own line. We can place them inside a <code>div</code> to achieve this structure (right under the paragraph). Note that the input also requires an <code>id</code> so that we can select it in the JavaScript.</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
@@ -696,7 +696,7 @@
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;passwordMessage&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 <p>We also want to add an image underneath this paragraph. We need the image to have an <code>id</code> so that we can select it and update it in the JavaScript. We also need to set its source.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;hiddenImage&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;Sunglasses.gif&quot;</span> /&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;hiddenImage&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://media.tenor.com/GdXZeKXdXfEAAAAM/funny-shades-off.gif&quot;</span> /&gt;</span>
 </code></pre>
 <p>When a user first loads up the webpage, the image should actually be hidden. We can make this happen with CSS. We will select the image using its <code>id</code>, and then set its <code>display</code> property to <code>none</code>. The CSS should go in the <strong>style.css</strong> file that is already linked to the HTML page.</p>
 <pre><code class="lang-css"><span class="hljs-selector-id">#hiddenImage</span> {
@@ -855,7 +855,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Style Manipulation","level":"1.8.3","depth":2,"previous":{"title":"Cheat Sheet","level":"1.8.2","depth":2,"path":"FinalProjects/CheatSheet.md","ref":"FinalProjects/CheatSheet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"Archive/StyleManipulationLesson/StyleManipulation.md","mtime":"2025-08-14T19:23:02.599Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-08-14T19:23:33.669Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Style Manipulation","level":"1.8.3","depth":2,"previous":{"title":"Cheat Sheet","level":"1.8.2","depth":2,"path":"FinalProjects/CheatSheet.md","ref":"FinalProjects/CheatSheet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"Archive/StyleManipulationLesson/StyleManipulation.md","mtime":"2025-08-15T15:20:18.925Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-08-15T15:20:50.151Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
