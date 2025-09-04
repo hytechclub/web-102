@@ -1,4 +1,4 @@
-# Week 8: DOM Manipulation Part 2
+# DOM Manipulation Part 2
 Show how DOM manipulation can be used to update the HTML of a webpage. This lesson covers:
 
 - Updating existing HTML elements
