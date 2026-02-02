@@ -34,5 +34,5 @@ There are a variety of self-paced work options listed at the end of the code-alo
 - [Final Project Inspiration & Ideation](SelfPacedWork.md)
 
 ### Final Project Idea Submissions
-[Click here to view the form responses.](https://hylandsw-my.sharepoint.com/:x:/g/personal/techoutreachteam_hyland_com/EULOr23r-bpGtxlGbJHtcG4BHvdu8JZ-xYdx83KgKFyLxg?e=mjO8Eb)
+[Click here to view the form responses.](https://hylandsw-my.sharepoint.com/:x:/g/personal/techoutreachteam_hyland_com/EULOr23r-bpGtxlGbJHtcG4BHvdu8JZ-xYdx83KgKFyLxg?e=mjO8Eb) Note that Microsoft Forms sometimes has issues with syncing, so the responses may not appear on the sheet even if they have been properly submitted.
 
