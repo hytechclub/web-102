@@ -1,7 +1,6 @@
 # Code-Along: Darth Vader "Sound"board
 Create a new webpage featuring buttons that will say some Darth Vader quotes.
 
-- [Click here for an example of a board with real sound](https://hytop.onrender.com/pf/darthsounds/)
 - [Click here for Darth Vader quote source](https://www.quora.com/What-are-some-famous-Darth-Vader-quotes)
 
 Start by copying the [JavaScript starter project](https://hytop.onrender.com/e/js). Then, follow the instructions below to build out the website.

@@ -83,3 +83,5 @@ Once you complete the tutorial, augment the game with some additional features s
 
 ### Other Canvas game
 Use the HTML5 Canvas to create a graphical game. Use the following tutorial as a reference: https://www.w3schools.com/graphics/game_intro.asp
+
+Here is another game made using the canvas: [Merge Blocks](https://joswellmaxeph.github.io/mergeblocks/)

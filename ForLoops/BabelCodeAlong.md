@@ -33,7 +33,7 @@ The CSS in the **style.css** file only really styles the non-essential parts of 
 The JavaScript in the **script.js** file is pretty extensive. There are _three_ functions, each doing a different thing. When working with JavaScript, it is often necessary to use a bunch of different functions. Here's what each function does:
 
 #### `getRandomWholeNumber`
-This function _returns_ a random number. It is similar to the one used in the [Dice Roller](../FunctionParameters/DiceRollerCodeAlong.md) activity. It takes in a maximum value parameter (`max`), and generates a whole number between `1` and `max`. It is _called by_ the `getRandomColor` function.
+This function _returns_ a random number. It takes in a maximum value parameter (`max`), and generates a whole number between `1` and `max`. It is _called by_ the `getRandomColor` function.
 
 #### `getRandomColor`
 This function _returns_ a random color. It _calls_ the `getRandomWholeNumber` function to choose between yellow, red, and blue. It is _called by_ the `generateImage` function.
