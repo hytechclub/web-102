@@ -7,7 +7,6 @@ Next, read up on how [logic gates work with boolean (on/off) values in circuits]
 
 Finally, play with these interactive tools to explore booleans and computer logic at its most fundamental level: 
 
-- [Boolean Game](https://booleangame.com/)
 - [Basic Gates Introduction](https://www.advanced-ict.info/interactive/circuits.html)
 - [NAND Game](https://nandgame.com/)
 
