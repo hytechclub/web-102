@@ -8,7 +8,15 @@ Learn how to change what happens in a program based on _conditions_.
 [Click here for the Conditional Debugging activity instructions.](ConditionalDebugging.md)
 
 ## Code-Along: Chatbot
+[Click here for the code-along **starter code**.](https://hytop.onrender.com/e/chatbot)
+
 [Click here for the code-along instructions.](ChatbotCodeAlong.md)
 
-## Self-Paced Work
-[Click here for the self-paced work options.](SelfPacedWork.md)
+## Self-Paced Work: Chatbot Updates
+[Click here for the self-paced work instructions.](ChatbotSelfPaced.md)
+
+## Challenges
+[Click here for some additional challenges.](Challenges.md)
+
+## Logic Operators
+[Click here to learn more about logic operators.](LogicOperators.md)

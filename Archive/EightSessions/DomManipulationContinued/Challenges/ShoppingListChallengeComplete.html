@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function addItem() {
+                let list = document.querySelector("#list");
+                let input = document.querySelector("#item");
+                let myItem = input.value;
+                input.value = "";
+        
+                let listItem = document.createElement("li");
+                let listText = document.createElement("span");
+                let listBtn = document.createElement("button");
+        
+                listItem.appendChild(listText);
+                listText.textContent = myItem;
+                listItem.appendChild(listBtn);
+                listBtn.textContent = "Delete";
+                list.appendChild(listItem);
+        
+                listBtn.onclick = function(e) {
+                    list.removeChild(listItem);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>My shopping list</h1>
+        Enter a new item: <input type="text" id="item">
+        <button onclick="addItem();">Add item</button>
+        <ul id="list"></ul>
+    </body>
+</html>

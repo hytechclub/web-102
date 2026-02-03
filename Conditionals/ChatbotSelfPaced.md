@@ -38,5 +38,5 @@ if (message === "Hello") {
 
 Update the existing `chat` function so that it can respond to other messages by saying "I do not understand your message."
 
-## Continuation
-You are welcome to continue adding responses to the code!
+## Challenges
+After completing the self-paced work, take a look at the [challenges](Challenges.md).

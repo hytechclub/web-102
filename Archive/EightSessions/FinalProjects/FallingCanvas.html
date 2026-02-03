@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <style>
+            canvas {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            p {
+                position: absolute;
+                right: 50px;
+                bottom: 50px;
+                font-size: 100px;
+                font-family: simsun;
+                color: white;
+            }
+
+            button {
+                position: absolute;
+                top: 800px;
+                left: 20px;
+            }
+        </style>
+        <script>
+            let randomVals = [];
+            let colorsOn = false;
+
+            function toggleColors() {
+                colorsOn = !colorsOn;
+                let p = document.querySelector("p");
+                p.style.color = colorsOn ? "white" : "darkgrey";
+            }
+
+            function init() {
+                let previousDown = false;
+                let previousSpeed = 0;
+                for (let i = 0; i < 20; i++) {
+                    let radius = 25+Math.ceil(Math.random()*75);
+                    let speed = 3+Math.ceil(Math.random()*5);
+                    let down = Math.random() < .5;
+
+                    if (speed === previousSpeed && down === previousDown) {
+                        down = !down;
+                    }
+
+                    let randomR = 100+Math.floor(Math.random()*120);
+                    let randomG = 0
+                    let randomB = 0
+
+                    randomVals.push({
+                        radius: radius,
+                        speed: speed,
+                        down: down,
+                        color: "rgb(" + randomR + ", " + randomG + ", " + randomB + ")"
+                    });
+
+                    previousDown = down;
+                    previousSpeed = speed;
+                }
+
+                window.requestAnimationFrame(draw);
+            }
+        
+            function draw() {
+                let canvas = document.getElementById('canvas')
+                let ctx = canvas.getContext('2d');
+        
+                ctx.fillStyle = colorsOn ? "rgb(100, 0, 0)" : "lightgrey";
+                ctx.fillRect(0, 0, canvas.width, canvas.height)
+
+                ctx.lineWidth = 2;
+
+                let endX = 0;
+                for (let i = 0; i < 20; i++) {
+                    endX = randomArc(ctx, endX, randomVals[i]);
+                }
+        
+                window.requestAnimationFrame(draw);
+            }
+
+            function randomArc(ctx, endX, randomVal) {
+                let date = new Date();
+                let radius = randomVal.radius;
+                let speed = randomVal.speed;
+                let down = randomVal.down;
+
+                ctx.beginPath();
+                if (!down) {
+                    ctx.arc(endX+radius, (1000-radius*2) - ((-1*radius)+((date.getSeconds() % speed)*1000)/speed + (date.getMilliseconds()/speed)), radius, 0, 2 * Math.PI);
+                } else {
+                    ctx.arc(endX+radius, (-1*radius)+((date.getSeconds() % speed)*1000)/speed + (date.getMilliseconds()/speed), radius, 0, 2 * Math.PI);
+                }
+                
+                ctx.strokeStyle = colorsOn ? randomVal.color : "darkgrey";
+                ctx.fillStyle = colorsOn ? randomVal.color : "lightgrey";
+                ctx.fill();
+                ctx.stroke();
+
+                return endX + radius*2;
+            }
+        
+            init();
+        </script>
+    </head>
+    <body>
+        <canvas id="canvas" width="2000" height="800"></canvas>
+        <button onclick="toggleColors()">Toggle Colors</button>
+    </body>
+</html>
