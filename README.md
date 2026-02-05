@@ -4,11 +4,14 @@ This course introduces the basics of JavaScript. Students will learn fundamental
 ## Outline
 Follow this schedule:
 
-- [Week 1](Introduction/) - HTML/CSS Review + Introduction to JS
-- [Week 2](Buttons/) - Buttons
-- [Week 3](Conditionals/) - Conditionals
-- [Week 4](DomManipulation/) - DOM Manipulation
-- [Week 5](DomManipulationContinued/) - DOM Manipulation Continued
-- [Week 6](ForLoops/) - For Loops
-- [Week 7](FinalProjects/) - Students work on Final Projects
-- [Week 8](FinalSession/) - Students present Final Projects
+- [Week 1 - HTML/CSS Review](HtmlCssReview/)
+- [Week 2 - Introduction to JS](IntroToJS/)
+- [Week 3 - Buttons](Buttons/)
+- [Week 4 - Conditionals](Conditionals/)
+- [Week 5 - Mid-Semester Review](MidSemesterReview/)
+- [Week 6 - DOM Manipulation 1](DomManipulation/)
+- [Week 7 - DOM Manipulation 2](DomManipulationContinued/)
+- [Week 8 - For Loops](ForLoops/)
+- [Week 9 - Final Project](FinalProjects/)
+- Week 10 - Final Project Presentations
+- 
